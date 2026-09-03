@@ -173,6 +173,8 @@ body{
 .hero h1 em{ font-style:italic; color:var(--accent-2); }
 .hero-sub{ margin:0 0 24px; color:var(--txt-2); max-width:780px; font-size:15px; }
 .hero-stats{ display:flex; flex-wrap:nowrap; gap:8px; overflow-x:auto; scrollbar-width:thin; }
+@media (max-width:1024px){ .hero-stats{ flex-wrap:wrap; display:grid; grid-template-columns:repeat(3,1fr); overflow-x:visible; } }
+@media (max-width:600px){ .hero-stats{ grid-template-columns:repeat(2,1fr); } }
 .hstat{
   flex:1 1 0; min-width:0;
   background:rgba(255,255,255,.035); border:1px solid var(--line); border-radius:10px;
@@ -202,7 +204,6 @@ body{
 .mech li b{ color:var(--txt); }
 
 .knots{ display:grid; grid-template-columns:repeat(auto-fit,minmax(195px,1fr)); gap:14px; }
-@media (max-width:1000px){ .knots{ grid-template-columns:1fr; } }
 .knot{
   background:rgba(0,0,0,.24); border:1px solid var(--line-2); border-radius:10px; padding:16px;
   border-top:3px solid var(--red);
@@ -718,6 +719,24 @@ mark{ background:rgba(232,163,61,.32); color:#fff; border-radius:2px; padding:0 
 .empty-state b{ display:block; font-size:17px; color:var(--txt-2); margin-bottom:7px; font-family:var(--serif); }
 
 /* ============================================================
+   OVERFLOW & TEXT FIXES
+   ============================================================ */
+/* Evitar que textos largos desborden contenedores */
+.hero h1, .view-head h2, .tl-card h4, .inc-hb h3, .map-detail h3,
+.decl-head h2, .cgroup-h h3, .knot h4, .knot p,
+.qa-qt, .qa-a-txt, .ver-cita, .concl-txt, .cit-txt,
+.inc-analisis, .inc-reso, .pstep-t, .pstep-d, .dh-note, .dh-tesis,
+.sr-t, .sr-x, .sd-lead, .sd-close,
+.sumario-doc .sd-sec p, .sumario-doc .sd-ol li, .sumario-doc .sd-ul li,
+.sumario-doc .sd-actas li span, .sumario-doc .sd-seq li span,
+.hero-sub, .warn-box, .doc-points li {
+  overflow-wrap:break-word; word-break:break-word;
+}
+
+/* Contenedores nunca desbordan horizontalmente */
+.view{ overflow-x:hidden; }
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 @media (max-width:900px){
@@ -727,9 +746,47 @@ mark{ background:rgba(232,163,61,.32); color:#fff; border-radius:2px; padding:0 
   .view{ padding:22px 18px 70px; }
   .hero{ padding:26px 20px 22px; }
   .hero h1{ font-size:29px; }
-  .map-shell{ grid-template-columns:1fr; grid-template-rows:auto 1fr auto; height:auto; }
+  .map-shell{ grid-template-columns:1fr; grid-template-rows:auto 1fr auto; height:auto; overflow:hidden; }
   .map-canvas-wrap{ height:420px; }
   .map-detail{ border-left:0; border-top:1px solid var(--line); max-height:340px; }
-  .search-wrap{ width:auto; flex:1; }
+  .search-wrap{ width:auto; flex:1; min-width:0; }
   .topbar-title{ display:none; }
+
+  /* Interrogatorios */
+  .dh-id{ min-width:0; }
+  .sub-tabs{ width:auto; max-width:100%; overflow-x:auto; scrollbar-width:thin; }
+  .qa-a{ padding-left:16px; }
+
+  /* Incongruencias */
+  .inc-head{ padding:14px 14px; }
+  .inc-body{ padding:2px 14px 14px; }
+
+  /* Sumario borrador */
+  .sumario-doc .sd-kv{ grid-template-columns:1fr; }
+  .sumario-doc .sd-seq li{ grid-template-columns:1fr; }
+  .sumario-doc .sd-actas li{ grid-template-columns:24px 1fr; }
+
+  /* Knots: 2 columnas en tablet */
+  .knots{ grid-template-columns:repeat(2,1fr); }
+}
+
+@media (max-width:480px){
+  .hero h1{ font-size:24px; }
+  .view-head h2{ font-size:22px; }
+  .hero-sub{ font-size:13.5px; }
+  .hstat b{ font-size:18px; }
+  .hstat span{ font-size:9px; }
+  .knots{ grid-template-columns:1fr; }
+  .dh-av{ width:42px; height:42px; flex:0 0 42px; font-size:15px; }
+  .dh-id h2{ font-size:22px; }
+  .decl-tabs{ gap:5px; }
+  .dtab{ padding:6px 10px; }
+  .dtab-av{ width:22px; height:22px; flex:0 0 22px; font-size:9px; }
+  .qa-n{ min-width:24px; font-size:10px; padding:2px 5px; }
+  .qa-qt{ font-size:12.5px; }
+  .qa-a-txt{ font-size:13px; padding-left:10px; }
+  .inc-hb h3{ font-size:15px; }
+  .ver-cita{ font-size:13px; padding-left:10px; }
+  .sumario-doc .sd-title{ font-size:22px; }
+  .sumario-doc .sd-firmas{ grid-template-columns:1fr; }
 }
