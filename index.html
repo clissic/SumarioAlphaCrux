@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sumario Alpha Crux — Análisis interactivo de la investigación</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L14.2 8.2 L21 9 L16 13.4 L17.5 20 L12 16.7 L6.5 20 L8 13.4 L3 9 L9.8 8.2 Z"/></svg>
+      </div>
+      <div class="brand-txt">
+        <strong>ALPHA CRUX</strong>
+        <span>Sumario de investigación</span>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <button class="nav-item is-active" data-view="resumen">
+        <span class="ni-ico">◈</span><span class="ni-lbl">Panorama</span>
+      </button>
+      <button class="nav-item" data-view="mapa">
+        <span class="ni-ico">⁙</span><span class="ni-lbl">Mapa conceptual</span>
+      </button>
+      <button class="nav-item" data-view="cronologia">
+        <span class="ni-ico">⌖</span><span class="ni-lbl">Línea de tiempo</span>
+        <span class="ni-count" id="cnt-timeline"></span>
+      </button>
+      <button class="nav-item" data-view="interrogatorios">
+        <span class="ni-ico">☰</span><span class="ni-lbl">Interrogatorios</span>
+        <span class="ni-count" id="cnt-decl"></span>
+      </button>
+      <button class="nav-item" data-view="incongruencias">
+        <span class="ni-ico">⚠</span><span class="ni-lbl">Incongruencias</span>
+        <span class="ni-count" id="cnt-incon"></span>
+      </button>
+      <button class="nav-item" data-view="conclusiones">
+        <span class="ni-ico">✓</span><span class="ni-lbl">Conclusiones</span>
+      </button>
+      <button class="nav-item" data-view="pasos">
+        <span class="ni-ico">→</span><span class="ni-lbl">Pasos a seguir</span>
+        <span class="ni-count" id="cnt-pasos"></span>
+      </button>
+      <button class="nav-item" data-view="documentos">
+        <span class="ni-ico">▤</span><span class="ni-lbl">Documentos base</span>
+      </button>
+      <button class="nav-item" data-view="sumario">
+        <span class="ni-ico">¶</span><span class="ni-lbl">Sumario (borrador)</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-foot">
+      <div class="sf-row"><span>Buque</span><b>Alpha Crux</b></div>
+      <div class="sf-row"><span>OMI</span><b>9024621</b></div>
+      <div class="sf-row"><span>Siniestro</span><b>25 ago 2026</b></div>
+      <div class="sf-row"><span>Lugar</span><b>Muelle B · hangar 7</b></div>
+    </div>
+  </aside>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="main">
+
+    <header class="topbar">
+      <button class="burger" id="burger" aria-label="Menú">☰</button>
+      <div class="topbar-title" id="topbarTitle">Panorama de la investigación</div>
+      <div class="search-wrap">
+        <input type="search" id="globalSearch" placeholder="Buscar en todo el sumario: nombre, tanque, ojo de buey, hora…" autocomplete="off">
+        <button class="search-clear" id="searchClear" hidden>✕</button>
+      </div>
+    </header>
+
+    <div class="scroll" id="scrollArea">
+
+      <!-- ---------- PANORAMA ---------- -->
+      <section class="view is-active" id="view-resumen">
+        <div class="hero">
+          <div class="hero-tag">Investigación de siniestro marítimo</div>
+          <h1>Hundimiento del B/P <em>Alpha Crux</em></h1>
+          <p class="hero-sub">Análisis interactivo de las doce actas de información sumaria, el informe del oficial actuante, el informe del supervisor de CONMO, la exposición del Práctico de Seguridad y la cronología de la respuesta. Puerto de Montevideo, 25 de agosto de 2026.</p>
+          <div class="hero-stats" id="heroStats"></div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card-h">Ficha del buque</h3>
+            <dl class="kv" id="fichaBuque"></dl>
+          </div>
+          <div class="card">
+            <h3 class="card-h">Secuencia acreditada del siniestro</h3>
+            <ol class="mech" id="mechChain"></ol>
+          </div>
+        </div>
+
+        <div class="card card-alert">
+          <h3 class="card-h">Los cinco nudos que definen el sumario</h3>
+          <div class="knots" id="knots"></div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-h">Declarantes y testigos pendientes</h3>
+          <div class="roster" id="roster"></div>
+        </div>
+      </section>
+
+      <!-- ---------- MAPA CONCEPTUAL ---------- -->
+      <section class="view" id="view-mapa">
+        <div class="view-head">
+          <h2>Mapa conceptual del caso</h2>
+          <p>Red de personas, hechos, deficiencias y nudos de contradicción. Arrastrá los nodos para reorganizarlos, usá la rueda para acercar y hacé clic en cualquier elemento para ver su detalle y sus vínculos.</p>
+        </div>
+
+        <div class="map-shell">
+          <div class="map-toolbar">
+            <div class="mt-legend" id="mapLegend"></div>
+            <div class="mt-actions">
+              <label class="mt-check"><input type="checkbox" id="mapLabels" checked><span>Etiquetas de vínculo</span></label>
+              <button class="btn btn-ghost" id="mapReheat">Reorganizar</button>
+              <button class="btn btn-ghost" id="mapReset">Centrar</button>
+            </div>
+          </div>
+          <div class="map-canvas-wrap">
+            <svg id="mapSvg"></svg>
+            <div class="map-hint">Arrastrá para mover · rueda para zoom · clic en un nodo para su detalle</div>
+          </div>
+          <aside class="map-detail" id="mapDetail">
+            <div class="md-empty">
+              <div class="md-empty-ico">⁙</div>
+              <p>Seleccioná un nodo del mapa para ver su descripción, su categoría y todos sus vínculos con el resto del caso.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ---------- CRONOLOGÍA ---------- -->
+      <section class="view" id="view-cronologia">
+        <div class="view-head">
+          <h2>Línea de tiempo</h2>
+          <p>Reconstrucción completa desde los antecedentes estructurales del buque hasta el último interrogatorio del sumario, incluyendo el momento exacto en que se tomó cada acta. Los hitos marcados en rojo presentan discrepancias entre fuentes.</p>
+        </div>
+        <div class="tl-filters" id="tlFilters"></div>
+        <div class="tl-toggles">
+          <label class="mt-check"><input type="checkbox" id="tlOnlyConflict"><span>Sólo hitos con discrepancias</span></label>
+          <label class="mt-check"><input type="checkbox" id="tlOnlyInterr"><span>Sólo interrogatorios</span></label>
+          <span class="tl-result" id="tlResult"></span>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <!-- ---------- INTERROGATORIOS ---------- -->
+      <section class="view" id="view-interrogatorios">
+        <div class="view-head">
+          <h2>Interrogatorios</h2>
+          <p>Una sección por cada acta de información sumaria, con la ficha del declarante, la transcripción completa de preguntas y respuestas, y las conclusiones extraídas de cada declaración.</p>
+        </div>
+        <div class="decl-tabs" id="declTabs"></div>
+        <div class="decl-body" id="declBody"></div>
+      </section>
+
+      <!-- ---------- INCONGRUENCIAS ---------- -->
+      <section class="view" id="view-incongruencias">
+        <div class="view-head">
+          <h2>Análisis de incongruencias entre declaraciones</h2>
+          <p>Contradicciones detectadas al cruzar las declaraciones entre sí y con la prueba documental. Cada ficha confronta las versiones textuales, analiza su consecuencia y propone la diligencia que puede resolverla.</p>
+        </div>
+        <div class="inc-filters" id="incFilters"></div>
+        <div class="inc-list" id="incList"></div>
+      </section>
+
+      <!-- ---------- CONCLUSIONES ---------- -->
+      <section class="view" id="view-conclusiones">
+        <div class="view-head">
+          <h2>Conclusiones posibles</h2>
+          <p>Hipótesis desprendidas del análisis, clasificadas según el grado de respaldo que hoy tienen en el expediente.</p>
+        </div>
+        <div class="warn-box" id="conclWarn"></div>
+        <div class="grade-legend" id="gradeLegend"></div>
+        <div id="conclList"></div>
+      </section>
+
+      <!-- ---------- PASOS ---------- -->
+      <section class="view" id="view-pasos">
+        <div class="view-head">
+          <h2>Posibles pasos a seguir</h2>
+          <p>Plan de diligencias organizado por bloque y prioridad. Marcá cada ítem para llevar el control de avance; el progreso queda guardado en este navegador.</p>
+        </div>
+        <div class="pasos-head">
+          <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+          <span class="progress-lbl" id="progressLbl"></span>
+          <button class="btn btn-ghost" id="pasosReset">Reiniciar control</button>
+        </div>
+        <div id="pasosList"></div>
+      </section>
+
+      <!-- ---------- DOCUMENTOS ---------- -->
+      <section class="view" id="view-documentos">
+        <div class="view-head">
+          <h2>Documentos base de la investigación</h2>
+          <p>Piezas del expediente distintas de las actas: el informe del oficial que actuó en la escena, el informe del supervisor de CONMO, la exposición del Práctico de Seguridad y la nota de cronología de la respuesta.</p>
+        </div>
+        <div id="docsList"></div>
+      </section>
+
+      <!-- ---------- SUMARIO BORRADOR ---------- -->
+      <section class="view" id="view-sumario">
+        <div class="view-head">
+          <h2>Sumario (borrador)</h2>
+          <p>Texto de elevación estructurado como el oficio modelo: situación, características del buque, investigación, conclusiones y recomendaciones. Se reescribe a partir de las actuaciones incorporadas al análisis; no usa el cuerpo del Word de referencia.</p>
+        </div>
+        <div class="sumario-toolbar" id="sumarioToolbar"></div>
+        <article class="sumario-doc" id="sumarioDoc"></article>
+      </section>
+
+      <!-- ---------- RESULTADOS DE BÚSQUEDA ---------- -->
+      <section class="view" id="view-search">
+        <div class="view-head">
+          <h2>Resultados de búsqueda</h2>
+          <p id="searchMeta"></p>
+        </div>
+        <div id="searchResults"></div>
+      </section>
+
+    </div><!-- /scroll -->
+  </main>
+</div>
+
+<script src="assets/data-declarantes.js"></script>
+<script src="assets/data-analisis.js"></script>
+<script src="assets/data-sumario.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/map.js"></script>
+</body>
+</html>

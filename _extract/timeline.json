@@ -1,0 +1,866 @@
+[
+  {
+    "fecha": "2025",
+    "hora": "—",
+    "fase": "antecedentes",
+    "titulo": "El buque queda apretado entre los hielos",
+    "texto": "Durante la zafra realizada cerca del polo sur el año anterior, el ALPHA CRUX quedó apretado entre los hielos. El patrón de pesca coreano conjetura que la filtración del casco pudo originarse en ese episodio.",
+    "fuente": "Acta Patrón de Pesca (Hoseon SHIN), P.7",
+    "ref": "patron-pesca",
+    "etiquetas": [
+      "casco",
+      "antecedente estructural"
+    ]
+  },
+  {
+    "fecha": "Fecha no determinada",
+    "hora": "—",
+    "fase": "antecedentes",
+    "titulo": "Ingreso anticipado a puerto por vía de agua en la bodega",
+    "texto": "El buque interrumpe la zafra e ingresa al puerto de Montevideo antes de lo previsto. El Jefe de Máquinas declara que \"entramos a puerto un mes antes\" y que fue \"por esta razón que entramos un mes antes al puerto\": la referencia es al adelanto respecto de la fecha de arribo prevista, no al tiempo transcurrido hasta el siniestro. El Capitán, el 1er Oficial y el Jefe de Máquinas atribuyen el ingreso a una filtración de agua en la bodega de carga que se manifestaba con mal tiempo; el patrón coreano y dos de los tres marineros indonesios sostienen que el motivo fue descargar el pescado. El 1er Oficial de Puente coreano confirma que \"habíamos detectado que había agua\" y que tras la descarga del pescado no quedó rastro de ella. Ninguna acta consigna la fecha efectiva de arribo, de modo que la duración de la estadía en puerto no surge del expediente.",
+    "fuente": "Actas Capitán P.10 · 1er Oficial P.11 · Jefe de Máquinas P.6 y P.8 · Patrón de Pesca P.7 · 1er Of. Puente coreano P.9",
+    "etiquetas": [
+      "vía de agua",
+      "fecha sin acreditar",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true
+  },
+  {
+    "fecha": "Estadía en puerto",
+    "hora": "—",
+    "fase": "antecedentes",
+    "titulo": "Desmantelamiento interior de la bodega para localizar la vía de agua",
+    "texto": "La tripulación retira las tablas que recubren la bodega de carga para localizar la vía de agua. Nunca se logra identificar el punto de ingreso. Tras la descarga del pescado no se vuelve a encontrar agua. El expediente no permite fechar estos trabajos ni establecer cuánto tiempo permaneció el buque en puerto antes del siniestro.",
+    "fuente": "Actas Jefe de Máquinas P.6 · 1er Oficial (ampliación) P.6 · Capitán P.10 · Patrón de Pesca P.6",
+    "etiquetas": [
+      "vía de agua",
+      "estanqueidad",
+      "fecha sin acreditar"
+    ]
+  },
+  {
+    "fecha": "22 de agosto de 2026",
+    "hora": "—",
+    "fase": "previo",
+    "titulo": "Cambio de tres tramos de caño de refrigeración del motor principal",
+    "texto": "El jefe de máquinas coreano Park KWANG JUN declara que, para preparar el zarpe, él mismo cambió tres tramos de caño de refrigeración del motor principal en la sala de máquinas, con ayuda de los tres marineros indonesios (AGUS N° 17, MURDIONO N° 19 y RAVEL N° 20). La prueba de presión se realizó el mismo día con resultado satisfactorio. Sostiene que el Jefe de Máquinas ruso lo sabía de antemano y presume que el Capitán también, pese a que ambos niegan toda reparación.",
+    "fuente": "Acta Jefe de Máquinas Coreano (Park KWANG JUN), P.5 y P.6",
+    "ref": "maquinas-coreano",
+    "etiquetas": [
+      "REPARACIÓN",
+      "estanqueidad",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true,
+    "destacado": true
+  },
+  {
+    "fecha": "24 de agosto de 2026",
+    "hora": "—",
+    "fase": "previo",
+    "titulo": "Tres trasvases entre los tanques 9 por orden del 1er Oficial",
+    "texto": "El 3° Oficial de Máquinas realiza tres trasvases de combustible entre los tanques 9 para adrizar el buque: dos veces de babor a estribor y una de estribor a babor. Declara expresamente que los hizo porque el 1er Oficial se lo ordenó. Acredita que el buque venía escorándose de forma recurrente el día previo.",
+    "fuente": "Acta 3° Oficial de Máquinas (German IVAN), P.7",
+    "ref": "tercer-maquinas",
+    "etiquetas": [
+      "ANTECEDENTE CLAVE",
+      "estabilidad",
+      "cadena de mando"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "24 de agosto de 2026",
+    "hora": "—",
+    "fase": "previo",
+    "titulo": "Taller portuario interviene el sistema de enfriamiento con la bomba de agua de mar desconectada",
+    "texto": "Un taller del puerto —no personal de la tripulación— comienza reparaciones en las cañerías del sistema de enfriamiento del reductor del eje principal. Para ello se desconecta la bomba que toma agua de mar. El 3° Oficial lo escuchó del 2° Oficial y del Jefe de Máquinas. El Capitán, el Jefe de Máquinas y el 1er Oficial niegan toda reparación.",
+    "fuente": "Acta 2° Oficial de Máquinas P.11 · 3° Oficial P.3 · negado por Capitán P.11, Jefe de Máquinas s/n y 1er Oficial (ampl.) P.6",
+    "etiquetas": [
+      "ESTANQUEIDAD",
+      "terceros",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true,
+    "destacado": true
+  },
+  {
+    "fecha": "24 de agosto de 2026",
+    "hora": "—",
+    "fase": "previo",
+    "titulo": "Técnicos uruguayos trabajan en el sistema eléctrico / de refrigeración",
+    "texto": "Los tres marineros indonesios confirman la presencia de una empresa uruguaya el día previo al incidente, pero difieren sobre el objeto y la ubicación: RAVEL la sitúa DENTRO de la sala de máquinas trabajando en el sistema eléctrico; AGUS en la electricidad de la cámara frigorífica; MURDIONO en el sistema de refrigeración y fuera de la sala de máquinas.",
+    "fuente": "Actas RAVEL P.5 · AGUS P.5 y P.8 · MURDIONO P.5",
+    "etiquetas": [
+      "sistema eléctrico",
+      "terceros",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "Mañana",
+    "fase": "previo",
+    "titulo": "Descarga del pescado y de la carnada",
+    "texto": "Se completa la descarga de la carga de pescado y de la carnada. El buque queda con las artes de pesca estibadas sobre la cubierta principal, a proa y a popa, lo que según el Jefe de Máquinas le daba \"peso alto\" y dificultaba su estabilidad.",
+    "fuente": "Actas Jefe de Máquinas P.3 · Capitán P.7 · 1er Oficial P.7",
+    "etiquetas": [
+      "ESTABILIDAD",
+      "condición de carga"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "Mañana",
+    "fase": "previo",
+    "titulo": "Trasvase de 20 m³ de los tanques de popa a los tanques 1 y 2 de proa",
+    "texto": "Se trasvasan 20 m³ de gasoil a cada uno de los tanques 1 y 2 de proa, desde los tanques de popa. El Jefe de Máquinas declara que fue por orden expresa del Capitán BELIKOV y que él se negó a ejecutarla por falta de contador en la bomba, delegándola en el 3° Oficial y en el jefe de máquinas coreano Park KWANG JUN. El Capitán vincula la maniobra a la búsqueda de la avería. No se realizó ningún cálculo de estabilidad.",
+    "fuente": "Actas Jefe de Máquinas P.3, P.4 y P.5 · Capitán P.14 y P.19",
+    "etiquetas": [
+      "trasvase popa→proa",
+      "estabilidad",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "15:00",
+    "fase": "previo",
+    "titulo": "Termina la guardia de máquinas indonesia — el buque está adrizado",
+    "texto": "Los tres marineros indonesios terminan su guardia (horario 07:30/08:00 a 15:00) y no vuelven a bajar a sala de máquinas. A partir de esa hora entran de guardia los oficiales rusos. AGUS PRIYANTO precisa que antes de irse a dormir \"el buque parecía estar adrizado\". Es el último punto objetivo en que consta el buque sin escora apreciable.",
+    "fuente": "Actas AGUS P.4 y P.6 · RAVEL P.4 · MURDIONO P.4",
+    "ref": "agus",
+    "etiquetas": [
+      "HITO OBJETIVO",
+      "cronología"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈16:00",
+    "fase": "siniestro",
+    "titulo": "El buque comienza a escorarse sobre la banda de babor",
+    "texto": "Única referencia horaria del inicio de la escora en todo el expediente. El Jefe de Máquinas la fija \"sobre las 16:00 hs\". Se encontraba durmiendo en su camarote en ese momento, al igual que el Capitán. El 2° Oficial de Máquinas, de guardia, también declara encontrarse en su camarote al comenzar la escora.",
+    "fuente": "Acta Jefe de Máquinas P.3 · 2° Of. Máquinas P.8 · Capitán P.22",
+    "ref": "jefe-maquinas",
+    "etiquetas": [
+      "INICIO DEL SINIESTRO"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈16:00",
+    "fase": "siniestro",
+    "titulo": "Personal venido de Corea suelda piezas a bordo",
+    "texto": "El jefe de máquinas coreano declara que a las 16:00 trabajaba en la cubierta \"porque habían venido gente de Corea a trabajar en el buque ya que estaban soldando piezas que estaban en mal estado\". Es trabajo en caliente ejecutado por terceros el mismo día del hundimiento y en coincidencia temporal con el inicio de la escora. No consta la identidad de la empresa, ni permiso de trabajo, ni supervisión, ni qué piezas se soldaron ni en qué ubicación. El hecho no fue indagado a ningún otro declarante.",
+    "fuente": "Acta Jefe de Máquinas Coreano (Park KWANG JUN), P.9",
+    "ref": "maquinas-coreano",
+    "etiquetas": [
+      "HECHO NUEVO",
+      "trabajo en caliente",
+      "terceros"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈16:30",
+    "fase": "siniestro",
+    "titulo": "El jefe de máquinas coreano inspecciona la sala de máquinas: \"estaba todo correcto\"",
+    "texto": "Park KWANG JUN baja a la sala de máquinas para corroborar su estado y la encuentra en condiciones correctas. Es el último control directo de la sala de máquinas del que hay constancia antes del siniestro y acota la ventana crítica a las poco más de dos horas que median hasta el mensaje de las 18:46. Su relato tensiona la hora de inicio de la escora que el Jefe de Máquinas ruso fija sobre las 16:00.",
+    "fuente": "Acta Jefe de Máquinas Coreano (Park KWANG JUN), P.9",
+    "ref": "maquinas-coreano",
+    "etiquetas": [
+      "HITO OBJETIVO",
+      "cronología"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈16:00 – 18:00",
+    "fase": "siniestro",
+    "titulo": "El 2° Oficial de Máquinas abre las válvulas del tanque 9 babor al 9 estribor",
+    "texto": "El 2° Oficial baja a sala de máquinas y abre la válvula de absorción del tanque 9 de babor y la de alimentación del 9 de estribor, verificando por testigo de vidrio 12–13 m³ en cada uno. NUNCA enciende la bomba: sólo abre válvulas, con lo que el trasvase se produce por gravedad \"a una velocidad sumamente menor\". Actúa sin autorización previa del oficial de guardia, reconociendo que ésta era necesaria.",
+    "fuente": "Acta 2° Oficial de Máquinas P.6, P.9, P.12, P.13, P.16, P.17 y P.19",
+    "ref": "segundo-maquinas",
+    "etiquetas": [
+      "BOMBA NUNCA ENCENDIDA",
+      "dirección trasvase",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true,
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈16:00 – 18:00",
+    "fase": "siniestro",
+    "titulo": "El 1er Oficial detecta 10° de escora a babor y baja a sala de máquinas",
+    "texto": "El 1er Oficial de Puente, único oficial de guardia, advierte una escora de ~10° a babor y baja a sala de máquinas. Encuentra al 2° Oficial y le indica adrizar el buque; éste responde que ya lo estaba haciendo. AQUÍ SE PRODUCE LA CONTRADICCIÓN CENTRAL DEL SUMARIO: el 2° Oficial afirma que el 1er Oficial le ordenó NO encender la bomba porque \"tal vez se podría escorar más el buque\"; el 1er Oficial lo niega: \"conversación de prender o apagar la bomba no hubo\".",
+    "fuente": "Actas 1er Oficial P.7, P.17 y P.32 · 1er Oficial (ampliación) P.4 y P.5 · 2° Of. Máquinas P.12",
+    "etiquetas": [
+      "CONTRADICCIÓN CENTRAL",
+      "cadena de mando"
+    ],
+    "conflicto": true,
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈16:00 – 18:00",
+    "fase": "siniestro",
+    "titulo": "El 2° Oficial busca al 3° Oficial para corroborar la maniobra",
+    "texto": "El 2° Oficial, no estando seguro de haber abierto correctamente las válvulas, sube a cubierta y va al camarote del 3° Oficial —franco de guardia— para que baje a corroborar. El 3° Oficial verifica que la bomba no estaba prendida y que las válvulas estaban abiertas, pero declara que NO pudo corroborar si estaban correctamente abiertas porque ya empezaba a entrar agua por el tambucho.",
+    "fuente": "Actas 2° Of. Máquinas P.12 y P.28 · 3° Of. Máquinas P.4 y P.5",
+    "etiquetas": [
+      "BOMBA NUNCA ENCENDIDA",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈16:00 – 18:00",
+    "fase": "siniestro",
+    "titulo": "TOKMIN informa al 1er Oficial que están \"escorando el buque\"",
+    "texto": "El 1er Oficial envía al encargado de procesamiento de pescado, Konstantin TOKMIN, a averiguar qué ocurría en sala de máquinas porque la escora no se corregía. TOKMIN regresa e informa que el 2° y el 3° Oficial estaban \"escorando el buque\". Pese a ello el 1er Oficial no detiene la operación, no da la alarma y se retira a controlar la tensión de los cabos de amarre.",
+    "fuente": "Acta 1er Oficial (ampliación) P.4",
+    "ref": "primer-oficial-ampliacion",
+    "etiquetas": [
+      "cadena de mando",
+      "testigo no interrogado"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈17:30",
+    "fase": "siniestro",
+    "titulo": "El jefe de máquinas coreano se retira del buque",
+    "texto": "Park KWANG JUN abandona el buque para comer fuera del puerto. Con su salida, la única autoridad técnica de máquinas presente a bordo eran el 2° Oficial de Máquinas, de guardia, y el 3° Oficial, franco. El Capitán y el Jefe de Máquinas ruso se encontraban durmiendo en sus camarotes.",
+    "fuente": "Acta Jefe de Máquinas Coreano (Park KWANG JUN), P.9",
+    "ref": "maquinas-coreano",
+    "etiquetas": [
+      "cronología",
+      "cadena de mando"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈18:00 – 18:45",
+    "fase": "siniestro",
+    "titulo": "Ingreso de agua por el ojo de buey de babor del taller",
+    "texto": "El agua embarca por un ojo de buey abierto situado por babor, en el compartimiento del taller donde se encuentra el torno, próximo a la sala de refrigeración, a 1–2 metros de la línea de flotación. El 3° Oficial intenta cerrarlo y no lo consigue por la presión del agua. El Jefe de Máquinas declara que sabía que uno de los dos ojos de buey del mamparo estaba abierto.",
+    "fuente": "Actas Jefe de Máquinas P.3 y P.11 · 2° Of. Máquinas P.12 y P.29 · 3° Of. Máquinas P.4 · 1er Oficial P.29 y P.38",
+    "etiquetas": [
+      "VÍA DE INUNDACIÓN",
+      "ojo de buey"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈18:00 – 18:45",
+    "fase": "siniestro",
+    "titulo": "BLACK OUT — el agua moja el tablero eléctrico principal",
+    "texto": "El agua ingresa por la escalera de acceso y cae por el tambucho de la sala de máquinas sobre el tablero de luz principal, provocando el black out. El generador siguió funcionando hasta que también le entró agua. Las tres bombas de achique quedan sin alimentación eléctrica y el generador de emergencia de proa no llega a encenderse. Es el punto de no retorno del siniestro.",
+    "fuente": "Actas Jefe de Máquinas P.3 y P.10 · 2° Of. Máquinas P.24 y P.30 · Capitán P.22",
+    "etiquetas": [
+      "PUNTO DE NO RETORNO",
+      "black out",
+      "energía de emergencia"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "≈18:00 – 18:45",
+    "fase": "siniestro",
+    "titulo": "Abandono del buque sin orden ni alarma",
+    "texto": "No se activó ninguna alarma ni se impartió orden de abandono. El 3° Oficial recorre los camarotes avisando a la tripulación. La tripulación indonesia baja al muelle en estado de pánico. El 1er Oficial pide a algunos que avisen al resto. El Capitán se despierta, sube al puente, encuentra a toda la tripulación ya en el muelle y desembarca último, con 35–40° de escora. El 1er Oficial estima 20 a 30 minutos entre el inicio de la escora y el abandono. El 1er Oficial de Puente coreano, que estaba en su camarote viendo televisión, describe la secuencia como prácticamente instantánea: sintió la escora, se produjo el black out y al salir al exterior la tripulación ya estaba en el muelle.",
+    "fuente": "Actas Capitán P.32 y P.37 · 1er Oficial P.30 y P.37 · 1er Oficial (ampl.) P.4 y P.9 · Jefe de Máquinas P.14 · 3° Of. Máquinas P.4 · 2° Of. Máquinas P.22 y P.32 · 1er Of. Puente coreano P.6",
+    "etiquetas": [
+      "abandono",
+      "alarmas",
+      "ESCORA SÚBITA"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "18:46",
+    "fase": "siniestro",
+    "titulo": "Mensaje al patrón de pesca: el aviso se cursa desde el muelle, ya abandonado el buque",
+    "texto": "El Sr. Kyongsu PARK envía un mensaje al patrón de pesca Hoseon SHIN —alojado en el Hotel Holiday Inn— informándole que el buque se había hundido. El patrón lo situó \"de guardia en puente\", pero al declarar Kyongsu PARK precisa que no estaba de guardia, que se encontraba en su camarote y que se comunicó \"inmediatamente ya estando en el muelle\", cuando toda la tripulación había abandonado el buque. La hora sigue siendo el único registro objetivo del período, pero cambia de significado: fija un límite POSTERIOR al black out y al abandono, no el momento del hundimiento. Es además 44 minutos anterior al aviso recibido por Prefectura.",
+    "fuente": "Actas 1er Of. Puente coreano P.5, P.6 y P.7 · Patrón de Pesca P.14",
+    "ref": "primer-oficial-coreano",
+    "etiquetas": [
+      "HITO HORARIO CLAVE",
+      "notificación",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true,
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "19:30",
+    "fase": "respuesta",
+    "titulo": "SAAM Towage pide autorización a CONMO — por solicitud de la Agencia Marítima",
+    "texto": "El CS (PM) Willian FERRAO, supervisor de CONMO, recibe un llamado de la empresa SAAM Towage solicitando autorización para asistir al pesquero RS «ALPHA CRUX» atracado en el hangar 7, «por solicitud de la Agencia Marítima», porque el buque se encontraba escorado. FERRAO informa de inmediato al Oficial Comandante de Guardia TN (CP) MOLESINI y al Práctico de Seguridad Portuaria PLADA. Es el primer registro objetivo de cómo llegó la noticia a la autoridad: no vino del buque, sino de la agencia vía la empresa de remolcadores. Queda sin establecer quién y cuándo informó a la Agencia Marítima.",
+    "fuente": "Informe Supervisor CONMO CS (PM) Willian FERRAO · Informe TN (CP) MOLESINI",
+    "ref": "informe-ferrao",
+    "etiquetas": [
+      "NOTIFICACIÓN",
+      "HITO OBJETIVO",
+      "agencia"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "19:33",
+    "fase": "respuesta",
+    "titulo": "Zarpan los remolcadores MANEADOR y CRISTOBAL",
+    "texto": "Los remolcadores de SAAM Towage zarpan hacia el hangar 7. Al arribar constatan que el ALPHA CRUX estaba apoyado sobre la banda del SURESTE 707 e informan que no iniciarán ninguna maniobra hasta que llegue el Práctico de Seguridad, por riesgo de perjuicio al buque.",
+    "fuente": "Informe Supervisor CONMO CS (PM) Willian FERRAO",
+    "ref": "informe-ferrao",
+    "etiquetas": [
+      "respuesta",
+      "remolcadores"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "19:36",
+    "fase": "respuesta",
+    "titulo": "Arribo del oficial actuante a la escena",
+    "texto": "El TN (CP) MOLESINI concurre al lugar acompañado por el Oficial de Guardia AN Diego FURRE. Constata que el ALPHA CRUX está escorado sobre la banda de babor, apoyado en la banda de estribor del SURESTE 707 (bandera coreana, OMI 8312851). Toma fotografía de la situación y aborda el buque para verificar que no hubiera tripulantes a bordo.",
+    "fuente": "Informe TN (CP) Adrián MOLESINI",
+    "ref": "informe-molesini",
+    "etiquetas": [
+      "respuesta"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "19:38",
+    "fase": "respuesta",
+    "titulo": "CONMO llama al Práctico de Seguridad",
+    "texto": "Según la exposición de PLADA, CONMO lo llama para informarle que el ALPHA CRUX se estaba escorando y apoyándose sobre el SURESTE 707, consultándole si podía concurrir. El informe de FERRAO consigna que la novedad de las 19:30 ya le fue informada junto con el Oficial Comandante de Guardia. En el camino PLADA llama a los remolcadores de Kios sin obtener respuesta.",
+    "fuente": "Exposición del Práctico de Seguridad CM Gustavo PLADA · Informe FERRAO",
+    "ref": "exposicion-plada",
+    "etiquetas": [
+      "respuesta"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "19:42",
+    "fase": "respuesta",
+    "titulo": "Comunicación con el Prefecto del Puerto",
+    "texto": "El oficial actuante se comunica telefónicamente con el Sr. Prefecto del Puerto de Montevideo para ampliar lo sucedido. Las comunicaciones se mantuvieron constantes hasta las 00:30, cuando se detuvieron las acciones. En paralelo ya se encontraban en camino los remolcadores de SAAM Towage, zarparon a las 19:33 según FERRAO.",
+    "fuente": "Informe TN (CP) Adrián MOLESINI",
+    "etiquetas": [
+      "respuesta"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "19:43",
+    "fase": "respuesta",
+    "titulo": "Contacto con la agencia marítima Oriental Shipping",
+    "texto": "El oficial actuante logra comunicarse con el Sr. Daniel URRESTARAZU (C.I. 1.885.820-3), de la agencia Oriental Shipping, para informarle del hundimiento. URRESTARAZU manifiesta que ya se dirigía al lugar y con anterioridad ya había contactado a la empresa de salvamento Tecno Drive, con el buque CARLON en viaje. El informe de FERRAO confirma que la agencia ya había solicitado remolcadores a SAAM antes de las 19:30: la llamada de MOLESINI no es el primer aviso que recibe la agencia, sino un contacto posterior a una movilización que ella misma había iniciado.",
+    "fuente": "Informe TN (CP) Adrián MOLESINI · Informe FERRAO",
+    "ref": "informe-molesini",
+    "etiquetas": [
+      "respuesta",
+      "agencia"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "20:00",
+    "fase": "respuesta",
+    "titulo": "La agencia atribuye el siniestro a un error en el trasvase",
+    "texto": "Se hace presente el Sr. URRESTARAZU. Entrevistado por el oficial actuante, informa que se encontraban realizando un trasvase de combustible entre tanques y que, debido a un error en la maniobra, se produjo la escora de la nave. Es la primera atribución de causa del expediente y es anterior a toda declaración de la tripulación.",
+    "fuente": "Informe TN (CP) Adrián MOLESINI",
+    "ref": "informe-molesini",
+    "etiquetas": [
+      "ATRIBUCIÓN TEMPRANA DE CAUSA"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "20:07",
+    "fase": "respuesta",
+    "titulo": "PLADA informa que está a 20–25 minutos del puerto",
+    "texto": "El Práctico de Seguridad comunica telefónicamente a CONMO que tiene entre 20 y 25 minutos para llegar a puerto.",
+    "fuente": "Informe Supervisor CONMO CS (PM) Willian FERRAO",
+    "ref": "informe-ferrao",
+    "etiquetas": [
+      "respuesta"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "20:20 / 20:21 / 20:25",
+    "fase": "respuesta",
+    "titulo": "Los remolcadores quedan a la orden del baqueano SUEIRO",
+    "texto": "FERRAO consigna que a las 20:21 los remolcadores quedan a la orden del baqueano SUEIRO. La nota de cronología sitúa el arribo del baqueano a las 20:20 y el informe de MOLESINI a las 20:25. Primera maniobra: apoyar al SURESTE 707 desde su proa para evitar que el ALPHA CRUX continuara escorándose. La acción no dio resultado: al efectuarla el ALPHA CRUX se hundía más de popa.",
+    "fuente": "Informe FERRAO · Nota de cronología · Informe TN (CP) MOLESINI",
+    "ref": "informe-ferrao",
+    "etiquetas": [
+      "maniobra infructuosa",
+      "INCONGRUENCIA menor"
+    ],
+    "conflicto": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "20:30 / 20:33",
+    "fase": "respuesta",
+    "titulo": "Arribo del Práctico de Seguridad CM Gustavo PLADA",
+    "texto": "MOLESINI consigna 20:30; FERRAO, 20:33. El práctico comienza a dar directivas en conjunto con el baqueano SUEIRO. Intervienen los remolcadores CRISTOBAL y MANEADOR (en el informe del oficial: MAREADOR). El CRISTOBAL se mantiene apoyado sobre el SURESTE 707 haciendo fuerza contra el muelle para evitar que el ALPHA CRUX se vaya de banda.",
+    "fuente": "Informe FERRAO · Informe TN (CP) MOLESINI · Exposición CM Gustavo PLADA",
+    "ref": "informe-ferrao",
+    "etiquetas": [
+      "respuesta",
+      "INCONGRUENCIA menor"
+    ],
+    "conflicto": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "20:37",
+    "fase": "respuesta",
+    "titulo": "Zarpa el CARLON en apoyo — discrepancia con el informe del oficial",
+    "texto": "FERRAO consigna que a las 20:37 zarpa el CARLON en apoyo a la maniobra. El informe de MOLESINI sitúa la presentación del CARLON a las 22:00. Es una de las discrepancias horarias más amplias de la fase de respuesta (≈1 h 23 min) y debe conciliarse con los registros de la empresa de salvamento.",
+    "fuente": "Informe Supervisor CONMO CS (PM) Willian FERRAO",
+    "ref": "informe-ferrao",
+    "etiquetas": [
+      "salvamento",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true,
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "20:50",
+    "fase": "respuesta",
+    "titulo": "Se solicitan buzos de Tecno Dive y asistencia del buque TITON",
+    "texto": "Mediante la agencia del buque se piden los buzos de Tecno Dive y la asistencia del buque TITON, que arriba a esa hora. Aproximadamente a las 21:40 llegan los buzos.",
+    "fuente": "Exposición del Práctico de Seguridad CM Gustavo PLADA",
+    "etiquetas": [
+      "salvamento"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "22:00",
+    "fase": "respuesta",
+    "titulo": "Baja el buzo y, según MOLESINI, se presenta el buque CARLON",
+    "texto": "Según el informe del oficial actuante y la nota de cronología, a esta hora se presenta el buque CARLON de la empresa de salvamento. Un buzo descendió y pasó una linga sobre la porta espía del espejo con el fin de utilizar la grúa del buque para levantar la banda de babor. FERRAO, en cambio, había consignado el zarpe del CARLON a las 20:37.",
+    "fuente": "Nota de cronología · Informe TN (CP) MOLESINI · Exposición CM PLADA",
+    "etiquetas": [
+      "salvamento",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "22:30",
+    "fase": "respuesta",
+    "titulo": "Se apoya barco con grúa — la grúa no soporta el peso",
+    "texto": "Se intenta levantar la banda de babor con la grúa. La maniobra resulta infructuosa: la grúa no soportó el peso del buque. Según la exposición del práctico, se intentó además tirar con un guinche del TITON mediante un cable, también sin éxito.",
+    "fuente": "Nota de cronología · Informe TN (CP) MOLESINI · Exposición CM PLADA",
+    "etiquetas": [
+      "maniobra infructuosa"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "22:40",
+    "fase": "respuesta",
+    "titulo": "Se van a soltar los cabos — se cobra sobre el buque escorado",
+    "texto": "Se dispone soltar los cabos y se cobra sobre el buque escorado con el cable de linga para evitar el hundimiento.",
+    "fuente": "Nota de cronología",
+    "etiquetas": [
+      "salvamento"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "22:45 – 22:57",
+    "fase": "respuesta",
+    "titulo": "Se decide y ejecuta la separación del SURESTE 707",
+    "texto": "FERRAO consigna que a las 22:45 se decide separar al SURESTE 707 tras varios intentos fallidos de adrizar el ALPHA CRUX, y que a las 22:57 se concreta la separación, quedando el ALPHA CRUX semihundido. MOLESINI y la nota de cronología sitúan la decisión coordinada hacia las 22:50. La exposición de PLADA, en cambio, atribuye a URRESTARAZU la indicación de sacar el SURESTE 707 a las 23:30. Quedan tres horarios distintos para el mismo hecho.",
+    "fuente": "Informe FERRAO · Nota de cronología · Informe TN (CP) MOLESINI · Exposición CM PLADA",
+    "ref": "informe-ferrao",
+    "etiquetas": [
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true,
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "22:55 / 23:00",
+    "fase": "respuesta",
+    "titulo": "Se levanta la maniobra y se arría el bote de la 72",
+    "texto": "Se levanta la maniobra de salvamento y se arría el bote de la 72.",
+    "fuente": "Nota de cronología",
+    "etiquetas": [
+      "salvamento"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "23:10",
+    "fase": "respuesta",
+    "titulo": "Activación del plan de contingencia contra la contaminación (OSRO)",
+    "texto": "Se activa el plan de contingencia contra la contaminación a cargo de la empresa Nueva Era. Simultáneamente baja el buzo y se trabaja en la cabecera del muelle B. El buque tenía a bordo ≈300 t de gasoil, con lo que la activación se produjo aproximadamente 4 horas y 24 minutos después del primer aviso del hundimiento (18:46).",
+    "fuente": "Nota de cronología · Informe TN (CP) MOLESINI",
+    "etiquetas": [
+      "CONTAMINACIÓN",
+      "demora"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "23:15",
+    "fase": "respuesta",
+    "titulo": "El CRISTOBAL queda desafectado de la maniobra",
+    "texto": "Según FERRAO, el remolcador CRISTOBAL es liberado de la operación.",
+    "fuente": "Informe Supervisor CONMO CS (PM) Willian FERRAO",
+    "ref": "informe-ferrao",
+    "etiquetas": [
+      "respuesta"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "23:28",
+    "fase": "respuesta",
+    "titulo": "El MANEADOR finaliza el cambio de amarre del SURESTE 707",
+    "texto": "FERRAO cierra su registro horario con la finalización del traslado del SURESTE 707 por el remolcador MANEADOR. El buque es llevado a segunda andana de otro pesquero de la misma empresa, según la exposición de PLADA.",
+    "fuente": "Informe Supervisor CONMO CS (PM) Willian FERRAO · Exposición CM PLADA",
+    "ref": "informe-ferrao",
+    "etiquetas": [
+      "respuesta"
+    ]
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "23:30",
+    "fase": "respuesta",
+    "titulo": "Botes PREMO y GRUBU en maniobra de contención de hidrocarburo",
+    "texto": "Los botes PREMO y GRUBU realizan maniobra de contención de hidrocarburo. En paralelo, la exposición de PLADA sitúa a esta hora la indicación de URRESTARAZU de retirar el SURESTE 707, hecho que FERRAO y MOLESINI ubican entre las 22:45 y 22:57.",
+    "fuente": "Nota de cronología · Exposición CM PLADA",
+    "etiquetas": [
+      "contaminación",
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "23:45",
+    "fase": "respuesta",
+    "titulo": "Se retira el CARLON — el buque queda apoyado en el fondo",
+    "texto": "Se retira el buque CARLON al constatar la imposibilidad de avanzar con las maniobras. El ALPHA CRUX queda apoyado en el fondo, de banda, sujeto a las bitas mediante sus propios cabos, lo que evita que termine de hundirse. El SURESTE 707 es llevado a segunda andana de otro pesquero de la misma empresa.",
+    "fuente": "Informe TN (CP) MOLESINI · Exposición CM PLADA · Nota de cronología",
+    "etiquetas": [
+      "situación final"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "25 de agosto de 2026",
+    "hora": "23:55 / 23:57",
+    "fase": "respuesta",
+    "titulo": "Se retiran autoridades / se hace presente el OSRO",
+    "texto": "La exposición del práctico consigna que a las 23:55 se retiran autoridades de Prefectura y ANP. La nota de cronología consigna que a las 23:57 se hace presente el OSRO. Ambos registros son difícilmente conciliables con la activación del OSRO consignada a las 23:10 y con la permanencia del oficial actuante hasta las 00:30.",
+    "fuente": "Exposición CM PLADA · Nota de cronología · Informe TN (CP) MOLESINI",
+    "etiquetas": [
+      "INCONGRUENCIA"
+    ],
+    "conflicto": true
+  },
+  {
+    "fecha": "26 de agosto de 2026",
+    "hora": "00:00",
+    "fase": "respuesta",
+    "titulo": "Colocación de barreras de contención",
+    "texto": "Se inicia la colocación de barreras de contención en las cercanías del buque con el propósito de prevenir el esparcimiento de hidrocarburos.",
+    "fuente": "Nota de cronología · Informe TN (CP) MOLESINI",
+    "etiquetas": [
+      "contaminación"
+    ]
+  },
+  {
+    "fecha": "26 de agosto de 2026",
+    "hora": "00:10",
+    "fase": "respuesta",
+    "titulo": "Llega la lancha NUEVA ERA",
+    "texto": "Arriba la lancha NUEVA ERA, de la empresa a cargo del plan de contingencia contra la contaminación.",
+    "fuente": "Nota de cronología",
+    "etiquetas": [
+      "contaminación"
+    ]
+  },
+  {
+    "fecha": "26 de agosto de 2026",
+    "hora": "00:30",
+    "fase": "respuesta",
+    "titulo": "Buque cercado con barrera — cierre de las acciones",
+    "texto": "El ALPHA CRUX queda cercado con la barrera de contención y se detienen las acciones. Cesan también las comunicaciones con el Prefecto del Puerto. Transcurrieron ≈5 h 44 min desde el primer aviso del hundimiento (18:46) hasta el cierre del cerco de contención.",
+    "fuente": "Informe TN (CP) MOLESINI",
+    "etiquetas": [
+      "cierre",
+      "contaminación"
+    ],
+    "destacado": true
+  },
+  {
+    "fecha": "26 de agosto de 2026",
+    "hora": "01:20",
+    "fase": "respuesta",
+    "titulo": "Llega el bote pontón",
+    "texto": "Arriba el bote pontón a la escena.",
+    "fuente": "Nota de cronología",
+    "etiquetas": [
+      "respuesta"
+    ]
+  },
+  {
+    "fecha": "26 de agosto de 2026",
+    "hora": "02:00",
+    "fase": "respuesta",
+    "titulo": "Se retira el personal de la escena",
+    "texto": "Se retiran MP N. NÚÑEZ y MP A. RODRÍGUEZ. Último registro de la nota de cronología.",
+    "fuente": "Nota de cronología",
+    "etiquetas": [
+      "cierre"
+    ]
+  },
+  {
+    "fecha": "26 de agosto de 2026",
+    "hora": "—",
+    "fase": "instruccion",
+    "titulo": "El oficial actuante eleva su informe al Prefecto del Puerto",
+    "texto": "El TN (CP) Adrián MOLESINI eleva al Sr. Prefecto del Puerto de Montevideo, CN (CP) Néstor LEMOS, las actuaciones realizadas en relación con el hundimiento.",
+    "fuente": "Informe TN (CP) Adrián MOLESINI",
+    "ref": "informe-molesini",
+    "etiquetas": [
+      "instrucción"
+    ]
+  },
+  {
+    "fecha": "26 de agosto de 2026",
+    "hora": "—",
+    "fase": "instruccion",
+    "titulo": "El Práctico de Seguridad presenta su exposición",
+    "texto": "El CM Gustavo PLADA presenta su exposición ante el Jefe de la Oficina de Pilotaje, CF (CP) Pablo FERNÁNDEZ, quedando asentada a fojas 166 y 167 del Libro de Exposiciones de Prácticos. Se reserva el derecho de ampliar y/o rectificar.",
+    "fuente": "Exposición del Práctico de Seguridad",
+    "ref": "exposicion-plada",
+    "etiquetas": [
+      "instrucción"
+    ]
+  },
+  {
+    "fecha": "27 de agosto de 2026",
+    "hora": "10:00 – 11:11",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — Jefe de Máquinas Ivanov YURI",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Adrián MOLESINI, con el intérprete Nicolai GOLUBEI FORTUNA. 19 preguntas numeradas (una sin numerar; falta la 18). Durante un tiempo esta acta figuró duplicada en el archivo rotulado \"1er Oficial de Máquinas Coreano\", error de archivo ya subsanado con la incorporación del acta real de Park KWANG JUN.",
+    "fuente": "Acta de Información Sumaria — Jefe de Máquinas",
+    "ref": "jefe-maquinas",
+    "etiquetas": [
+      "INTERROGATORIO"
+    ],
+    "interrogatorio": true
+  },
+  {
+    "fecha": "27 de agosto de 2026",
+    "hora": "10:00 – 13:30",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — Capitán Andrei BELIKOV",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con el intérprete Nicolai GOLUBEI FORTUNA. 43 preguntas. ATENCIÓN: se superpone íntegramente con el interrogatorio del Jefe de Máquinas (10:00–11:11), y ambos consignan al MISMO intérprete, lo que es materialmente imposible.",
+    "fuente": "Acta de Información Sumaria — Capitán",
+    "ref": "capitan",
+    "etiquetas": [
+      "INTERROGATORIO",
+      "INCONGRUENCIA"
+    ],
+    "interrogatorio": true,
+    "conflicto": true
+  },
+  {
+    "fecha": "27 de agosto de 2026",
+    "hora": "15:00 – 16:10",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — 1er Oficial de Puente Dmitrii FROLOV",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con el intérprete Nicolai GOLUBEI FORTUNA. Numeración hasta 43 con saltos: faltan las preguntas 13, 24, 27 y 28.",
+    "fuente": "Acta de Información Sumaria — 1er Oficial de Puente",
+    "ref": "primer-oficial",
+    "etiquetas": [
+      "INTERROGATORIO"
+    ],
+    "interrogatorio": true
+  },
+  {
+    "fecha": "27 de agosto de 2026",
+    "hora": "—",
+    "fase": "instruccion",
+    "titulo": "Se remite la transcripción de la exposición del Práctico de Seguridad",
+    "texto": "El CF (CP) Pablo FERNÁNDEZ, Jefe de la Oficina de Pilotaje, remite al Sr. Prefecto del Puerto de Montevideo la transcripción de la exposición presentada por el CM Gustavo PLADA, certificando que es copia fiel de la asentada a fojas 166 y 167 del Libro de Exposiciones de Prácticos.",
+    "fuente": "Exposición del Práctico de Seguridad, Parte 1",
+    "etiquetas": [
+      "instrucción"
+    ]
+  },
+  {
+    "fecha": "28 de agosto de 2026",
+    "hora": "09:50 – 11:10",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — 2° Oficial de Máquinas Igor ABDRAKHMANOV",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con el intérprete Nicolai GOLUBEI FORTUNA. 34 preguntas. Es la declaración del oficial señalado como responsable por el 1er Oficial y por la agencia marítima, y la que introduce el hecho de que la bomba nunca fue encendida.",
+    "fuente": "Acta de Información Sumaria — 2do Oficial de Máquinas",
+    "ref": "segundo-maquinas",
+    "etiquetas": [
+      "INTERROGATORIO"
+    ],
+    "interrogatorio": true,
+    "destacado": true
+  },
+  {
+    "fecha": "31 de agosto de 2026",
+    "hora": "11:20 – 11:40",
+    "fase": "instruccion",
+    "titulo": "AMPLIACIÓN — 1er Oficial de Puente Dmitrii FROLOV",
+    "texto": "Ampliación de declaración tomada por el TN (CP) Joaquín PÉREZ CORIA, con el intérprete Nicolai GOLUBEI FORTUNA. 10 preguntas, dirigidas a precisar el encuentro con el 2° Oficial de Máquinas y la supuesta orden de no encender la bomba, que el declarante niega.",
+    "fuente": "Acta de Información Sumaria — 1er Oficial de Puente (Ampliación)",
+    "ref": "primer-oficial-ampliacion",
+    "etiquetas": [
+      "INTERROGATORIO",
+      "ampliación"
+    ],
+    "interrogatorio": true,
+    "destacado": true
+  },
+  {
+    "fecha": "31 de agosto de 2026",
+    "hora": "11:30 – 11:11 (?)",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — 3° Oficial de Máquinas German IVAN",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Adrián MOLESINI, con el intérprete Nicolai GOLUBEI FORTUNA. El acta consigna hora de cierre (11:11) ANTERIOR a la de apertura (11:30) y repite el número de pregunta 8. Se superpone además con la ampliación de FROLOV (11:20–11:40), consignando el mismo intérprete.",
+    "fuente": "Acta de Información Sumaria — 3er Oficial de Máquinas",
+    "ref": "tercer-maquinas",
+    "etiquetas": [
+      "INTERROGATORIO",
+      "INCONGRUENCIA"
+    ],
+    "interrogatorio": true,
+    "conflicto": true
+  },
+  {
+    "fecha": "31 de agosto de 2026",
+    "hora": "16:30 – 17:00",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — Marinero indonesio MURDIONO",
+    "texto": "Acta de información sumaria tomada por el AN (CP) Brian MUÑIZ, con la intérprete Verónica BRITOS. 12 preguntas.",
+    "fuente": "Acta de Información Sumaria — Marinero Indonesio MURDIONO",
+    "ref": "murdiono",
+    "etiquetas": [
+      "INTERROGATORIO"
+    ],
+    "interrogatorio": true
+  },
+  {
+    "fecha": "31 de agosto de 2026",
+    "hora": "17:00 – 17:20",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — Marinero indonesio RAVEL WATTIMURY",
+    "texto": "Acta de información sumaria tomada por el AN (CP) Brian MUÑIZ, con la intérprete Verónica BRITOS. 11 preguntas.",
+    "fuente": "Acta de Información Sumaria — Marinero Indonesio RAVEL",
+    "ref": "ravel",
+    "etiquetas": [
+      "INTERROGATORIO"
+    ],
+    "interrogatorio": true
+  },
+  {
+    "fecha": "31 de agosto de 2026",
+    "hora": "17:20 – 17:40",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — Marinero indonesio AGUS PRIYANTO",
+    "texto": "Acta de información sumaria tomada por el AN (CP) Brian MUÑIZ, con la intérprete Verónica BRITOS. 10 preguntas.",
+    "fuente": "Acta de Información Sumaria — Marinero Indonesio AGUS PRIYANTO",
+    "ref": "agus",
+    "etiquetas": [
+      "INTERROGATORIO"
+    ],
+    "interrogatorio": true
+  },
+  {
+    "fecha": "1 de septiembre de 2026",
+    "hora": "15:00",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — Jefe de Máquinas coreano Park KWANG JUN",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Adrián MOLESINI, con el traductor Dong Joon CHO CHOI. 14 preguntas. Es el acta que subsana la duplicación del archivo rotulado \"1er Oficial de Máquinas Coreano\". Incorpora dos hechos nuevos decisivos: la soldadura ejecutada por personal venido de Corea el día del siniestro y el cambio de tres tramos de caño de refrigeración del motor principal el 22 de agosto. El acta consigna la misma hora de apertura y de cierre, y el mismo traductor figura ese día en el acta del patrón de pesca de 15:30 a 16:20.",
+    "fuente": "Acta de Información Sumaria — 1er Oficial de Máquinas Coreano",
+    "ref": "maquinas-coreano",
+    "etiquetas": [
+      "INTERROGATORIO",
+      "HECHOS NUEVOS",
+      "INCONGRUENCIA"
+    ],
+    "interrogatorio": true,
+    "conflicto": true,
+    "destacado": true
+  },
+  {
+    "fecha": "1 de septiembre de 2026",
+    "hora": "15:30 – 16:20",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — Patrón de Pesca coreano Hoseon SHIN",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con el intérprete Dong Joon CHO CHOI. 16 preguntas. Aporta el dato horario de las 18:46 y la identidad de su autor, Kyongsu PARK, a quien sitúa de guardia en el puente. Comparte traductor con el acta de Park KWANG JUN tomada ese mismo día a las 15:00.",
+    "fuente": "Acta de Información Sumaria — Patrón de Pesca Coreano",
+    "ref": "patron-pesca",
+    "etiquetas": [
+      "INTERROGATORIO"
+    ],
+    "interrogatorio": true,
+    "destacado": true
+  },
+  {
+    "fecha": "2 de septiembre de 2026",
+    "hora": "10:00",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — 1er Oficial de Puente coreano Kyongsu PARK",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con el intérprete Dong Joon CHO CHOI. 18 preguntas. Última acta del expediente y la única que incluye una pregunta final invitando a señalar la actuación de terceros. Desmiente el presupuesto del hito de las 18:46 —niega haber estado de guardia y en el puente— y describe la escora y el black out como prácticamente simultáneos. El pie del acta consigna \"01 de septiembre de 2026 a las 16:20 horas\", hora anterior a su apertura y coincidente con el cierre del acta del patrón de pesca; la pregunta 4 reproduce sin adaptar el cuestionario del patrón.",
+    "fuente": "Acta de Información Sumaria — 1er Oficial Coreano",
+    "ref": "primer-oficial-coreano",
+    "etiquetas": [
+      "INTERROGATORIO",
+      "HECHOS NUEVOS",
+      "INCONGRUENCIA"
+    ],
+    "interrogatorio": true,
+    "conflicto": true,
+    "destacado": true
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "antecedentes",
+    "label": "Antecedentes",
+    "color": "#8b8b9e"
+  },
+  {
+    "id": "previo",
+    "label": "Jornada previa al siniestro",
+    "color": "#4fa3d1"
+  },
+  {
+    "id": "siniestro",
+    "label": "Escora y hundimiento",
+    "color": "#e2574c"
+  },
+  {
+    "id": "respuesta",
+    "label": "Respuesta en la escena",
+    "color": "#e8a33d"
+  },
+  {
+    "id": "instruccion",
+    "label": "Instrucción del sumario",
+    "color": "#57b894"
+  }
+]
