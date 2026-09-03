@@ -704,7 +704,7 @@
      DOCUMENTOS
      ============================================================ */
   function renderDocs() {
-    var TIPO = { informe: "chip-info", exposicion: "chip-purple", cronologia: "chip" };
+    var TIPO = { informe: "chip-info", exposicion: "chip-purple", cronologia: "chip", planos: "chip-info" };
     q("#docsList").innerHTML = AN.documentos.map(function (d) {
       var imgs = (d.imagenes || []).map(function (src) {
         return '<a href="' + esc(src) + '" target="_blank" rel="noopener">' +

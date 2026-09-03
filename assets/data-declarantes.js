@@ -21,7 +21,7 @@ window.CASO = {
     { nombre: "Capitán de Corbeta (CP) Carlos RODRIGUEZ", rol: "Oficial Instructor" },
     { nombre: "Teniente de Navío (CP) Joaquín PÉREZ CORIA", rol: "Oficial Instructor — Jefe Depto. Despacho de Buques" },
     { nombre: "Teniente de Navío (CP) Adrián MOLESINI", rol: "Oficial Instructor — actuó en la escena como Oficial Comandante de Guardia" },
-    { nombre: "Alférez de Navío (CP) Brian MUÑIZ", rol: "Oficial actuante (tripulación indonesia)" }
+    { nombre: "Alférez de Navío (CP) Brian MUÑIZ", rol: "Oficial actuante — primeras versiones de actas indonesias (31/08)" }
   ],
 
   declarantes: [
@@ -633,13 +633,13 @@ window.CASO = {
         "Recibe órdenes de": "Jefe de máquinas coreano Park KWANG JUN"
       },
       acta: {
-        fecha: "31 de agosto de 2026",
-        inicio: "16:30",
-        cierre: "17:00",
-        oficial: "AN (CP) Brian MUÑIZ",
+        fecha: "3 de septiembre de 2026",
+        inicio: "11:00",
+        cierre: "11:30",
+        oficial: "TN (CP) Joaquín PÉREZ CORIA",
         interprete: "Verónica BRITOS (uruguaya, C.I. 4.470.416-9)",
         lugar: "Prefectura del Puerto de Montevideo",
-        preguntas: 12,
+        preguntas: 13,
         archivo: "ACTA DE INFORMACION SUMARIA - Marinero Indonesio MURDIONO.docx"
       },
       posicion: "Terminó su guardia a las 15:00 y no volvió a bajar a sala de máquinas. Horario 07:30–15:00; a partir de esa hora entraban de guardia los rusos.",
@@ -652,11 +652,12 @@ window.CASO = {
         { n: 5, p: "Para que diga si conoce los trabajos realizados por una empresa uruguaya en sala de máquinas.", r: "Hubo una empresa trabajando el día anterior al incidente, pero fueron a reparar el sistema de refrigeración del buque, nada relacionado con la sala de máquinas.", tags: ["terceros"], clave: true },
         { n: 6, p: "Para que diga si conoce la causa de la escora del buque o el motivo del trasvase interno de combustible el día del incidente.", r: "No, desconozco el motivo, yo no me encontraba en la sala de máquinas en ese momento." },
         { n: 7, p: "Para que diga si sabe el motivo por el cual ingresó el buque al puerto de Montevideo.", r: "Entramos a descargar el pescado porque había una filtración de agua que caía de un tubo dentro de la bodega de carga.", tags: ["vía de agua"], clave: true },
-        { n: 8, p: "Para que diga si está en conocimiento de si en algún lugar de la bodega de carga había una avería o filtración de agua.", r: "Sí, la filtración venía de un tubo de dentro de la bodega de carga. No filtraba siempre pero cuando filtraba el oficial coreano la arreglaba. El día del incidente no había pérdida de ese tubo.", tags: ["VÍA DE AGUA", "CONTRADICCIÓN"], clave: true },
+        { n: 8, p: "Para que diga si está en conocimiento de si en algún lugar de la bodega de carga había una avería o filtración de agua.", r: "Sí, la filtración venía de un tubo de dentro de la bodega de carga. No filtraba siempre pero cuando filtraba el oficial coreano la arreglaba. El día del incidente no había pérdida de ese tubo. El día del incidente se encontraban buscando la filtración en la bodega X, X, y X con un coreano que vino de tierra.", tags: ["VÍA DE AGUA", "CONTRADICCIÓN"], clave: true },
         { n: 9, p: "Para que diga de quién recibe órdenes y cuál es su horario de trabajo.", r: "Recibo órdenes del jefe de máquinas coreano, Park KWANG JUN. La jornada de trabajo es de 12 horas continuas y 6 de descanso, posterior a las 6 de descanso comienzan nuevamente las 12 horas de trabajo, en tres turnos diferentes. En puerto es de las 08:00 hasta las 15:00.", tags: ["descanso", "cadena de mando"], clave: true },
         { n: 10, p: "Para que diga actualmente dónde está alojado y si tiene las necesidades básicas cubiertas.", r: "En el Sur Este 701. Ahora tengo camarote con una cama pero los primeros tres días dormimos en el piso porque no había habitaciones limpias; a medida que nos las fueron asignando las limpiamos nosotros. Ayer el oficial coreano nos dio ropa. Comida y baño también en el Sur Este 701.", tags: ["condiciones náufragos"], clave: true },
         { n: 11, p: "Para que diga si vio a algún miembro de la tripulación consumir alcohol a bordo o en aparente estado etílico.", r: "Ver tomar, no vi a nadie. Hasta la última vez que los vi, que me fui a acostar, estaban todos estables." },
-        { n: 12, p: "Para que diga si hay algún hecho relacionado con el incidente que no haya sido preguntado y que considere importante aclarar.", r: "No." }
+        { n: 12, p: "Para que diga si estuvo trabajando con el jefe de máquinas coreano Park KWANG JUN en el cambio de tres tramos de caño de refrigeración del motor principal el día 22 de agosto.", r: "Sí, nosotros cambiamos un caño en sala de máquinas con el jefe de máquinas coreano. El caño era de agua y para el motor principal. Se hicieron pruebas posteriores al cambio y se confirmó que la reparación quedó bien hecho sin pérdidas. El caño lo trajeron de tierra, el mismo coreano que estaba buscando la pérdida en la bodega de pescado. Asimismo, este coreano no tenía nada que ver con la empresa uruguaya que trabajó en la refrigeración de la bodega. El cambio lo hicimos en la mañana del día antes del incidente. Este coreano está hoy trabajando en el Sur Este 707 y en el Sur Este 701.", tags: ["reparación caño", "TERCEROS", "coreano de tierra"], clave: true },
+        { n: 13, p: "Para que diga si hay algún hecho relacionado con el incidente que no haya sido preguntado y que considere importante aclarar.", r: "No." }
       ],
       conclusiones: [
         { tipo: "hecho", t: "Es el único declarante que identifica concretamente el origen de la filtración: un tubo dentro de la bodega de carga, que no perdía de forma permanente y que el oficial coreano reparaba cuando ocurría. Precisa además que el día del incidente ese tubo no tenía pérdida." },
@@ -665,7 +666,8 @@ window.CASO = {
         { tipo: "hecho", t: "Corrobora la presencia de una empresa uruguaya trabajando el día anterior al incidente, aunque la ubica en el sistema de refrigeración y no en sala de máquinas." },
         { tipo: "alerta", t: "Describe un régimen de trabajo de 12 horas continuas con 6 de descanso, esquema que no cumple los mínimos de descanso exigibles y que debe ser evaluado como posible factor de fatiga." },
         { tipo: "alerta", t: "Relata que los tres primeros días posteriores al siniestro los náufragos durmieron en el piso del SURESTE 701 por falta de habitaciones limpias, teniendo que limpiarlas ellos mismos. Corresponde verificar el cumplimiento de las obligaciones del armador y del agente respecto de la tripulación siniestrada." },
-        { tipo: "alerta", t: "Identifica a Park KWANG JUN, jefe de máquinas coreano, como quien imparte las órdenes a los marineros indonesios. Interrogado el 1 de septiembre, éste niega haber conocido avería alguna, lo que contradice frontalmente la reparación del tubo de la bodega que MURDIONO le atribuye." }
+        { tipo: "alerta", t: "Identifica a Park KWANG JUN, jefe de máquinas coreano, como quien imparte las órdenes a los marineros indonesios. Interrogado el 1 de septiembre, éste niega haber conocido avería alguna, lo que contradice frontalmente la reparación del tubo de la bodega que MURDIONO le atribuye." },
+        { tipo: "hecho", t: "Confirma la reparación del caño de refrigeración del motor principal realizada el día antes del incidente con el jefe de máquinas coreano Park KWANG JUN. La pieza fue traída de tierra por un coreano ajeno a la empresa uruguaya, quien actualmente trabaja en el SURESTE 707 y en el SURESTE 701. Las pruebas posteriores resultaron satisfactorias." }
       ]
     },
 
@@ -685,13 +687,13 @@ window.CASO = {
         "Recibe órdenes de": "Jefe de máquinas coreano Park KWANG JUN"
       },
       acta: {
-        fecha: "31 de agosto de 2026",
-        inicio: "17:00",
-        cierre: "17:20",
-        oficial: "AN (CP) Brian MUÑIZ",
+        fecha: "3 de septiembre de 2026",
+        inicio: "12:40",
+        cierre: "13:00",
+        oficial: "TN (CP) Joaquín PÉREZ CORIA",
         interprete: "Verónica BRITOS",
         lugar: "Prefectura del Puerto de Montevideo",
-        preguntas: 11,
+        preguntas: 13,
         archivo: "ACTA DE INFORMACION SUMARIA - Marinero Indonesio RAVEL.docx"
       },
       posicion: "No estaba a bordo durante el incidente: se encontraba recorriendo la ciudad. Al regresar encontró el buque hundido.",
@@ -707,14 +709,17 @@ window.CASO = {
         { n: 8, p: "Para que diga si está en conocimiento de si en algún lugar de la bodega de carga había una avería o filtración de agua.", r: "No, no sabía de ninguna avería. Solo de la parte eléctrica de la refrigeración. Agua a la bodega tampoco entraba.", tags: ["CONTRADICCIÓN"], clave: true },
         { n: 9, p: "Para que diga de quién recibe órdenes y cuál es su horario de trabajo.", r: "Recibo órdenes del jefe de máquinas coreano, Park KWANG JUN. La jornada de trabajo es de 12 horas continuas y 6 de descanso, posterior a las 6 de descanso comienzan nuevamente las 12 horas de trabajo. En puerto es de las 08:00 hasta las 15:00.", tags: ["descanso"] },
         { n: 10, p: "Para que diga actualmente dónde está alojado y si tiene las necesidades básicas cubiertas.", r: "En el Sur Este 701. Ahora tengo camarote con una cama pero los primeros tres días dormimos en el piso. Ayer el oficial coreano nos dio ropa. Comida y baño también en el Sur Este 701. En el Sur Este 701 hay poca tripulación por lo que hay camarotes vacíos.", tags: ["condiciones náufragos"] },
-        { n: 11, p: "Para que diga si hay algún hecho relacionado con el incidente que no haya sido preguntado y que considere importante aclarar.", r: "No." }
+        { n: 11, p: "Para que diga si vio a algún miembro de la tripulación consumir alcohol a bordo o en aparente estado etílico.", r: "No, no vi a nadie." },
+        { n: 12, p: "Para que diga si estuvo trabajando con el jefe de máquinas Park KWANG JUN en el cambio de tres tramos de caño de refrigeración del motor principal el día 22 de agosto.", r: "Sí, estuvimos trabajando con él en esa reparación pero fue en la mañana del día antes del incidente. No sé cuál era particularmente el funcionamiento de ese caño, yo solo ayudo en los trabajos. El caño lo trajo un coreano de tierra. Luego del trabajo que mencioné no volví a ver más al coreano. Luego de cambiarlo se hicieron pruebas y quedó bien, las uniones del mismo son con tornillos.", tags: ["reparación caño", "TERCEROS", "coreano de tierra"], clave: true },
+        { n: 13, p: "Para que diga si hay algún hecho relacionado con el incidente que no haya sido preguntado y que considere importante aclarar.", r: "No." }
       ],
       conclusiones: [
         { tipo: "critico", t: "Es el único declarante que ubica a la empresa uruguaya trabajando DENTRO de la sala de máquinas y sobre el SISTEMA ELÉCTRICO del buque. El dato es de especial relevancia porque el black out —factor determinante de la pérdida del buque— se produjo por el mojado del tablero eléctrico principal, y porque los otros dos marineros y el 2° Oficial describen trabajos distintos y en otras ubicaciones." },
         { tipo: "contradiccion", t: "Niega la existencia de la filtración en la bodega de carga: \"agua a la bodega tampoco entraba\". Contradice al Capitán, al 1er Oficial, al Jefe de Máquinas, al 2° y 3° Oficial de Máquinas, al patrón coreano y a MURDIONO, todos los cuales la reconocen." },
         { tipo: "hecho", t: "No se encontraba a bordo durante el siniestro. Su valor probatorio se limita a la situación previa del buque y a los trabajos del día anterior." },
         { tipo: "hecho", t: "Coincide con los otros dos marineros indonesios en el régimen de guardia (07:30/08:00 a 15:00) y en que la guardia posterior era de los oficiales rusos." },
-        { tipo: "alerta", t: "Confirma las condiciones deficientes de alojamiento de los náufragos durante los primeros tres días a bordo del SURESTE 701." }
+        { tipo: "alerta", t: "Confirma las condiciones deficientes de alojamiento de los náufragos durante los primeros tres días a bordo del SURESTE 701." },
+        { tipo: "hecho", t: "Confirma la reparación del caño con Park KWANG JUN el día anterior al incidente. Aporta un detalle técnico: las uniones del caño son con tornillos. El caño fue traído por un coreano de tierra a quien no volvió a ver después de la reparación." }
       ]
     },
 
@@ -734,13 +739,13 @@ window.CASO = {
         "Recibe órdenes de": "Jefe de máquinas coreano Park KWANG JUN"
       },
       acta: {
-        fecha: "31 de agosto de 2026",
-        inicio: "17:20",
-        cierre: "17:40",
-        oficial: "AN (CP) Brian MUÑIZ",
+        fecha: "3 de septiembre de 2026",
+        inicio: "12:00",
+        cierre: "12:30",
+        oficial: "TN (CP) Joaquín PÉREZ CORIA",
         interprete: "Verónica BRITOS",
         lugar: "Prefectura del Puerto de Montevideo",
-        preguntas: 10,
+        preguntas: 14,
         archivo: "ACTA DE INFORMACION SUMARIA - Marinero Indonesio AGUS PRIYANTO.docx"
       },
       posicion: "Terminó su guardia a las 15:00 y se fue a dormir. Antes de acostarse el buque \"parecía estar adrizado\".",
@@ -755,14 +760,20 @@ window.CASO = {
         { n: 7, p: "Para que diga si sabe el motivo por el cual ingresó el buque al puerto de Montevideo.", r: "Ingresamos a descargar el pescado.", tags: ["contradicción"] },
         { n: 8, p: "Para que diga si está en conocimiento de si en algún lugar de la bodega de carga había una avería o filtración de agua.", r: "El único problema que había era en la electricidad de la cámara de refrigeración del pescado, pero eso sucedió aquí en puerto. Estuvieron unos uruguayos trabajando en la electricidad de la frigorífica pero solo un día, el día previo al incidente.", tags: ["TERCEROS", "sistema eléctrico"], clave: true },
         { n: 9, p: "Para que diga de quién recibe órdenes y cuál es su horario de trabajo.", r: "Recibo órdenes del jefe de máquinas coreano, Park KWANG JUN. La jornada de trabajo es de 12 horas continuas y 6 de descanso, posterior a las 6 de descanso comienzan nuevamente las 12 horas de trabajo. El patrón de pesca coreano nos informa cuándo finalizar la jornada.", tags: ["descanso"] },
-        { n: 10, p: "Para que diga si hay algún hecho relacionado con el incidente que no haya sido preguntado y que considere importante aclarar.", r: "No." }
+        { n: 10, p: "Para que diga actualmente dónde está alojado y si tiene las necesidades básicas cubiertas.", r: "Estamos en el Sur Este 701, ahora está todo bien.", tags: ["condiciones náufragos"] },
+        { n: 11, p: "Para que diga si vio a algún miembro de la tripulación consumir alcohol a bordo o en aparente estado etílico.", r: "No, no vi a nadie." },
+        { n: 12, p: "Para que diga si estuvo trabajando con el jefe de máquinas Park KWANG JUN en el cambio de tres tramos de caño de refrigeración del motor principal el día 22 de agosto.", r: "Sí, estuve en la reparación del caño de agua de la máquina principal. La reparación fue de suplantar un tramo del caño. El mismo se puso nuevo y en las extremidades del caño se unió mediante mordazas. Ese mismo día se hizo una prueba de la reparación del mismo la cual fue correcta. Lo que se hizo fue abrir las válvulas. Cuando pasó lo sucedido el motor estaba apagado entonces no pasaba agua por el mismo.", tags: ["reparación caño", "TERCEROS"], clave: true },
+        { n: 13, p: "Para que diga si en algunas de las reparaciones del buque vino una empresa ajena al mismo.", r: "El caño lo trajo un coreano ajeno al buque, pero la sustitución del mismo la realizó el Jefe de Máquinas Coreano con nosotros, pero una de las reparaciones que se hicieron en la bodega de carga fue una empresa uruguaya, de la cual vinieron 3 personas.", tags: ["TERCEROS", "empresa uruguaya"], clave: true },
+        { n: 14, p: "Para que diga si hay algún hecho relacionado con el incidente que no haya sido preguntado y que considere importante aclarar.", r: "No." }
       ],
       conclusiones: [
         { tipo: "critico", t: "Aporta un dato temporal decisivo: al terminar su guardia a las 15:00 y antes de irse a dormir, \"el buque parecía estar adrizado\". Fija un punto de partida objetivo: a las 15:00 el buque no presentaba escora apreciable, y el Jefe de Máquinas sitúa el inicio de la escora sobre las 16:00." },
         { tipo: "hecho", t: "Coincide con RAVEL y con AGUS en la presencia de técnicos uruguayos el día previo, situando el trabajo en la electricidad de la cámara frigorífica del pescado." },
         { tipo: "contradiccion", t: "Desconoce la filtración de agua en la bodega y reduce el problema a una cuestión eléctrica de la cámara de refrigeración, contradiciendo a los oficiales rusos y a MURDIONO." },
         { tipo: "hecho", t: "Confirma que el trasvase de combustible era una operación habitual de estabilización, aunque no conocía el motivo de la del día 25." },
-        { tipo: "alerta", t: "Reitera el régimen de 12 horas de trabajo por 6 de descanso y añade que es el patrón de pesca coreano quien determina el fin de la jornada, lo que evidencia una cadena de mando paralela a la de los oficiales rusos." }
+        { tipo: "alerta", t: "Reitera el régimen de 12 horas de trabajo por 6 de descanso y añade que es el patrón de pesca coreano quien determina el fin de la jornada, lo que evidencia una cadena de mando paralela a la de los oficiales rusos." },
+        { tipo: "hecho", t: "Confirma la reparación del caño de refrigeración del motor principal. Aporta detalles técnicos: se suplantó un tramo, se unió mediante mordazas, se probó abriendo las válvulas. Precisa que cuando ocurrió el siniestro el motor estaba apagado, por lo que no pasaba agua por ese caño." },
+        { tipo: "hecho", t: "Confirma que el caño fue traído por un coreano ajeno al buque y que la empresa uruguaya (3 personas) trabajó en la bodega de carga, distinguiendo claramente entre ambas intervenciones externas." }
       ]
     }
   ]

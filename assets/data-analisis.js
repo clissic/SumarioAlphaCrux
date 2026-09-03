@@ -101,6 +101,24 @@ window.ANALISIS = {
         "El informe está firmado «Willian FERRAO»; otros documentos del expediente lo consignan como «William»."
       ],
       archivo: "Informe Supervisor Cabo de Segunda William FERRAO (Supervisor CONMO).pdf"
+    },
+    {
+      id: "planos-alpha",
+      titulo: "Planos del buque Alpha Crux",
+      autor: "Archivo del buque / astillero",
+      cargo: "—",
+      fecha: "Sin fecha",
+      destinatario: "Expediente sumario",
+      tipo: "planos",
+      resumen: "Plano general de disposición del buque pesquero Alpha Crux (ex nombre de construcción). Permite ubicar los tanques de combustible, la sala de máquinas, la bodega de carga, los ojos de buey y los espacios mencionados en las declaraciones.",
+      puntos: [
+        "Permite verificar la ubicación relativa de los tanques de combustible mencionados en las declaraciones (popa y proa), así como la distancia entre ellos y la sala de máquinas.",
+        "Ubica el ojo de buey del taller del torno respecto de la línea de flotación, dato clave para evaluar la inundación por escora.",
+        "Muestra la disposición de la bodega de carga donde se reportó la filtración de agua y donde se desmantelaron las tablas de recubrimiento.",
+        "Permite contrastar las declaraciones sobre la ubicación de los generadores, bombas de achique y tablero eléctrico principal.",
+        "ALERTA: No se ha verificado si estos planos corresponden exactamente a la configuración actual del buque o si hubo modificaciones posteriores a su construcción."
+      ],
+      archivo: "Planos Alpha Crux.pdf"
     }
   ],
 
@@ -142,7 +160,7 @@ window.ANALISIS = {
     {
       fecha: "22 de agosto de 2026", hora: "—", fase: "previo",
       titulo: "Cambio de tres tramos de caño de refrigeración del motor principal",
-      texto: "El jefe de máquinas coreano Park KWANG JUN declara que, para preparar el zarpe, él mismo cambió tres tramos de caño de refrigeración del motor principal en la sala de máquinas, con ayuda de los tres marineros indonesios (AGUS N° 17, MURDIONO N° 19 y RAVEL N° 20). La prueba de presión se realizó el mismo día con resultado satisfactorio. Sostiene que el Jefe de Máquinas ruso lo sabía de antemano y presume que el Capitán también, pese a que ambos niegan toda reparación.",
+      texto: "El jefe de máquinas coreano Park KWANG JUN declara que, para preparar el zarpe, él mismo cambió tres tramos de caño de refrigeración del motor principal en la sala de máquinas, con ayuda de los tres marineros indonesios (AGUS N° 17, MURDIONO N° 19 y RAVEL N° 20). La prueba de presión se realizó el mismo día con resultado satisfactorio. Sostiene que el Jefe de Máquinas ruso lo sabía de antemano y presume que el Capitán también, pese a que ambos niegan toda reparación. Los tres marineros indonesios confirman la reparación en sus actas ampliadas del 3 de septiembre.",
       fuente: "Acta Jefe de Máquinas Coreano (Park KWANG JUN), P.5 y P.6", ref: "maquinas-coreano",
       etiquetas: ["REPARACIÓN", "estanqueidad", "INCONGRUENCIA"], conflicto: true, destacado: true
     },
@@ -535,25 +553,35 @@ window.ANALISIS = {
       etiquetas: ["INTERROGATORIO", "INCONGRUENCIA"], interrogatorio: true, conflicto: true
     },
     {
-      fecha: "31 de agosto de 2026", hora: "16:30 – 17:00", fase: "instruccion",
-      titulo: "INTERROGATORIO — Marinero indonesio MURDIONO",
-      texto: "Acta de información sumaria tomada por el AN (CP) Brian MUÑIZ, con la intérprete Verónica BRITOS. 12 preguntas.",
+      fecha: "3 de septiembre de 2026", hora: "11:00", fase: "instruccion",
+      titulo: "INTERROGATORIO — Marinero indonesio MURDIONO (ampliación)",
+      texto: "Acta ampliada de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con la intérprete Verónica BRITOS. 13 preguntas. Incorpora indagación sobre la reparación del caño de refrigeración del motor principal y precisa que el día del incidente se buscaba la filtración en la bodega con un coreano venido de tierra.",
       fuente: "Acta de Información Sumaria — Marinero Indonesio MURDIONO", ref: "murdiono",
-      etiquetas: ["INTERROGATORIO"], interrogatorio: true
+      etiquetas: ["INTERROGATORIO", "HECHOS NUEVOS"], interrogatorio: true, destacado: true
     },
     {
-      fecha: "31 de agosto de 2026", hora: "17:00 – 17:20", fase: "instruccion",
-      titulo: "INTERROGATORIO — Marinero indonesio RAVEL WATTIMURY",
-      texto: "Acta de información sumaria tomada por el AN (CP) Brian MUÑIZ, con la intérprete Verónica BRITOS. 11 preguntas.",
-      fuente: "Acta de Información Sumaria — Marinero Indonesio RAVEL", ref: "ravel",
-      etiquetas: ["INTERROGATORIO"], interrogatorio: true
-    },
-    {
-      fecha: "31 de agosto de 2026", hora: "17:20 – 17:40", fase: "instruccion",
-      titulo: "INTERROGATORIO — Marinero indonesio AGUS PRIYANTO",
-      texto: "Acta de información sumaria tomada por el AN (CP) Brian MUÑIZ, con la intérprete Verónica BRITOS. 10 preguntas.",
+      fecha: "3 de septiembre de 2026", hora: "12:00", fase: "instruccion",
+      titulo: "INTERROGATORIO — Marinero indonesio AGUS PRIYANTO (ampliación)",
+      texto: "Acta ampliada de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con la intérprete Verónica BRITOS. 14 preguntas. Incorpora indagación sobre alojamiento, alcohol, reparación del caño del motor principal (uniones con mordazas) y distinción entre el coreano ajeno que trajo la pieza y la empresa uruguaya de tres personas en la bodega.",
       fuente: "Acta de Información Sumaria — Marinero Indonesio AGUS PRIYANTO", ref: "agus",
-      etiquetas: ["INTERROGATORIO"], interrogatorio: true
+      etiquetas: ["INTERROGATORIO", "HECHOS NUEVOS"], interrogatorio: true, destacado: true
+    },
+    {
+      fecha: "3 de septiembre de 2026", hora: "12:40", fase: "instruccion",
+      titulo: "INTERROGATORIO — Marinero indonesio RAVEL WATTIMURY (ampliación)",
+      texto: "Acta ampliada de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con la intérprete Verónica BRITOS. 13 preguntas. Incorpora indagación sobre alcohol y confirmación de la reparación del caño del motor principal con Park KWANG JUN; describe las uniones con tornillos.",
+      fuente: "Acta de Información Sumaria — Marinero Indonesio RAVEL", ref: "ravel",
+      etiquetas: ["INTERROGATORIO", "HECHOS NUEVOS"], interrogatorio: true, destacado: true
+    },
+    {
+      fecha: "3 de septiembre de 2026",
+      fase: "instruccion",
+      hora: "—",
+      titulo: "Los tres marineros indonesios confirman la reparación del caño del motor principal",
+      texto: "En sus actas ampliadas del 3 de septiembre, MURDIONO, RAVEL y AGUS PRIYANTO confirman haber participado en el cambio de un caño de refrigeración del motor principal con Park KWANG JUN el día antes del incidente. Los tres coinciden en que se hicieron pruebas exitosas. AGUS detalla que las uniones son con mordazas y que el motor estaba apagado durante el siniestro. MURDIONO precisa que el coreano que trajo el caño es el mismo que buscaba la pérdida en la bodega.",
+      fuente: "Actas MURDIONO P.12 · RAVEL P.12 · AGUS P.12",
+      etiquetas: ["reparación caño", "motor principal", "coreano de tierra"],
+      ref: "murdiono"
     },
     {
       fecha: "1 de septiembre de 2026", hora: "15:00", fase: "instruccion",
@@ -613,13 +641,12 @@ window.ANALISIS = {
       { id: "parkkj", label: "Jefe Máq. coreano Park KWANG JUN", cat: "coreana", size: 23, ref: "maquinas-coreano", det: "Jefe o técnico de máquinas coreano, 63 años, doc. M419X3876, empresa Dong Nam, ≈3 años a bordo. Declaró el 1 de septiembre. Describe su función como asistencia y supervisión de los oficiales rusos e imparte las órdenes a los tres marineros indonesios. Ejecutó el cambio de caños de refrigeración del motor principal el 22 de agosto y sitúa a personal venido de Corea soldando a bordo el día del siniestro. A las 16:30 encontró la sala de máquinas correcta y se retiró del buque a las 17:30." },
       { id: "hoseon", label: "Patrón Hoseon SHIN", cat: "coreana", size: 18, ref: "patron-pesca", det: "Patrón de pesca, empresa Dong Nam. No estaba a bordo: se alojaba en el Hotel Holiday Inn. Recibió el aviso de Kyongsu PARK a las 18:46. Aporta el antecedente del buque apretado entre los hielos cerca del polo sur. Único declarante que admite consumo de alcohol en las 24 h previas, en la ciudad." },
       /* --- indonesios --- */
-      { id: "murdiono", label: "Mar. MURDIONO", cat: "indonesia", size: 16, ref: "murdiono", det: "Marinero de guardia de máquinas. Único declarante que identifica el origen concreto de la filtración: un tubo dentro de la bodega de carga, reparado informalmente por el oficial coreano cuando perdía. Precisa que el día del incidente ese tubo no tenía pérdida." },
-      { id: "ravel", label: "Mar. RAVEL WATTIMURY", cat: "indonesia", size: 16, ref: "ravel", det: "Marinero de guardia de máquinas. No estaba a bordo durante el siniestro. Único declarante que ubica a la empresa uruguaya trabajando DENTRO de la sala de máquinas y sobre el sistema ELÉCTRICO del buque. Niega la existencia de filtración en la bodega." },
-      { id: "agus", label: "Mar. AGUS PRIYANTO", cat: "indonesia", size: 16, ref: "agus", det: "Marinero de guardia de máquinas. Fija el último punto objetivo sin escora: al terminar su guardia a las 15:00 y antes de irse a dormir, \"el buque parecía estar adrizado\". Sitúa los trabajos de los técnicos uruguayos en la electricidad de la cámara frigorífica." },
+      { id: "murdiono", label: "Mar. MURDIONO", cat: "indonesia", size: 16, ref: "murdiono", det: "Marinero de guardia de máquinas. Único declarante que identifica el origen concreto de la filtración: un tubo dentro de la bodega de carga, reparado informalmente por el oficial coreano. En su acta ampliada del 3/09 confirma la reparación del caño del motor principal y que el día del incidente se buscaba la filtración con un coreano de tierra." },
+      { id: "ravel", label: "Mar. RAVEL WATTIMURY", cat: "indonesia", size: 16, ref: "ravel", det: "Marinero de guardia de máquinas. No estaba a bordo durante el siniestro. Único declarante que ubica a la empresa uruguaya trabajando DENTRO de la sala de máquinas y sobre el sistema ELÉCTRICO. En su acta ampliada confirma la reparación del caño del motor con uniones de tornillos." },
+      { id: "agus", label: "Mar. AGUS PRIYANTO", cat: "indonesia", size: 16, ref: "agus", det: "Marinero de guardia de máquinas. Fija el último punto objetivo sin escora: a las 15:00 el buque parecía estar adrizado. En su acta ampliada confirma la reparación del caño con mordazas y distingue al coreano ajeno de la empresa uruguaya en la bodega." },
       /* --- autoridad --- */
       { id: "molesini", label: "TN (CP) Adrián MOLESINI", cat: "autoridad", size: 20, ref: "informe-molesini", det: "Oficial Comandante de Guardia de la Prefectura del Puerto de Montevideo. Actuó en la escena desde las 19:36 hasta las 00:30 y elevó el informe del siniestro. Es además Oficial Instructor del sumario y tomó las actas del Jefe de Máquinas y del 3° Oficial de Máquinas." },
-      { id: "perez", label: "TN (CP) Joaquín PÉREZ CORIA", cat: "autoridad", size: 18, det: "Jefe del Departamento Despacho de Buques de la Prefectura del Puerto de Montevideo y Oficial Instructor. Tomó las actas del Capitán, del 1er Oficial (y su ampliación), del 2° Oficial de Máquinas y del patrón de pesca coreano." },
-      { id: "muniz", label: "AN (CP) Brian MUÑIZ", cat: "autoridad", size: 15, det: "Oficial actuante del Departamento Despacho de Buques. Tomó las tres actas de los marineros indonesios el 31 de agosto." },
+      { id: "perez", label: "TN (CP) Joaquín PÉREZ CORIA", cat: "autoridad", size: 15, det: "Oficial actuante del Departamento Despacho de Buques. Tomó las tres actas ampliadas de los marineros indonesios el 3 de septiembre de 2026." },
       { id: "rodriguez", label: "CC (CP) Carlos RODRIGUEZ", cat: "autoridad", size: 14, det: "Oficial Instructor designado en el sumario. No consta que haya tomado actas." },
       { id: "lemos", label: "CN (CP) Néstor LEMOS", cat: "autoridad", size: 14, det: "Prefecto del Puerto de Montevideo. Destinatario del informe del oficial actuante y de la transcripción de la exposición del práctico. Mantuvo comunicaciones constantes con el oficial actuante hasta las 00:30." },
       { id: "ferrao", label: "CS (PM) Willian FERRAO", cat: "autoridad", size: 18, ref: "informe-ferrao", det: "Supervisor de CONMO. El 26/08 elevó informe a MOLESINI. A las 19:30 recibió llamado de SAAM Towage pidiendo autorización para asistir al ALPHA CRUX «por solicitud de la Agencia Marítima», porque el buque estaba escorado. Informó de inmediato al Oficial Comandante de Guardia y a PLADA. Aporta la cronología CONMO hasta las 23:28. Firma «Willian»; otros documentos lo consignan «William»." },
@@ -648,7 +675,7 @@ window.ANALISIS = {
       { id: "abandono", label: "Abandono sin orden ni alarma", cat: "deficiencia", size: 20, det: "No se activó ninguna alarma ni se impartió orden formal de abandono. El 3° Oficial recorrió los camarotes avisando; la tripulación indonesia bajó al muelle en estado de pánico; el Capitán encontró al buque ya vacío al subir al puente." },
       { id: "viadeagua", label: "Vía de agua no localizada en la bodega", cat: "hecho", size: 19, det: "Motivó el ingreso anticipado a puerto según el Capitán, el 1er Oficial y el Jefe de Máquinas: éste declara que entraron \"un mes antes\", en referencia al adelanto sobre la fecha de arribo prevista. Ninguna acta consigna la fecha efectiva de ingreso. Nunca se identificó el punto de entrada del agua; se desmantelaron las tablas de recubrimiento de la bodega. MURDIONO la atribuye a un tubo interior reparado informalmente; el patrón coreano al casco dañado entre hielos; RAVEL niega su existencia." },
       { id: "bombaaguamar", label: "Bomba de agua de mar desconectada", cat: "hecho", size: 19, det: "Desconectada el 24 de agosto para permitir al taller portuario reparar las cañerías del sistema de enfriamiento del reductor del eje principal. Es una intervención directa sobre un circuito abierto al mar. Sólo el 2° Oficial de Máquinas la declara; el Capitán, el Jefe de Máquinas y el 1er Oficial niegan toda reparación." },
-      { id: "canos-refrig", label: "Cambio de tres tramos de caño de refrigeración (22/08)", cat: "hecho", size: 20, det: "Aportado por el jefe de máquinas coreano: cambió tres tramos de caño de refrigeración del motor principal en la sala de máquinas, con ayuda de los tres marineros indonesios, y realizó la prueba de presión el mismo día con resultado satisfactorio. Es una segunda intervención sobre el circuito de refrigeración, en fecha distinta y por personal distinto que la del taller portuario del 24 de agosto. Afirma que el Jefe de Máquinas ruso lo sabía de antemano." },
+      { id: "canos-refrig", label: "Cambio de tres tramos de caño de refrigeración (22/08)", cat: "hecho", size: 20, det: "Aportado por el jefe de máquinas coreano y confirmado por los tres marineros indonesios en sus actas ampliadas del 3/09: cambio de caño de refrigeración del motor principal en sala de máquinas, con prueba satisfactoria. MURDIONO identifica al coreano de tierra que trajo la pieza; AGUS describe uniones con mordazas; RAVEL con tornillos." },
       { id: "bombas-portatiles", label: "Dos bombas portátiles nunca empleadas", cat: "hecho", size: 15, det: "El jefe de máquinas coreano declara que el buque contaba con una bomba de achique y dos bombas portátiles, frente a las tres bombas de achique que describe el resto del expediente. Si las portátiles eran autónomas de la energía del buque, no se explica que no se emplearan durante las casi tres horas de inundación progresiva previas al hundimiento." },
       { id: "aviso1846", label: "Aviso 18:46 · Agencia ya sabía · Prefectura 19:30", cat: "deficiencia", size: 21, det: "A las 18:46 Kyongsu PARK avisó al patrón desde el muelle. Antes de las 19:30 la Agencia Marítima ya había pedido remolcadores a SAAM. A las 19:30 SAAM pidió autorización a CONMO y FERRAO avisó a Prefectura y a PLADA. Ningún tripulante notificó a la autoridad; quién informó a la agencia sigue sin establecerse." },
       { id: "puente-vacio", label: "Puente sin guardia efectiva", cat: "deficiencia", size: 21, det: "El 1er Oficial de Puente ruso, único oficial de guardia, declara que al momento del black out estaba en tierra, sobre el muro, controlando la tensión de los cabos de amarre. El 1er Oficial de Puente coreano declara que no estaba de guardia y que se encontraba en su camarote. El Capitán y el Jefe de Máquinas dormían. Nadie ha sido identificado ejerciendo la guardia de puente durante la fase crítica del siniestro." },
@@ -666,7 +693,7 @@ window.ANALISIS = {
       { id: "c-bomba", label: "¿Se ordenó no encender la bomba?", cat: "conflicto", size: 24, det: "CONTRADICCIÓN CENTRAL. El 2° Oficial de Máquinas afirma de forma circunstanciada que el 1er Oficial le ordenó no prender la bomba, en la sala de refrigeración, \"porque tal vez se podría escorar más el buque\". El 1er Oficial lo niega: \"conversación de prender o apagar la bomba no hubo\". De su resolución depende si el oficial de guardia impidió activamente el adrizamiento del buque." },
       { id: "c-direccion", label: "¿En qué dirección se trasvasó?", cat: "conflicto", size: 22, det: "El ejecutante material declara 9 BABOR → 9 ESTRIBOR, sentido correcto para adrizar. El Capitán sostiene 9 ESTRIBOR → 9 BABOR y la señala como causa del hundimiento. El 1er Oficial supone que \"se equivocó y trasvasó todo el combustible hacia babor\". El instructor formuló la pregunta al 3° Oficial dando por sentada la versión del Capitán." },
       { id: "c-orden", label: "¿Quién ordenó el trasvase 9↔9?", cat: "conflicto", size: 22, det: "Nadie lo asume. El Capitán dice no haberlo ordenado ni conocido; el 1er Oficial, de guardia, dice que nadie le dio la orden y que fue iniciativa propia del 2° Oficial; el 2° Oficial dice que surgió por la escora y que abrió las válvulas antes de cruzarse con el 1er Oficial; el Jefe de Máquinas dice que \"la orden no está muy clara quién la dio\"; el 3° Oficial precisa que cuando él descansa quien ordena el trasvase es el 1er Oficial." },
-      { id: "c-reparacion", label: "¿Qué reparaciones se hicieron y quién las hizo?", cat: "conflicto", size: 23, det: "El 2° Oficial de Máquinas, el 3° Oficial y los tres marineros indonesios confirman la intervención de una empresa externa el 24 de agosto, discrepando sobre el objeto (enfriamiento del reductor, sistema eléctrico, cámara frigorífica) y la ubicación. El jefe de máquinas coreano añade una intervención distinta: el 22 de agosto él mismo cambió tres tramos de caño de refrigeración del motor principal con los tres indonesios. El Capitán, el Jefe de Máquinas y el 1er Oficial niegan toda reparación, pero el coreano sostiene que el Jefe de Máquinas lo sabía de antemano." },
+      { id: "c-reparacion", label: "¿Qué reparaciones se hicieron y quién las hizo?", cat: "conflicto", size: 23, det: "El 2° Oficial de Máquinas, el 3° Oficial y los tres marineros indonesios confirman la intervención de una empresa externa el 24 de agosto, discrepando sobre el objeto y la ubicación. El jefe de máquinas coreano añade una intervención distinta: el 22 de agosto cambió caños de refrigeración del motor principal con los tres indonesios —ahora confirmado por los tres en actas ampliadas del 3/09—. El Capitán, el Jefe de Máquinas y el 1er Oficial niegan toda reparación." },
       { id: "c-causa", label: "¿Cuál fue la causa de la escora?", cat: "conflicto", size: 23, det: "Cinco hipótesis incompatibles: error humano del maquinista (1er Oficial, agencia marítima); el ojo de buey abierto (Jefe de Máquinas); el viento (2° Oficial de Máquinas); error en el manejo del lastre (patrón coreano); ninguna de las anteriores porque el trasvase no pudo generar escora significativa (Capitán y 1er Oficial de Puente coreano). El propio 3° Oficial y el 2° Oficial descartan el trasvase forzado al confirmar que la bomba nunca se encendió. El 1er Oficial de Puente coreano añade un dato que ninguna hipótesis explica: la escora y el black out fueron prácticamente simultáneos y \"todo sucedió muy rápido\"." },
       { id: "c-ingreso", label: "¿Por qué ingresó el buque a puerto y cuándo?", cat: "conflicto", size: 17, det: "Por la filtración de agua en la bodega (Capitán, 1er Oficial, Jefe de Máquinas) o para descargar el pescado (patrón coreano, RAVEL, AGUS). MURDIONO sostiene ambas cosas a la vez. La fecha de arribo tampoco está acreditada: la única referencia temporal es el \"un mes antes\" del Jefe de Máquinas, que alude al adelanto sobre la fecha de ingreso prevista y no al tiempo transcurrido hasta el siniestro." }
     ],
@@ -747,6 +774,9 @@ window.ANALISIS = {
       { s: "taller", t: "bombaaguamar", l: "la desconectó para trabajar", tipo: "causa" },
       { s: "parkkj", t: "c-reparacion", l: "él mismo cambió caños el 22/08", tipo: "declara" },
       { s: "parkkj", t: "canos-refrig", l: "la ejecutó con los tres indonesios", tipo: "accion" },
+      { s: "murdiono", t: "canos-refrig", l: "confirma cambio de caño del motor con Park KJ", tipo: "declara" },
+      { s: "ravel", t: "canos-refrig", l: "confirma cambio de caño, uniones con tornillos", tipo: "declara" },
+      { s: "agus", t: "canos-refrig", l: "confirma cambio de caño, uniones con mordazas", tipo: "declara" },
       { s: "canos-refrig", t: "c-reparacion", l: "segunda intervención, otra fecha y otro autor", tipo: "conflicto" },
       { s: "parkkj", t: "yuri", l: "\"seguro que sabía\" de la reparación", tipo: "conflicto" },
       { s: "parkkj", t: "equipo-coreano", l: "los sitúa soldando a bordo a las 16:00", tipo: "declara" },
@@ -822,9 +852,9 @@ window.ANALISIS = {
       { s: "perez", t: "igor", l: "toma su acta", tipo: "instruccion" },
       { s: "perez", t: "hoseon", l: "toma su acta", tipo: "instruccion" },
       { s: "perez", t: "kyongsu", l: "toma su acta", tipo: "instruccion" },
-      { s: "muniz", t: "murdiono", l: "toma su acta", tipo: "instruccion" },
-      { s: "muniz", t: "ravel", l: "toma su acta", tipo: "instruccion" },
-      { s: "muniz", t: "agus", l: "toma su acta", tipo: "instruccion" },
+      { s: "perez", t: "murdiono", l: "toma su acta ampliada", tipo: "instruccion" },
+      { s: "perez", t: "ravel", l: "toma su acta ampliada", tipo: "instruccion" },
+      { s: "perez", t: "agus", l: "toma su acta ampliada", tipo: "instruccion" },
       { s: "rodriguez", t: "expediente", l: "Oficial Instructor", tipo: "instruccion" },
       { s: "molesini", t: "expediente", l: "actuó en la escena y además instruye", tipo: "instruccion" }
     ]
@@ -904,15 +934,15 @@ window.ANALISIS = {
         { quien: "Park KWANG JUN — Jefe Máq. coreano", ref: "maquinas-coreano", cita: "Lo que se hizo el día 22 de agosto fue el cambio de tres tramos de caño de refrigeración del motor principal […] la reparación la hice yo con ayuda de 3 tripulantes indonesios y la prueba de presión se realizó el mismo día […] está ubicado en la sala de máquina del buque.", donde: "Acta 01/09, P.5" },
         { quien: "Park KWANG JUN — sobre el conocimiento de los oficiales rusos", ref: "maquinas-coreano", cita: "El jefe de máquina ruso seguro que sabía porque él ya estaba enterado que en puerto se iba a realizar esta tarea, y del capitán ruso presumo que sí, ya que el jefe de máquina debería de haberle dicho.", donde: "Acta 01/09, P.6" },
         { quien: "German IVAN — 3° Of. Máquinas", ref: "tercer-maquinas", cita: "Yo no vi nada, pero sí escuché que había un problema en el caño de refrigeración de la caja reductora. Yo lo escuché del 2° de máquina como también del jefe de máquina.", donde: "Acta 31/08, P.3" },
-        { quien: "RAVEL WATTIMURY — Marinero", ref: "ravel", cita: "Hubo una empresa trabajando el día anterior al incidente, dentro de la sala de máquinas, pero estaban trabajando en el sistema eléctrico del buque.", donde: "Acta 31/08, P.5" },
-        { quien: "AGUS PRIYANTO — Marinero", ref: "agus", cita: "Estuvieron unos uruguayos trabajando en la electricidad de la frigorífica pero solo un día, el día previo al incidente.", donde: "Acta 31/08, P.8" },
-        { quien: "MURDIONO — Marinero", ref: "murdiono", cita: "Hubo una empresa trabajando el día anterior al incidente, pero fueron a reparar el sistema de refrigeración del buque, nada relacionado con la sala de máquinas.", donde: "Acta 31/08, P.5" },
+        { quien: "RAVEL WATTIMURY — Marinero", ref: "ravel", cita: "Hubo una empresa trabajando el día anterior al incidente, dentro de la sala de máquinas, pero estaban trabajando en el sistema eléctrico del buque.", donde: "Acta 03/09, P.5" },
+        { quien: "AGUS PRIYANTO — Marinero", ref: "agus", cita: "Estuvieron unos uruguayos trabajando en la electricidad de la frigorífica pero solo un día, el día previo al incidente.", donde: "Acta 03/09, P.8" },
+        { quien: "MURDIONO — Marinero", ref: "murdiono", cita: "Hubo una empresa trabajando el día anterior al incidente, pero fueron a reparar el sistema de refrigeración del buque, nada relacionado con la sala de máquinas.", donde: "Acta 03/09, P.5" },
         { quien: "Andrei BELIKOV — Capitán", ref: "capitan", cita: "No, no se hizo nada de eso.", donde: "Acta 27/08, P.11" },
         { quien: "Ivanov YURI — Jefe de Máquinas", ref: "jefe-maquinas", cita: "No, no había ningún tipo de reparación.", donde: "Acta 27/08, pregunta sin numerar" },
         { quien: "Dmitrii FROLOV — 1er Oficial", ref: "primer-oficial-ampliacion", cita: "No escuché nada de eso.", donde: "Ampliación 31/08, P.6" }
       ],
       analisis: "El dato aportado por el 2° Oficial es de máxima relevancia técnica y está prácticamente inexplorado en el expediente: la desconexión de la bomba que toma agua de mar implica intervenir un circuito abierto al mar. Si al finalizar la jornada del 24 de agosto ese circuito quedó sin la debida estanqueidad —brida sin ciego, válvula de fondo mal cerrada, junta mal montada—, existe una vía de inundación alternativa y progresiva que explicaría una escora de origen desconocido, sin necesidad de recurrir a la hipótesis del trasvase. La declaración del jefe de máquinas coreano agrava el cuadro en lugar de aclararlo: describe una intervención adicional, el 22 de agosto, ejecutada por él mismo con los tres marineros indonesios sobre tres tramos de caño de refrigeración del motor principal dentro de la sala de máquinas. No es la misma obra que la del taller portuario —difieren la fecha, el ejecutante y el elemento intervenido—, de modo que hubo al menos dos intervenciones sucesivas sobre los circuitos de refrigeración en los tres días previos al hundimiento. Sobre esa base, la negativa cerrada del Capitán, del Jefe de Máquinas y del 1er Oficial resulta insostenible: el 3° Oficial declara haberlo escuchado del propio Jefe de Máquinas, y el coreano afirma que éste estaba enterado de antemano y presume que el Capitán fue informado.",
-      resolucion: "Identificar y requerir a la empresa del taller portuario: orden de trabajo, permisos, detalle de las tareas, personal interviniente y constancia del estado de las tomas de mar al finalizar. Requerir el registro y el resultado documentado de la prueba de presión del 22 de agosto que invoca el jefe de máquinas coreano. Pericia sobre el circuito de enfriamiento del motor principal, sobre el del reductor y sobre las válvulas de fondo al reflotar. Ampliar declaración al Capitán y al Jefe de Máquinas confrontándolos con la imputación directa de conocimiento previo, y a los tres marineros indonesios sobre su participación material en el cambio de caños."
+      resolucion: "Identificar y requerir a la empresa del taller portuario: orden de trabajo, permisos, detalle de las tareas, personal interviniente y constancia del estado de las tomas de mar al finalizar. Requerir el registro y el resultado documentado de la prueba de presión del 22 de agosto que invoca el jefe de máquinas coreano y que ahora confirman los tres marineros indonesios. Pericia sobre el circuito de enfriamiento del motor principal, sobre el del reductor y sobre las válvulas de fondo al reflotar. Ampliar declaración al Capitán y al Jefe de Máquinas confrontándolos con la imputación directa de conocimiento previo. Identificar al coreano de tierra que trajo el caño, según MURDIONO y AGUS."
     },
     {
       id: "i05b",
@@ -939,7 +969,7 @@ window.ANALISIS = {
         { quien: "Andrei BELIKOV — Capitán", ref: "capitan", cita: "El ángulo de escora que manejamos como normal atracados a muro es de entre 20 y 25 grados pero no hay nada por escrito.", donde: "Acta 27/08, P.27" },
         { quien: "Ivanov YURI — Jefe de Máquinas", ref: "jefe-maquinas", cita: "El límite de la escora es 25°, pasando este grado ya es de riesgo. […] En alta mar el buque se escoraba más de 25° y no escuchaba nada.", donde: "Acta 27/08, P.12 y P.17" },
         { quien: "Dmitrii FROLOV — 1er Oficial", ref: "primer-oficial-ampliacion", cita: "La escora inicial es algo normal en el buque.", donde: "Ampliación 31/08, P.10" },
-        { quien: "AGUS PRIYANTO — Marinero", ref: "agus", cita: "Antes de irme a dormir el buque parecía estar adrizado.", donde: "Acta 31/08, P.6" }
+        { quien: "AGUS PRIYANTO — Marinero", ref: "agus", cita: "Antes de irme a dormir el buque parecía estar adrizado.", donde: "Acta 03/09, P.6" }
       ],
       analisis: "Ningún buque atracado a muro puede considerar normal una escora de 20 a 25 grados: a esos ángulos el ojo de buey situado a 1–2 metros de la línea de flotación queda necesariamente sumergido, que es exactamente lo que ocurrió. El criterio declarado por el Capitán y el Jefe de Máquinas no responde a ningún cuaderno de estabilidad y ambos reconocen que no hay nada por escrito. Esta tolerancia normalizada a escoras extremas es, en términos de investigación de siniestros, un factor causal de pleno derecho: explica por qué el Capitán percibió la escora y la atribuyó al consumo de tanques de agua sin darle importancia, por qué el 1er Oficial la calificó de \"normal\", y por qué nadie dio la alarma hasta que el agua ya entraba al buque.",
       resolucion: "Requerir el cuaderno de estabilidad aprobado del buque y contrastarlo con los criterios declarados. Ampliar declaración al Capitán sobre el origen de ese criterio. Evaluar el hecho como deficiencia del sistema de gestión de la seguridad a los efectos de la responsabilidad del armador."
@@ -980,7 +1010,7 @@ window.ANALISIS = {
       eje: "Cronología",
       resumen: "Las declaraciones no explican tres horas y media del siniestro. Los relatos internos y los registros externos no se pueden conciliar.",
       versiones: [
-        { quien: "AGUS PRIYANTO — Marinero", ref: "agus", cita: "Yo terminé mi guardia a las 15:00 horas […] antes de irme a dormir el buque parecía estar adrizado.", donde: "Acta 31/08, P.4 y P.6" },
+        { quien: "AGUS PRIYANTO — Marinero", ref: "agus", cita: "Yo terminé mi guardia a las 15:00 horas […] antes de irme a dormir el buque parecía estar adrizado.", donde: "Acta 03/09, P.4 y P.6" },
         { quien: "Ivanov YURI — Jefe de Máquinas", ref: "jefe-maquinas", cita: "Sobre las 16:00 hs el buque se empieza a escorar sobre la banda babor.", donde: "Acta 27/08, P.3" },
         { quien: "Park KWANG JUN — Jefe Máq. coreano", ref: "maquinas-coreano", cita: "Yo alrededor de las 16:30 bajé a sala de máquina para corroborar el estado de ésta y estaba todo correcto; luego de eso, cerca de las 17:30 yo me retiro del barco.", donde: "Acta 01/09, P.9" },
         { quien: "Dmitrii FROLOV — 1er Oficial", ref: "primer-oficial-ampliacion", cita: "[Desde que comenzó a escorarse el buque hasta que lo abandonó pasaron] de 20 a 30 minutos.", donde: "Ampliación 31/08, P.9" },
@@ -1002,8 +1032,8 @@ window.ANALISIS = {
         { quien: "Ivanov YURI — Jefe de Máquinas", ref: "jefe-maquinas", cita: "Nosotros entramos a puerto un mes antes porque el buque tenía un rumbo de agua. […] El buque contaba con una avería en la bodega de carga, pero no sé qué tan grande era ya que no se lograba ver bien, es por esta razón que entramos un mes antes al puerto.", donde: "Acta 27/08, P.6 y P.8" },
         { quien: "Dmitrii FROLOV — 1er Oficial", ref: "primer-oficial", cita: "Ingresamos a puerto porque teníamos una filtración de agua cuando había mucha tormenta pero no sabíamos por dónde ingresaba.", donde: "Acta 27/08, P.11" },
         { quien: "Hoseon SHIN — Patrón de Pesca", ref: "patron-pesca", cita: "El motivo por el que el buque ingresó a puerto fue para descargar el pescado.", donde: "Acta 01/09, P.7" },
-        { quien: "RAVEL WATTIMURY — Marinero", ref: "ravel", cita: "Entramos a descargar el pescado.", donde: "Acta 31/08, P.7" },
-        { quien: "MURDIONO — Marinero", ref: "murdiono", cita: "Entramos a descargar el pescado porque había una filtración de agua que caía de un tubo dentro de la bodega de carga.", donde: "Acta 31/08, P.7" }
+        { quien: "RAVEL WATTIMURY — Marinero", ref: "ravel", cita: "Entramos a descargar el pescado.", donde: "Acta 03/09, P.7" },
+        { quien: "MURDIONO — Marinero", ref: "murdiono", cita: "Entramos a descargar el pescado porque había una filtración de agua que caía de un tubo dentro de la bodega de carga.", donde: "Acta 03/09, P.7" }
       ],
       analisis: "La discrepancia sobre el motivo puede ser sólo aparente, ya que ambos son compatibles y MURDIONO los enuncia juntos. Sin embargo tiene consecuencias: si el buque ingresó por una vía de agua no localizada, corresponde verificar si el hecho fue declarado a la autoridad marítima al arribo, si se solicitó inspección, si se dio intervención a la sociedad de clasificación y si el buque estaba en condiciones de navegabilidad. Hay además un punto que el expediente no resuelve y que conviene no dar por sentado: la fecha de ingreso. La única referencia temporal es la del Jefe de Máquinas, que dos veces dice haber entrado \"un mes antes\", y esa expresión alude al adelanto respecto de la fecha de arribo prevista —interrumpieron la zafra por la avería—, no al tiempo transcurrido hasta el hundimiento. Ninguna otra acta consigna cuándo atracó el buque, de modo que la duración real de la estadía en puerto no está acreditada. El dato importa porque de él depende cuánto tiempo estuvo el buque con la bodega desmantelada y la avería sin localizar, y desde cuándo la autoridad marítima pudo conocer su condición.",
       resolucion: "Requerir la declaración general de arribo, el despacho de entrada con la fecha y hora efectivas de atraque, el registro de movimientos de la Administración Nacional de Puertos, la solicitud de inspección si existió, y toda comunicación del armador o de la agencia a la autoridad marítima y a la sociedad de clasificación sobre la vía de agua. Ampliar declaración al Capitán y al Jefe de Máquinas para que precisen la fecha de arribo y la fecha en que estaba previsto el ingreso."
@@ -1015,13 +1045,13 @@ window.ANALISIS = {
       eje: "Estanqueidad",
       resumen: "Seis versiones incompatibles sobre un hecho que condiciona la reserva de flotabilidad del buque, incluidas dos negaciones totales.",
       versiones: [
-        { quien: "MURDIONO — Marinero", ref: "murdiono", cita: "La filtración venía de un tubo de dentro de la bodega de carga. No filtraba siempre pero cuando filtraba el oficial coreano la arreglaba. El día del incidente no había pérdida de ese tubo.", donde: "Acta 31/08, P.8" },
+        { quien: "MURDIONO — Marinero", ref: "murdiono", cita: "La filtración venía de un tubo de dentro de la bodega de carga. No filtraba siempre pero cuando filtraba el oficial coreano la arreglaba. El día del incidente no había pérdida de ese tubo. El día del incidente se encontraban buscando la filtración en la bodega con un coreano que vino de tierra.", donde: "Acta 03/09, P.8" },
         { quien: "Kyongsu PARK — 1er Of. Puente coreano", ref: "primer-oficial-coreano", cita: "Sí, habíamos detectado que había agua, pero una vez que descargamos los pescados y verificamos no quedaba ningún rastro del agua.", donde: "Acta 02/09, P.9" },
         { quien: "Park KWANG JUN — Jefe Máq. coreano", ref: "maquinas-coreano", cita: "No. Si hubiéramos detectado o sospechado de algo que afecta la estabilidad del buque hubiéramos informado a la empresa, ya que eso implica una reparación mayor del buque.", donde: "Acta 01/09, P.8" },
         { quien: "Hoseon SHIN — Patrón de Pesca", ref: "patron-pesca", cita: "El año pasado en la zafra que se realizó cerca del polo sur, el buque quedó apretado entre los hielos. Si tengo que hacer una conjetura, la filtración tal vez fue en el casco y se produjo en ese incidente.", donde: "Acta 01/09, P.7" },
         { quien: "Igor ABDRAKHMANOV — 2° Of. Máquinas", ref: "segundo-maquinas", cita: "Tenía conocimiento de que en la bodega donde estaba el pescado ingresaba agua por unas tapas que aparentemente tenían problemas de estanqueidad.", donde: "Acta 28/08, P.10" },
         { quien: "Dmitrii FROLOV — 1er Oficial", ref: "primer-oficial", cita: "Nuestra teoría era que entraba por cubierta. […] No había ningún defecto en el buque. Todos los mecanismos estaban en perfectas condiciones.", donde: "Acta 27/08, P.10 y P.11" },
-        { quien: "RAVEL WATTIMURY — Marinero", ref: "ravel", cita: "No, no sabía de ninguna avería. Solo de la parte eléctrica de la refrigeración. Agua a la bodega tampoco entraba.", donde: "Acta 31/08, P.8" }
+        { quien: "RAVEL WATTIMURY — Marinero", ref: "ravel", cita: "No, no sabía de ninguna avería. Solo de la parte eléctrica de la refrigeración. Agua a la bodega tampoco entraba.", donde: "Acta 03/09, P.8" }
       ],
       analisis: "La versión de MURDIONO es la única que identifica un origen concreto y describe un patrón de reparación informal por parte del oficial coreano, sin registro ni intervención de los oficiales rusos, mientras el Capitán y el 1er Oficial declaran no haber logrado localizar nunca la filtración. Ese punto queda ahora directamente enfrentado: interrogado el oficial coreano, niega haber conocido cualquier avería o condición que afectara la estanqueidad, de modo que la conducta que MURDIONO le atribuye es incompatible con su propia declaración. Uno de los dos falta a la verdad, o bien el coreano no consideraba \"avería\" una pérdida que reparaba de manera rutinaria, lo que sería igualmente revelador del régimen de mantenimiento a bordo. El antecedente del casco apretado entre hielos aportado por el patrón coreano abre una línea de investigación estructural completamente inexplorada. La negativa de Park KWANG JUN queda además desmentida desde dentro de su propia línea: el 1er Oficial de Puente coreano confirma en primera persona del plural que \"habíamos detectado que había agua\". La negación absoluta de RAVEL es aislada y contradice ahora a ocho declarantes. La contradicción interna del 1er Oficial —\"ningún defecto\" y \"perfectas condiciones\" seguido de la admisión de la filtración en la pregunta siguiente— afecta la credibilidad general de su declaración.",
       resolucion: "Inspección subacuática y pericia del casco al reflotar, con especial atención a la zona de la bodega de carga y a posibles daños compatibles con presión de hielo. Requerir historial de clase, informes de inspección PSC, y registro de reparaciones. Carear o ampliar la declaración de MURDIONO y de Park KWANG JUN sobre la reparación del tubo de la bodega, exhibiéndole a este último la declaración del marinero."
@@ -1204,7 +1234,7 @@ window.ANALISIS = {
         { quien: "Kyongsu PARK — coreano", ref: "primer-oficial-coreano", cita: "Dong Nam, primer oficial de puente, estoy embarcado en el Alpha Crux desde el 30 de marzo de 2025.", donde: "Acta 02/09, P.3" },
         { quien: "Park KWANG JUN — sobre la relación jerárquica", ref: "maquinas-coreano", cita: "Yo como técnico de máquina tengo la función de asistencia y supervisión de los oficiales rusos, que es el jefe de máquina y 2 oficiales más, quienes cumplen la tarea cotidiana del buque.", donde: "Acta 01/09, P.3" },
         { quien: "Kyongsu PARK — sobre la relación jerárquica", ref: "primer-oficial-coreano", cita: "Nosotros nos involucramos en la tarea específica de la pesca entonces nosotros nunca les podemos dar órdenes a los oficiales rusos, eso es natural. Pero con los indonesios interactuamos en las maniobras de pesca, incluso damos órdenes.", donde: "Acta 02/09, P.14" },
-        { quien: "Marineros indonesios", ref: "agus", cita: "Recibo órdenes del jefe de máquinas coreano, Park KWANG JUN.", donde: "Actas 31/08 — AGUS P.9, RAVEL P.9, MURDIONO P.9" }
+        { quien: "Marineros indonesios", ref: "agus", cita: "Recibo órdenes del jefe de máquinas coreano, Park KWANG JUN.", donde: "Actas 03/09 — AGUS P.9, RAVEL P.9, MURDIONO P.9" }
       ],
       analisis: "Lo que empezó como una duda sobre la jefatura de máquinas resultó ser un patrón: el buque tenía dos jefes de máquinas y dos primeros oficiales de puente, uno por la línea rusa del armador OO Vodoley y otro por la línea coreana de Dong Nam. En máquinas, Ivanov YURI y Park KWANG JUN se presentan alternativamente con el mismo cargo, el coreano se define además como \"técnico\" y los tres marineros indonesios declaran recibir órdenes de él y no de la línea rusa. En puente, Dmitrii FROLOV y Kyongsu PARK ostentan idéntico cargo. Y los dos oficiales coreanos describen posiciones opuestas frente a la misma oficialidad rusa: Park KWANG JUN afirma ejercer \"asistencia y supervisión\" sobre ella, incluido el jefe de máquinas, mientras Kyongsu PARK sostiene que \"nunca les podemos dar órdenes a los oficiales rusos\". Ambos coinciden, en cambio, en que sí mandan sobre la tripulación indonesia. La cuestión no es nominal: de ella depende a quién correspondía autorizar y supervisar los trasvases de combustible, controlar la estanqueidad, responder por las reparaciones ejecutadas en puerto y cubrir la guardia de puente que nadie ejercía.",
       resolucion: "Requerir al armador y a la empresa Dong Nam el rol de tripulación, los contratos de embarque y los certificados de competencia de los cuatro oficiales involucrados, con determinación expresa del cargo, las funciones y la línea de dependencia de cada uno. Aclarar por ampliación de declaración la relación jerárquica real entre la línea rusa y la coreana, y en particular la contradicción entre los propios oficiales coreanos sobre su autoridad frente a la oficialidad rusa. Corregir la rotulación de las actas."
@@ -1231,15 +1261,15 @@ window.ANALISIS = {
       titulo: "Indagación desigual sobre consumo de alcohol",
       gravedad: "media",
       eje: "Validez formal del expediente",
-      resumen: "La pregunta sobre consumo de alcohol se formuló a seis declarantes y se omitió respecto de los tres oficiales directamente involucrados.",
+      resumen: "La pregunta sobre consumo de alcohol se formuló a ocho declarantes y se omitió respecto de los tres oficiales directamente involucrados.",
       versiones: [
-        { quien: "Se preguntó a", cita: "1er Oficial FROLOV (ampliación, P.7 y P.8), 3° Of. Máquinas German IVAN (P.8b), MURDIONO (P.11), patrón de pesca Hoseon SHIN (P.10 y P.11), jefe de máquinas coreano Park KWANG JUN (P.4) y 1er Of. de Puente coreano Kyongsu PARK (P.15 y P.16).", donde: "Actas 31/08, 01/09 y 02/09" },
-        { quien: "NO se preguntó a", cita: "Capitán Andrei BELIKOV, Jefe de Máquinas Ivanov YURI, 2° Of. de Máquinas Igor ABDRAKHMANOV, marineros RAVEL y AGUS.", donde: "Actas 27/08 y 28/08" },
+        { quien: "Se preguntó a", cita: "1er Oficial FROLOV (ampliación, P.7 y P.8), 3° Of. Máquinas German IVAN (P.8b), MURDIONO (P.11), RAVEL (P.11), AGUS PRIYANTO (P.11), patrón de pesca Hoseon SHIN (P.10 y P.11), jefe de máquinas coreano Park KWANG JUN (P.4) y 1er Of. de Puente coreano Kyongsu PARK (P.15 y P.16).", donde: "Actas 03/09, 01/09, 02/09 y 03/09" },
+        { quien: "NO se preguntó a", cita: "Capitán Andrei BELIKOV, Jefe de Máquinas Ivanov YURI y 2° Of. de Máquinas Igor ABDRAKHMANOV.", donde: "Actas 27/08 y 28/08" },
         { quien: "Hoseon SHIN — Patrón de Pesca", ref: "patron-pesca", cita: "Que sí pero no a bordo, en la ciudad.", donde: "Acta 01/09, P.10" },
         { quien: "Park KWANG JUN — Jefe Máq. coreano", ref: "maquinas-coreano", cita: "Yo no tomo alcohol, soy muy creyente por eso no bebo alcohol.", donde: "Acta 01/09, P.4" },
         { quien: "Kyongsu PARK — 1er Of. Puente coreano", ref: "primer-oficial-coreano", cita: "Yo no bebo alcohol. […] [Sobre el resto de la tripulación] No, a nadie.", donde: "Acta 02/09, P.15 y P.16" }
       ],
-      analisis: "La omisión es significativa porque afecta precisamente a los tres oficiales cuya conducta está en discusión: el Capitán, el Jefe de Máquinas y el 2° Oficial de Máquinas, que era quien estaba de guardia y operó las válvulas. El único declarante que admite consumo lo hizo en la ciudad y no se encontraba a bordo. Nótese además que las preguntas sobre alcohol aparecen sólo en las actas tomadas a partir del 31 de agosto, es decir, se incorporaron al cuestionario después de las primeras declaraciones, lo que sugiere que la línea de indagación surgió avanzada la instrucción y no se retrotrajo a los ya declarados.",
+      analisis: "La omisión sigue siendo significativa porque afecta a los tres oficiales cuya conducta está en discusión: el Capitán, el Jefe de Máquinas y el 2° Oficial de Máquinas, que era quien estaba de guardia y operó las válvulas. El único declarante que admite consumo lo hizo en la ciudad y no se encontraba a bordo. Las actas ampliadas del 3 de septiembre incorporaron la pregunta sobre alcohol a RAVEL y AGUS PRIYANTO, pero no se retrotrajo a los oficiales rusos ya declarados.",
       resolucion: "Ampliar declaración al Capitán, al Jefe de Máquinas y al 2° Oficial de Máquinas incluyendo la indagación sobre consumo de alcohol y sustancias en las 24 horas previas. Dejar constancia expresa de que a la fecha resulta materialmente imposible practicar pruebas de alcoholemia con valor probatorio, y de las razones de la demora."
     },
     {

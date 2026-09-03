@@ -14,11 +14,11 @@ window.SUMARIO = {
     destinatario: "SEÑOR PREFECTO DEL PUERTO DE MONTEVIDEO",
     destinatarioCargo: "Capitán de Navío (CP) Néstor LEMOS",
     estado: "Borrador vivo — se actualiza con cada acta o documento incorporado al análisis",
-    notaFormal: "Este texto reproduce la estructura del oficio de elevación. No se incorporan fotografías ni planillas de cámara: a la fecha no obran en el expediente registros fotográficos o audiovisuales de la fase crítica del siniestro. La reconstrucción se apoya en actas, informe del oficial actuante, informe del supervisor de CONMO, exposición del práctico de seguridad y nota de cronología."
+    notaFormal: "Este texto reproduce la estructura del oficio de elevación. No se incorporan fotografías ni planillas de cámara: a la fecha no obran en el expediente registros fotográficos o audiovisuales de la fase crítica del siniestro. La reconstrucción se apoya en actas, informe del oficial actuante, informe del supervisor de CONMO, exposición del práctico de seguridad, nota de cronología y planos del buque."
   },
 
   introduccion:
-    "Me dirijo a Ud. a efectos de elevar las actuaciones realizadas hasta la fecha en relación con el hundimiento del buque «Alpha Crux», N° OMI 9024621, bandera rusa, ocurrido el 25 de agosto de 2026 en el Muelle B, hangar 7, del Puerto de Montevideo. El presente constituye un borrador de respuesta a la investigación, elaborado sobre la base de las doce actas de información sumaria tomadas, el informe del Oficial Comandante de Guardia, el informe del supervisor de CONMO, la exposición del Práctico de Seguridad y la nota de cronología de la respuesta. Quedan diligencias pendientes cuya práctica puede modificar, confirmar o descartar las conclusiones provisorias que se formulan.",
+    "Me dirijo a Ud. a efectos de elevar las actuaciones realizadas hasta la fecha en relación con el hundimiento del buque «Alpha Crux», N° OMI 9024621, bandera rusa, ocurrido el 25 de agosto de 2026 en el Muelle B, hangar 7, del Puerto de Montevideo. El presente constituye un borrador de respuesta a la investigación, elaborado sobre la base de las doce actas de información sumaria tomadas —incluidas las actas ampliadas de los tres marineros indonesios del 3 de septiembre—, el informe del Oficial Comandante de Guardia, el informe del supervisor de CONMO, la exposición del Práctico de Seguridad, la nota de cronología de la respuesta y los planos del buque. Quedan diligencias pendientes cuya práctica puede modificar, confirmar o descartar las conclusiones provisorias que se formulan.",
 
   situacion: [
     "El día 25 de agosto de 2026, aproximadamente a las 19:30 horas, el CS (PM) Willian FERRAO, supervisor del Centro de Control Marítimo (CONMO), recibió un llamado de la empresa SAAM Towage solicitando autorización para asistir al pesquero RS «Alpha Crux» atracado en el hangar 7, «por solicitud de la Agencia Marítima», porque el buque se encontraba escorado. FERRAO informó de inmediato al Teniente de Navío (CP) Adrián MOLESINI, Oficial Comandante de Guardia de la Prefectura del Puerto de Montevideo, y al Práctico de Seguridad Portuaria PLADA. Ningún tripulante ni oficial del Alpha Crux notificó el siniestro a la autoridad marítima. Queda acreditada la cadena agencia→SAAM→CONMO→Prefectura; queda sin establecer quién y cuándo informó a la Agencia Marítima.",
@@ -47,7 +47,7 @@ window.SUMARIO = {
     },
     {
       titulo: "Sobre las reparaciones en puerto",
-      texto: "Conviven al menos dos intervenciones distintas: el cambio de tres tramos de caño de refrigeración del motor principal el 22 de agosto, ejecutado por el jefe de máquinas coreano con tres marineros indonesios; y trabajos del taller portuario el 24 de agosto sobre el enfriamiento del reductor del eje, con desconexión de la bomba de agua de mar. El Capitán y el Jefe de Máquinas rusos niegan toda reparación. El jefe de máquinas coreano afirma que el ruso «seguro que sabía»."
+      texto: "Conviven al menos dos intervenciones distintas: el cambio de tres tramos de caño de refrigeración del motor principal el 22 de agosto, ejecutado por el jefe de máquinas coreano con los tres marineros indonesios —ahora confirmado por los tres en sus actas ampliadas del 3 de septiembre, con detalles técnicos (mordazas, tornillos, pruebas con válvulas)—; y trabajos del taller portuario el 24 de agosto sobre el enfriamiento del reductor del eje. El Capitán y el Jefe de Máquinas rusos niegan toda reparación. El jefe de máquinas coreano afirma que el ruso «seguro que sabía»."
     },
     {
       titulo: "Sobre el trabajo en caliente el día del hundimiento",
@@ -69,7 +69,7 @@ window.SUMARIO = {
 
   sucesion: [
     { h: "Estadía en puerto", t: "Ingreso anticipado por vía de agua en bodega (fecha de arribo no acreditada). Desmantelamiento interior sin localizar el punto de ingreso. Descarga de pescado y carnada." },
-    { h: "22 ago", t: "Cambio de tres tramos de caño de refrigeración del motor principal (Park KWANG JUN + tres marineros indonesios). Prueba de presión satisfactoria según el declarante." },
+    { h: "22 ago", t: "Cambio de caño de refrigeración del motor principal (Park KWANG JUN + tres marineros indonesios). Prueba satisfactoria según Park KJ y confirmada por MURDIONO, RAVEL y AGUS en actas ampliadas del 3/09." },
     { h: "24 ago", t: "Tres trasvases entre tanques 9 por orden del 1er Oficial. Taller portuario interviene el enfriamiento del reductor del eje; se desconecta la bomba de agua de mar." },
     { h: "25 ago ≈16:00", t: "Personal venido de Corea soldaba a bordo (sólo lo declara Park KWANG JUN). El Jefe de Máquinas sitúa el inicio de la escora sobre esta hora." },
     { h: "≈16:30", t: "Park KWANG JUN inspecciona la sala de máquinas: «estaba todo correcto»." },
@@ -90,7 +90,7 @@ window.SUMARIO = {
     "Testigos pendientes: Konstantin TOKMIN, Evgenii SIIUKOV y el personal venido de Corea que soldaba a bordo el 25 de agosto.",
     "Defectos formales del expediente: actas con intérprete en horarios solapados; dos actas con hora de cierre anterior a la apertura; pregunta del cuestionario del patrón de pesca reproducida en el acta del 1er Oficial de Puente coreano; saltos de numeración en cuestionarios.",
     "Discrepancias horarias entre el informe de FERRAO, el de MOLESINI, la exposición de PLADA y la nota de cronología —en especial el zarpe del CARLON (20:37 vs. 22:00) y la decisión de retirar el SURESTE 707—.",
-    "Ningún registro objetivo de la fase crítica incorporado al expediente: sin CCTV, sin grabaciones de CONMO contrastadas, sin tráfico VHF, sin registros telefónicos de la agencia ni de SAAM, sin datos meteorológicos, sin documentación técnica del buque."
+    "Ningún registro objetivo de la fase crítica incorporado al expediente: sin CCTV, sin grabaciones de CONMO contrastadas, sin tráfico VHF, sin registros telefónicos de la agencia ni de SAAM, sin datos meteorológicos. Se incorporaron planos del buque, pendiente de verificar si reflejan la configuración actual."
   ],
 
   conclusiones: [
