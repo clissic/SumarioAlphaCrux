@@ -452,7 +452,7 @@ body{
    INCONGRUENCIAS
    ============================================================ */
 .inc-filters{ display:flex; flex-wrap:wrap; gap:7px; margin-bottom:22px; }
-.inc-list{ display:flex; flex-direction:column; gap:14px; }
+.inc-list, #docsList{ display:flex; flex-direction:column; gap:14px; }
 .inc{
   background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
 }
@@ -588,7 +588,7 @@ body{
    ============================================================ */
 .sumario-toolbar{
   display:flex; flex-wrap:wrap; gap:10px; align-items:center;
-  margin-bottom:18px; max-width:920px;
+  margin-bottom:18px; width:100%;
 }
 .sumario-toolbar .chip{ cursor:default; }
 .sumario-toc{
@@ -602,7 +602,8 @@ body{
 .sumario-toc a:hover{ color:var(--accent-2); border-color:var(--accent); }
 
 .sumario-doc{
-  max-width:920px;
+  width:100%;
+  max-width:none;
   background:linear-gradient(180deg, #161f2b 0%, #121a24 100%);
   border:1px solid var(--line-2);
   border-radius:var(--radius);

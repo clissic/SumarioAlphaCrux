@@ -777,43 +777,49 @@
     "conflicto": true
   },
   {
-    "fecha": "31 de agosto de 2026",
-    "hora": "16:30 – 17:00",
+    "fecha": "3 de septiembre de 2026",
+    "hora": "11:00",
     "fase": "instruccion",
     "titulo": "INTERROGATORIO — Marinero indonesio MURDIONO",
-    "texto": "Acta de información sumaria tomada por el AN (CP) Brian MUÑIZ, con la intérprete Verónica BRITOS. 12 preguntas.",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con la intérprete Verónica BRITOS. 13 preguntas. Incluye indagación sobre la reparación del caño de refrigeración del motor principal y precisa que el día del incidente se buscaba la filtración en la bodega con un coreano venido de tierra.",
     "fuente": "Acta de Información Sumaria — Marinero Indonesio MURDIONO",
     "ref": "murdiono",
     "etiquetas": [
-      "INTERROGATORIO"
+      "INTERROGATORIO",
+      "HECHOS NUEVOS"
     ],
-    "interrogatorio": true
+    "interrogatorio": true,
+    "destacado": true
   },
   {
-    "fecha": "31 de agosto de 2026",
-    "hora": "17:00 – 17:20",
-    "fase": "instruccion",
-    "titulo": "INTERROGATORIO — Marinero indonesio RAVEL WATTIMURY",
-    "texto": "Acta de información sumaria tomada por el AN (CP) Brian MUÑIZ, con la intérprete Verónica BRITOS. 11 preguntas.",
-    "fuente": "Acta de Información Sumaria — Marinero Indonesio RAVEL",
-    "ref": "ravel",
-    "etiquetas": [
-      "INTERROGATORIO"
-    ],
-    "interrogatorio": true
-  },
-  {
-    "fecha": "31 de agosto de 2026",
-    "hora": "17:20 – 17:40",
+    "fecha": "3 de septiembre de 2026",
+    "hora": "12:00",
     "fase": "instruccion",
     "titulo": "INTERROGATORIO — Marinero indonesio AGUS PRIYANTO",
-    "texto": "Acta de información sumaria tomada por el AN (CP) Brian MUÑIZ, con la intérprete Verónica BRITOS. 10 preguntas.",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con la intérprete Verónica BRITOS. 14 preguntas. Incluye indagación sobre alojamiento, alcohol, reparación del caño del motor principal (uniones con mordazas) y distinción entre el coreano ajeno que trajo la pieza y la empresa uruguaya de tres personas en la bodega.",
     "fuente": "Acta de Información Sumaria — Marinero Indonesio AGUS PRIYANTO",
     "ref": "agus",
     "etiquetas": [
-      "INTERROGATORIO"
+      "INTERROGATORIO",
+      "HECHOS NUEVOS"
     ],
-    "interrogatorio": true
+    "interrogatorio": true,
+    "destacado": true
+  },
+  {
+    "fecha": "3 de septiembre de 2026",
+    "hora": "12:40",
+    "fase": "instruccion",
+    "titulo": "INTERROGATORIO — Marinero indonesio RAVEL WATTIMURY",
+    "texto": "Acta de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con la intérprete Verónica BRITOS. 13 preguntas. Incluye indagación sobre alcohol y confirmación de la reparación del caño del motor principal con Park KWANG JUN; describe las uniones con tornillos.",
+    "fuente": "Acta de Información Sumaria — Marinero Indonesio RAVEL",
+    "ref": "ravel",
+    "etiquetas": [
+      "INTERROGATORIO",
+      "HECHOS NUEVOS"
+    ],
+    "interrogatorio": true,
+    "destacado": true
   },
   {
     "fecha": "1 de septiembre de 2026",

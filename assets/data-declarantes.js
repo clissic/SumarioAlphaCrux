@@ -10,7 +10,7 @@ window.CASO = {
     eslora: "52,35 m",
     manga: "9,85 m",
     armador: "OO Vodoley",
-    agencia: "Oriental Shipping (Sr. Daniel URRESTARAZU)",
+    agencia: "Oriental Shipping (Sr. Daniel URRESTARAZU LEINDEKAR)",
     lugar: "Muelle B, hangar 7 — Puerto de Montevideo",
     fecha: "25 de agosto de 2026",
     combustible: "≈300–303 t de gasoil a bordo",
@@ -20,8 +20,7 @@ window.CASO = {
   instructores: [
     { nombre: "Capitán de Corbeta (CP) Carlos RODRIGUEZ", rol: "Oficial Instructor" },
     { nombre: "Teniente de Navío (CP) Joaquín PÉREZ CORIA", rol: "Oficial Instructor — Jefe Depto. Despacho de Buques" },
-    { nombre: "Teniente de Navío (CP) Adrián MOLESINI", rol: "Oficial Instructor — actuó en la escena como Oficial Comandante de Guardia" },
-    { nombre: "Alférez de Navío (CP) Brian MUÑIZ", rol: "Oficial actuante — primeras versiones de actas indonesias (31/08)" }
+    { nombre: "Teniente de Navío (CP) Adrián MOLESINI", rol: "Oficial Instructor — actuó en la escena como Oficial Comandante de Guardia" }
   ],
 
   declarantes: [
@@ -774,6 +773,61 @@ window.CASO = {
         { tipo: "alerta", t: "Reitera el régimen de 12 horas de trabajo por 6 de descanso y añade que es el patrón de pesca coreano quien determina el fin de la jornada, lo que evidencia una cadena de mando paralela a la de los oficiales rusos." },
         { tipo: "hecho", t: "Confirma la reparación del caño de refrigeración del motor principal. Aporta detalles técnicos: se suplantó un tramo, se unió mediante mordazas, se probó abriendo las válvulas. Precisa que cuando ocurrió el siniestro el motor estaba apagado, por lo que no pasaba agua por ese caño." },
         { tipo: "hecho", t: "Confirma que el caño fue traído por un coreano ajeno al buque y que la empresa uruguaya (3 personas) trabajó en la bodega de carga, distinguiendo claramente entre ambas intervenciones externas." }
+      ]
+    },
+
+    /* ----------------------------------------------------------------- 13 */
+    {
+      id: "urrestarazu",
+      nombre: "Daniel URRESTARAZU LEINDEKAR",
+      cargo: "Agente marítimo — Oriental Shipping",
+      cargoCorto: "Agente URRESTARAZU",
+      grupo: "terceros",
+      ficha: {
+        Nacionalidad: "Uruguaya",
+        "C.I.": "1.885.820-3",
+        "Estado civil": "Casado",
+        Dirección: "Av. Paname M222 S16 — El Pinar, Canelones",
+        Profesión: "Agente marítimo",
+        Agencia: "Oriental Shipping",
+        "Nota de grafía": "En el cuerpo del acta figura también «ARRESTARAZU»; CI y pie coinciden con URRESTARAZU"
+      },
+      acta: {
+        fecha: "3 de septiembre de 2026",
+        inicio: "15:10",
+        cierre: "16:00",
+        oficial: "TN (CP) Joaquín PÉREZ CORIA",
+        interprete: "Sin intérprete (declaración en español)",
+        lugar: "Prefectura del Puerto de Montevideo",
+        preguntas: 13,
+        archivo: "ACTA DE INFORMACION SUMARIA - Agente Maritimo.docx"
+      },
+      posicion: "No estaba a bordo. Recibió aviso a las 18:55; llegó al muelle ≈19:45 y permaneció durante las maniobras de salvamento hasta después de la colocación de barreras OSRO.",
+      tesis: "Se enteró por el inspector coreano Sr. MOON, quien a las 18:55 le envió una foto del buque escorado atribuyendo la causa a un trasvase incorrecto de los marineros rusos y pidiendo remolcador. Él movilizó SAAM Towage ≈19:15, Tecno Dive/CARLON a las 19:56 y OSRO Nueva Era a las 20:53. Desconoce la vía de agua de bodega y los trabajos técnicos a bordo; el alojamiento de los indonesios lo decide el armador a través de MOON.",
+      qa: [
+        { n: 1, p: "Por su nombre, nacionalidad, documento de identidad, estado civil, dirección y profesión.", r: "Daniel ARRESTARAZU LEINDEKAR, uruguayo, CI: 1.885.820-3, casado, Av. Paname M222 S16 — El Pinar — Canelones, agente marítimo." },
+        { n: 2, p: "Para que diga si sabe porqué está siendo interrogado.", r: "Que sí." },
+        { n: 3, p: "Para que diga qué rol cumple para el buque.", r: "Soy el Agente Marítimo del buque." },
+        { n: 4, p: "Para que narre los hechos sucedidos el día del hundimiento del B/P Alpha Crux.", r: "Ese día me enteré de la situación por un inspector coreano que está a bordo, Sr. MOON. A la hora 18:55 él me manda un mensaje con una foto del barco muy escorado. En el mensaje decía que los marineros rusos transfirieron el combustible incorrectamente y me pidió un remolcador para que, apoyándolo en el Sur Este 707, evitara que se siguiera escorando. En ese momento llamé a SAAM Towage, aproximadamente a las 19:15. Me atendió la guardia y le informé que teníamos un barco con un problema y se estaba escorando, que necesitábamos un remolcador para aguantar el Sur Este 707 y detener la escora del Alpha Crux. Intenté llamar a Eduardo SUEIRO, baqueano del puerto que realiza maniobras, no logrando comunicarme con él hasta las 19:52, hora en la que recién pude hablar con él. Calculo que habré llegado al muelle del buque a las 19:45; yo cuando hablé con SUEIRO ya estaba en el muelle. SUEIRO llamó al Práctico de Seguridad de Guardia que era el CM PLADA y llegaron casi juntos aproximadamente a las 20:30. También llamé a Federico DA CUNHA de Tecno Dive a las 19:56, para que me asistieran con buzos y con el CARLON. Luego de que estaban presentes todos los actores entendidos en la maniobra comenzaron a intentar maniobras para recuperar el barco. Realizaron una maniobra con el CARLON: los buzos se tiraron al agua y envolvieron parte de la popa del Alpha Crux con una linga para levantarlo, pero no dio efecto positivo porque el buque subía muy poco debido a la capacidad de la grúa del CARLON. Aproximadamente a las 22:30 se abandonaron los intentos de levantar el Alpha Crux con el CARLON porque estaba dañando al Sur Este 707. Luego y por un tema de seguridad, entre el práctico PLADA, el baqueano SUEIRO y el representante del armador del Sur Este 707, el Sr. MOON, decidieron sacar al Sur Este 707. Los remolcadores de SAAM Towage MANEADOR y CRISTOBAL lo sacan de la banda del Alpha Crux y lo ponen a la banda del Sur Este 701. Luego de que la OSRO colocara las barreras de contención entiendo que no había más nada para hacer y me retiro del lugar.", tags: ["CADENA DE AVISO", "MOON", "18:55", "causa prematura"], clave: true },
+        { n: 5, p: "Para que diga en qué momento se designa a la OSRO y cuándo se hace presente en el lugar de los hechos.", r: "A la hora 20:53 llamo a la OSRO, Nueva Era, y les digo que los necesito en el lugar porque el buque se estaba escorando y no sabía cómo iba a terminar eso. Hablé con Fabián SOCA. Al momento en que sacan al Sur Este 707 él comienza con la colocación de las barreras de contención de hidrocarburos.", tags: ["OSRO", "contaminación", "20:53"], clave: true },
+        { n: 6, p: "Para que diga si estaba en conocimiento de que el buque ingresó a puerto por una aparente filtración de agua en la bodega de carga.", r: "No, nunca me informaron de esto. Cuando solicitan el ingreso a puerto el motivo que mencionan es la descarga de pescado.", tags: ["vía de agua", "CONTRADICCIÓN", "ingreso"], clave: true },
+        { n: 7, p: "Para que diga si estaba en conocimiento de los trabajos que se estaban realizando a bordo. En caso afirmativo, nómbrelos.", r: "Lo único que le pidieron a la agencia fue un trabajo de libre de gases para trabajos menores en cubierta. Esos trabajos los estaba haciendo la tripulación.", tags: ["trabajos en puerto"] },
+        { n: 8, p: "Para que diga si estaba en conocimiento de que embarcó una empresa uruguaya a trabajar sobre el sistema de refrigeración de la bodega de carga.", r: "No, a la agencia no le pidieron nada.", tags: ["terceros", "empresa uruguaya"], clave: true },
+        { n: 9, p: "Para que diga si estaba en conocimiento del trabajo que se realizó en el sistema de refrigeración del motor principal.", r: "No, a la agencia no le informaron ni le pidieron nada.", tags: ["caño refrigeración"] },
+        { n: 10, p: "Para que diga si se encontraba trabajando personal coreano externo al buque, quiénes son estas personas, cuál es su función y a quién responden.", r: "Desconozco la tarea del Sr. MOON a bordo; sí estoy en conocimiento de que él está al tanto de las reparaciones pero desconozco el alcance de su trabajo.", tags: ["MOON", "TERCEROS", "soldadura"], clave: true },
+        { n: 11, p: "Para que diga por qué no se alojó a los tripulantes indonesios en hotel, siendo que en la póliza de seguro del buque establece que el mismo cubre todos los gastos que puedan surgir relacionados a la investigación de incidentes marítimos.", r: "Como Agencia Marítima desconozco las cláusulas menores de la póliza del seguro, y por otro lado, el que debe tomar esa decisión es el armador a través del Sr. MOON.", tags: ["condiciones náufragos", "MOON"], clave: true },
+        { n: 12, p: "Para que diga si hay algún hecho relacionado con el incidente que no haya sido preguntado y que considere importante aclarar.", r: "No." },
+        { n: 13, p: "Para que diga si hay algún hecho relacionado con el incidente que no haya sido preguntado y que considere importante aclarar.", r: "No." }
+      ],
+      conclusiones: [
+        { tipo: "critico", t: "Cierra el eslabón faltante de la cadena de aviso: a las 18:55 el inspector coreano Sr. MOON le envió un mensaje con foto del buque escorado. Él llamó a SAAM Towage ≈19:15; CONMO registró el pedido de SAAM a las 19:30. Queda acreditada la secuencia MOON → agencia → SAAM → CONMO → Prefectura." },
+        { tipo: "critico", t: "La atribución prematura de causa al «error de trasvase» no nació en la agencia: proviene del mensaje de MOON a las 18:55 («los marineros rusos transfirieron el combustible incorrectamente»). URRESTARAZU la reprodujo ante MOLESINI a las 20:00. La tesis que orientó el expediente inicial tiene autor identificado y hora." },
+        { tipo: "hecho", t: "Aporta horarios concretos de su actuación: llegada al muelle ≈19:45; contacto con SUEIRO a las 19:52; llamado a Tecno Dive / Federico DA CUNHA a las 19:56; arribo de SUEIRO y PLADA ≈20:30; llamado a OSRO Nueva Era (Fabián SOCA) a las 20:53; abandono de la maniobra del CARLON ≈22:30." },
+        { tipo: "contradiccion", t: "Sobre el retiro del SURESTE 707: atribuye la decisión a PLADA, SUEIRO y MOON (representante del armador del 707), no a sí mismo. PLADA, en cambio, le atribuyó a él la indicación a las 23:30. La hora que da (≈22:30, abandono del CARLON) se alinea más con FERRAO/MOLESINI (22:45–22:57) que con PLADA." },
+        { tipo: "alerta", t: "Introduce al Sr. MOON como figura central aún no interrogada: inspector coreano a bordo, remitente del aviso 18:55, representante del armador del SURESTE 707, al tanto de las reparaciones, y quien —según el agente— decide el alojamiento de los náufragos. Es el testigo externo de mayor valor del expediente." },
+        { tipo: "hecho", t: "La agencia no fue informada de la vía de agua en bodega: el motivo declarado al solicitar ingreso fue descarga de pescado. Tampoco le pidieron intervención para la empresa uruguaya de refrigeración ni para el cambio de caños del motor; sólo un libre de gases para trabajos menores en cubierta ejecutados por la tripulación." },
+        { tipo: "alerta", t: "Sobre el alojamiento de los indonesios en el SURESTE 701 frente al hotel de la línea coreana: remite la decisión al armador a través de MOON y declara desconocer las cláusulas de la póliza. La disparidad de trato queda sin justificación documental en el expediente." },
+        { tipo: "alerta", t: "El llamado a OSRO a las 20:53 —más de dos horas antes de la activación formal del plan a las 23:10— acredita que la agencia ya anticipaba riesgo de contaminación, pero las barreras recién se colocaron al retirar el SURESTE 707." }
       ]
     }
   ]
