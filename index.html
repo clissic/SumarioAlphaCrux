@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sumario Alpha Crux — Análisis interactivo de la investigación</title>
+<link rel="stylesheet" href="assets/vendor/leaflet.css">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -50,6 +51,9 @@
       </button>
       <button class="nav-item" data-view="documentos">
         <span class="ni-ico">▤</span><span class="ni-lbl">Documentos base</span>
+      </button>
+      <button class="nav-item" data-view="viento">
+        <span class="ni-ico">≋</span><span class="ni-lbl">Viento y escenario</span>
       </button>
       <button class="nav-item" data-view="sumario">
         <span class="ni-ico">¶</span><span class="ni-lbl">Sumario (borrador)</span>
@@ -202,9 +206,32 @@
       <section class="view" id="view-documentos">
         <div class="view-head">
           <h2>Documentos base de la investigación</h2>
-          <p>Piezas del expediente distintas de las actas: el informe del oficial que actuó en la escena, el informe del supervisor de CONMO, la exposición del Práctico de Seguridad, la nota de cronología de la respuesta y los planos del buque.</p>
+          <p>Piezas del expediente distintas de las actas: informes, exposición del práctico, cronología, planos, datos de viento y el rol de tripulación.</p>
         </div>
         <div id="docsList"></div>
+      </section>
+
+      <!-- ---------- VIENTO Y ESCENARIO ---------- -->
+      <section class="view" id="view-viento">
+        <div class="view-head">
+          <h2>Viento y escenario náutico</h2>
+          <p>Posición del buque sobre OpenSeaMap con encabezamiento 305°, y representación interactiva del viento según la serie Telemetry+ (Nettra) del Puerto de Montevideo. La dirección indica de dónde viene el viento.</p>
+        </div>
+        <div class="wind-panel">
+          <div class="wind-controls">
+            <label class="wind-label" for="windTime">Horario
+              <select id="windTime"></select>
+            </label>
+            <div class="wind-readout" id="windReadout"></div>
+            <div class="wind-meta" id="windMeta"></div>
+          </div>
+          <div class="wind-analysis" id="windAnalysis"></div>
+        </div>
+        <div class="wind-map-shell">
+          <div id="windMap" class="wind-map"></div>
+          <canvas id="windParticles" class="wind-particles" aria-hidden="true"></canvas>
+          <div class="wind-map-hint">OpenSeaMap · partículas = dirección hacia la que sopla · rumbo del buque 305°</div>
+        </div>
       </section>
 
       <!-- ---------- SUMARIO BORRADOR ---------- -->
@@ -230,10 +257,12 @@
   </main>
 </div>
 
+<script src="assets/vendor/leaflet.js"></script>
 <script src="assets/data-declarantes.js"></script>
 <script src="assets/data-analisis.js"></script>
 <script src="assets/data-sumario.js"></script>
 <script src="assets/app.js"></script>
 <script src="assets/map.js"></script>
+<script src="assets/wind-map.js"></script>
 </body>
 </html>

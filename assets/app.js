@@ -26,6 +26,7 @@
     conclusiones: "Conclusiones posibles",
     pasos: "Posibles pasos a seguir",
     documentos: "Documentos base",
+    viento: "Viento y escenario náutico",
     sumario: "Sumario (borrador)",
     search: "Resultados de búsqueda"
   };
@@ -73,6 +74,8 @@
     q("#topbarTitle").textContent = VIEW_TITLES[view] || "";
     if (!opts.keepScroll) q("#scrollArea").scrollTop = 0;
     if (view === "mapa" && window.MAPA) window.MAPA.ensure();
+    if (view === "viento" && window.WIND_MAP) window.WIND_MAP.ensure();
+    else if (window.WIND_MAP) window.WIND_MAP.stop();
     q("#sidebar").classList.remove("open");
   }
   window.gotoView = show;
@@ -705,12 +708,43 @@
      DOCUMENTOS
      ============================================================ */
   function renderDocs() {
-    var TIPO = { informe: "chip-info", exposicion: "chip-purple", cronologia: "chip", planos: "chip-info" };
+    var TIPO = { informe: "chip-info", exposicion: "chip-purple", cronologia: "chip", planos: "chip-info", meteo: "chip-info", rol: "chip-purple" };
+    var vientoSeries = (AN.viento && AN.viento.series) || [];
+    var rolOficiales = (AN.rol && AN.rol.oficiales) || [];
     q("#docsList").innerHTML = AN.documentos.map(function (d) {
       var imgs = (d.imagenes || []).map(function (src) {
         return '<a href="' + esc(src) + '" target="_blank" rel="noopener">' +
           '<img src="' + esc(src) + '" alt="' + esc(d.titulo) + '" loading="lazy"></a>';
       }).join("");
+      var archivoCell = d.archivoUrl
+        ? '<a class="doc-file-link" href="' + esc(d.archivoUrl) + '" target="_blank" rel="noopener">' + esc(d.archivo) + "</a>"
+        : esc(d.archivo);
+      var rows = d.tabla || (d.useVientoTabla ? vientoSeries : null);
+      var tablaHtml = "";
+      if (rows && rows.length) {
+        tablaHtml = '<div class="inc-sec-h">Serie horaria</div>' +
+          '<div class="doc-table-wrap"><table class="doc-table">' +
+          "<thead><tr><th>Timestamp</th><th>Velocidad (nudos)</th><th>Dirección (°)</th></tr></thead><tbody>" +
+          rows.map(function (r) {
+            return "<tr><td>" + esc(r.ts) + "</td><td>" + esc(String(r.kn).replace(".", ",")) +
+              "</td><td>" + esc(String(r.dir)) + "</td></tr>";
+          }).join("") +
+          "</tbody></table></div>" +
+          '<p class="doc-table-note">Dirección = de dónde viene el viento. Fuente: ' +
+          esc((AN.viento && AN.viento.fuente) || "") + ".</p>";
+      }
+      if (d.useRolTabla && rolOficiales.length) {
+        tablaHtml += '<div class="inc-sec-h">Oficiales y roles nominales (crew list)</div>' +
+          '<div class="doc-table-wrap"><table class="doc-table">' +
+          "<thead><tr><th>N°</th><th>Nac.</th><th>Rank</th><th>Nombre</th><th>Embarque</th><th>Nota</th></tr></thead><tbody>" +
+          rolOficiales.map(function (r) {
+            return "<tr><td>" + r.n + "</td><td>" + esc(r.nat) + "</td><td>" + esc(r.rank) +
+              "</td><td>" + esc(r.name) + "</td><td>" + esc(r.aboard) + "</td><td>" + esc(r.nota) + "</td></tr>";
+          }).join("") +
+          "</tbody></table></div>" +
+          '<p class="doc-table-note">' + esc((AN.rol && AN.rol.notaIndonesios) || "") +
+          " Fuente: " + esc((AN.rol && AN.rol.fuente) || "") + ".</p>";
+      }
       return '<div class="inc" data-doc="' + d.id + '">' +
         '<button class="inc-head"><span class="inc-num">▤</span>' +
         '<span class="inc-hb"><h3>' + esc(d.titulo) + "</h3>" +
@@ -724,12 +758,13 @@
         "<dt>Cargo</dt><dd>" + esc(d.cargo) + "</dd>" +
         "<dt>Fecha</dt><dd>" + esc(d.fecha) + "</dd>" +
         "<dt>Destinatario</dt><dd>" + esc(d.destinatario) + "</dd>" +
-        "<dt>Archivo</dt><dd>" + esc(d.archivo) + "</dd></dl>" +
+        "<dt>Archivo</dt><dd>" + archivoCell + "</dd></dl>" +
         '<div class="inc-sec-h">Contenido relevante</div>' +
         '<ul class="doc-points">' + d.puntos.map(function (p) {
-          var alert = /^ALERTA/.test(p);
+          var alert = /^ALERTA/.test(p) || /^HALLAZGO/.test(p);
           return "<li" + (alert ? ' class="alert"' : "") + ">" + esc(p) + "</li>";
         }).join("") + "</ul>" +
+        tablaHtml +
         (imgs ? '<div class="inc-sec-h">Documento original</div><div class="doc-imgs">' + imgs + "</div>" : "") +
         "</div></div>";
     }).join("");
@@ -820,6 +855,14 @@
         act: function () { gotoDocumento(d.id); }
       });
     });
+    if (AN.viento) {
+      searchIndex.push({
+        grupo: "Viento y escenario", t: "Viento Telemetry+ · OpenSeaMap",
+        x: AN.viento.analisis, w: AN.viento.fuente,
+        blob: "viento openseamap " + AN.viento.analisis + " " + AN.viento.posLabel,
+        act: function () { show("viento"); }
+      });
+    }
     if (SUM) {
       searchIndex.push({
         grupo: "Sumario (borrador)", t: SUM.meta.asunto, x: SUM.introduccion,

@@ -118,9 +118,108 @@ window.ANALISIS = {
         "Permite contrastar las declaraciones sobre la ubicación de los generadores, bombas de achique y tablero eléctrico principal.",
         "ALERTA: No se ha verificado si estos planos corresponden exactamente a la configuración actual del buque o si hubo modificaciones posteriores a su construcción."
       ],
-      archivo: "Planos Alpha Crux.pdf"
+      archivo: "Planos Alpha Crux.pdf",
+      archivoUrl: "files/Planos Alpha Crux.pdf"
+    },
+    {
+      id: "meteo-viento",
+      titulo: "Datos meteorológicos de viento",
+      autor: "Telemetry+ (Nettra) — Puerto de Montevideo",
+      cargo: "Estación meteorológica portuaria",
+      fecha: "25–26 de agosto de 2026",
+      destinatario: "Expediente sumario",
+      tipo: "meteo",
+      resumen: "Serie horaria de velocidad y dirección del viento el día del siniestro. La dirección indica de dónde viene el viento. En la ventana crítica (≈16–19 h) el viento fue brisa débil (≈4–5 nudos) casi de popa respecto del encabezamiento 305° del buque.",
+      puntos: [
+        "Fuente: app Telemetry+ de Nettra, datos del Puerto de Montevideo.",
+        "Convención: los ángulos son la dirección de procedencia del viento (meteorológica), no hacia dónde sopla.",
+        "El 25/08 a las 16:27: 5,09 nudos desde 129°; a las 18:27: 4,41 nudos desde 134°.",
+        "Con encabezamiento del buque al rumbo 305°, ese viento relativo viene casi de popa (empuje axial), sin momento escorante significativo a babor.",
+        "La hipótesis del 2° Oficial de Máquinas —que el viento inclinó el buque— queda refutada por estos registros: brisa débil e incompatible con la escora observada a babor."
+      ],
+      archivo: "Datos meteorológicos de viento.pdf",
+      archivoUrl: "files/Datos meteorológicos de viento.pdf",
+      useVientoTabla: true
+    },
+    {
+      id: "rol-tripulacion",
+      titulo: "Rol de tripulación — F/V Alpha Crux (2026)",
+      autor: "Buque / armador",
+      cargo: "Crew list",
+      fecha: "2026 (lista a bordo)",
+      destinatario: "Expediente sumario",
+      tipo: "rol",
+      resumen: "Lista de 41 tripulantes con nacionalidad, cargo, pasaporte, libreta de embarque y fecha de embarque. Permite fijar cargos oficiales y cruzar nombres con las actas (grafías variantes incluidas).",
+      puntos: [
+        "41 personas: 10 rusos, 27 indonesios (todos rank Sailor) y 4 coreanos.",
+        "Oficialidad rusa: BELIKOV (CAP'T), FROLOV (CHIEF MATE), SHUKOV EVGENII (2nd mate), IVANOV YURY (Ch.Engineer), ABDRAKHMANOV IGOR (2nd engineer), GERMAN IVAN (3rd engineer), TOKMIN KONSTANTIN (Ch.fishmaster), MOLEV ANDREI (Boatswain), KOMANDIR SERGEY (Sailor), CHERNOV RUSLAN (cook).",
+        "HALLAZGO — Evgenii SIIUKOV del expediente figura en el rol como SHUKOV EVGENII, 2° Oficial de Puente (2nd mate). Konstantin TOKMIN figura como Ch.fishmaster (no sólo «encargado de procesamiento»).",
+        "ALERTA — Hoseon SHIN (SHIN HO SEON) figura como Guarantee engineer, no como patrón de pesca; el Ch.fishmaster del rol es TOKMIN. El cargo usado en las actas no coincide con el del crew list.",
+        "Coreanos: PARK KWANG JUN (Ch.Engineer), PARK KYONGSU (CHIEF MATE), KWON TAE GUN (CHIEF TRAL) y SHIN HO SEON (Guarantee engineer). KWON no ha declarado.",
+        "En el ejemplar obrante hay marcas manuscritas (V) junto a ABDRAKHMANOV IGOR y PARK KWANG JUN."
+      ],
+      archivo: "Rol de tirpulación.pdf",
+      archivoUrl: "files/Rol de tirpulación.pdf",
+      imagenes: ["files/Rol de tirpulación.jpg"],
+      useRolTabla: true
     }
   ],
+
+  /* ================================================================== */
+  /*  ROL DE TRIPULACIÓN (crew list 2026)                               */
+  /* ================================================================== */
+  rol: {
+    fuente: "F/V ALPHA-CRUX CREW LIST (2026)",
+    total: 41,
+    oficiales: [
+      { n: 1,  nat: "RUS", rank: "CAP'T", name: "BELIKOV ANDREI", aboard: "01.04.2026", nota: "Capitán — declarado" },
+      { n: 2,  nat: "RUS", rank: "CHIEF MATE", name: "FROLOV DMITRII", aboard: "11.04.2026", nota: "1er Oficial — declarado" },
+      { n: 3,  nat: "RUS", rank: "2nd mate", name: "SHUKOV EVGENII", aboard: "21.03.2026", nota: "Evgenii SIIUKOV en actas — pendiente" },
+      { n: 4,  nat: "RUS", rank: "Ch.Engineer", name: "IVANOV YURY", aboard: "01.04.2026", nota: "Jefe de Máquinas — declarado" },
+      { n: 5,  nat: "RUS", rank: "2nd engineer", name: "ABDRAKHMANOV IGOR", aboard: "01.04.2026", nota: "Declarado (marca V en el rol)" },
+      { n: 6,  nat: "RUS", rank: "3rd engineer", name: "GERMAN IVAN", aboard: "01.04.2026", nota: "Declarado" },
+      { n: 7,  nat: "RUS", rank: "Ch.fishmaster", name: "TOKMIN KONSTANTIN", aboard: "01.04.2026", nota: "Testigo clave — pendiente" },
+      { n: 8,  nat: "RUS", rank: "Boatswain", name: "MOLEV ANDREI", aboard: "22.07.2026", nota: "No declarado" },
+      { n: 9,  nat: "RUS", rank: "Sailor", name: "KOMANDIR SERGEY", aboard: "01.04.2026", nota: "No declarado" },
+      { n: 10, nat: "RUS", rank: "cook", name: "CHERNOV RUSLAN", aboard: "11.04.2026", nota: "No declarado" },
+      { n: 38, nat: "KOR", rank: "Guarantee engineer", name: "SHIN HO SEON", aboard: "26.07.2025", nota: "Hoseon SHIN — actas: Patrón de Pesca" },
+      { n: 39, nat: "KOR", rank: "Ch.Engineer", name: "PARK KWANG JUN", aboard: "03.08.2025", nota: "Declarado (marca V en el rol)" },
+      { n: 40, nat: "KOR", rank: "CHIEF MATE", name: "PARK KYONGSU", aboard: "30.03.2025", nota: "Declarado" },
+      { n: 41, nat: "KOR", rank: "CHIEF TRAL", name: "KWON TAE GUN", aboard: "18.06.2025", nota: "No declarado" }
+    ],
+    indonesios: 27,
+    notaIndonesios: "Números 11–37 del rol: 27 marineros indonesios con rank Sailor. Declarados: AGUS PRIYANTO, MURDIONO y RAVEL WATTIMURY."
+  },
+
+  /* ================================================================== */
+  /*  VIENTO Y ESCENARIO NÁUTICO                                        */
+  /* ================================================================== */
+  viento: {
+    fuente: "Telemetry+ (Nettra) — Puerto de Montevideo",
+    convencion: "La dirección en grados indica de dónde viene el viento.",
+    lat: -34.9005667,
+    lon: -56.2076167,
+    rumbo: 305,
+    posLabel: "S 34°54.034′  W 056°12.457′",
+    defaultIdx: 8,
+    series: [
+      { ts: "25/08/2026 0:27",  kn: 3.11, dir: 149 },
+      { ts: "25/08/2026 2:27",  kn: 3.48, dir: 153 },
+      { ts: "25/08/2026 4:27",  kn: 2.78, dir: 159 },
+      { ts: "25/08/2026 6:27",  kn: 4.36, dir: 119 },
+      { ts: "25/08/2026 8:27",  kn: 4.53, dir: 121 },
+      { ts: "25/08/2026 10:27", kn: 5.55, dir: 56 },
+      { ts: "25/08/2026 12:27", kn: 4.26, dir: 90 },
+      { ts: "25/08/2026 14:27", kn: 3.87, dir: 118 },
+      { ts: "25/08/2026 16:27", kn: 5.09, dir: 129 },
+      { ts: "25/08/2026 18:27", kn: 4.41, dir: 134 },
+      { ts: "25/08/2026 20:27", kn: 4.65, dir: 133 },
+      { ts: "25/08/2026 22:27", kn: 2.79, dir: 136 },
+      { ts: "26/08/2026 0:27",  kn: 6.75, dir: 74 },
+      { ts: "26/08/2026 2:27",  kn: 3.46, dir: 150 }
+    ],
+    analisis: "En la ventana crítica del siniestro (≈16–19 h del 25/08), el viento registrado fue brisa débil (4–5 nudos) desde ≈129–134°. Con el buque fondeado/atracado con encabezamiento 305°, ese viento llega casi de popa: el empuje es axial y no genera momento escorante a babor. La hipótesis del 2° Oficial de Máquinas queda refutada."
+  },
 
   /* ================================================================== */
   /*  LÍNEA DE TIEMPO                                                   */
@@ -1274,7 +1373,22 @@ window.ANALISIS = {
         { quien: "Marineros indonesios", ref: "agus", cita: "Recibo órdenes del jefe de máquinas coreano, Park KWANG JUN.", donde: "Actas 03/09 — AGUS P.9, RAVEL P.9, MURDIONO P.9" }
       ],
       analisis: "Lo que empezó como una duda sobre la jefatura de máquinas resultó ser un patrón: el buque tenía dos jefes de máquinas y dos primeros oficiales de puente, uno por la línea rusa del armador OO Vodoley y otro por la línea coreana de Dong Nam. En máquinas, Ivanov YURI y Park KWANG JUN se presentan alternativamente con el mismo cargo, el coreano se define además como \"técnico\" y los tres marineros indonesios declaran recibir órdenes de él y no de la línea rusa. En puente, Dmitrii FROLOV y Kyongsu PARK ostentan idéntico cargo. Y los dos oficiales coreanos describen posiciones opuestas frente a la misma oficialidad rusa: Park KWANG JUN afirma ejercer \"asistencia y supervisión\" sobre ella, incluido el jefe de máquinas, mientras Kyongsu PARK sostiene que \"nunca les podemos dar órdenes a los oficiales rusos\". Ambos coinciden, en cambio, en que sí mandan sobre la tripulación indonesia. La cuestión no es nominal: de ella depende a quién correspondía autorizar y supervisar los trasvases de combustible, controlar la estanqueidad, responder por las reparaciones ejecutadas en puerto y cubrir la guardia de puente que nadie ejercía.",
-      resolucion: "Requerir al armador y a la empresa Dong Nam el rol de tripulación, los contratos de embarque y los certificados de competencia de los cuatro oficiales involucrados, con determinación expresa del cargo, las funciones y la línea de dependencia de cada uno. Aclarar por ampliación de declaración la relación jerárquica real entre la línea rusa y la coreana, y en particular la contradicción entre los propios oficiales coreanos sobre su autoridad frente a la oficialidad rusa. Corregir la rotulación de las actas."
+      resolucion: "El rol de tripulación (crew list 2026) ya está incorporado al expediente y confirma la duplicación de cargos (dos CHIEF MATE y dos Ch.Engineer). Contrastar con contratos de embarque y certificados de competencia; aclarar por ampliación la relación jerárquica real entre la línea rusa y la coreana. Corregir la rotulación de las actas."
+    },
+    {
+      id: "i22",
+      titulo: "El rol contradice el cargo de Hoseon SHIN y sitúa a TOKMIN como Ch.fishmaster",
+      gravedad: "alta",
+      eje: "Cadena de mando",
+      resumen: "El crew list identifica a SHIN HO SEON como Guarantee engineer y a TOKMIN KONSTANTIN como Ch.fishmaster; las actas tratan a SHIN como patrón de pesca.",
+      versiones: [
+        { quien: "Crew list F/V Alpha Crux (2026)", ref: "rol-tripulacion", cita: "N° 38 SHIN HO SEON — Guarantee engineer · N° 7 TOKMIN KONSTANTIN — Ch.fishmaster · N° 41 KWON TAE GUN — CHIEF TRAL · N° 3 SHUKOV EVGENII — 2nd mate.", donde: "Rol de tirpulación.pdf" },
+        { quien: "Hoseon SHIN — en acta", ref: "patron-pesca", cita: "Dong Nam, patrón de pesca, yo trabajé en este barco desde hace dos años […] Lo relacionado con la captura de los peces, la actividad pesquera.", donde: "Acta 01/09, P.3 y P.4" },
+        { quien: "Dmitrii FROLOV — sobre TOKMIN", ref: "primer-oficial", cita: "En puente había otra persona, el encargado del procesamiento del pescado, Konstantin TOKMIN.", donde: "Ampliación 31/08, P.4" },
+        { quien: "Andrei BELIKOV — sobre SIIUKOV", ref: "capitan", cita: "el 2ndo oficial, Evgenii SIIUKOV, realiza los cálculos de estabilidad.", donde: "Acta 27/08, P.20" }
+      ],
+      analisis: "El documento de rol cierra varios huecos onomásticos y abre uno de mando. Evgenii SIIUKOV del expediente es SHUKOV EVGENII, 2nd mate. TOKMIN no es un auxiliar de cubierta: el rol lo nomina Ch.fishmaster. Hoseon SHIN, tratado en toda la instrucción como patrón de pesca, figura como Guarantee engineer; el cargo pesquero nominal del crew list es de TOKMIN (y aparece además KWON TAE GUN como CHIEF TRAL, aún no interrogado). Si SHIN no era el patrón operativo, su afirmación sobre quién estaba de guardia en puente y su hipótesis causal pesan distinto; y TOKMIN concentra a la vez el valor de testigo ocular de sala de máquinas y el de jefe de pesca según el rol.",
+      resolucion: "Confrontar a SHIN, TOKMIN y KWON con el crew list sobre su cargo efectivo el 25/08. Ampliar a SHIN sobre la discrepancia Guarantee engineer / patrón de pesca. Priorizar el interrogatorio de TOKMIN y de SHUKOV/SIIUKOV con las grafías del rol."
     },
     {
       id: "i23",
@@ -1382,7 +1496,7 @@ window.ANALISIS = {
           { grado: "a-verificar", t: "Existe una línea causal alternativa seria y prácticamente inexplorada: los trabajos ejecutados a bordo en los días previos sobre los circuitos de refrigeración. El 2° Oficial de Máquinas sitúa al taller portuario el 24 de agosto interviniendo las cañerías del sistema de enfriamiento del reductor del eje principal, para lo cual se DESCONECTÓ la bomba que toma agua de mar, es decir, sobre un circuito abierto al mar. El jefe de máquinas coreano añade una intervención distinta el 22 de agosto: el cambio de tres tramos de caño de refrigeración del motor principal, ejecutado por él mismo con los tres marineros indonesios. Son al menos dos obras sucesivas sobre circuitos de agua en los tres días anteriores al hundimiento. Si alguno de ellos quedó sin la debida estanqueidad, existe una vía de inundación previa, progresiva y silenciosa que explicaría tanto la escora de origen desconocido como la pérdida de reserva de flotabilidad necesaria para que un ángulo de 10° sumergiera una abertura situada a 1–2 metros de la flotación." },
           { grado: "a-verificar", t: "Hay un hecho nuevo, aportado por el jefe de máquinas coreano y no indagado a ningún otro declarante, que exige investigación inmediata: a las 16:00 del día del siniestro había personal venido de Corea soldando a bordo piezas que estaban en mal estado. Es trabajo en caliente ejecutado por terceros en coincidencia temporal exacta con la hora que el Jefe de Máquinas fija como inicio de la escora, sin que consten la identidad de la empresa, el permiso de trabajo, la supervisión, las piezas soldadas ni su ubicación." },
           { grado: "a-verificar", t: "La vía de agua que motivó el ingreso anticipado a puerto nunca fue localizada, y la fecha de ese ingreso no surge del expediente: la única referencia, la del Jefe de Máquinas, alude al adelanto sobre la fecha de arribo prevista y no al tiempo transcurrido hasta el siniestro. El patrón de pesca coreano aporta un antecedente estructural no investigado: el buque quedó apretado entre los hielos durante la zafra del año anterior cerca del polo sur, con posible daño del casco. MURDIONO, en cambio, la atribuye a un tubo interior de la bodega reparado informalmente por el oficial coreano, quien al declarar niega haber conocido avería alguna. Ninguna de las dos líneas fue explorada." },
-          { grado: "descartable", t: "La hipótesis del viento, formulada por el 2° Oficial de Máquinas, no está respaldada por ningún otro declarante ni por dato meteorológico alguno incorporado al expediente, y resulta poco verosímil para un buque de 52 m atracado a muro. La hipótesis del \"error en el manejo del lastre\" del patrón coreano no se corresponde con la operación efectivamente realizada, que fue un trasvase de combustible." }
+          { grado: "refutado", t: "La hipótesis del viento, formulada por el 2° Oficial de Máquinas, queda refutada por los registros Telemetry+ (Nettra) del Puerto de Montevideo: el 25/08 a las 16:27 y 18:27 el viento fue brisa débil (5,09 y 4,41 nudos) desde 129–134°. Con encabezamiento 305°, ese viento relativo llega casi de popa —empuje axial, sin momento escorante a babor—. La hipótesis del \"error en el manejo del lastre\" del patrón coreano no se corresponde con la operación efectivamente realizada, que fue un trasvase de combustible." }
         ]
       },
       {
@@ -1420,7 +1534,7 @@ window.ANALISIS = {
           { grado: "acreditado", t: "Tres informantes con conocimiento directo siguen sin ser interrogados: Konstantin TOKMIN; Evgenii SIIUKOV; y el inspector coreano Sr. MOON —quien a las 18:55 avisó a la agencia, atribuyó la causa, representa al armador del SURESTE 707 y estaría al tanto de las reparaciones—. A ellos se suman los operarios venidos de Corea que soldaban a bordo. La declaración del agente URRESTARAZU ya fue incorporada el 3 de septiembre." },
           { grado: "acreditado", t: "La duplicación del archivo rotulado como acta del 1er Oficial de Máquinas coreano, que reproducía literalmente el acta del Jefe de Máquinas ruso, quedó subsanada con la incorporación de la declaración de Park KWANG JUN del 1 de septiembre. Subsiste en cambio la indeterminación de los cargos, y las últimas dos actas revelaron que no es un problema aislado: el buque tenía dos jefes de máquinas y dos primeros oficiales de puente, uno por la línea rusa del armador y otro por la coreana de Dong Nam, y ninguno de los cuatro tiene su cargo y su línea de dependencia establecidos en el expediente." },
           { grado: "acreditado", t: "Dos pares de actas se solapan en el tiempo consignando al mismo intérprete, lo que es materialmente imposible, y dos actas registran hora de cierre anterior a su apertura: la del 3° Oficial de Máquinas y la del 1er Oficial de Puente coreano, cuyo pie reproduce literalmente la fecha y hora de cierre del acta del patrón de pesca del día anterior y cuya pregunta 4 reproduce el cuestionario de ese mismo declarante. Son defectos formales subsanables que deben subsanarse para evitar objeciones sobre la validez de las actas." },
-          { grado: "acreditado", t: "No se ha incorporado al expediente ningún registro objetivo: no hay grabaciones de CCTV, ni registros de CONMO, ni tráfico VHF, ni registros telefónicos, ni datos meteorológicos, ni documentación técnica del buque. La totalidad de la reconstrucción de los hechos descansa hoy en declaraciones contradictorias entre sí." }
+          { grado: "acreditado", t: "Siguen faltando registros objetivos de la fase crítica: no hay grabaciones de CCTV, ni registros de CONMO contrastados, ni tráfico VHF, ni registros telefónicos de la agencia ni de SAAM. Sí se incorporaron planos del buque y la serie de viento Telemetry+ del 25–26/08, que permite descartar la hipótesis meteorológica. El grueso de la reconstrucción de los hechos sigue descansando en declaraciones contradictorias entre sí." }
         ]
       }
     ]
@@ -1435,13 +1549,14 @@ window.ANALISIS = {
       urgencia: "inmediata",
       items: [
         { t: "Interrogar al inspector coreano Sr. MOON.", d: "Es la diligencia más urgente que abre la declaración de URRESTARAZU. Debe declarar sobre: el mensaje de las 18:55 (contenido, foto, destinatario); el fundamento de su atribución de causa al trasvase de los rusos; su cargo, empresa y a quién responde; su rol como representante del armador del SURESTE 707 y su participación en la decisión de retirarlo; qué reparaciones conocía (caños, soldadura, empresa uruguaya); y la decisión de alojar a los indonesios en el SURESTE 701. Requerir el mensaje con foto y sus registros telefónicos del 25/08." },
-        { t: "Interrogar a Konstantin TOKMIN / TAKMIN, encargado del procesamiento de pescado.", d: "Es el testigo con mayor valor probatorio del expediente y no ha declarado. Estaba en el puente con el 1er Oficial, fue enviado por éste a sala de máquinas durante el intervalo crítico y regresó informando que el 2° y el 3° Oficial estaban \"escorando el buque\". El propio 1er Oficial lo invoca como quien puede verificar su versión. Debe declarar sobre: qué vio exactamente en sala de máquinas, si la bomba estaba encendida, qué le dijo al 1er Oficial y a qué hora." },
+        { t: "Interrogar a Konstantin TOKMIN (Ch.fishmaster según el rol de tripulación).", d: "Es el testigo con mayor valor probatorio del expediente y no ha declarado. El crew list lo identifica como Ch.fishmaster (TOKMIN KONSTANTIN), no sólo como encargado de procesamiento. Estaba en el puente con el 1er Oficial, fue enviado por éste a sala de máquinas durante el intervalo crítico y regresó informando que el 2° y el 3° Oficial estaban \"escorando el buque\". El propio 1er Oficial lo invoca como quien puede verificar su versión. Debe declarar sobre: qué vio exactamente en sala de máquinas, si la bomba estaba encendida, qué le dijo al 1er Oficial y a qué hora." },
         { t: "Determinar quién ejercía la guardia de puente y ampliar declaración a FROLOV y al patrón de pesca.", d: "Es el vacío que abre la declaración de Kyongsu PARK. Éste niega haber estado de guardia y en el puente, contra lo afirmado por el patrón de pesca, y el 1er Oficial de Puente ruso —único oficial de guardia— se sitúa en tierra sobre el muro al momento del black out, con el Capitán y el Jefe de Máquinas durmiendo: nadie queda identificado en el puente durante la fase crítica. Requerir el libro de guardias y el rol de guardias en puerto; ampliar a FROLOV sobre el momento y la duración de su permanencia en tierra y a quién dejó a cargo del puente; y ampliar al patrón de pesca sobre el fundamento de su afirmación." },
         { t: "Ampliar declaración al 1er Oficial de Puente coreano Kyongsu PARK.", d: "Su acta del 2 de septiembre acota la ventana del siniestro pero deja puntos abiertos. Debe precisar: cuánto tiempo transcurrió entre que sintió la escora y el black out, y entre éste y su llegada al muelle, para fijar el desplazamiento hacia atrás del hito de las 18:46; la hora exacta del mensaje al patrón y si cursó alguna otra comunicación; su cargo efectivo y su relación con el 1er Oficial ruso, dado que ambos ostentan el mismo cargo; y la contradicción con Park KWANG JUN sobre la autoridad de los oficiales coreanos frente a la oficialidad rusa. Rectificar la fecha y hora de cierre del acta y la pregunta 4, que reproduce el cuestionario del patrón de pesca." },
         { t: "Identificar e interrogar a los operarios venidos de Corea que soldaban a bordo el 25 de agosto.", d: "Es la diligencia más urgente que abre la declaración del jefe de máquinas coreano. Sitúa a personal externo ejecutando trabajo en caliente sobre piezas en mal estado a las 16:00, la misma hora en que el Jefe de Máquinas fija el inicio de la escora, y el hecho no fue indagado a ningún otro declarante. URRESTARAZU declara que MOON está al tanto de las reparaciones pero desconoce su alcance; requerir a MOON y a la ANP los registros de ingreso de personal al muelle B ese día, los permisos de trabajo en caliente y las órdenes de trabajo. Deben declarar sobre: qué piezas soldaron, en qué ubicación del buque, con qué autorización y supervisión, y en qué estado quedó el trabajo." },
         { t: "Ampliar declaración al jefe de máquinas coreano Park KWANG JUN.", d: "Su acta del 1 de septiembre dejó puntos esenciales sin cubrir. Debe precisar: qué piezas se soldaban y dónde; el detalle del cambio de caños del 22 de agosto y el registro de la prueba de presión; su participación en el trasvase popa→proa que le atribuye el Jefe de Máquinas ruso; la reparación del tubo de la bodega que le atribuye MURDIONO y que él niega conocer; la ubicación y el tipo de accionamiento de las dos bombas portátiles; el estado de la escora al bajar a la sala de máquinas a las 16:30 y al retirarse a las 17:30; y su cargo y relación jerárquica efectiva con la oficialidad rusa." },
-        { t: "Interrogar a Evgenii SIIUKOV, 2° Oficial de Puente.", d: "Señalado por el Capitán como encargado de los cálculos de estabilidad después de cada trasvase. Debe declarar sobre: qué cálculos realizaba efectivamente, con qué datos y herramientas, qué cálculos existían para la estadía en puerto y para el 25 de agosto, y dónde constaban." },
-        { t: "Interrogar al resto de la tripulación no declarada y completar el rol.", d: "Completar el rol de tripulación para identificar a todos los presentes a bordo el 25 de agosto. La cadena de aviso a la agencia quedó cerrada en MOON (18:55); falta confrontar al Capitán con ese nombre. Tomar declaración también a SUEIRO, patrones de remolcadores, Federico DA CUNHA (Tecno Dive) y Fabián SOCA (OSRO Nueva Era)." }
+        { t: "Interrogar a Evgenii SHUKOV / SIIUKOV, 2° Oficial de Puente (2nd mate).", d: "El rol de tripulación lo consigna como SHUKOV EVGENII, 2nd mate (embarque 21.03.2026). El Capitán lo señaló como encargado de los cálculos de estabilidad después de cada trasvase (grafía SIIUKOV en actas). Debe declarar sobre: qué cálculos realizaba efectivamente, con qué datos y herramientas, qué cálculos existían para la estadía en puerto y para el 25 de agosto, y dónde constaban." },
+        { t: "Ampliar al patrón Hoseon SHIN (SHIN HO SEON) y aclarar su cargo efectivo.", d: "El rol lo identifica como Guarantee engineer, mientras las actas lo tratan como patrón de pesca; el Ch.fishmaster del crew list es TOKMIN. Ampliar sobre el fundamento de su afirmación de que Kyongsu PARK estaba de guardia en puente, y sobre su rol real a bordo frente a TOKMIN y a KWON TAE GUN (CHIEF TRAL, aún no declarado)." },
+        { t: "Interrogar a KWON TAE GUN (CHIEF TRAL) y al resto de la tripulación no declarada.", d: "El rol de tripulación (41 plazas) ya está incorporado al expediente. Faltan declarar, entre otros: KWON TAE GUN, MOLEV ANDREI (Boatswain), KOMANDIR SERGEY, CHERNOV RUSLAN y los 24 marineros indonesios no interrogados. Confrontar al Capitán con el nombre de MOON. Tomar declaración también a SUEIRO, patrones de remolcadores, Federico DA CUNHA (Tecno Dive) y Fabián SOCA (OSRO Nueva Era)." }
       ]
     },
     {
@@ -1479,7 +1594,7 @@ window.ANALISIS = {
         { t: "Documentación técnica y estatutaria del buque.", d: "Declaración general de arribo y despacho de entrada, que fijarán la fecha efectiva de atraque —hoy no acreditada en el expediente— y la duración real de la estadía en puerto; plano de disposición general y de tanques con capacidades certificadas; cuaderno de estabilidad aprobado; condición de carga y calados al arribo y al 25 de agosto; certificados estatutarios y del Estado de bandera; historial de clase; informes de inspección PSC; y el manual del sistema de gestión de la seguridad con los procedimientos de trasvase." },
         { t: "Libros y registros de a bordo.", d: "Diario de navegación, libro de máquinas, libro de guardia de puente, libro de registro de hidrocarburos, registros de sondaje de tanques, y los registros de consumo diario de gasoil que según el Capitán el Jefe de Máquinas le entregaba a diario. Verificar si fueron recuperados del buque y su estado." },
         { t: "Rol de tripulación y certificados de competencia.", d: "Composición completa de la tripulación al 25 de agosto, titulaciones y certificados de competencia de los oficiales, cuadro orgánico, rol de emergencia y abandono, y registros de los ejercicios periódicos exigibles." },
-        { t: "Datos meteorológicos oficiales del 25 de agosto.", d: "Necesarios para evaluar la hipótesis del viento formulada por el 2° Oficial de Máquinas, hoy sin ningún respaldo documental en el expediente." }
+        { t: "Certificación formal ANP/INUMET de los datos de viento del 25 de agosto (opcional).", d: "La serie Telemetry+ (Nettra) del Puerto de Montevideo ya está incorporada y basta para descartar la hipótesis del viento (brisa débil casi de popa a las 16:27/18:27). Si el instructor requiere valor probatorio formal, solicitar certificación o extracto oficial a ANP/INUMET contrastando la misma ventana horaria." }
       ]
     },
     {

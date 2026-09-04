@@ -378,7 +378,7 @@ window.CASO = {
         { tipo: "alerta", t: "Sus responsabilidades declaradas son la lubricación y el motor principal, y admite conocer el buque sólo \"aproximadamente\" porque el sistema de combustible corresponde al Jefe de Máquinas y al 3° Oficial. Aun así operó válvulas de trasvase de combustible sin autorización previa del oficial de guardia, reconociendo que ésta era necesaria." },
         { tipo: "contradiccion", t: "El 1er Oficial afirma haberlo encontrado \"sentado\" en la sala de máquinas y que ya había comenzado el trasvase; el 2° Oficial dice que estaba en su camarote cuando comenzó la escora y que bajó después. Las secuencias no se pueden conciliar." },
         { tipo: "contradiccion", t: "Sostiene que el 3° Oficial bajó con él, vio las válvulas abiertas y le dijo \"que estaba todo correcto\". El 3° Oficial declara que NO pudo corroborar si estaban correctamente abiertas porque empezó a entrar agua." },
-        { tipo: "alerta", t: "Su teoría de que el viento inclinó el buque no está respaldada por ningún otro declarante ni por dato meteorológico alguno en el expediente. Debe verificarse con registros oficiales del día." },
+        { tipo: "alerta", t: "Su teoría de que el viento inclinó el buque queda refutada por la serie Telemetry+ del Puerto de Montevideo: el 25/08 a las 16:27/18:27 el viento fue brisa débil (≈4–5 nudos) casi de popa respecto del rumbo 305°, sin momento escorante a babor." },
         { tipo: "hecho", t: "Confirma la existencia de un generador de emergencia en proa que no se alcanzó a encender, y que las tres bombas de achique quedaron sin alimentación eléctrica alternativa tras el black out." }
       ]
     },
@@ -486,6 +486,7 @@ window.CASO = {
         { tipo: "alerta", t: "Aporta un antecedente estructural inexplorado: durante la zafra del año anterior cerca del polo sur el buque quedó apretado entre los hielos, y conjetura que la filtración pudo originarse en el casco en ese episodio. Debe verificarse contra el historial de clase e inspecciones del buque." },
         { tipo: "contradiccion", t: "Sostiene que el buque ingresó a puerto para descargar pescado, mientras el Capitán, el 1er Oficial y el Jefe de Máquinas declaran que el ingreso se debió a la filtración de agua en la bodega." },
         { tipo: "alerta", t: "Es el único declarante que admite consumo de alcohol en las 24 horas previas, aunque en la ciudad y no a bordo, y estando fuera del buque. Al Capitán, al Jefe de Máquinas y al 2° Oficial de Máquinas no se les formuló la pregunta sobre alcohol." },
+        { tipo: "alerta", t: "El rol de tripulación lo identifica como SHIN HO SEON, Guarantee engineer (embarque 26.07.2025), no como patrón de pesca; el Ch.fishmaster del crew list es TOKMIN KONSTANTIN. Debe aclararse su cargo efectivo frente a lo declarado en acta." },
         { tipo: "alerta", t: "Su hipótesis de \"error en el manejo del lastre\" no se corresponde con la operación efectivamente realizada, que fue un trasvase de combustible entre tanques. Refleja desconocimiento del hecho concreto y no debería ponderarse como aporte técnico." },
         { tipo: "hecho", t: "Confirma que tras la descarga del pescado no se volvió a encontrar agua en la bodega y que nunca se determinó el origen de la filtración, coincidiendo con el Capitán." }
       ]
