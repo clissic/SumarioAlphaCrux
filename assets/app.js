@@ -159,7 +159,7 @@
       "<b>Ingreso de agua por un ojo de buey abierto</b> a babor, en el taller del torno, situado a 1–2 metros de la línea de flotación. No se pudo cerrar por la presión del agua.",
       "El agua desciende por el tambucho y <b>moja el tablero eléctrico principal</b>: se produce el <b>black out</b>. Varios declarantes describen la fase final como prácticamente súbita.",
       "<b>Las bombas de achique quedan sin energía</b> y el generador de emergencia no se alcanza a encender: inundación incontrolable.",
-      "<b>Abandono sin orden ni alarma.</b> A las 18:46 Kyongsu PARK avisa al patrón desde el muelle; a las 18:55 el inspector MOON avisa a la agencia con foto y atribución de causa. El buque queda de banda, apoyado en el fondo y sujeto por sus propios cabos."
+      "<b>Abandono sin orden ni alarma.</b> A las 18:46 Kyongsu PARK avisa al patrón desde el muelle; según URRESTARAZU, a las 18:55 Kibong MOON avisa a la agencia (punto en disputa tras su acta del 4/09). El buque queda de banda, apoyado en el fondo y sujeto por sus propios cabos."
     ];
     q("#mechChain").innerHTML = mech.map(function (m) { return "<li>" + m + "</li>"; }).join("");
 
