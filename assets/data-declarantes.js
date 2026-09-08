@@ -891,6 +891,94 @@ window.CASO = {
         { tipo: "hecho", t: "Aclara el rótulo «RAMBLA» de los planos: era el nombre anterior del buque bajo otro armador. Entiende que desde 2015 no hubo cambios estructurales." },
         { tipo: "alerta", t: "El acta no indaga el mensaje 18:55, el pedido de remolcador, su rol como representante del armador del SURESTE 707, la decisión de retirarlo ni el alojamiento de los indonesios —puntos que URRESTARAZU le atribuyó—. Requiere ampliación." }
       ]
+    },
+    /* ----------------------------------------------------------------- 15 */
+    {
+      id: "patron-maneador",
+      nombre: "Fabrizio VIERA",
+      cargo: "Patrón del remolcador MANEADOR — SAAM Towage Uruguay",
+      cargoCorto: "Patrón MANEADOR",
+      grupo: "terceros",
+      ficha: {
+        Nacionalidad: "Uruguaya",
+        "C.I.": "4.272.983-4",
+        Profesión: "Patrón de remolcador",
+        Empresa: "SAAM Towage Uruguay",
+        Unidad: "R/M MANEADOR"
+      },
+      acta: {
+        formato: "Informe operativo",
+        fecha: "6 de septiembre de 2026",
+        inicio: "—",
+        cierre: "—",
+        oficial: "Presentado a la Prefectura del Puerto de Montevideo",
+        interprete: "No corresponde",
+        lugar: "Montevideo",
+        preguntas: "No aplica (7 apartados temáticos)",
+        archivo: "Declaraciones de patrones de remolcadores.pdf"
+      },
+      posicion: "A cargo del R/M MANEADOR. Recibió la notificación a las 19:25, zarpó hacia el lugar a las 19:35 y permaneció en la operación hasta las 23:20.",
+      tesis: "La atribución a un trasvase incorrecto fue información suministrada por la agencia, no una conclusión propia. Al arribar observó pérdida total de estabilidad transversal y al SURESTE 707 como sostén temporal. Consideró inseguro maniobrar sin PLADA o SUEIRO. Durante el desatraque de emergencia hizo firme en la aleta de babor del SURESTE 707 y luego lo amarró al costado del SURESTE 701.",
+      qa: [
+        { n: "1", p: "Notificación de la emergencia", r: "A las 19:25 recibió la notificación de emergencia de la Central de Operaciones de SAAM y de la Autoridad Marítima, solicitando auxilio inmediato para el B/P ALPHA CRUX.", tags: ["19:25", "CRONOLOGÍA"], clave: true },
+        { n: "2", p: "Información causal recibida", r: "Según la información brindada por la agencia, el buque estaba excesivamente escorado a babor, con peligro de hundimiento por haber perdido estabilidad debido a una maniobra incorrecta de trasvase interno de combustible entre sus tanques.", tags: ["AGENCIA", "CAUSA DE OÍDAS"], clave: true },
+        { n: "3", p: "Salida y constatación al arribar", r: "A las 19:35 se dirigió al lugar, previa solicitud de autorización a Control Montevideo. Al arribar encontró al ALPHA CRUX con pérdida total de estabilidad transversal; el SURESTE 707, abarloado a su banda de babor, actuaba como sostén temporal e impedía su hundimiento inmediato.", tags: ["19:35", "SURESTE 707"], clave: true },
+        { n: "4", p: "Decisión inicial de no maniobrar", r: "Informó a Control Montevideo que no realizarían maniobra sobre ambos buques. Evaluó que retirar al SURESTE 707 provocaría el hundimiento inmediato del ALPHA CRUX y resolvió esperar a un responsable directo, supeditando la acción a PLADA o SUEIRO por seguridad de tripulaciones, unidades, instalaciones y ambiente.", tags: ["DECISIÓN TÉCNICA", "RIESGO"], clave: true },
+        { n: "5", p: "Primera maniobra ordenada", r: "A las 20:15 se hicieron presentes Gustavo PLADA y Eduardo SUEIRO. Por orden de PLADA, el CRISTOBAL empujó sobre la amura de babor del SURESTE 707 para contener la escora del ALPHA CRUX; el MANEADOR quedó a la espera.", tags: ["20:15", "PLADA", "INCONGRUENCIA"], clave: true },
+        { n: "6", p: "Desatraque de emergencia", r: "A las 21:10 el ALPHA CRUX continuaba incrementando su escora y comenzaba a arrastrar y escorar peligrosamente al SURESTE 707, que tenía tripulantes a bordo. PLADA y SUEIRO dispusieron su desatraque de emergencia. El MANEADOR hizo firme en la aleta de babor del 707 y el CRISTOBAL en la amura de la misma banda.", tags: ["21:10", "EMERGENCIA", "HECHO NUEVO"], clave: true },
+        { n: "7", p: "Resultado y finalización", r: "Los remolcadores llevaron rápidamente al SURESTE 707 a zona segura; el MANEADOR lo amadrinó y reposicionó al costado del SURESTE 701. Al retirar el 707 del costado del ALPHA CRUX se produjo de forma inmediata el hundimiento de este último. Fueron dispensados por PLADA y finalizaron a las 23:20.", tags: ["HUNDIMIENTO INMEDIATO", "23:20"], clave: true }
+      ],
+      conclusiones: [
+        { tipo: "critico", t: "La versión de «trasvase incorrecto» llegó a SAAM desde la agencia y fue recibida antes de la observación directa de los patrones. Por tanto, estos informes no corroboran la causa: documentan la propagación temprana de esa tesis." },
+        { tipo: "hecho", t: "Confirma que el SURESTE 707 era el sostén temporal que impedía el hundimiento inmediato del ALPHA CRUX y que su retiro produjo de inmediato el hundimiento final." },
+        { tipo: "hecho", t: "La espera hasta la llegada de PLADA/SUEIRO se presenta como decisión profesional de gestión de riesgo, comunicada a Control Montevideo, no como una negativa arbitraria a prestar asistencia." },
+        { tipo: "contradiccion", t: "Sitúa la presencia de PLADA y SUEIRO a las 20:15, frente a 20:20–20:33 en otras fuentes; el desatraque de emergencia comienza a las 21:10, mucho antes de las 22:45–23:30 consignadas por FERRAO, MOLESINI, URRESTARAZU y PLADA." },
+        { tipo: "alerta", t: "El informe del MANEADOR y el del CRISTOBAL son prácticamente idénticos, incluso en estructura y redacción. Debe establecerse si representan recuerdos independientes o una reconstrucción corporativa común de SAAM." }
+      ]
+    },
+    /* ----------------------------------------------------------------- 16 */
+    {
+      id: "patron-cristobal",
+      nombre: "Álvaro RODRÍGUEZ",
+      cargo: "Patrón del remolcador CRISTOBAL — SAAM Towage Uruguay",
+      cargoCorto: "Patrón CRISTOBAL",
+      grupo: "terceros",
+      ficha: {
+        Nacionalidad: "Uruguaya",
+        "C.I.": "1.793.391-5",
+        Profesión: "Patrón de remolcador",
+        Empresa: "SAAM Towage Uruguay",
+        Unidad: "R/M CRISTOBAL"
+      },
+      acta: {
+        formato: "Informe operativo",
+        fecha: "6 de septiembre de 2026",
+        inicio: "—",
+        cierre: "—",
+        oficial: "Presentado a la Prefectura del Puerto de Montevideo",
+        interprete: "No corresponde",
+        lugar: "Montevideo",
+        preguntas: "No aplica (7 apartados temáticos)",
+        archivo: "Declaraciones de patrones de remolcadores.pdf"
+      },
+      posicion: "A cargo del R/M CRISTOBAL. Recibió la notificación a las 19:25, zarpó hacia el lugar a las 19:35 y permaneció en la operación hasta las 23:20.",
+      tesis: "La atribución a un trasvase incorrecto fue información suministrada por la agencia. Al arribar observó pérdida total de estabilidad transversal y al SURESTE 707 como sostén temporal. Esperó a PLADA o SUEIRO y, por orden de PLADA, empujó la amura de babor del SURESTE 707 para contener la escora. En el desatraque de emergencia hizo firme en la amura de babor del 707.",
+      qa: [
+        { n: "1", p: "Notificación de la emergencia", r: "A las 19:25 recibió la notificación de emergencia de la Central de Operaciones de SAAM y de la Autoridad Marítima, solicitando auxilio inmediato para el B/P ALPHA CRUX.", tags: ["19:25", "CRONOLOGÍA"], clave: true },
+        { n: "2", p: "Información causal recibida", r: "Según la información brindada por la agencia, el buque estaba excesivamente escorado a babor, con peligro de hundimiento por haber perdido estabilidad debido a una maniobra incorrecta de trasvase interno de combustible entre sus tanques.", tags: ["AGENCIA", "CAUSA DE OÍDAS"], clave: true },
+        { n: "3", p: "Salida y constatación al arribar", r: "A las 19:35 se dirigió al lugar, previa solicitud de autorización a Control Montevideo. Al arribar encontró al ALPHA CRUX con pérdida total de estabilidad transversal; el SURESTE 707, abarloado a su banda de babor, actuaba como sostén temporal e impedía su hundimiento inmediato.", tags: ["19:35", "SURESTE 707"], clave: true },
+        { n: "4", p: "Decisión inicial de no maniobrar", r: "Informó a Control Montevideo que no realizarían maniobra sobre ambos buques. Evaluó que retirar al SURESTE 707 provocaría el hundimiento inmediato del ALPHA CRUX y resolvió esperar a un responsable directo, supeditando la acción a PLADA o SUEIRO por seguridad.", tags: ["DECISIÓN TÉCNICA", "RIESGO"], clave: true },
+        { n: "5", p: "Primera maniobra ordenada", r: "A las 20:15 se hicieron presentes Gustavo PLADA y Eduardo SUEIRO. Por orden de PLADA, el CRISTOBAL empujó sobre la amura de babor del SURESTE 707 para intentar contener la escora del ALPHA CRUX; el MANEADOR quedó a la espera.", tags: ["20:15", "PLADA", "INCONGRUENCIA"], clave: true },
+        { n: "6", p: "Desatraque de emergencia", r: "A las 21:10 el ALPHA CRUX continuaba incrementando su escora y comenzaba a arrastrar y escorar peligrosamente al SURESTE 707, que tenía tripulantes a bordo. PLADA y SUEIRO dispusieron su desatraque. El MANEADOR hizo firme en la aleta de babor del 707 y el CRISTOBAL en la amura de la misma banda.", tags: ["21:10", "EMERGENCIA", "HECHO NUEVO"], clave: true },
+        { n: "7", p: "Resultado y finalización", r: "Los remolcadores llevaron rápidamente al SURESTE 707 a zona segura; el MANEADOR lo amadrinó y reposicionó al costado del SURESTE 701. Al retirar el 707 del costado del ALPHA CRUX se produjo de forma inmediata el hundimiento de este último. Fueron dispensados por PLADA y finalizaron a las 23:20.", tags: ["HUNDIMIENTO INMEDIATO", "23:20"], clave: true }
+      ],
+      conclusiones: [
+        { tipo: "critico", t: "No aporta conocimiento propio sobre el supuesto trasvase incorrecto: identifica expresamente a la agencia como fuente de esa información." },
+        { tipo: "hecho", t: "Su observación directa acredita pérdida total de estabilidad transversal al arribar y función de sostén temporal del SURESTE 707." },
+        { tipo: "hecho", t: "Confirma que el CRISTOBAL ejecutó la maniobra de empuje por orden de PLADA y participó luego en el desatraque de emergencia del 707." },
+        { tipo: "contradiccion", t: "Sus horarios coinciden con VIERA pero difieren materialmente de los registros oficiales, especialmente 20:15 para PLADA/SUEIRO y 21:10 para decidir retirar el SURESTE 707." },
+        { tipo: "alerta", t: "La redacción es casi literal respecto del informe de VIERA. La coincidencia fortalece la versión corporativa de SAAM, pero no equivale por sí sola a dos corroboraciones independientes." }
+      ]
     }
 
   ]

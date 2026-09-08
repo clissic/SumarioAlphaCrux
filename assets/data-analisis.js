@@ -1,5 +1,6 @@
 /* Cronología, red conceptual, incongruencias, conclusiones y pasos a seguir.
-   Elaborado a partir del cruce de las 14 actas, el informe del TN (CP) MOLESINI,
+   Elaborado a partir del cruce de 14 actas y dos informes de patrones de remolcador,
+   el informe del TN (CP) MOLESINI,
    el informe del supervisor de CONMO CS (PM) Willian FERRAO, la exposición del
    Práctico de Seguridad CM Gustavo PLADA y la nota de cronología manuscrita.
    El borrador del sumario Word se excluye deliberadamente: su texto arrastra
@@ -24,7 +25,7 @@ window.ANALISIS = {
         "El aviso llegó por el CS (PM) Willian FERRAO, supervisor de CONMO, quien a su vez tomó conocimiento porque SAAM Towage solicitó autorización para asistir al buque —por pedido de la Agencia Marítima—. Ningún tripulante notificó a la autoridad marítima.",
         "Concurrió al lugar a las 19:36 con el Oficial de Guardia AN Diego FURRE, constató la escora a babor con apoyo sobre el SURESTE 707, tomó fotografía de la situación y abordó el buque para verificar que no hubiera tripulantes.",
         "A las 19:43 contactó a la agencia Oriental Shipping (Sr. Daniel URRESTARAZU), quien a las 20:00 se hizo presente e informó que se encontraban realizando un trasvase de combustible entre tanques y que, debido a un error en la maniobra, se produjo la escora. El informe de FERRAO acredita que la agencia ya había solicitado remolcadores a SAAM antes de esa llamada.",
-        "Los patrones de los remolcadores CRISTOBAL y MAREADOR se negaron a maniobrar hasta el arribo del baqueano o del práctico de seguridad.",
+        "MOLESINI describe que los patrones de CRISTOBAL y MAREADOR/MANEADOR no maniobraron hasta el arribo del baqueano o práctico. Sus informes posteriores explican que comunicaron a Control una espera fundada en riesgos para tripulaciones, buques, instalaciones y ambiente, porque retirar el SURESTE 707 hundiría de inmediato al ALPHA CRUX.",
         "20:25 — Arriba el baqueano Sr. Eduardo SUEIRO. Primera maniobra: apoyar al SURESTE 707 desde su proa para evitar que el ALPHA CRUX continuara escorándose. Sin resultado: al hacerlo el ALPHA CRUX se hundía más de popa.",
         "20:30 — Se presenta el práctico de seguridad Sr. Gustavo PLADA, que da directivas junto con SUEIRO sin acción positiva.",
         "22:00 — Se presenta el buque CARLON de la empresa de salvamento. Un buzo pasó una linga por la porta espía del espejo para levantar la banda de babor con la grúa del buque. La grúa no soportó el peso.",
@@ -162,6 +163,30 @@ window.ANALISIS = {
       archivoUrl: "files/Rol de tirpulación.pdf",
       imagenes: ["files/Rol de tirpulación.jpg"],
       useRolTabla: true
+    },
+    {
+      id: "informes-patrones-remolcadores",
+      titulo: "Informes de los patrones de los remolcadores MANEADOR y CRISTOBAL",
+      autor: "Fabrizio VIERA y Álvaro RODRÍGUEZ — SAAM Towage Uruguay",
+      cargo: "Patrones de los R/M MANEADOR y CRISTOBAL",
+      fecha: "6 de septiembre de 2026 (remisión SAAM: 7 de septiembre)",
+      destinatario: "Prefectura del Puerto de Montevideo",
+      tipo: "informe",
+      resumen: "Dos informes operativos casi idénticos sobre la asistencia al ALPHA CRUX y el desatraque de emergencia del SURESTE 707. Identifican a la agencia como fuente de la tesis del trasvase incorrecto y aportan horarios que difieren de los registros previos.",
+      puntos: [
+        "19:25 — Ambos patrones reciben la emergencia desde la Central de Operaciones de SAAM y la Autoridad Marítima. La nota de remisión de SAAM registra además una solicitud del cliente a las 19:06.",
+        "La afirmación de que la escora obedecía a un trasvase incorrecto les fue suministrada por la agencia: no deriva de una observación técnica propia de los patrones.",
+        "19:35 — Se dirigen al lugar, previa autorización de Control Montevideo. Al arribar observan pérdida total de estabilidad transversal; el SURESTE 707 era el sostén temporal que impedía el hundimiento inmediato.",
+        "La decisión de esperar a PLADA o SUEIRO se funda en seguridad de tripulaciones, unidades, instalaciones y ambiente. Fue comunicada a Control Montevideo.",
+        "20:15 — Sitúan presentes a PLADA y SUEIRO. Por orden de PLADA, el CRISTOBAL empuja la amura de babor del SURESTE 707 y el MANEADOR queda a la espera.",
+        "21:10 — El ALPHA CRUX incrementa la escora y comienza a arrastrar y escorar peligrosamente al SURESTE 707, que tenía tripulantes. PLADA y SUEIRO ordenan el desatraque de emergencia.",
+        "El MANEADOR hace firme en la aleta de babor del SURESTE 707 y el CRISTOBAL en la amura de la misma banda. Lo llevan a zona segura y lo reposicionan junto al SURESTE 701.",
+        "HALLAZGO CENTRAL — Ambos informes afirman que, al retirar el SURESTE 707, se produjo de forma inmediata el hundimiento del ALPHA CRUX.",
+        "23:20 — Finalizan la actuación. Este horario y los de 20:15/21:10 discrepan con FERRAO, MOLESINI, PLADA y URRESTARAZU.",
+        "ALERTA — Los informes de ambos patrones son prácticamente idénticos. Debe valorarse como versión corporativa coincidente de SAAM, no automáticamente como dos recuerdos independientes."
+      ],
+      archivo: "Declaraciones de patrones de remolcadores.pdf",
+      archivoUrl: "files/Declaraciones de patrones de remolcadores.pdf"
     }
   ],
 
@@ -427,11 +452,18 @@ window.ANALISIS = {
       etiquetas: ["NOTIFICACIÓN", "HITO OBJETIVO", "agencia"], destacado: true
     },
     {
-      fecha: "25 de agosto de 2026", hora: "19:33", fase: "respuesta",
+      fecha: "25 de agosto de 2026", hora: "19:06 / 19:25", fase: "respuesta",
+      titulo: "SAAM recibe la solicitud del cliente y notifica a los patrones",
+      texto: "La nota de remisión de SAAM registra a las 19:06 una solicitud de asistencia para SURESTE 707 y ALPHA CRUX por parte de su cliente. Los informes de los patrones sitúan a las 19:25 la notificación de emergencia de la Central de Operaciones de SAAM y de la Autoridad Marítima. La diferencia con el llamado de URRESTARAZU a SAAM ≈19:15 requiere los registros originales.",
+      fuente: "Nota SAAM 07/09 · Informes VIERA y RODRÍGUEZ 06/09", ref: "informes-patrones-remolcadores",
+      etiquetas: ["SAAM", "NOTIFICACIÓN", "INCONGRUENCIA"], conflicto: true, destacado: true
+    },
+    {
+      fecha: "25 de agosto de 2026", hora: "19:33 / 19:35", fase: "respuesta",
       titulo: "Zarpan los remolcadores MANEADOR y CRISTOBAL",
-      texto: "Los remolcadores de SAAM Towage zarpan hacia el hangar 7. Al arribar constatan que el ALPHA CRUX estaba apoyado sobre la banda del SURESTE 707 e informan que no iniciarán ninguna maniobra hasta que llegue el Práctico de Seguridad, por riesgo de perjuicio al buque.",
-      fuente: "Informe Supervisor CONMO CS (PM) Willian FERRAO", ref: "informe-ferrao",
-      etiquetas: ["respuesta", "remolcadores"]
+      texto: "FERRAO registra el zarpe a las 19:33; ambos patrones dicen haberse dirigido al lugar a las 19:35, previa autorización de Control Montevideo. Al arribar constatan pérdida total de estabilidad transversal y al SURESTE 707 como sostén temporal. Comunican que no maniobrarán hasta la presencia de PLADA o SUEIRO por los riesgos para personas, unidades, instalaciones y ambiente.",
+      fuente: "Informe FERRAO · Informes VIERA y RODRÍGUEZ", ref: "patron-maneador",
+      etiquetas: ["respuesta", "remolcadores", "INCONGRUENCIA menor"], conflicto: true
     },
     {
       fecha: "25 de agosto de 2026", hora: "19:36", fase: "respuesta",
@@ -476,10 +508,10 @@ window.ANALISIS = {
       etiquetas: ["respuesta"]
     },
     {
-      fecha: "25 de agosto de 2026", hora: "20:20 / 20:21 / 20:25", fase: "respuesta",
+      fecha: "25 de agosto de 2026", hora: "20:15 / 20:20 / 20:21 / 20:25", fase: "respuesta",
       titulo: "Los remolcadores quedan a la orden del baqueano SUEIRO",
-      texto: "FERRAO consigna que a las 20:21 los remolcadores quedan a la orden del baqueano SUEIRO. La nota de cronología sitúa el arribo del baqueano a las 20:20 y el informe de MOLESINI a las 20:25. URRESTARAZU declara haber contactado a SUEIRO a las 19:52 y que SUEIRO y PLADA llegaron casi juntos ≈20:30. Primera maniobra: apoyar al SURESTE 707 desde su proa para evitar que el ALPHA CRUX continuara escorándose. La acción no dio resultado: al efectuarla el ALPHA CRUX se hundía más de popa.",
-      fuente: "Informe FERRAO · Nota de cronología · Informe TN (CP) MOLESINI · Acta URRESTARAZU", ref: "informe-ferrao",
+      texto: "Los patrones sitúan presentes a PLADA y SUEIRO a las 20:15; la nota de cronología fija 20:20, FERRAO 20:21, MOLESINI 20:25 y URRESTARAZU ≈20:30. Por orden de PLADA, el CRISTOBAL empuja la amura de babor del SURESTE 707 para contener la escora, mientras el MANEADOR queda a la espera.",
+      fuente: "Informes VIERA/RODRÍGUEZ · FERRAO · Cronología · MOLESINI · URRESTARAZU", ref: "patron-cristobal",
       etiquetas: ["maniobra infructuosa", "INCONGRUENCIA menor"], conflicto: true
     },
     {
@@ -511,6 +543,13 @@ window.ANALISIS = {
       etiquetas: ["salvamento"]
     },
     {
+      fecha: "25 de agosto de 2026", hora: "21:10", fase: "respuesta",
+      titulo: "Según SAAM, PLADA y SUEIRO ordenan el desatraque de emergencia del SURESTE 707",
+      texto: "Los dos patrones afirman que el ALPHA CRUX incrementaba su escora y comenzaba a arrastrar y escorar peligrosamente al SURESTE 707, con tripulantes a bordo. PLADA y SUEIRO disponen el desatraque. MANEADOR hace firme en la aleta de babor y CRISTOBAL en la amura de la misma banda. Este horario antecede entre 1 h 20 min y 2 h 20 min a las demás fuentes.",
+      fuente: "Informes de Fabrizio VIERA y Álvaro RODRÍGUEZ", ref: "patron-maneador",
+      etiquetas: ["SURESTE 707", "EMERGENCIA", "INCONGRUENCIA"], conflicto: true, destacado: true
+    },
+    {
       fecha: "25 de agosto de 2026", hora: "22:00", fase: "respuesta",
       titulo: "Baja el buzo y, según MOLESINI, se presenta el buque CARLON",
       texto: "Según el informe del oficial actuante y la nota de cronología, a esta hora se presenta el buque CARLON de la empresa de salvamento. Un buzo descendió y pasó una linga sobre la porta espía del espejo con el fin de utilizar la grúa del buque para levantar la banda de babor. FERRAO, en cambio, había consignado el zarpe del CARLON a las 20:37.",
@@ -534,8 +573,8 @@ window.ANALISIS = {
     {
       fecha: "25 de agosto de 2026", hora: "22:45 – 22:57", fase: "respuesta",
       titulo: "Se decide y ejecuta la separación del SURESTE 707",
-      texto: "FERRAO consigna que a las 22:45 se decide separar al SURESTE 707 tras varios intentos fallidos de adrizar el ALPHA CRUX, y que a las 22:57 se concreta la separación, quedando el ALPHA CRUX semihundido. MOLESINI y la nota de cronología sitúan la decisión coordinada hacia las 22:50. URRESTARAZU sitúa ≈22:30 el abandono de la maniobra del CARLON porque dañaba al 707, y atribuye la decisión de sacarlo a PLADA, SUEIRO y el Sr. MOON (representante del armador del 707), no a sí mismo. La exposición de PLADA, en cambio, le atribuye a URRESTARAZU la indicación a las 23:30. Quedan horarios y autorías en disputa.",
-      fuente: "Informe FERRAO · Informe MOLESINI · Exposición PLADA · Acta URRESTARAZU P.4", ref: "urrestarazu",
+      texto: "FERRAO consigna decisión 22:45 y separación 22:57; MOLESINI y la nota, ≈22:50; URRESTARAZU, ≈22:30; PLADA, 23:30. Los dos patrones sitúan el desatraque de emergencia a las 21:10. Ambos afirman que el retiro del sostén produjo de inmediato el hundimiento del ALPHA CRUX. El horario y la autoría continúan en disputa, pero el efecto material inmediato queda ahora corroborado por los ejecutantes.",
+      fuente: "FERRAO · MOLESINI · PLADA · URRESTARAZU · Informes de patrones SAAM", ref: "patron-cristobal",
       etiquetas: ["SURESTE 707", "INCONGRUENCIA", "MOON"], conflicto: true, destacado: true
     },
     {
@@ -558,6 +597,13 @@ window.ANALISIS = {
       texto: "Según FERRAO, el remolcador CRISTOBAL es liberado de la operación.",
       fuente: "Informe Supervisor CONMO CS (PM) Willian FERRAO", ref: "informe-ferrao",
       etiquetas: ["respuesta"]
+    },
+    {
+      fecha: "25 de agosto de 2026", hora: "23:20", fase: "respuesta",
+      titulo: "Los patrones de SAAM dan por finalizada su actuación",
+      texto: "VIERA y RODRÍGUEZ afirman que PLADA los dispensó, comunicaron la novedad a Control Montevideo y finalizaron a las 23:20. FERRAO registra al CRISTOBAL desafectado a las 23:15 y al MANEADOR completando el cambio de amarre a las 23:28.",
+      fuente: "Informes de patrones SAAM · Informe FERRAO", ref: "patron-maneador",
+      etiquetas: ["SAAM", "INCONGRUENCIA menor"], conflicto: true
     },
     {
       fecha: "25 de agosto de 2026", hora: "23:28", fase: "respuesta",
@@ -751,6 +797,20 @@ window.ANALISIS = {
       texto: "Acta de información sumaria tomada por el TN (CP) Joaquín PÉREZ CORIA, con el intérprete Dong Joon CHO CHOI. 20 preguntas. Inspector técnico de Dong Nam desde 2019. A bordo hasta las 17:10; a las 19:00 vuelve y encuentra el buque escorado. Entregó caños el 24/08 para el recambio del enfriamiento del motor hacia la caja reductora. Niega personal coreano de tierra. Informó a la agencia de soldadura, no de caños. Declara no saber la causa. El instructor no le preguntó por el mensaje de las 18:55 ni por el pedido de remolcador que URRESTARAZU le atribuye.",
       fuente: "Acta de Información Sumaria — Inspector del Armador", ref: "moon",
       etiquetas: ["INTERROGATORIO", "HECHOS NUEVOS", "INCONGRUENCIA", "MOON"], interrogatorio: true, destacado: true, conflicto: true
+    },
+    {
+      fecha: "6 de septiembre de 2026", hora: "—", fase: "instruccion",
+      titulo: "INFORME OPERATIVO — Patrón del R/M MANEADOR Fabrizio VIERA",
+      texto: "Informe presentado a Prefectura. Aporta la secuencia SAAM: aviso 19:25, salida 19:35, PLADA/SUEIRO 20:15, desatraque de emergencia del SURESTE 707 a las 21:10 y fin 23:20. Afirma que el 707 impedía el hundimiento inmediato y que retirarlo produjo de inmediato el hundimiento del ALPHA CRUX. La tesis del trasvase incorrecto le había sido informada por la agencia.",
+      fuente: "Informe operativo del patrón del MANEADOR", ref: "patron-maneador",
+      etiquetas: ["INFORME OPERATIVO", "SAAM", "HECHOS NUEVOS", "INCONGRUENCIA"], declaracion: true, conflicto: true, destacado: true
+    },
+    {
+      fecha: "6 de septiembre de 2026", hora: "—", fase: "instruccion",
+      titulo: "INFORME OPERATIVO — Patrón del R/M CRISTOBAL Álvaro RODRÍGUEZ",
+      texto: "Informe presentado a Prefectura, prácticamente idéntico al de VIERA. Confirma la evaluación inicial, la espera por un responsable directo, las maniobras ordenadas por PLADA, el retiro de emergencia del SURESTE 707 y el hundimiento inmediato del ALPHA CRUX al perder ese apoyo.",
+      fuente: "Informe operativo del patrón del CRISTOBAL", ref: "patron-cristobal",
+      etiquetas: ["INFORME OPERATIVO", "SAAM", "HECHOS NUEVOS", "INCONGRUENCIA"], declaracion: true, conflicto: true, destacado: true
     }
   ],
 
@@ -807,7 +867,9 @@ window.ANALISIS = {
       { id: "sueiro", label: "Eduardo SUEIRO", cat: "terceros", size: 16, det: "Baqueano de puerto, llamado por la agencia. Arribó entre las 20:20 y 20:25 y comenzó a dar directivas a los remolcadores, que se habían negado a maniobrar hasta su llegada. Dispuso la primera maniobra de apoyo al SURESTE 707, que resultó infructuosa." },
       { id: "taller", label: "Taller portuario / técnicos uruguayos", cat: "terceros", size: 20, det: "Empresa externa que el día 24 de agosto intervino a bordo. El 2° Oficial de Máquinas la sitúa reparando las cañerías del sistema de enfriamiento del reductor del eje principal, CON LA BOMBA DE AGUA DE MAR DESCONECTADA. Los marineros indonesios la sitúan alternativamente en el sistema eléctrico dentro de la sala de máquinas, en la electricidad de la cámara frigorífica o en el sistema de refrigeración. El Capitán, el Jefe de Máquinas y el 1er Oficial niegan toda reparación." },
       { id: "equipo-coreano", label: "Personal venido de Corea — soldadura a bordo", cat: "terceros", size: 21, det: "Aportado por Park KWANG JUN: a las 16:00 del 25/08 gente venida de Corea soldaba a bordo. MOON (4/09) niega personal coreano de tierra trabajando en reparaciones y sitúa la soldadura en cubierta con habilitación pedida a la agencia, ejecutada por la tripulación. La identidad del personal externo sigue sin acreditarse." },
-      { id: "remolcadores", label: "Remolcadores CRISTOBAL y MANEADOR", cat: "terceros", size: 16, det: "Remolcadores de SAAM Towage. A las 19:30 la empresa pidió a CONMO autorización para asistir al ALPHA CRUX por solicitud de la Agencia Marítima. Zarparon a las 19:33; al arribar se negaron a maniobrar hasta el práctico. A las 20:21 quedaron a la orden de SUEIRO. MOLESINI llama MAREADOR al segundo; FERRAO y PLADA lo llaman MANEADOR." },
+      { id: "remolcadores", label: "Remolcadores CRISTOBAL y MANEADOR", cat: "terceros", size: 16, det: "Remolcadores de SAAM Towage. Sus patrones informan: aviso 19:25, salida 19:35, espera por PLADA/SUEIRO por razones de seguridad, desatraque de emergencia del SURESTE 707 a las 21:10 y fin 23:20. La denominación correcta es MANEADOR; MOLESINI lo llama MAREADOR." },
+      { id: "patron-maneador", label: "Patrón Fabrizio VIERA — MANEADOR", cat: "terceros", size: 18, ref: "patron-maneador", det: "Patrón del MANEADOR, SAAM Towage. Informe del 6/09. Identifica a la agencia como fuente de la tesis del trasvase. Observó pérdida total de estabilidad y al SURESTE 707 como sostén. Participó en su desatraque y reposicionamiento junto al SURESTE 701." },
+      { id: "patron-cristobal", label: "Patrón Álvaro RODRÍGUEZ — CRISTOBAL", cat: "terceros", size: 18, ref: "patron-cristobal", det: "Patrón del CRISTOBAL, SAAM Towage. Informe del 6/09. Por orden de PLADA empujó la amura de babor del SURESTE 707 para contener la escora y luego participó en el desatraque de emergencia." },
       { id: "salvamento", label: "CARLON / TITON — Tecno Drive · Tecno Dive", cat: "terceros", size: 14, det: "Buques y empresas de salvamento. FERRAO sitúa el zarpe del CARLON a las 20:37; MOLESINI su presentación a las 22:00. Un buzo pasó una linga por la porta espía del espejo para levantar la banda de babor con la grúa del CARLON y con el guinche del TITON. Ambas maniobras fueron infructuosas." },
       { id: "osro", label: "OSRO — Nueva Era", cat: "terceros", size: 13, det: "Empresa a cargo del plan de contingencia contra la contaminación, activado a las 23:10. Barreras colocadas desde las 00:00 y buque cercado a las 00:30, ≈5 h 44 min después del primer aviso del hundimiento." },
       /* --- hechos / mecanismo --- */
@@ -985,6 +1047,12 @@ window.ANALISIS = {
       { s: "urrestarazu", t: "sueiro", l: "lo contacta a las 19:52", tipo: "accion" },
       { s: "perez", t: "urrestarazu", l: "toma su acta", tipo: "instruccion" },
       { s: "remolcadores", t: "ferrao", l: "pide autorización a CONMO a las 19:30", tipo: "accion" },
+      { s: "patron-maneador", t: "remolcadores", l: "patrón · informe 6/09", tipo: "estructura" },
+      { s: "patron-cristobal", t: "remolcadores", l: "patrón · informe 6/09", tipo: "estructura" },
+      { s: "patron-maneador", t: "sureste707", l: "desatraque 21:10 · aleta Br", tipo: "accion" },
+      { s: "patron-cristobal", t: "sureste707", l: "empuje y desatraque · amura Br", tipo: "accion" },
+      { s: "urrestarazu", t: "patron-maneador", l: "agencia informa causa de trasvase", tipo: "declara" },
+      { s: "urrestarazu", t: "patron-cristobal", l: "agencia informa causa de trasvase", tipo: "declara" },
       { s: "ferrao", t: "molesini", l: "informa la novedad", tipo: "accion" },
       { s: "ferrao", t: "plada", l: "informa la novedad", tipo: "accion" },
       { s: "ferrao", t: "aviso1846", l: "acredita la cadena agencia→SAAM→CONMO", tipo: "declara" },
@@ -1419,19 +1487,20 @@ window.ANALISIS = {
     {
       id: "i23",
       titulo: "Discrepancias horarias en la fase de respuesta",
-      gravedad: "media",
+      gravedad: "alta",
       eje: "Cronología",
-      resumen: "Cuatro registros de la respuesta —FERRAO, MOLESINI, PLADA y la nota de cronología— difieren en varios hitos clave.",
+      resumen: "Los informes de ambos patrones agregan una cronología SAAM que difiere hasta 2 h 20 min de FERRAO, MOLESINI, PLADA, URRESTARAZU y la nota manuscrita.",
       versiones: [
+        { quien: "Aviso y salida de SAAM", ref: "patron-maneador", cita: "Nota SAAM: solicitud del cliente 19:06 · patrones: aviso 19:25 y salida 19:35 · URRESTARAZU: llamada a SAAM ≈19:15 · FERRAO: pedido a CONMO 19:30 y zarpe 19:33.", donde: "SAAM / Acta URRESTARAZU / FERRAO" },
         { quien: "Zarpa / presentación del CARLON", ref: "informe-ferrao", cita: "FERRAO: zarpa a las 20:37 · MOLESINI / nota de cronología: se presenta a las 22:00. Discrepancia de ≈1 h 23 min.", donde: "Informe FERRAO / Informe MOLESINI" },
-        { quien: "Arribo del baqueano SUEIRO", cita: "Nota de cronología: 20:20 · FERRAO: remolcadores a su orden a las 20:21 · Informe del oficial: 20:25.", donde: "Cronología / FERRAO / Informe" },
-        { quien: "Arribo de PLADA", cita: "MOLESINI: 20:30 · FERRAO: 20:33. A las 20:07 PLADA había informado a CONMO que estaba a 20–25 minutos.", donde: "Informe / FERRAO" },
-        { quien: "Retiro del SURESTE 707", cita: "FERRAO: decisión 22:45, separación 22:57 · MOLESINI / cronología: decisión ≈22:50 · Exposición de PLADA: a las 23:30 URRESTARAZU indica que lo saquen · Acta URRESTARAZU: ≈22:30 abandono CARLON; decisión PLADA + SUEIRO + MOON.", donde: "FERRAO / Informe / Exposición / Cronología" },
+        { quien: "Arribo de PLADA / SUEIRO", ref: "patron-cristobal", cita: "Patrones SAAM: ambos presentes 20:15 · cronología: SUEIRO 20:20 · FERRAO: 20:21/20:33 · MOLESINI: 20:25/20:30 · URRESTARAZU: ≈20:30.", donde: "Todos los registros de respuesta" },
+        { quien: "Retiro del SURESTE 707", ref: "patron-maneador", cita: "Patrones: desatraque 21:10 · URRESTARAZU: ≈22:30 · FERRAO: decisión 22:45 y separación 22:57 · MOLESINI/cronología: ≈22:50 · PLADA: 23:30.", donde: "Todos los registros de respuesta" },
+        { quien: "Fin de actuación SAAM", ref: "patron-cristobal", cita: "Patrones: 23:20 · FERRAO: CRISTOBAL 23:15 y MANEADOR 23:28.", donde: "Informes SAAM / FERRAO" },
         { quien: "OSRO", cita: "Informe y cronología: activación del plan a las 23:10 · Nota de cronología: «23:57 se hace presente el OSRO» · Exposición del práctico: 23:55 se retiran autoridades.", donde: "Informe / Exposición / Cronología" },
         { quien: "Nombre del remolcador", cita: "Informe del oficial actuante: MAREADOR · FERRAO y exposición del práctico: MANEADOR.", donde: "Informe / FERRAO / Exposición" }
       ],
-      analisis: "Ninguna de estas discrepancias altera la causa del siniestro, pero todas afectan la calidad probatoria del expediente. La más amplia es la del CARLON (20:37 vs. 22:00). Sobre el SURESTE 707 conviven ahora tres horarios y dos atribuciones de autoría de la decisión. El informe de FERRAO aporta el registro CONMO que faltaba y, a la vez, multiplica los puntos a conciliar.",
-      resolucion: "Consolidar una única cronología oficial contrastando los cuatro documentos con los registros de CONMO, de la ANP, de SAAM Towage y de la empresa de salvamento. Requerir ampliación a PLADA —que se reservó el derecho de ampliar y rectificar—, al baqueano SUEIRO y a los patrones de los remolcadores."
+      analisis: "La cronología SAAM no es un ajuste menor: anticipa el desatraque del SURESTE 707 en al menos 1 h 20 min respecto de las demás fuentes y hasta 2 h 20 min respecto de PLADA. La hora afecta la secuencia CARLON/TITON, la atribución de quién decidió retirar el 707 y el inicio de las medidas contra contaminación. Los dos patrones coinciden porque sus informes son casi literales; esa coincidencia no reemplaza los registros objetivos.",
+      resolucion: "Consolidar una cronología oficial con grabaciones y libro de Control Montevideo, despacho electrónico de SAAM, AIS de los remolcadores, comunicaciones VHF y registros de ANP. Ampliar a PLADA y SUEIRO sobre las 20:15 y 21:10 consignadas por SAAM."
     },
     {
       id: "i24",
@@ -1481,16 +1550,17 @@ window.ANALISIS = {
     {
       id: "i27",
       titulo: "Quién decidió retirar el SURESTE 707",
-      gravedad: "media",
+      gravedad: "alta",
       eje: "Respuesta en la escena",
-      resumen: "PLADA atribuye la indicación a URRESTARAZU a las 23:30; URRESTARAZU la atribuye a PLADA, SUEIRO y MOON ≈22:30 tras abandonar el CARLON.",
+      resumen: "Los patrones atribuyen a PLADA y SUEIRO la orden de desatraque de emergencia a las 21:10; las demás fuentes difieren en hora y participantes.",
       versiones: [
+        { quien: "Fabrizio VIERA y Álvaro RODRÍGUEZ — patrones SAAM", ref: "patron-maneador", cita: "21:10 Hs […] ante el riesgo inminente de perder ambas embarcaciones, el Práctico G. Plada y el Vaqueano Sueiro disponen el desatraque de emergencia del B/P SURESTE 707.", donde: "Informes 06/09" },
         { quien: "CM Gustavo PLADA", ref: "exposicion-plada", cita: "El Sr. Daniel Urrestarazu […] indica que saquen el SURESTE 707 para no dañarlo.", donde: "Exposición 26/08 · ≈23:30" },
         { quien: "Daniel URRESTARAZU", ref: "urrestarazu", cita: "Aproximadamente a las 22:30 se abandonaron los intentos […] Luego […] entre el práctico PLADA, el baqueano SUEIRO y el representante del armador del Sur Este 707, el Sr. MOON, decidieron sacar al Sur Este 707.", donde: "Acta 03/09, P.4" },
         { quien: "CS (PM) Willian FERRAO", ref: "informe-ferrao", cita: "22:45 se decide separar […] 22:57 se separa el SURESTE 707.", donde: "Informe 26/08" }
       ],
-      analisis: "La discrepancia ya no es sólo horaria: también es de autoría. URRESTARAZU se excluye de la decisión y sitúa a MOON como representante del armador del 707. PLADA lo señala a él. FERRAO/MOLESINI no nombran autor individual. Resolverlo importa para fijar responsabilidades sobre el momento en que el Alpha Crux perdió el apoyo lateral.",
-      resolucion: "Carear o ampliar a PLADA, SUEIRO y URRESTARAZU; ampliar a MOON sobre su participación en la decisión. Contrastar con registros de SAAM y CONMO."
+      analisis: "Los ejecutantes materiales aportan una versión nueva: orden conjunta PLADA/SUEIRO a las 21:10 por riesgo de perder ambos buques. Coinciden con todos en la necesidad material de retirar el 707, pero no con la hora ni con la autoría. Además, acreditan el efecto: al perder ese sostén, el ALPHA CRUX se hundió inmediatamente. Esto no convierte el retiro en causa del siniestro; fue la consecuencia inevitable de una pérdida de estabilidad ya irreversible y una medida para evitar un segundo buque siniestrado.",
+      resolucion: "Ampliar a PLADA y tomar declaración a SUEIRO confrontándolos con los informes SAAM; requerir VHF/AIS y registro de órdenes. Ampliar a MOON y URRESTARAZU sobre su participación."
     },
     {
       id: "i28",
@@ -1505,6 +1575,20 @@ window.ANALISIS = {
       ],
       analisis: "La existencia de personal externo coreano el día del siniestro es un nudo abierto: un declarante lo afirma, el inspector del armador lo niega y reduce la soldadura a cubierta con tripulación propia. MOON además acredita la entrega de caños el 24/08 para el circuito motor→reductora y admite no haber avisado ese trabajo a la autoridad uruguaya. La línea causal de las reparaciones se refuerza y, a la vez, se complica.",
       resolucion: "Carear a Park KWANG JUN y a Kibong MOON. Requerir a ANP/agencia la habilitación de soldadura y registros de ingreso al muelle. Ampliar a MOON sobre el mensaje 18:55."
+    },
+    {
+      id: "i29",
+      titulo: "Los informes de los dos patrones reproducen una versión corporativa casi idéntica",
+      gravedad: "media",
+      eje: "Integridad de la investigación",
+      resumen: "VIERA y RODRÍGUEZ firman informes individualizados pero prácticamente idénticos en secuencia, redacción, horarios y evaluación técnica.",
+      versiones: [
+        { quien: "Fabrizio VIERA — MANEADOR", ref: "patron-maneador", cita: "De acuerdo con la información brindada por la agencia […] maniobra incorrecta de trasvase […] 20:15 […] 21:10 […] al retirar el SURESTE 707 […] se ocasionó de forma inmediata el hundimiento.", donde: "Informe 06/09" },
+        { quien: "Álvaro RODRÍGUEZ — CRISTOBAL", ref: "patron-cristobal", cita: "Reproduce la misma secuencia y formulación, variando únicamente la identificación del patrón y las tareas específicas de cada remolcador.", donde: "Informe 06/09" },
+        { quien: "Sebastián GUICHÓN — Gerente de Operaciones SAAM", ref: "informes-patrones-remolcadores", cita: "Remite ambos anexos el 7/09 junto con una cronología corporativa de la asistencia.", donde: "Nota SAAM 07/09" }
+      ],
+      analisis: "La coincidencia brinda una posición clara y consistente de SAAM, pero no debe ponderarse como si fueran dos relatos espontáneos e independientes. Sí tienen especial valor los extremos ligados a la ejecución material —cómo hicieron firme, qué maniobra realizó cada unidad y el efecto inmediato de retirar el 707—, que resultan propios de cada patrón.",
+      resolucion: "Ratificar individualmente los informes, separando recuerdos propios de información recibida de CCO/agencia. Requerir partes de máquinas, bitácoras, AIS, grabaciones VHF y despacho operativo de cada remolcador."
     },
 
   ],
@@ -1523,7 +1607,8 @@ window.ANALISIS = {
           { grado: "acreditado", t: "El intento de cerrar el ojo de buey fracasó por la presión del agua ya embarcada, lo que indica que cuando se advirtió la vía de inundación ésta ya estaba plenamente establecida y el momento útil para actuar había pasado." },
           { grado: "acreditado", t: "El agua embarcada descendió por la escalera de acceso y por el tambucho de la sala de máquinas y mojó el tablero eléctrico principal, provocando el black out. El generador continuó funcionando hasta que también le entró agua." },
           { grado: "acreditado", t: "El black out constituye el punto de no retorno del siniestro: dejó sin alimentación a las tres bombas de achique, que estaban operativas pero no llegaron a funcionar, sin que existiera fuente de energía alternativa disponible en tiempo útil. A partir de ese instante el buque no tenía posibilidad material de recuperación." },
-          { grado: "acreditado", t: "El buque no llegó a hundirse por completo únicamente porque quedó apoyado en el fondo y sujeto a las bitas mediante sus propios cabos, y por haber estado apoyado sobre el SURESTE 707 durante las primeras horas." }
+          { grado: "acreditado", t: "El SURESTE 707 actuó como sostén temporal del ALPHA CRUX. Los dos patrones que ejecutaron el desatraque afirman que al retirarlo se produjo inmediatamente el hundimiento final. El retiro no fue causa primaria del siniestro: se dispuso para evitar perder también el 707, que ya era arrastrado y escorado peligrosamente." },
+          { grado: "acreditado", t: "El buque no llegó a hundirse por completo porque quedó apoyado en el fondo y sujeto a las bitas mediante sus propios cabos." }
         ]
       },
       {
@@ -1564,6 +1649,8 @@ window.ANALISIS = {
           { grado: "acreditado", t: "Ningún tripulante ni oficial del ALPHA CRUX notificó el siniestro a la autoridad marítima. Queda acreditada la cadena agencia → SAAM ≈19:15 → CONMO 19:30 → Prefectura. El eslabón MOON 18:55 lo aporta URRESTARAZU; Kibong MOON (acta 4/09) confirma retiro a las 17:10 y retorno a las 19:00, sin pronunciarse sobre el mensaje porque no se le preguntó. Es un incumplimiento del deber de notificación imputable al Capitán, con independencia de la causa del hundimiento." },
           { grado: "acreditado", t: "Existió una demora relevante entre el hundimiento y la respuesta. Kyongsu PARK avisó al patrón a las 18:46 desde el muelle; según URRESTARAZU, MOON avisó a la agencia a las 18:55; Prefectura intervino a las 19:36. URRESTARAZU llamó a OSRO a las 20:53, pero la activación formal del plan se consigna a las 23:10 y el cerco a las 00:30. Transcurrieron aproximadamente 5 horas y 44 minutos con un buque hundido y ≈300 t de gasoil a bordo." },
           { grado: "acreditado", t: "Todas las maniobras de salvamento resultaron infructuosas: el apoyo de los remolcadores sobre el SURESTE 707 hacía que el ALPHA CRUX se hundiera más de popa, la grúa del CARLON no soportó el peso del buque y el tiro con el guinche del TITON tampoco dio resultado. Finalmente hubo que retirar el SURESTE 707 porque estaba siendo arrastrado." },
+          { grado: "acreditado", t: "Los patrones de MANEADOR y CRISTOBAL justifican la espera por PLADA/SUEIRO como decisión de seguridad comunicada a Control Montevideo. Su conducta no puede describirse simplemente como negativa a asistir: evaluaron correctamente que retirar el 707 hundiría al ALPHA CRUX y esperaron una conducción responsable antes de ejecutar maniobras de alto riesgo." },
+          { grado: "a-verificar", t: "La cronología SAAM sitúa el desatraque del SURESTE 707 a las 21:10, entre 1 h 20 min y 2 h 20 min antes que las demás fuentes. Esta divergencia material exige AIS, VHF, bitácoras y despacho de remolcadores; los dos informes coincidentes son una versión corporativa casi idéntica, no dos corroboraciones plenamente independientes." },
           { grado: "probable", t: "La atribución prematura de causa al error de trasvase ingresó al expediente vía URRESTARAZU a las 20:00, quien la imputa al mensaje de MOON a las 18:55. MOON declara no saber la causa. La tesis queda refutada como causa suficiente (bomba apagada) y su autoría textual queda en disputa pendiente de ampliación y del mensaje documental." }
         ]
       },
@@ -1573,6 +1660,7 @@ window.ANALISIS = {
         items: [
           { grado: "acreditado", t: "Siguen sin declarar Konstantin TOKMIN y Evgenii SHUKOV/SIIUKOV, más el personal de soldadura cuya existencia MOON niega y Park KWANG JUN afirma. Kibong MOON y Daniel URRESTARAZU ya declararon (3/09 y 4/09); entre ambos queda abierta la disputa sobre el contenido del aviso 18:55." },
           { grado: "acreditado", t: "MOON acredita la entrega el 24/08 de caños para el recambio del enfriamiento del motor principal hacia la caja reductora —circuito coincidente con el que el 2° Oficial vinculó a la bomba de agua de mar desconectada— y admite no haber notificado ese trabajo a la autoridad uruguaya por considerarlo breve. Informó a la agencia de soldadura en cubierta, no de caños." },
+          { grado: "acreditado", t: "Los informes operativos de Fabrizio VIERA (MANEADOR) y Álvaro RODRÍGUEZ (CRISTOBAL), fechados el 6/09 y remitidos por SAAM el 7/09, ya fueron incorporados. Confirman la fuente agencial de la tesis del trasvase y la función de sostén del SURESTE 707, pero abren discrepancias horarias sustanciales." },
           { grado: "acreditado", t: "La duplicación del archivo rotulado como acta del 1er Oficial de Máquinas coreano, que reproducía literalmente el acta del Jefe de Máquinas ruso, quedó subsanada con la incorporación de la declaración de Park KWANG JUN del 1 de septiembre. Subsiste en cambio la indeterminación de los cargos, y las últimas actas revelaron que no es un problema aislado: el buque tenía dos jefes de máquinas y dos primeros oficiales de puente, uno por la línea rusa del armador y otro por la coreana de Dong Nam, y ninguno de los cuatro tiene su cargo y su línea de dependencia establecidos en el expediente." },
           { grado: "acreditado", t: "Dos pares de actas se solapan en el tiempo consignando al mismo intérprete, lo que es materialmente imposible, y dos actas registran hora de cierre anterior a su apertura: la del 3° Oficial de Máquinas y la del 1er Oficial de Puente coreano, cuyo pie reproduce literalmente la fecha y hora de cierre del acta del patrón de pesca del día anterior y cuya pregunta 4 reproduce el cuestionario de ese mismo declarante. Son defectos formales subsanables que deben subsanarse para evitar objeciones sobre la validez de las actas." },
           { grado: "acreditado", t: "Siguen faltando registros objetivos de la fase crítica: no hay grabaciones de CCTV, ni registros de CONMO contrastados, ni tráfico VHF, ni registros telefónicos de la agencia ni de SAAM. Sí se incorporaron planos del buque y la serie de viento Telemetry+ del 25–26/08, que permite descartar la hipótesis meteorológica. El grueso de la reconstrucción de los hechos sigue descansando en declaraciones contradictorias entre sí." }
@@ -1597,7 +1685,7 @@ window.ANALISIS = {
         { t: "Ampliar declaración al jefe de máquinas coreano Park KWANG JUN.", d: "Su acta del 1 de septiembre dejó puntos esenciales sin cubrir. Debe precisar: qué piezas se soldaban y dónde; el detalle del cambio de caños del 22 de agosto y el registro de la prueba de presión; su participación en el trasvase popa→proa que le atribuye el Jefe de Máquinas ruso; la reparación del tubo de la bodega que le atribuye MURDIONO y que él niega conocer; la ubicación y el tipo de accionamiento de las dos bombas portátiles; el estado de la escora al bajar a la sala de máquinas a las 16:30 y al retirarse a las 17:30; y su cargo y relación jerárquica efectiva con la oficialidad rusa." },
         { t: "Interrogar a Evgenii SHUKOV / SIIUKOV, 2° Oficial de Puente (2nd mate).", d: "El rol de tripulación lo consigna como SHUKOV EVGENII, 2nd mate (embarque 21.03.2026). El Capitán lo señaló como encargado de los cálculos de estabilidad después de cada trasvase (grafía SIIUKOV en actas). Debe declarar sobre: qué cálculos realizaba efectivamente, con qué datos y herramientas, qué cálculos existían para la estadía en puerto y para el 25 de agosto, y dónde constaban." },
         { t: "Ampliar al patrón Hoseon SHIN (SHIN HO SEON) y aclarar su cargo efectivo.", d: "El rol lo identifica como Guarantee engineer, mientras las actas lo tratan como patrón de pesca; el Ch.fishmaster del crew list es TOKMIN. Ampliar sobre el fundamento de su afirmación de que Kyongsu PARK estaba de guardia en puente, y sobre su rol real a bordo frente a TOKMIN y a KWON TAE GUN (CHIEF TRAL, aún no declarado)." },
-        { t: "Interrogar a KWON TAE GUN (CHIEF TRAL) y al resto de la tripulación no declarada.", d: "El rol de tripulación (41 plazas) ya está incorporado al expediente. Faltan declarar, entre otros: KWON TAE GUN, MOLEV ANDREI (Boatswain), KOMANDIR SERGEY, CHERNOV RUSLAN y los 24 marineros indonesios no interrogados. Confrontar al Capitán con el nombre de MOON. Tomar declaración también a SUEIRO, patrones de remolcadores, Federico DA CUNHA (Tecno Dive) y Fabián SOCA (OSRO Nueva Era)." }
+        { t: "Interrogar a KWON TAE GUN (CHIEF TRAL) y al resto de la tripulación no declarada.", d: "El rol de tripulación (41 plazas) ya está incorporado. Faltan, entre otros: KWON TAE GUN, MOLEV ANDREI, KOMANDIR SERGEY, CHERNOV RUSLAN y 24 marineros indonesios. Confrontar al Capitán con el nombre de MOON. Tomar declaración a SUEIRO, Federico DA CUNHA (Tecno Dive) y Fabián SOCA (OSRO). Los patrones VIERA y RODRÍGUEZ ya presentaron informes y requieren ratificación individual." }
       ]
     },
     {
@@ -1630,7 +1718,7 @@ window.ANALISIS = {
       urgencia: "alta",
       items: [
         { t: "Registros audiovisuales y de tráfico del puerto.", d: "Grabaciones de CCTV del puerto y de la ANP correspondientes al 25 de agosto, que permitirían fijar objetivamente el momento de inicio de la escora y su progresión. Es la prueba que puede cerrar el hueco temporal de las 16:00 a las 19:30." },
-        { t: "Registros de CONMO, SAAM Towage y tráfico VHF.", d: "Contrastar el informe de FERRAO con el libro de novedades de CONMO, las grabaciones de tráfico y el despacho de SAAM Towage, para fijar la hora exacta del pedido de autorización «por solicitud de la Agencia Marítima», del zarpe de remolcadores y del CARLON (20:37 según FERRAO / 22:00 según MOLESINI)." },
+        { t: "Registros de CONMO, SAAM Towage, AIS y tráfico VHF.", d: "Contrastar FERRAO y los informes de patrones con el libro/grabaciones de Control Montevideo, despacho electrónico y bitácoras SAAM, AIS de MANEADOR/CRISTOBAL y VHF. Fijar solicitud del cliente (nota SAAM: 19:06), aviso a patrones (19:25), zarpe (19:33/19:35), presencia de PLADA/SUEIRO (20:15–20:33), desatraque del 707 (21:10–23:30) y cierre (23:15–23:28)." },
         { t: "Registros telefónicos y de mensajería.", d: "Del mensaje de Kyongsu PARK al patrón Hoseon SHIN de las 18:46; de las comunicaciones de Oriental Shipping y de SAAM Towage ese día —en particular quién de la agencia ordenó a SAAM antes de las 19:30—; y de las comunicaciones de la tripulación entre las 16:00 y las 20:00." },
         { t: "Documentación técnica y estatutaria del buque.", d: "Declaración general de arribo y despacho de entrada, que fijarán la fecha efectiva de atraque —hoy no acreditada en el expediente— y la duración real de la estadía en puerto; plano de disposición general y de tanques con capacidades certificadas; cuaderno de estabilidad aprobado; condición de carga y calados al arribo y al 25 de agosto; certificados estatutarios y del Estado de bandera; historial de clase; informes de inspección PSC; y el manual del sistema de gestión de la seguridad con los procedimientos de trasvase." },
         { t: "Libros y registros de a bordo.", d: "Diario de navegación, libro de máquinas, libro de guardia de puente, libro de registro de hidrocarburos, registros de sondaje de tanques, y los registros de consumo diario de gasoil que según el Capitán el Jefe de Máquinas le entregaba a diario. Verificar si fueron recuperados del buque y su estado." },
@@ -1645,10 +1733,10 @@ window.ANALISIS = {
         { t: "Identificar y requerir al taller portuario que trabajó el 24 de agosto.", d: "Orden de trabajo, presupuesto, permisos de trabajo, detalle de las tareas efectivamente realizadas, personal interviniente, y constancia del estado en que quedaron las tomas de mar y el circuito de enfriamiento al finalizar la jornada. Tomar declaración al personal que trabajó a bordo. Es una diligencia crítica y hoy pendiente." },
         { t: "Identificar a la empresa y a los operarios venidos de Corea que soldaban el 25 de agosto.", d: "Requerir a la agencia marítima, a la Administración Nacional de Puertos y a la empresa Dong Nam los registros de ingreso al muelle B ese día, la contratación, los permisos de trabajo en caliente y las órdenes de trabajo. Determinar quién autorizó y supervisó la tarea y qué elementos del buque se soldaron. El hecho sólo consta por la declaración del jefe de máquinas coreano y no fue indagado a nadie más." },
         { t: "Requerir a la empresa Dong Nam la documentación de su personal embarcado.", d: "Contratos, funciones, titulaciones y relación jerárquica del patrón de pesca Hoseon SHIN, del jefe de máquinas Park KWANG JUN, de Kyongsu PARK y del resto de los tripulantes coreanos, a fin de establecer la estructura real de mando a bordo y su articulación con la oficialidad rusa del armador OO Vodoley." },
-        { t: "Interrogar al Sr. Daniel URRESTARAZU, agencia marítima Oriental Shipping.", d: "Sobre la fuente, hora y medio por el que obtuvo la información que transmitió al oficial actuante a las 20:00, atribuyendo la escora a un error en la maniobra de trasvase. Sobre su contacto previo con la empresa de salvamento. Sobre las obligaciones asumidas respecto de la tripulación siniestrada. Y sobre la instrucción de retirar el SURESTE 707." },
+        { t: "Ampliar a Daniel URRESTARAZU sobre la información transmitida a SAAM.", d: "Ya declaró el 3/09. Confrontarlo con los informes de los patrones, que dicen haber recibido de la agencia la tesis del trasvase antes de arribar. Precisar quién habló con CCO, qué informó y a qué hora; aclarar la solicitud de cliente registrada por SAAM a las 19:06 frente a su llamada declarada ≈19:15." },
         { t: "Tomar declaración al baqueano de puerto Sr. Eduardo SUEIRO.", d: "Intervino desde las 20:20/20:25 dirigiendo las primeras maniobras y no ha declarado en el expediente." },
         { t: "Ampliación de la exposición del Práctico de Seguridad CM Gustavo PLADA.", d: "Se reservó expresamente el derecho de ampliar y rectificar. Corresponde requerirle precisión sobre las discrepancias horarias con el informe del oficial actuante, en particular sobre la decisión de retirar el SURESTE 707 y sobre el retiro de las autoridades a las 23:55." },
-        { t: "Tomar declaración a los patrones de los remolcadores CRISTOBAL y MANEADOR.", d: "Incluido el patrón del remolcador que solicitó a CONMO autorización para dirigirse al muelle 7, que fue el origen de la primera noticia del siniestro y cuya identidad no consta en el expediente. Indagar sobre el estado del buque a su llegada y sobre por qué se negaron a maniobrar hasta el arribo del baqueano o del práctico." },
+        { t: "Ratificar individualmente los informes de los patrones VIERA y RODRÍGUEZ.", d: "Los informes del 6/09 ya están incorporados. Deben separar conocimiento propio de información de CCO/agencia y explicar la redacción prácticamente idéntica. Precisar horas 19:25, 19:35, 20:15, 21:10 y 23:20; identificar la comunicación a Control; confirmar posiciones de remolque y efecto inmediato del retiro del SURESTE 707." },
         { t: "Tomar declaración al personal de salvamento y a los buzos.", d: "Tecno Drive y Tecno Dive, buques CARLON y TITON. Los buzos son los únicos que observaron el casco sumergido en las horas inmediatas al siniestro y pueden aportar sobre el estado del casco, las aberturas y la posición del buque." },
         { t: "Requerir informe a la empresa OSRO Nueva Era.", d: "Sobre la hora efectiva de activación y de llegada, la evolución del cerco de contención y la cuantificación de hidrocarburo derramado y recuperado." }
       ]

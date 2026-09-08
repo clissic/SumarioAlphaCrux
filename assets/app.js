@@ -21,7 +21,7 @@
     resumen: "Panorama de la investigación",
     mapa: "Mapa conceptual del caso",
     cronologia: "Línea de tiempo",
-    interrogatorios: "Interrogatorios",
+    interrogatorios: "Declaraciones e informes",
     incongruencias: "Análisis de incongruencias",
     conclusiones: "Conclusiones posibles",
     pasos: "Posibles pasos a seguir",
@@ -121,7 +121,7 @@
      PANORAMA
      ============================================================ */
   function renderPanorama() {
-    var nInterr = AN.timeline.filter(function (t) { return t.interrogatorio; }).length;
+    var nInterr = DECL.length;
     var nPreg = DECL.reduce(function (a, d) { return a + d.qa.length; }, 0);
     var criticas = AN.incongruencias.filter(function (i) { return i.gravedad === "critica"; }).length;
     var pendientesNodos = AN.grafo.nodos.filter(function (n) {
@@ -130,8 +130,8 @@
     var nPasos = AN.pasos.reduce(function (a, b) { return a + b.items.length; }, 0);
 
     var stats = [
-      { n: nInterr, l: "Actas tomadas" },
-      { n: nPreg, l: "Preguntas transcriptas" },
+      { n: nInterr, l: "Declaraciones / informes" },
+      { n: nPreg, l: "Preguntas / apartados" },
       { n: AN.timeline.length, l: "Hitos en la cronología" },
       { n: AN.incongruencias.length, l: "Incongruencias", cls: "warn" },
       { n: criticas, l: "De gravedad crítica", cls: "hot" },
@@ -315,6 +315,9 @@
   function renderDeclBody() {
     var d = DECL.filter(function (x) { return x.id === declActive; })[0];
     var c = declColor(d);
+    var esInforme = d.acta.formato === "Informe operativo";
+    var unidadLabel = esInforme ? "Apartados" : "Preguntas";
+    var unidadLabelLower = esInforme ? "apartados" : "preguntas";
 
     var fichaRows = Object.keys(d.ficha).map(function (k) {
       return "<dt>" + esc(k) + "</dt><dd>" + esc(d.ficha[k]) + "</dd>";
@@ -326,7 +329,8 @@
       ["Oficial actuante", d.acta.oficial],
       ["Intérprete", d.acta.interprete],
       ["Lugar", d.acta.lugar],
-      ["Preguntas", String(d.acta.preguntas)],
+      ["Formato", d.acta.formato || "Acta de información sumaria"],
+      [unidadLabel, String(d.acta.preguntas)],
       ["Archivo", d.acta.archivo]
     ].map(function (r) { return "<dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd>"; }).join("");
 
@@ -340,7 +344,7 @@
       '<p class="dh-cargo">' + esc(d.cargo) + "</p>" +
       '<div class="dh-chips">' +
       '<span class="chip chip-info">' + esc(d.acta.fecha) + " · " + esc(d.acta.inicio) + "–" + esc(String(d.acta.cierre).split(" ")[0]) + "</span>" +
-      '<span class="chip">' + esc(d.qa.length) + " preguntas</span>" +
+      '<span class="chip">' + esc(d.qa.length) + " " + unidadLabelLower + "</span>" +
       (nCrit ? '<span class="chip chip-hot">' + nCrit + " puntos críticos</span>" : "") +
       (nContra ? '<span class="chip chip-purple">' + nContra + " contradicciones</span>" : "") +
       "</div></div></div>" +
@@ -353,7 +357,9 @@
 
     var subtabs =
       '<div class="sub-tabs">' +
-      '<button class="stab' + (declTab === "qa" ? " is-active" : "") + '" data-t="qa">Preguntas y respuestas<span class="stab-count">' + d.qa.length + "</span></button>" +
+      '<button class="stab' + (declTab === "qa" ? " is-active" : "") + '" data-t="qa">' +
+      (esInforme ? "Contenido del informe" : "Preguntas y respuestas") +
+      '<span class="stab-count">' + d.qa.length + "</span></button>" +
       '<button class="stab' + (declTab === "cl" ? " is-active" : "") + '" data-t="cl">Conclusiones<span class="stab-count">' + d.conclusiones.length + "</span></button>" +
       "</div>";
 
@@ -361,7 +367,8 @@
     if (declTab === "qa") {
       body =
         '<div class="qa-tools">' +
-        '<label class="mt-check"><input type="checkbox" id="qaOnlyKey"><span>Sólo preguntas clave</span></label>' +
+        '<label class="mt-check"><input type="checkbox" id="qaOnlyKey"><span>Sólo ' +
+        (esInforme ? "apartados clave" : "preguntas clave") + "</span></label>" +
         '<button class="btn btn-ghost" id="qaAll">Abrir todas</button>' +
         '<button class="btn btn-ghost" id="qaNone">Cerrar todas</button>' +
         "</div>" + '<div class="qa-list" id="qaList"></div>';
@@ -616,6 +623,7 @@
     var actas = DECL.map(function (d, i) {
       var doc = d.ficha && (d.ficha.Pasaporte || d.ficha.Documento || d.ficha["N° pasaporte"] || "");
       var extra = doc ? " · doc. " + doc : "";
+      var unidad = d.acta.formato === "Informe operativo" ? " apartados" : " preguntas";
       return '<li><span class="n">' + String(i + 1).padStart(2, "0") + "</span><span><b>" +
         esc(d.nombre) + "</b> — " + esc(d.cargo) + extra + "<br>" +
         esc(d.acta.fecha) + (d.acta.inicio ? ", " + d.acta.inicio : "") +
@@ -623,7 +631,7 @@
           ? " – " + d.acta.cierre : "") +
         " · " + esc(d.acta.oficial) +
         (d.acta.interprete ? " · intérprete " + esc(d.acta.interprete.split("(")[0].trim()) : "") +
-        " · " + d.qa.length + " preguntas</span></li>";
+        " · " + d.qa.length + unidad + "</span></li>";
     }).join("");
 
     var analisis = SUM.analisisActas.map(function (a) {
