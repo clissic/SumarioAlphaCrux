@@ -84,6 +84,36 @@ body{
 .sf-row{ display:flex; justify-content:space-between; gap:10px; padding:3px 0; }
 .sf-row span{ color:var(--txt-3); }
 .sf-row b{ color:var(--txt-2); font-weight:600; text-align:right; }
+.sidebar-credits{
+  margin-top:11px; padding-top:9px; border-top:1px solid rgba(255,255,255,.055);
+  color:var(--txt-3); font-size:9px; line-height:1.55; letter-spacing:.01em;
+}
+.credit-author{
+  position:relative; color:var(--txt-2); cursor:help; outline:none;
+  border-bottom:1px dotted rgba(255,255,255,.2);
+}
+.credit-popover{
+  position:absolute; left:0; bottom:calc(100% + 9px); z-index:100;
+  display:block; width:250px; padding:11px 12px;
+  background:var(--panel-2); border:1px solid var(--line-2); border-radius:8px;
+  box-shadow:var(--sh); color:var(--txt-2); font-size:11px;
+  line-height:1.45; letter-spacing:0; pointer-events:none;
+  opacity:0; visibility:hidden; transform:translateY(4px);
+  transition:opacity .15s, transform .15s, visibility .15s;
+}
+.credit-popover::after{
+  content:""; position:absolute; left:20px; top:100%;
+  border:6px solid transparent; border-top-color:var(--line-2);
+}
+.credit-popover b,
+.credit-popover span{ display:block; text-align:left; }
+.credit-popover b{ margin-bottom:6px; color:var(--txt); font-weight:600; }
+.credit-popover span + span{ margin-top:2px; }
+.credit-author:hover .credit-popover,
+.credit-author:focus .credit-popover,
+.credit-author:focus-visible .credit-popover{
+  opacity:1; visibility:visible; transform:none;
+}
 
 .main{ flex:1; display:flex; flex-direction:column; min-width:0; }
 
