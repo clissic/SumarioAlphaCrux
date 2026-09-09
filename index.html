@@ -34,6 +34,10 @@
         <span class="ni-ico">⌖</span><span class="ni-lbl">Línea de tiempo</span>
         <span class="ni-count" id="cnt-timeline"></span>
       </button>
+      <button class="nav-item" data-view="videos">
+        <span class="ni-ico">▶</span><span class="ni-lbl">Análisis de videos</span>
+        <span class="ni-count" id="cnt-videos"></span>
+      </button>
       <button class="nav-item" data-view="interrogatorios">
         <span class="ni-ico">☰</span><span class="ni-lbl">Declaraciones</span>
         <span class="ni-count" id="cnt-decl"></span>
@@ -99,7 +103,7 @@
         <div class="hero">
           <div class="hero-tag">Investigación de siniestro marítimo</div>
           <h1>Hundimiento del B/P <em>Alpha Crux</em></h1>
-          <p class="hero-sub">Análisis interactivo de catorce actas de información sumaria, los informes de los patrones de MANEADOR y CRISTOBAL, el informe del oficial actuante, el informe de CONMO, la exposición del Práctico de Seguridad y la cronología de respuesta. Puerto de Montevideo, 25 de agosto de 2026.</p>
+          <p class="hero-sub">Análisis interactivo de diecisiete actas de información sumaria, los informes de los patrones de MANEADOR y CRISTOBAL, el informe del oficial actuante, el informe de CONMO, la exposición del Práctico de Seguridad y la cronología de respuesta. Puerto de Montevideo, 25 de agosto de 2026.</p>
           <div class="hero-stats" id="heroStats"></div>
         </div>
 
@@ -167,6 +171,16 @@
           <span class="tl-result" id="tlResult"></span>
         </div>
         <div class="timeline" id="timeline"></div>
+      </section>
+
+      <!-- ---------- ANÁLISIS DE VIDEOS ---------- -->
+      <section class="view" id="view-videos">
+        <div class="view-head">
+          <h2>Análisis de videos</h2>
+          <p>Registro audiovisual ordenado cronológicamente. Cada acordeón identifica fecha, intervalo, unidad y valor investigativo; al abrirlo se carga el archivo en un reproductor HTML5.</p>
+        </div>
+        <div class="video-summary" id="videoSummary"></div>
+        <div class="video-list" id="videoList"></div>
       </section>
 
       <!-- ---------- INTERROGATORIOS ---------- -->

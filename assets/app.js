@@ -21,6 +21,7 @@
     resumen: "Panorama de la investigación",
     mapa: "Mapa conceptual del caso",
     cronologia: "Línea de tiempo",
+    videos: "Análisis de videos",
     interrogatorios: "Declaraciones e informes",
     incongruencias: "Análisis de incongruencias",
     conclusiones: "Conclusiones posibles",
@@ -76,6 +77,9 @@
     if (view === "mapa" && window.MAPA) window.MAPA.ensure();
     if (view === "viento" && window.WIND_MAP) window.WIND_MAP.ensure();
     else if (window.WIND_MAP) window.WIND_MAP.stop();
+    if (view !== "videos") {
+      qa("#videoList video").forEach(function (v) { v.pause(); });
+    }
     q("#sidebar").classList.remove("open");
   }
   window.gotoView = show;
@@ -584,7 +588,9 @@
 
   function renderSumario() {
     if (!SUM) return;
-    var nActas = DECL.length;
+    var nActas = DECL.filter(function (d) {
+      return d.acta.formato !== "Informe operativo";
+    }).length;
     var nCrit = AN.incongruencias.filter(function (i) { return i.gravedad === "critica"; }).length;
     var nPend = AN.grafo.nodos.filter(function (n) {
       return n.cat === "no-declaro" || n.id === "equipo-coreano";
@@ -661,7 +667,7 @@
       '<header class="sd-head">' +
         '<p class="sd-kicker">' + esc(SUM.meta.titulo) + "</p>" +
         '<h2 class="sd-title">' + esc(SUM.meta.asunto) + "</h2>" +
-        '<p class="sd-inst">Oficiales instructores</p>' +
+        '<p class="sd-inst">Autoridades del sumario</p>' +
         '<div class="sd-firmas" style="margin-top:14px">' + inst + "</div>" +
       "</header>" +
       '<div class="sd-meta"><span>Montevideo, ' + esc(SUM.meta.fechaOficio) + ".-</span>" +
@@ -708,6 +714,74 @@
         var id = a.getAttribute("href").slice(1);
         var n = document.getElementById(id);
         if (n) scrollTo(n, { block: "start", behavior: "smooth" });
+      });
+    });
+  }
+
+  /* ============================================================
+     ANÁLISIS DE VIDEOS
+     ============================================================ */
+  function renderVideos() {
+    var data = AN.videos;
+    var list = q("#videoList");
+    var summary = q("#videoSummary");
+    if (!data || !list || !summary) return;
+
+    var items = data.items || [];
+    summary.innerHTML =
+      '<div class="video-summary-stat"><b>' + items.length + '</b><span>archivos catalogados</span></div>' +
+      '<div class="video-summary-stat"><b>' + (items[0] ? esc(items[0].inicio) : "—") + '</b><span>primer registro</span></div>' +
+      '<div class="video-summary-stat"><b>' + (items.length ? esc(items[items.length - 1].fin) : "—") + '</b><span>último registro</span></div>' +
+      '<p class="video-warning">' + esc(data.advertencia) + "</p>";
+
+    list.innerHTML = items.map(function (v, i) {
+      var fechaCorta = v.fecha.replace(" de agosto de ", "-08-");
+      var tituloCompleto = fechaCorta + " " + v.inicio.replace(/:/g, ".") +
+        " al " + v.fin.replace(/:/g, ".") + " — " + v.unidad + " · " + v.titulo;
+      return '<article class="video-item" data-video="' + esc(v.id) + '">' +
+        '<button class="video-head" type="button" aria-expanded="false">' +
+          '<span class="video-index">' + String(i + 1).padStart(2, "0") + "</span>" +
+          '<span class="video-head-main"><b>' + esc(tituloCompleto) + '</b>' +
+            '<span>' + esc(v.duracion) + " · " + esc(v.archivo) + "</span></span>" +
+          '<span class="chip chip-info">' + esc(v.unidad) + "</span>" +
+          '<span class="video-arrow">▸</span>' +
+        "</button>" +
+        '<div class="video-body">' +
+          '<div class="video-meta">' +
+            '<div><span>Fecha</span><b>' + esc(v.fecha) + "</b></div>" +
+            '<div><span>Intervalo</span><b>' + esc(v.inicio) + "–" + esc(v.fin) + "</b></div>" +
+            '<div><span>Duración nominal</span><b>' + esc(v.duracion) + "</b></div>" +
+          "</div>" +
+          '<div class="video-analysis"><h3>Valor investigativo</h3><p>' + esc(v.relevancia) + "</p></div>" +
+          '<video controls playsinline preload="none" data-src="' + esc(v.url) + '">' +
+            "Tu navegador no puede reproducir este video." +
+          "</video>" +
+          '<a class="video-open-link" href="' + esc(v.url) + '" target="_blank" rel="noopener">Abrir archivo en otra pestaña ↗</a>' +
+        "</div>" +
+      "</article>";
+    }).join("");
+
+    qa("#videoList .video-head").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var item = button.parentNode;
+        var video = item.querySelector("video");
+        var willOpen = !item.classList.contains("open");
+
+        qa("#videoList .video-item.open").forEach(function (other) {
+          if (other === item) return;
+          other.classList.remove("open");
+          other.querySelector(".video-head").setAttribute("aria-expanded", "false");
+          var otherVideo = other.querySelector("video");
+          if (otherVideo) otherVideo.pause();
+        });
+
+        item.classList.toggle("open", willOpen);
+        button.setAttribute("aria-expanded", String(willOpen));
+        if (willOpen && video && !video.getAttribute("src")) {
+          video.setAttribute("src", video.dataset.src);
+          video.load();
+        }
+        if (!willOpen && video) video.pause();
       });
     });
   }
@@ -856,6 +930,28 @@
         act: function () { show("mapa"); if (window.MAPA) window.MAPA.focus(n.id); }
       });
     });
+    if (AN.videos) {
+      AN.videos.items.forEach(function (v) {
+        searchIndex.push({
+          grupo: "Análisis de videos",
+          t: v.inicio + "–" + v.fin + " · " + v.unidad + " · " + v.titulo,
+          x: v.relevancia,
+          w: v.fecha + " · " + v.duracion,
+          blob: [v.fecha, v.inicio, v.fin, v.unidad, v.titulo, v.archivo, v.relevancia].join(" "),
+          act: function () {
+            show("videos");
+            setTimeout(function () {
+              var item = q('[data-video="' + v.id + '"]');
+              if (item) {
+                var button = item.querySelector(".video-head");
+                if (!item.classList.contains("open") && button) button.click();
+                scrollTo(item, { block: "center", behavior: "smooth" });
+              }
+            }, 60);
+          }
+        });
+      });
+    }
     AN.documentos.forEach(function (d) {
       searchIndex.push({
         grupo: "Documentos base", t: d.titulo, x: d.resumen, w: d.autor + " · " + d.fecha,
@@ -948,7 +1044,7 @@
 
     var order = ["Declarantes", "Preguntas y respuestas", "Incongruencias", "Línea de tiempo",
       "Conclusiones por declaración", "Conclusiones generales", "Pasos a seguir",
-      "Mapa conceptual", "Documentos base", "Sumario (borrador)"];
+      "Mapa conceptual", "Análisis de videos", "Documentos base", "Sumario (borrador)"];
 
     var html = "";
     order.forEach(function (g) {
@@ -1007,6 +1103,7 @@
   q("#cnt-decl").textContent = DECL.length;
   q("#cnt-incon").textContent = AN.incongruencias.length;
   q("#cnt-pasos").textContent = AN.pasos.reduce(function (a, b) { return a + b.items.length; }, 0);
+  q("#cnt-videos").textContent = AN.videos ? AN.videos.items.length : 0;
 
   renderPanorama();
   renderTimelineFilters();
@@ -1017,6 +1114,7 @@
   renderInc();
   renderConclusiones();
   renderPasos();
+  renderVideos();
   renderDocs();
   renderSumario();
   buildIndex();

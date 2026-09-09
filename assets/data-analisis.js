@@ -1,5 +1,5 @@
 /* Cronología, red conceptual, incongruencias, conclusiones y pasos a seguir.
-   Elaborado a partir del cruce de 14 actas y dos informes de patrones de remolcador,
+   Elaborado a partir del cruce de 17 actas y dos informes de patrones de remolcador,
    el informe del TN (CP) MOLESINI,
    el informe del supervisor de CONMO CS (PM) Willian FERRAO, la exposición del
    Práctico de Seguridad CM Gustavo PLADA y la nota de cronología manuscrita.
@@ -191,6 +191,88 @@ window.ANALISIS = {
   ],
 
   /* ================================================================== */
+  /*  REGISTRO AUDIOVISUAL                                              */
+  /* ================================================================== */
+  videos: {
+    fuente: "Archivos incorporados en files/Videos/",
+    advertencia: "La descripción inicial se basa en el nombre y el intervalo temporal de cada archivo. Las inferencias sobre maniobras deben confirmarse mediante visualización cuadro a cuadro y cotejo con AIS, VHF y bitácoras.",
+    items: [
+      {
+        id: "video-192735",
+        fecha: "25 de agosto de 2026",
+        inicio: "19:27:35",
+        fin: "19:50:32",
+        duracion: "22 min 57 s",
+        unidad: "MANEADOR",
+        titulo: "Proa — cubierta",
+        archivo: "25-08-2026 19.27.35 al 19.50.32 - MANEADOR Proa Cubierta.mp4",
+        url: "files/Videos/25-08-2026 19.27.35 al 19.50.32 - MANEADOR Proa Cubierta.mp4",
+        relevancia: "Primer intervalo audiovisual catalogado. Abarca el aviso a los patrones (19:25), la salida declarada (19:35) y el arribo inicial; permite contrastar posición, comunicaciones y secuencia de aproximación."
+      },
+      {
+        id: "video-192828",
+        fecha: "25 de agosto de 2026",
+        inicio: "19:28:28",
+        fin: "19:41:48",
+        duracion: "13 min 20 s",
+        unidad: "MANEADOR",
+        titulo: "Proa — panorámica",
+        archivo: "25082026 19.28.28 al 19.41.48 - MANEADOR Proa Panoramica.mp4",
+        url: "files/Videos/25082026 19.28.28 al 19.41.48 - MANEADOR Proa Panoramica.mp4",
+        relevancia: "Vista panorámica simultánea con el registro de cubierta del MANEADOR. Útil para reconstruir el estado del ALPHA CRUX y del SURESTE 707 al inicio de la respuesta."
+      },
+      {
+        id: "video-195721",
+        fecha: "25 de agosto de 2026",
+        inicio: "19:57:21",
+        fin: "20:02:21",
+        duracion: "5 min",
+        unidad: "CRISTOBAL",
+        titulo: "Registro inicial",
+        archivo: "25-08-2026 19.57.21 al 20.02.21 - CRISTOBAL.mp4",
+        url: "files/Videos/25-08-2026 19.57.21 al 20.02.21 - CRISTOBAL.mp4",
+        relevancia: "Registra la situación inmediatamente anterior a la llegada consignada de PLADA y SUEIRO. Permite comprobar si los remolcadores permanecían a la espera y el apoyo entre ambos pesqueros."
+      },
+      {
+        id: "video-203455",
+        fecha: "25 de agosto de 2026",
+        inicio: "20:34:55",
+        fin: "20:39:52",
+        duracion: "4 min 57 s",
+        unidad: "CRISTOBAL",
+        titulo: "Se acerca al SURESTE 707 y empuja de popa",
+        archivo: "25-08-2026 20.34.55 al 20.39.52 - CRISTOBAL se acerca a SUR ESTE 707 y empuja de popa.mp4",
+        url: "files/Videos/25-08-2026 20.34.55 al 20.39.52 - CRISTOBAL se acerca a SUR ESTE 707 y empuja de popa.mp4",
+        relevancia: "Ventana decisiva para fijar el inicio y la geometría de la primera maniobra, contrastándola con las horas 20:15–20:33 declaradas para la llegada y toma de dirección de PLADA/SUEIRO."
+      },
+      {
+        id: "video-210237",
+        fecha: "25 de agosto de 2026",
+        inicio: "21:02:37",
+        fin: "21:07:17",
+        duracion: "4 min 40 s",
+        unidad: "CRISTOBAL",
+        titulo: "Continúa empujando",
+        archivo: "25-08-2026  21.02.37 al 21.07.17 - CRISTOBAL sigue empujando.mp4",
+        url: "files/Videos/25-08-2026  21.02.37 al 21.07.17 - CRISTOBAL sigue empujando.mp4",
+        relevancia: "Finaliza tres minutos antes de las 21:10, hora en que los patrones sitúan el desatraque de emergencia del SURESTE 707. Puede mostrar la transición entre contención y retiro."
+      },
+      {
+        id: "video-224907",
+        fecha: "25 de agosto de 2026",
+        inicio: "22:49:07",
+        fin: "22:58:38",
+        duracion: "9 min 31 s",
+        unidad: "CRISTOBAL",
+        titulo: "Ventana crítica de separación",
+        archivo: "25-08-2026 22.49.07 al 22.58.38 - CRISTOBAL.mp4",
+        url: "files/Videos/25-08-2026 22.49.07 al 22.58.38 - CRISTOBAL.mp4",
+        relevancia: "Coincide exactamente con la decisión/separación del SURESTE 707 registrada por FERRAO (22:45–22:57) y MOLESINI (≈22:50). Es el archivo prioritario para resolver la discrepancia con las 21:10 informadas por los patrones."
+      }
+    ]
+  },
+
+  /* ================================================================== */
   /*  ROL DE TRIPULACIÓN (crew list 2026)                               */
   /* ================================================================== */
   rol: {
@@ -203,7 +285,7 @@ window.ANALISIS = {
       { n: 4,  nat: "RUS", rank: "Ch.Engineer", name: "IVANOV YURY", aboard: "01.04.2026", nota: "Jefe de Máquinas — declarado" },
       { n: 5,  nat: "RUS", rank: "2nd engineer", name: "ABDRAKHMANOV IGOR", aboard: "01.04.2026", nota: "Declarado (marca V en el rol)" },
       { n: 6,  nat: "RUS", rank: "3rd engineer", name: "GERMAN IVAN", aboard: "01.04.2026", nota: "Declarado" },
-      { n: 7,  nat: "RUS", rank: "Ch.fishmaster", name: "TOKMIN KONSTANTIN", aboard: "01.04.2026", nota: "Testigo clave — pendiente" },
+      { n: 7,  nat: "RUS", rank: "Ch.fishmaster", name: "TOKMIN KONSTANTIN", aboard: "01.04.2026", nota: "Patrón de pesca ruso — declarado 08/09" },
       { n: 8,  nat: "RUS", rank: "Boatswain", name: "MOLEV ANDREI", aboard: "22.07.2026", nota: "No declarado" },
       { n: 9,  nat: "RUS", rank: "Sailor", name: "KOMANDIR SERGEY", aboard: "01.04.2026", nota: "No declarado" },
       { n: 10, nat: "RUS", rank: "cook", name: "CHERNOV RUSLAN", aboard: "11.04.2026", nota: "No declarado" },
@@ -284,7 +366,7 @@ window.ANALISIS = {
     {
       fecha: "22 de agosto de 2026", hora: "—", fase: "previo",
       titulo: "Cambio de tres tramos de caño de refrigeración del motor principal",
-      texto: "El jefe de máquinas coreano Park KWANG JUN declara que, para preparar el zarpe, él mismo cambió tres tramos de caño de refrigeración del motor principal en la sala de máquinas, con ayuda de los tres marineros indonesios (AGUS N° 17, MURDIONO N° 19 y RAVEL N° 20). La prueba de presión se realizó el mismo día con resultado satisfactorio. Sostiene que el Jefe de Máquinas ruso lo sabía de antemano y presume que el Capitán también, pese a que ambos niegan toda reparación. Los tres marineros indonesios confirman la reparación en sus actas del 3 de septiembre.",
+      texto: "Park KWANG JUN declara que cambió tres tramos del caño de refrigeración del motor principal con tres marineros indonesios y que probó el sistema. Ivanov lo negó inicialmente, pero el 8/09 admitió conocer el caño podrido y haber visto que Park lo retiró; desconoce, sin embargo, toda prueba. El Capitán mantiene que nadie le informó.",
       fuente: "Acta Jefe de Máquinas Coreano (Park KWANG JUN), P.5 y P.6", ref: "maquinas-coreano",
       etiquetas: ["REPARACIÓN", "estanqueidad", "INCONGRUENCIA"], conflicto: true, destacado: true
     },
@@ -298,7 +380,7 @@ window.ANALISIS = {
     {
       fecha: "24 de agosto de 2026", hora: "—", fase: "previo",
       titulo: "Taller portuario interviene el sistema de enfriamiento con la bomba de agua de mar desconectada",
-      texto: "Un taller del puerto —no personal de la tripulación— comienza reparaciones en las cañerías del sistema de enfriamiento del reductor del eje principal. Para ello se desconecta la bomba que toma agua de mar. El 3° Oficial lo escuchó del 2° Oficial y del Jefe de Máquinas. El Capitán, el Jefe de Máquinas y el 1er Oficial niegan toda reparación.",
+      texto: "Un taller del puerto interviene según el 2° Oficial sobre el enfriamiento de la reductora, con la bomba de agua de mar desconectada. Ivanov admite ahora una línea desde toma de fondo al motor con ramal a reductora y un caño podrido retirado por Park, pero no aclara si se trata de la misma obra. El Capitán y FROLOV mantienen su desconocimiento.",
       fuente: "Acta 2° Oficial de Máquinas P.11 · 3° Oficial P.3 · negado por Capitán P.11, Jefe de Máquinas s/n y 1er Oficial (ampl.) P.6",
       etiquetas: ["ESTANQUEIDAD", "terceros", "INCONGRUENCIA"], conflicto: true, destacado: true
     },
@@ -376,9 +458,9 @@ window.ANALISIS = {
     {
       fecha: "25 de agosto de 2026", hora: "≈16:00 – 18:00", fase: "siniestro",
       titulo: "TOKMIN informa al 1er Oficial que están \"escorando el buque\"",
-      texto: "El 1er Oficial envía al encargado de procesamiento de pescado, Konstantin TOKMIN, a averiguar qué ocurría en sala de máquinas porque la escora no se corregía. TOKMIN regresa e informa que el 2° y el 3° Oficial estaban \"escorando el buque\". Pese a ello el 1er Oficial no detiene la operación, no da la alarma y se retira a controlar la tensión de los cabos de amarre.",
-      fuente: "Acta 1er Oficial (ampliación) P.4", ref: "primer-oficial-ampliacion",
-      etiquetas: ["cadena de mando", "testigo no interrogado"], destacado: true
+      texto: "FROLOV afirmó que envió a TOKMIN a sala de máquinas y que éste volvió informando que el 2° y 3° Oficial estaban «escorando el buque». TOKMIN declaró el 8/09 que nunca entró: encontró al 2° Oficial en la puerta del camarote del 3°, regresó al puente y vio que FROLOV ya había bajado al muelle. No reconoce el informe que FROLOV le atribuye.",
+      fuente: "Ampliación FROLOV P.4 · Acta TOKMIN P.3 y P.7", ref: "tokmin",
+      etiquetas: ["CADENA DE MANDO", "CONTRADICCIÓN"], destacado: true, conflicto: true
     },
     {
       fecha: "25 de agosto de 2026", hora: "≈17:30", fase: "siniestro",
@@ -811,6 +893,27 @@ window.ANALISIS = {
       texto: "Informe presentado a Prefectura, prácticamente idéntico al de VIERA. Confirma la evaluación inicial, la espera por un responsable directo, las maniobras ordenadas por PLADA, el retiro de emergencia del SURESTE 707 y el hundimiento inmediato del ALPHA CRUX al perder ese apoyo.",
       fuente: "Informe operativo del patrón del CRISTOBAL", ref: "patron-cristobal",
       etiquetas: ["INFORME OPERATIVO", "SAAM", "HECHOS NUEVOS", "INCONGRUENCIA"], declaracion: true, conflicto: true, destacado: true
+    },
+    {
+      fecha: "8 de septiembre de 2026", hora: "14:00 – 14:35", fase: "instruccion",
+      titulo: "AMPLIACIÓN — Jefe de Máquinas ruso Ivanov YURI",
+      texto: "Rectifica su negativa original: admite que sabía que el caño estaba podrido y que Park KWANG JUN lo sustituyó sin plan de mantenimiento. Describe el circuito desde una toma de fondo al motor principal, con ramal a la caja reductora. No presenció ni conoce prueba alguna. Se contradice sobre si vio las válvulas cerradas o abiertas.",
+      fuente: "Ampliación Jefe de Máquinas 08/09", ref: "jefe-maquinas-ampliacion",
+      etiquetas: ["AMPLIACIÓN", "ADMISIÓN", "TOMA DE FONDO", "INCONGRUENCIA"], interrogatorio: true, conflicto: true, destacado: true
+    },
+    {
+      fecha: "8 de septiembre de 2026", hora: "14:30 – 15:00", fase: "instruccion",
+      titulo: "AMPLIACIÓN — Capitán Andrei BELIKOV",
+      texto: "Confirma que los oficiales coreanos estaban subordinados a su jerarquía y mantiene que desconocía la sustitución del caño porque ni el jefe ruso ni el coreano se la comunicaron. La ampliación se superpone cinco minutos con la de Ivanov usando el mismo intérprete.",
+      fuente: "Ampliación Capitán 08/09", ref: "capitan-ampliacion",
+      etiquetas: ["AMPLIACIÓN", "CADENA DE MANDO", "INCONGRUENCIA FORMAL"], interrogatorio: true, conflicto: true, destacado: true
+    },
+    {
+      fecha: "8 de septiembre de 2026", hora: "15:00 – 15:22", fase: "instruccion",
+      titulo: "INTERROGATORIO — Patrón de pesca ruso Konstantin TOKMIN",
+      texto: "Testigo clave finalmente interrogado. Confirma que FROLOV conocía el sentido babor→estribor y que bajó al muelle antes del black out. Contradice el relato que FROLOV le atribuía: TOKMIN nunca entró a sala de máquinas ni informó que los maquinistas estaban «escorando el buque». Su imputación al 2° Oficial es sólo opinión, pues no observó la maniobra.",
+      fuente: "Acta Patrón de Pesca Ruso 08/09", ref: "tokmin",
+      etiquetas: ["INTERROGATORIO", "TESTIGO CLAVE", "CONTRADICCIÓN", "HECHOS NUEVOS"], interrogatorio: true, conflicto: true, destacado: true
     }
   ],
 
@@ -842,7 +945,7 @@ window.ANALISIS = {
       { id: "igor", label: "2° Of. Máq. Igor ABDRAKHMANOV", cat: "rusa", size: 24, ref: "segundo-maquinas", det: "2° Oficial de Máquinas, de guardia. Señalado como culpable por el 1er Oficial y por la agencia. Declara que NUNCA encendió la bomba: sólo abrió las válvulas del tanque 9 de babor al 9 de estribor. Afirma que el 1er Oficial le ordenó no encenderla. Aporta el dato de la bomba de agua de mar desconectada por el taller portuario." },
       { id: "german", label: "3° Of. Máq. German IVAN", cat: "rusa", size: 20, ref: "tercer-maquinas", det: "3° Oficial de Máquinas, franco de guardia. Corrobora que la bomba no estaba prendida. El 24 de agosto realizó tres trasvases 9↔9 por orden del 1er Oficial. Intentó cerrar el ojo de buey sin éxito y recorrió los camarotes ordenando el abandono." },
       /* --- testigos no interrogados --- */
-      { id: "tokmin", label: "Konstantin TOKMIN", cat: "no-declaro", size: 19, det: "Encargado del procesamiento de pescado / Ch.fishmaster según el rol. Estaba en el puente con el 1er Oficial y fue enviado por éste a averiguar qué ocurría en sala de máquinas; regresó informando que el 2° y el 3° Oficial estaban \"escorando el buque\". El propio 1er Oficial lo invoca como quien \"puede verificar mejor mi versión\". NO FUE INTERROGADO. Su apellido aparece con tres grafías distintas: TOKMIN, TAKMIN e \"Instantáneo TOKMIN\"." },
+      { id: "tokmin", label: "Konstantin TOKMIN", cat: "rusa", size: 19, ref: "tokmin", det: "Patrón de pesca ruso / Ch.fishmaster según el rol. Declaró el 8/09. Estaba en el puente con FROLOV. Fue enviado a verificar, pero no entró a máquinas: contradice el informe que FROLOV le atribuyó. Confirma que FROLOV conocía el sentido babor→estribor y bajó al muelle antes del black out." },
       { id: "siiukov", label: "2° Of. Evgenii SIIUKOV", cat: "no-declaro", size: 16, det: "Segundo Oficial de Puente (SHUKOV EVGENII en el rol). Según el Capitán, es la persona que realiza los cálculos de estabilidad del buque después de cada trasvase de combustible. Es el testigo directo del régimen de control de estabilidad a bordo. NO FUE INTERROGADO." },
       /* --- coreanos --- */
       { id: "moon", label: "Inspector Kibong MOON", cat: "terceros", size: 24, ref: "moon", det: "Inspector técnico de Dong Nam desde 2019. Declaró el 4/09. A bordo hasta 17:10; a las 19:00 vuelve y halla el buque escorado. Entregó caños el 24/08 para el enfriamiento del motor→reductora. Niega personal coreano de tierra. Informó a la agencia de soldadura, no de caños. Dice no saber la causa. URRESTARAZU le atribuye el mensaje 18:55 con foto y atribución de causa —punto no indagado en su acta—." },
@@ -854,9 +957,8 @@ window.ANALISIS = {
       { id: "ravel", label: "Mar. RAVEL WATTIMURY", cat: "indonesia", size: 16, ref: "ravel", det: "Marinero de guardia de máquinas. No estaba a bordo durante el siniestro. Único declarante que ubica a la empresa uruguaya trabajando DENTRO de la sala de máquinas y sobre el sistema ELÉCTRICO. En su acta del 3/09 confirma la reparación del caño del motor con uniones de tornillos." },
       { id: "agus", label: "Mar. AGUS PRIYANTO", cat: "indonesia", size: 16, ref: "agus", det: "Marinero de guardia de máquinas. Fija el último punto objetivo sin escora: a las 15:00 el buque parecía estar adrizado. En su acta del 3/09 confirma la reparación del caño con mordazas y distingue al coreano ajeno de la empresa uruguaya en la bodega." },
       /* --- autoridad --- */
-      { id: "molesini", label: "TN (CP) Adrián MOLESINI", cat: "autoridad", size: 20, ref: "informe-molesini", det: "Oficial Comandante de Guardia de la Prefectura del Puerto de Montevideo. Actuó en la escena desde las 19:36 hasta las 00:30 y elevó el informe del siniestro. Es además Oficial Instructor del sumario y tomó las actas del Jefe de Máquinas y del 3° Oficial de Máquinas." },
-      { id: "perez", label: "TN (CP) Joaquín PÉREZ CORIA", cat: "autoridad", size: 20, det: "Jefe del Departamento Despacho de Buques e Oficial Instructor. Tomó las actas del Capitán, del 1er Oficial (y su ampliación), del 2° Oficial de Máquinas, del patrón de pesca coreano, del 1er Oficial de Puente coreano, de los tres marineros indonesios, del agente marítimo URRESTARAZU (3/09) y del inspector Kibong MOON (4/09)." },
-      { id: "rodriguez", label: "CC (CP) Carlos RODRIGUEZ", cat: "autoridad", size: 14, det: "Oficial Instructor designado en el sumario. No consta que haya tomado actas." },
+      { id: "molesini", label: "TN (CP) Adrián MOLESINI", cat: "autoridad", size: 20, ref: "informe-molesini", det: "Oficial Secretario del sumario. Actuó en la escena como Oficial Comandante de Guardia desde las 19:36 hasta las 00:30, elevó el informe del siniestro y tomó diversas actas." },
+      { id: "perez", label: "TN (CP) Joaquín PÉREZ CORIA", cat: "autoridad", size: 20, det: "Oficial Instructor del sumario y Jefe del Departamento Despacho de Buques. Dirige formalmente la investigación y tomó la mayoría de las actas." },
       { id: "lemos", label: "CN (CP) Néstor LEMOS", cat: "autoridad", size: 14, det: "Prefecto del Puerto de Montevideo. Destinatario del informe del oficial actuante y de la transcripción de la exposición del práctico. Mantuvo comunicaciones constantes con el oficial actuante hasta las 00:30." },
       { id: "ferrao", label: "CS (PM) Willian FERRAO", cat: "autoridad", size: 18, ref: "informe-ferrao", det: "Supervisor de CONMO. El 26/08 elevó informe a MOLESINI. A las 19:30 recibió llamado de SAAM Towage pidiendo autorización para asistir al ALPHA CRUX «por solicitud de la Agencia Marítima», porque el buque estaba escorado. Informó de inmediato al Oficial Comandante de Guardia y a PLADA. Aporta la cronología CONMO hasta las 23:28. Firma «Willian»; otros documentos lo consignan «William»." },
       { id: "furre", label: "AN Diego FURRE", cat: "autoridad", size: 12, det: "Oficial de Guardia que acompañó al oficial actuante a la escena a las 19:36." },
@@ -865,7 +967,7 @@ window.ANALISIS = {
       { id: "urrestarazu", label: "Daniel URRESTARAZU", cat: "terceros", size: 22, ref: "urrestarazu", det: "Agente marítimo Oriental Shipping, C.I. 1.885.820-3. Declaró el 3/09. A las 18:55 recibió de MOON foto y atribución de causa; a las 19:15 llamó a SAAM; a las 19:56 a Tecno Dive; a las 20:53 a OSRO. Reprodujo ante MOLESINI a las 20:00 la tesis del error de trasvase recibida de MOON. Niega conocer la vía de agua y los trabajos técnicos. Atribuye el retiro del 707 a PLADA, SUEIRO y MOON." },
       { id: "plada", label: "CM Gustavo PLADA", cat: "terceros", size: 18, ref: "exposicion-plada", det: "Práctico de Seguridad del Puerto de Montevideo, C.I. 1.880.660-8, de guardia de GSP. Avisado por CONMO a las 19:38, arribó a las 20:30 y dirigió las maniobras junto con el baqueano. Presentó exposición escrita reservándose el derecho de ampliar o rectificar." },
       { id: "sueiro", label: "Eduardo SUEIRO", cat: "terceros", size: 16, det: "Baqueano de puerto, llamado por la agencia. Arribó entre las 20:20 y 20:25 y comenzó a dar directivas a los remolcadores, que se habían negado a maniobrar hasta su llegada. Dispuso la primera maniobra de apoyo al SURESTE 707, que resultó infructuosa." },
-      { id: "taller", label: "Taller portuario / técnicos uruguayos", cat: "terceros", size: 20, det: "Empresa externa que el día 24 de agosto intervino a bordo. El 2° Oficial de Máquinas la sitúa reparando las cañerías del sistema de enfriamiento del reductor del eje principal, CON LA BOMBA DE AGUA DE MAR DESCONECTADA. Los marineros indonesios la sitúan alternativamente en el sistema eléctrico dentro de la sala de máquinas, en la electricidad de la cámara frigorífica o en el sistema de refrigeración. El Capitán, el Jefe de Máquinas y el 1er Oficial niegan toda reparación." },
+      { id: "taller", label: "Taller portuario / técnicos uruguayos", cat: "terceros", size: 20, det: "El 2° Oficial sitúa un taller sobre el enfriamiento de la reductora con bomba de agua de mar desconectada; los indonesios describen trabajos eléctricos o de refrigeración. Ivanov admite ahora el caño podrido retirado por Park, pero no identifica intervención externa. Falta determinar si fueron una o varias obras." },
       { id: "equipo-coreano", label: "Personal venido de Corea — soldadura a bordo", cat: "terceros", size: 21, det: "Aportado por Park KWANG JUN: a las 16:00 del 25/08 gente venida de Corea soldaba a bordo. MOON (4/09) niega personal coreano de tierra trabajando en reparaciones y sitúa la soldadura en cubierta con habilitación pedida a la agencia, ejecutada por la tripulación. La identidad del personal externo sigue sin acreditarse." },
       { id: "remolcadores", label: "Remolcadores CRISTOBAL y MANEADOR", cat: "terceros", size: 16, det: "Remolcadores de SAAM Towage. Sus patrones informan: aviso 19:25, salida 19:35, espera por PLADA/SUEIRO por razones de seguridad, desatraque de emergencia del SURESTE 707 a las 21:10 y fin 23:20. La denominación correcta es MANEADOR; MOLESINI lo llama MAREADOR." },
       { id: "patron-maneador", label: "Patrón Fabrizio VIERA — MANEADOR", cat: "terceros", size: 18, ref: "patron-maneador", det: "Patrón del MANEADOR, SAAM Towage. Informe del 6/09. Identifica a la agencia como fuente de la tesis del trasvase. Observó pérdida total de estabilidad y al SURESTE 707 como sostén. Participó en su desatraque y reposicionamiento junto al SURESTE 701." },
@@ -885,7 +987,7 @@ window.ANALISIS = {
       { id: "hundimiento", label: "Hundimiento del buque", cat: "hecho", size: 26, det: "El buque quedó de banda, apoyado en el fondo, sujeto a las bitas mediante sus propios cabos, lo que evitó que terminara de hundirse. Único registro horario del período: el mensaje de las 18:46 de Kyongsu PARK, cursado ya desde el muelle y con el buque abandonado, lo que fija esa hora como límite POSTERIOR al black out y al abandono." },
       { id: "abandono", label: "Abandono sin orden ni alarma", cat: "deficiencia", size: 20, det: "No se activó ninguna alarma ni se impartió orden formal de abandono. El 3° Oficial recorrió los camarotes avisando; la tripulación indonesia bajó al muelle en estado de pánico; el Capitán encontró al buque ya vacío al subir al puente." },
       { id: "viadeagua", label: "Vía de agua no localizada en la bodega", cat: "hecho", size: 19, det: "Motivó el ingreso anticipado a puerto según el Capitán, el 1er Oficial y el Jefe de Máquinas: éste declara que entraron \"un mes antes\", en referencia al adelanto sobre la fecha de arribo prevista. Ninguna acta consigna la fecha efectiva de ingreso. Nunca se identificó el punto de entrada del agua; se desmantelaron las tablas de recubrimiento de la bodega. MURDIONO la atribuye a un tubo interior reparado informalmente; el patrón coreano al casco dañado entre hielos; RAVEL niega su existencia." },
-      { id: "bombaaguamar", label: "Bomba de agua de mar desconectada", cat: "hecho", size: 19, det: "Desconectada el 24 de agosto para permitir al taller portuario reparar las cañerías del sistema de enfriamiento del reductor del eje principal. Es una intervención directa sobre un circuito abierto al mar. Sólo el 2° Oficial de Máquinas la declara; el Capitán, el Jefe de Máquinas y el 1er Oficial niegan toda reparación." },
+      { id: "bombaaguamar", label: "Bomba de agua de mar desconectada", cat: "hecho", size: 19, det: "El 2° Oficial la sitúa desconectada durante trabajos en refrigeración. Ivanov confirma que el caño intervenido nacía en una toma de fondo y se dividía hacia motor y reductora, aunque se contradice sobre válvulas abiertas/cerradas. Es una vía causal que exige pericia." },
       { id: "canos-refrig", label: "Cambio de tres tramos de caño de refrigeración (22/08)", cat: "hecho", size: 20, det: "Aportado por el jefe de máquinas coreano y confirmado por los tres marineros indonesios en sus actas del 3/09: cambio de caño de refrigeración del motor principal en sala de máquinas, con prueba satisfactoria. MURDIONO identifica al coreano de tierra que trajo la pieza; AGUS describe uniones con mordazas; RAVEL con tornillos." },
       { id: "bombas-portatiles", label: "Dos bombas portátiles nunca empleadas", cat: "hecho", size: 15, det: "El jefe de máquinas coreano declara que el buque contaba con una bomba de achique y dos bombas portátiles, frente a las tres bombas de achique que describe el resto del expediente. Si las portátiles eran autónomas de la energía del buque, no se explica que no se emplearan durante las casi tres horas de inundación progresiva previas al hundimiento." },
       { id: "aviso1846", label: "Cadena de aviso 18:46–19:30", cat: "deficiencia", size: 21, det: "A las 18:46 Kyongsu PARK avisó al patrón desde el muelle. A las 18:55 MOON avisó a URRESTARAZU con foto y atribución de causa. ≈19:15 la agencia pidió remolcador a SAAM. A las 19:30 SAAM pidió autorización a CONMO y FERRAO avisó a Prefectura. Cadena acreditada: MOON → agencia → SAAM → CONMO → Prefectura. Ningún tripulante notificó a la autoridad." },
@@ -904,7 +1006,7 @@ window.ANALISIS = {
       { id: "c-bomba", label: "¿Se ordenó no encender la bomba?", cat: "conflicto", size: 24, det: "CONTRADICCIÓN CENTRAL. El 2° Oficial de Máquinas afirma de forma circunstanciada que el 1er Oficial le ordenó no prender la bomba, en la sala de refrigeración, \"porque tal vez se podría escorar más el buque\". El 1er Oficial lo niega: \"conversación de prender o apagar la bomba no hubo\". De su resolución depende si el oficial de guardia impidió activamente el adrizamiento del buque." },
       { id: "c-direccion", label: "¿En qué dirección se trasvasó?", cat: "conflicto", size: 22, det: "El ejecutante material declara 9 BABOR → 9 ESTRIBOR, sentido correcto para adrizar. El Capitán sostiene 9 ESTRIBOR → 9 BABOR y la señala como causa del hundimiento. El 1er Oficial supone que \"se equivocó y trasvasó todo el combustible hacia babor\". El instructor formuló la pregunta al 3° Oficial dando por sentada la versión del Capitán." },
       { id: "c-orden", label: "¿Quién ordenó el trasvase 9↔9?", cat: "conflicto", size: 22, det: "Nadie lo asume. El Capitán dice no haberlo ordenado ni conocido; el 1er Oficial, de guardia, dice que nadie le dio la orden y que fue iniciativa propia del 2° Oficial; el 2° Oficial dice que surgió por la escora y que abrió las válvulas antes de cruzarse con el 1er Oficial; el Jefe de Máquinas dice que \"la orden no está muy clara quién la dio\"; el 3° Oficial precisa que cuando él descansa quien ordena el trasvase es el 1er Oficial." },
-      { id: "c-reparacion", label: "¿Qué reparaciones se hicieron y quién las hizo?", cat: "conflicto", size: 23, det: "El 2° Oficial de Máquinas, el 3° Oficial y los tres marineros indonesios confirman la intervención de una empresa externa el 24 de agosto, discrepando sobre el objeto y la ubicación. El jefe de máquinas coreano añade una intervención distinta: el 22 de agosto cambió caños de refrigeración del motor principal con los tres indonesios —confirmado por los tres en sus actas del 3/09—. El Capitán, el Jefe de Máquinas y el 1er Oficial niegan toda reparación." },
+      { id: "c-reparacion", label: "¿Qué reparaciones se hicieron y quién las hizo?", cat: "conflicto", size: 23, det: "Ivanov rectificó su negativa y admitió el caño podrido retirado por Park, sin plan ni prueba conocida. Su descripción conecta toma de fondo, motor y reductora. Persisten diferencias sobre fecha, taller externo, válvulas, prueba y conocimiento del Capitán." },
       { id: "c-causa", label: "¿Cuál fue la causa de la escora?", cat: "conflicto", size: 23, det: "Cinco hipótesis incompatibles: error humano del maquinista (1er Oficial, agencia marítima); el ojo de buey abierto (Jefe de Máquinas); el viento (2° Oficial de Máquinas); error en el manejo del lastre (patrón coreano); ninguna de las anteriores porque el trasvase no pudo generar escora significativa (Capitán y 1er Oficial de Puente coreano). El propio 3° Oficial y el 2° Oficial descartan el trasvase forzado al confirmar que la bomba nunca se encendió. El 1er Oficial de Puente coreano añade un dato que ninguna hipótesis explica: la escora y el black out fueron prácticamente simultáneos y \"todo sucedió muy rápido\"." },
       { id: "c-ingreso", label: "¿Por qué ingresó el buque a puerto y cuándo?", cat: "conflicto", size: 17, det: "Por la filtración de agua en la bodega (Capitán, 1er Oficial, Jefe de Máquinas) o para descargar el pescado (patrón coreano, RAVEL, AGUS). MURDIONO sostiene ambas cosas a la vez. La fecha de arribo tampoco está acreditada: la única referencia temporal es el \"un mes antes\" del Jefe de Máquinas, que alude al adelanto sobre la fecha de ingreso prevista y no al tiempo transcurrido hasta el siniestro." }
     ],
@@ -935,7 +1037,7 @@ window.ANALISIS = {
       { s: "parkkj", t: "ravel", l: "imparte órdenes", tipo: "orden" },
       { s: "parkkj", t: "agus", l: "imparte órdenes", tipo: "orden" },
       { s: "frolov", t: "tokmin", l: "lo envía a averiguar a sala de máquinas", tipo: "accion" },
-      { s: "tokmin", t: "frolov", l: "le informa que estaban \"escorando el buque\"", tipo: "accion" },
+      { s: "tokmin", t: "frolov", l: "niega el informe que FROLOV le atribuye", tipo: "conflicto" },
       { s: "kyongsu", t: "hoseon", l: "le avisa por mensaje a las 18:46, ya desde el muelle", tipo: "accion" },
       { s: "hoseon", t: "kyongsu", l: "lo sitúa de guardia en el puente · él lo niega", tipo: "conflicto" },
       { s: "kyongsu", t: "parkkj", l: "versiones opuestas sobre la autoridad frente a los rusos", tipo: "conflicto" },
@@ -1024,7 +1126,9 @@ window.ANALISIS = {
       { s: "sin-emergencia", t: "achique", l: "sin alimentación alternativa", tipo: "causa" },
       { s: "bomba-sin-contador", t: "sin-calculo", l: "imposibilita el control cuantitativo", tipo: "causa" },
       { s: "aviso1846", t: "expediente", l: "cadena acreditada · falta ampliar a MOON sobre 18:55", tipo: "deficiencia" },
-      { s: "tokmin", t: "expediente", l: "testigo clave no interrogado", tipo: "deficiencia" },
+      { s: "molesini", t: "tokmin", l: "toma su acta 08/09", tipo: "instruccion" },
+      { s: "molesini", t: "yuri", l: "toma ampliación 08/09", tipo: "instruccion" },
+      { s: "perez", t: "belikov", l: "amplía declaración 08/09", tipo: "instruccion" },
       { s: "siiukov", t: "expediente", l: "no interrogado", tipo: "deficiencia" },
       { s: "alpha", t: "puente-vacio", l: "", tipo: "deficiencia" },
       { s: "frolov", t: "puente-vacio", l: "de guardia, en tierra sobre el muro", tipo: "declara" },
@@ -1082,8 +1186,8 @@ window.ANALISIS = {
       { s: "perez", t: "murdiono", l: "toma su acta", tipo: "instruccion" },
       { s: "perez", t: "ravel", l: "toma su acta", tipo: "instruccion" },
       { s: "perez", t: "agus", l: "toma su acta", tipo: "instruccion" },
-      { s: "rodriguez", t: "expediente", l: "Oficial Instructor", tipo: "instruccion" },
-      { s: "molesini", t: "expediente", l: "actuó en la escena y además instruye", tipo: "instruccion" }
+      { s: "perez", t: "expediente", l: "Oficial Instructor", tipo: "instruccion" },
+      { s: "molesini", t: "expediente", l: "Oficial Secretario · actuó en la escena", tipo: "instruccion" }
     ]
   },
 
@@ -1099,10 +1203,11 @@ window.ANALISIS = {
       resumen: "Es la contradicción decisiva del sumario. De su resolución depende determinar si el oficial de guardia impidió activamente el adrizamiento del buque.",
       versiones: [
         { quien: "Igor ABDRAKHMANOV — 2° Of. Máquinas", ref: "segundo-maquinas", cita: "En ese momento me cruzo con el primer oficial en la sala de refrigeración y me ordenó que no prenda la bomba porque tal vez se podría escorar más el buque. A ese comentario le respondí que eso no tenía sentido ya que la maniobra sería trasvasar el combustible hacia el tanque contrario a la escora. Al encontrar al tercer oficial de máquinas bajamos a la sala pero no encendimos la bomba por orden del primer oficial.", donde: "Acta 28/08, P.12" },
-        { quien: "Dmitrii FROLOV — 1er Oficial", ref: "primer-oficial-ampliacion", cita: "Conversación de prender o apagar la bomba no hubo. Yo confiaba en que el segundo de máquinas sabía qué hacer para adrizar el buque.", donde: "Ampliación 31/08, P.5" }
+        { quien: "Dmitrii FROLOV — 1er Oficial", ref: "primer-oficial-ampliacion", cita: "Conversación de prender o apagar la bomba no hubo. Yo confiaba en que el segundo de máquinas sabía qué hacer para adrizar el buque.", donde: "Ampliación 31/08, P.5" },
+        { quien: "Konstantin TOKMIN — Patrón de pesca ruso", ref: "tokmin", cita: "No, no escuché nada [sobre una orden del 1° Oficial al 2° de máquinas].", donde: "Acta 08/09, P.9" }
       ],
-      analisis: "La versión del 2° Oficial es circunstanciada: identifica el lugar (sala de refrigeración), el contenido de la orden, su propia objeción técnica y la consecuencia (no encendieron la bomba). La del 1er Oficial es una negación genérica. Nótese además que la propia ampliación de FROLOV fue tomada para indagar este punto, lo que indica que el instructor ya advertía la contradicción. Si la versión del 2° Oficial es correcta, la conducta del oficial de guardia deja de ser una omisión de supervisión y pasa a ser una intervención activa que impidió corregir la escora: el buque quedó con las válvulas abiertas trasvasando por gravedad, con caudal insuficiente, mientras la escora aumentaba.",
-      resolucion: "Careo entre ambos declarantes y ampliación específica. Interrogar al 3° Oficial de Máquinas, que estuvo presente cuando se decidió no encender la bomba, y a Konstantin TOKMIN, que fue enviado por FROLOV a sala de máquinas en ese intervalo."
+      analisis: "TOKMIN no resuelve la contradicción: no presenció la conversación y sólo dice no haber oído una orden. La versión del 2° Oficial sigue siendo circunstanciada; la de FROLOV, una negación. Sin embargo, TOKMIN sí debilita la credibilidad general de FROLOV al negar haber entrado a máquinas y haberle dado el informe que éste le atribuyó.",
+      resolucion: "Careo FROLOV–ABDRAKHMANOV. Ampliar al 3° Oficial sobre la conversación previa al descenso conjunto y exhibir a FROLOV la declaración de TOKMIN."
     },
     {
       id: "i02",
@@ -1114,9 +1219,10 @@ window.ANALISIS = {
         { quien: "Igor ABDRAKHMANOV — 2° Of. Máquinas (ejecutante material)", ref: "segundo-maquinas", cita: "Abrí la válvula que absorbe del tanque Nro. 9 de babor y la que alimenta al tanque Nro. 9 de estribor. Las válvulas están identificadas con el número del tanque. […] Principalmente para adrizar el buque.", donde: "Acta 28/08, P.13 y P.16" },
         { quien: "Andrei BELIKOV — Capitán", ref: "capitan", cita: "En cuanto al trasvaso transversal de combustible entre los tanques Nro. 9, de estribor a babor, que generó el hundimiento del buque, no puedo contestar nada porque nunca me enteré de esa maniobra.", donde: "Acta 27/08, P.14" },
         { quien: "Dmitrii FROLOV — 1er Oficial", ref: "primer-oficial", cita: "Yo creo que se equivocó y que en vez de trasvasar hacia estribor, trasvasó todo el combustible hacia babor.", donde: "Acta 27/08, P.14" },
-        { quien: "Instructor — formulación de la pregunta al 3° Of. Máquinas", ref: "tercer-maquinas", cita: "Para que indique por qué razón hicieron trasvaso de combustible el día 25 […] entre los tanques 9 de estribor al tanque 9 de babor y autorizado por quién.", donde: "Acta 31/08, P.4" }
+        { quien: "Instructor — formulación de la pregunta al 3° Of. Máquinas", ref: "tercer-maquinas", cita: "Para que indique por qué razón hicieron trasvaso de combustible el día 25 […] entre los tanques 9 de estribor al tanque 9 de babor y autorizado por quién.", donde: "Acta 31/08, P.4" },
+        { quien: "Konstantin TOKMIN — testigo en puente", ref: "tokmin", cita: "El 1° Oficial volvió y me comentó que estaba el 2° de máquinas ruso trasvasando combustible babor a estribor.", donde: "Acta 08/09, P.3" }
       ],
-      analisis: "El único declarante que operó las válvulas describe con detalle técnico el sentido babor→estribor, que es el correcto para adrizar un buque escorado a babor, y menciona el sistema de identificación de válvulas por número de tanque con doble válvula de absorción y alimentación. La versión contraria del Capitán es de oídas: él estaba durmiendo y admite no haberse enterado de la maniobra. La del 1er Oficial es explícitamente una conjetura (\"yo creo que se equivocó\"). Es especialmente relevante que el instructor haya formulado la pregunta al 3° Oficial dando por sentada la versión del Capitán, lo que condiciona la respuesta e introduce en el expediente un hecho no acreditado como si lo estuviera.",
+      analisis: "TOKMIN aporta corroboración contemporánea desde el puente: FROLOV le dijo durante el hecho que el trasvase era babor→estribor. Coincide con el ejecutante y demuestra que FROLOV conocía entonces el sentido correcto; su posterior tesis de un trasvase hacia babor es una conjetura incompatible con lo que él mismo había comunicado. La dirección babor→estribor queda ahora fuertemente corroborada, aunque la posición material de válvulas debe verificarse.",
       resolucion: "Verificación material sobre el buque al reflotarse: posición de las válvulas y estado de los tanques 9 de babor y estribor. Pericia de estabilidad que calcule el momento escorante de un trasvase por gravedad en cada sentido, con 12–13 m³ por tanque. Reformular la pregunta al 3° Oficial en términos neutros."
     },
     {
@@ -1166,10 +1272,12 @@ window.ANALISIS = {
         { quien: "MURDIONO — Marinero", ref: "murdiono", cita: "Hubo una empresa trabajando el día anterior al incidente, pero fueron a reparar el sistema de refrigeración del buque, nada relacionado con la sala de máquinas.", donde: "Acta 03/09, P.5" },
         { quien: "Andrei BELIKOV — Capitán", ref: "capitan", cita: "No, no se hizo nada de eso.", donde: "Acta 27/08, P.11" },
         { quien: "Ivanov YURI — Jefe de Máquinas", ref: "jefe-maquinas", cita: "No, no había ningún tipo de reparación.", donde: "Acta 27/08, pregunta sin numerar" },
+        { quien: "Ivanov YURI — ampliación", ref: "jefe-maquinas-ampliacion", cita: "Sí estaba al tanto de esa sustitución, sabía que ese caño estaba podrido y el jefe de máquina coreano fue quien realizó la reparación. […] No había ningún plan. […] Tampoco me informaron de que hayan hecho prueba alguna.", donde: "Ampliación 08/09, P.3, P.6 y P.8" },
+        { quien: "Andrei BELIKOV — ampliación", ref: "capitan-ampliacion", cita: "No estaba al tanto. […] [Ni el jefe ruso ni el coreano] me comentó sobre esta reparación.", donde: "Ampliación 08/09, P.4–P.6" },
         { quien: "Dmitrii FROLOV — 1er Oficial", ref: "primer-oficial-ampliacion", cita: "No escuché nada de eso.", donde: "Ampliación 31/08, P.6" }
       ],
-      analisis: "El dato aportado por el 2° Oficial es de máxima relevancia técnica y está prácticamente inexplorado en el expediente: la desconexión de la bomba que toma agua de mar implica intervenir un circuito abierto al mar. Si al finalizar la jornada del 24 de agosto ese circuito quedó sin la debida estanqueidad —brida sin ciego, válvula de fondo mal cerrada, junta mal montada—, existe una vía de inundación alternativa y progresiva que explicaría una escora de origen desconocido, sin necesidad de recurrir a la hipótesis del trasvase. La declaración del jefe de máquinas coreano agrava el cuadro en lugar de aclararlo: describe una intervención adicional, el 22 de agosto, ejecutada por él mismo con los tres marineros indonesios sobre tres tramos de caño de refrigeración del motor principal dentro de la sala de máquinas. No es la misma obra que la del taller portuario —difieren la fecha, el ejecutante y el elemento intervenido—, de modo que hubo al menos dos intervenciones sucesivas sobre los circuitos de refrigeración en los tres días previos al hundimiento. Sobre esa base, la negativa cerrada del Capitán, del Jefe de Máquinas y del 1er Oficial resulta insostenible: el 3° Oficial declara haberlo escuchado del propio Jefe de Máquinas, y el coreano afirma que éste estaba enterado de antemano y presume que el Capitán fue informado.",
-      resolucion: "Identificar y requerir a la empresa del taller portuario: orden de trabajo, permisos, detalle de las tareas, personal interviniente y constancia del estado de las tomas de mar al finalizar. Requerir el registro y el resultado documentado de la prueba de presión del 22 de agosto que invoca el jefe de máquinas coreano y que ahora confirman los tres marineros indonesios. Pericia sobre el circuito de enfriamiento del motor principal, sobre el del reductor y sobre las válvulas de fondo al reflotar. Ampliar declaración al Capitán y al Jefe de Máquinas confrontándolos con la imputación directa de conocimiento previo. Identificar al coreano de tierra que trajo el caño, según MURDIONO y AGUS."
+      analisis: "La ampliación de Ivanov transforma esta línea: se retracta de su negativa, admite que el caño estaba podrido, que Park lo retiró sin aviso ni plan y que él no conoce prueba alguna. Además describe una única línea desde la toma de fondo al motor principal con un ramal menor a la reductora, lo que puede explicar que distintos testigos nombraran motor y caja como si fueran obras separadas. Su observación de válvulas cerradas/abiertas es internamente contradictoria. El Capitán mantiene su desconocimiento, compatible con que Ivanov no le informara pero revelador de una falla grave de mando y mantenimiento.",
+      resolucion: "Peritar como una unidad la toma de fondo, válvula, caño principal y ramal a reductora. Requerir plan/orden, materiales, responsables y prueba documentada. Ampliar a Ivanov sobre la contradicción válvulas abiertas/cerradas y carearlo con Park sobre aviso, ejecución y prueba. Evaluar la omisión de informar al Capitán."
     },
     {
       id: "i05b",
@@ -1438,7 +1546,7 @@ window.ANALISIS = {
       titulo: "Interrogatorios superpuestos con un solo intérprete",
       gravedad: "alta",
       eje: "Validez formal del expediente",
-      resumen: "Dos pares de actas se solapan en el tiempo consignando al mismo intérprete, lo que es materialmente imposible y afecta su validez formal.",
+      resumen: "Tres pares de actas se solapan en el tiempo consignando al mismo intérprete, lo que es materialmente imposible y afecta su validez formal.",
       versiones: [
         { quien: "Acta del Capitán", ref: "capitan", cita: "27 de agosto de 2026, hora 10:00 […] ante mí, TN (CP) Joaquín PÉREZ CORIA […] acompañado por el Sr. Nicolai GOLUBEI FORTUNA […] quien cumple función de intérprete. Cierre: 13:30 horas.", donde: "Acta 27/08" },
         { quien: "Acta del Jefe de Máquinas", ref: "jefe-maquinas", cita: "27 de agosto de 2026 a la hora 10:00 […] ante mí, TN (CP) Adrián MOLESINI […] acompañado por el Sr. Nicolai GOLUBEI FORTUNA […] quien cumple función de traductor. Cierre: 11:11 horas.", donde: "Acta 27/08" },
@@ -1446,9 +1554,11 @@ window.ANALISIS = {
         { quien: "Acta del 3° Of. de Máquinas", ref: "tercer-maquinas", cita: "31 de agosto de 2026 a la hora 11:30 […] TN (CP) Adrián MOLESINI […] traductor Nicolai GOLUBEI FORTUNA. Cierre consignado: 11:11 horas.", donde: "Acta 31/08" },
         { quien: "Acta del Jefe de Máquinas coreano", ref: "maquinas-coreano", cita: "1 de septiembre de 2026 a la hora 15:00 […] ante mí, TN (CP) Adrián MOLESINI […] Sr. Dong Joon CHO CHOI […] quien cumple función de traductor. Cierre: 15:00 horas.", donde: "Acta 01/09" },
         { quien: "Acta del Patrón de Pesca", ref: "patron-pesca", cita: "1 de septiembre de 2026, 15:30 a 16:20 […] TN (CP) Joaquín PÉREZ CORIA […] intérprete Dong Joon CHO CHOI.", donde: "Acta 01/09" },
+        { quien: "Ampliación del Jefe de Máquinas ruso", ref: "jefe-maquinas-ampliacion", cita: "8 de septiembre, 14:00–14:35, ante TN (CP) Adrián MOLESINI, con Nicolai GOLUBEI FORTUNA.", donde: "Ampliación 08/09" },
+        { quien: "Ampliación del Capitán", ref: "capitan-ampliacion", cita: "8 de septiembre, 14:30–15:00, ante TN (CP) Joaquín PÉREZ CORIA, con Nicolai GOLUBEI FORTUNA.", donde: "Ampliación 08/09" },
         { quien: "Acta del 1er Of. de Puente coreano", ref: "primer-oficial-coreano", cita: "Apertura: «02 de septiembre de 2026 a la hora 10:00». Cierre: «EN LA PREFECTURA DEL PUERTO DE MONTEVIDEO, 01 DE SEPTIEMBRE DE 2026 A LAS 16:20 HORAS». La pregunta 4 indaga «cuáles son sus responsabilidades como Patrón de Pesca».", donde: "Acta 02/09" }
       ],
-      analisis: "El 27 de agosto el intérprete GOLUBEI FORTUNA figura simultáneamente asistiendo al Capitán (10:00–13:30, ante PÉREZ CORIA) y al Jefe de Máquinas (10:00–11:11, ante MOLESINI). El 31 de agosto figura de nuevo en dos actas solapadas: la ampliación del 1er Oficial (11:20–11:40) y la del 3° Oficial (apertura 11:30), que consigna además una hora de cierre (11:11) anterior a su apertura. El 1 de septiembre el traductor CHO CHOI figura en dos actas tomadas por instructores distintos: la del jefe de máquinas coreano a las 15:00 y la del patrón de pesca de 15:30 a 16:20. Aquélla consigna la misma hora de apertura y de cierre para catorce preguntas traducidas, con lo que la duración real del acto no queda documentada. El acta del 1er Oficial de Puente coreano agrega el caso más claro de arrastre de plantilla: abierta el 2 de septiembre a las 10:00, su pie reproduce literalmente el cierre del acta del patrón de pesca del día anterior —«01 de septiembre de 2026 a las 16:20»—, y su pregunta 4 le indaga sobre sus responsabilidades «como Patrón de Pesca», cargo que no ostenta. Son defectos formales subsanables, pero deben subsanarse: cualquier objeción sobre la asistencia efectiva del intérprete o sobre la individualización del acto afectaría la validez de las actas y, con ellas, del núcleo probatorio del sumario.",
+      analisis: "El intérprete GOLUBEI FORTUNA figura en actas simultáneas el 27 y 31 de agosto. El defecto se repite el 8/09: asiste a Ivanov ante MOLESINI hasta las 14:35 y a BELIKOV ante PÉREZ CORIA desde las 14:30. Los cinco minutos comunes son materialmente imposibles. Persisten además la duración imposible del acta de Park KWANG JUN y el arrastre de plantilla del acta de Kyongsu PARK. Son defectos subsanables, pero afectan la validez formal del núcleo probatorio si no se certifican las horas reales.",
       resolucion: "Subsanar mediante certificación del intérprete y de los oficiales actuantes sobre las horas efectivas de cada acto, o mediante ratificación de las actas por los declarantes. Rectificar la fecha y hora de cierre del acta del 1er Oficial de Puente coreano y dejar constancia de que la pregunta 4 reproduce por error el cuestionario del patrón de pesca. Consignar en lo sucesivo horas de apertura y cierre no superpuestas y distintas entre sí."
     },
     {
@@ -1456,7 +1566,7 @@ window.ANALISIS = {
       titulo: "Estructura de cargos duplicada: dos jefes de máquinas y dos primeros oficiales de puente",
       gravedad: "critica",
       eje: "Cadena de mando",
-      resumen: "La línea rusa del armador y la línea coreana de Dong Nam ostentan los mismos cargos en paralelo, y el expediente no establece a quién correspondía la autoridad efectiva.",
+      resumen: "La ampliación del Capitán establece subordinación formal de la línea coreana, pero la ejecución real seguía repartida entre cargos duplicados.",
       versiones: [
         { quien: "Ivanov YURI — ruso", ref: "jefe-maquinas", cita: "En la P.1 se identifica como \"primer oficial de máquina del buque Alpha Crux\" y en la P.2 como \"jefe de máquinas del mismo\".", donde: "Acta 27/08, P.1 y P.2" },
         { quien: "Park KWANG JUN — coreano", ref: "maquinas-coreano", cita: "P.1: \"jefe de máquina del buque ALPHA CRUX\". P.2: \"Soy el técnico de máquina del buque\". Firma el acta como \"Jefe de Maquinas\". El acta se rotula \"1er Oficial de Máquinas Coreano\".", donde: "Acta 01/09, P.1 y P.2" },
@@ -1464,9 +1574,11 @@ window.ANALISIS = {
         { quien: "Kyongsu PARK — coreano", ref: "primer-oficial-coreano", cita: "Dong Nam, primer oficial de puente, estoy embarcado en el Alpha Crux desde el 30 de marzo de 2025.", donde: "Acta 02/09, P.3" },
         { quien: "Park KWANG JUN — sobre la relación jerárquica", ref: "maquinas-coreano", cita: "Yo como técnico de máquina tengo la función de asistencia y supervisión de los oficiales rusos, que es el jefe de máquina y 2 oficiales más, quienes cumplen la tarea cotidiana del buque.", donde: "Acta 01/09, P.3" },
         { quien: "Kyongsu PARK — sobre la relación jerárquica", ref: "primer-oficial-coreano", cita: "Nosotros nos involucramos en la tarea específica de la pesca entonces nosotros nunca les podemos dar órdenes a los oficiales rusos, eso es natural. Pero con los indonesios interactuamos en las maniobras de pesca, incluso damos órdenes.", donde: "Acta 02/09, P.14" },
+        { quien: "Andrei BELIKOV — Capitán", ref: "capitan-ampliacion", cita: "Que sí [los oficiales coreanos están subordinados a su jerarquía como Capitán].", donde: "Ampliación 08/09, P.3" },
+        { quien: "Ivanov YURI — Jefe ruso", ref: "jefe-maquinas-ampliacion", cita: "A mí solo el que me da las órdenes es el Capitán ruso Sr. Andrei BELIKOV.", donde: "Ampliación 08/09, P.2" },
         { quien: "Marineros indonesios", ref: "agus", cita: "Recibo órdenes del jefe de máquinas coreano, Park KWANG JUN.", donde: "Actas 03/09 — AGUS P.9, RAVEL P.9, MURDIONO P.9" }
       ],
-      analisis: "Lo que empezó como una duda sobre la jefatura de máquinas resultó ser un patrón: el buque tenía dos jefes de máquinas y dos primeros oficiales de puente, uno por la línea rusa del armador OO Vodoley y otro por la línea coreana de Dong Nam. En máquinas, Ivanov YURI y Park KWANG JUN se presentan alternativamente con el mismo cargo, el coreano se define además como \"técnico\" y los tres marineros indonesios declaran recibir órdenes de él y no de la línea rusa. En puente, Dmitrii FROLOV y Kyongsu PARK ostentan idéntico cargo. Y los dos oficiales coreanos describen posiciones opuestas frente a la misma oficialidad rusa: Park KWANG JUN afirma ejercer \"asistencia y supervisión\" sobre ella, incluido el jefe de máquinas, mientras Kyongsu PARK sostiene que \"nunca les podemos dar órdenes a los oficiales rusos\". Ambos coinciden, en cambio, en que sí mandan sobre la tripulación indonesia. La cuestión no es nominal: de ella depende a quién correspondía autorizar y supervisar los trasvases de combustible, controlar la estanqueidad, responder por las reparaciones ejecutadas en puerto y cubrir la guardia de puente que nadie ejercía.",
+      analisis: "BELIKOV aclara la jerarquía formal: todos los oficiales coreanos estaban subordinados al Capitán ruso; Ivanov confirma que sólo recibía órdenes de éste. Esto no elimina la dualidad operativa: Park dirigía a los indonesios, ejecutaba reparaciones sin plan ni aviso al jefe ruso y se atribuía supervisión técnica. La autoridad formal queda fijada en BELIKOV, mientras el control efectivo de tareas críticas continuaba fragmentado.",
       resolucion: "El rol de tripulación (crew list 2026) ya está incorporado al expediente y confirma la duplicación de cargos (dos CHIEF MATE y dos Ch.Engineer). Contrastar con contratos de embarque y certificados de competencia; aclarar por ampliación la relación jerárquica real entre la línea rusa y la coreana. Corregir la rotulación de las actas."
     },
     {
@@ -1478,11 +1590,12 @@ window.ANALISIS = {
       versiones: [
         { quien: "Crew list F/V Alpha Crux (2026)", ref: "rol-tripulacion", cita: "N° 38 SHIN HO SEON — Guarantee engineer · N° 7 TOKMIN KONSTANTIN — Ch.fishmaster · N° 41 KWON TAE GUN — CHIEF TRAL · N° 3 SHUKOV EVGENII — 2nd mate.", donde: "Rol de tirpulación.pdf" },
         { quien: "Hoseon SHIN — en acta", ref: "patron-pesca", cita: "Dong Nam, patrón de pesca, yo trabajé en este barco desde hace dos años […] Lo relacionado con la captura de los peces, la actividad pesquera.", donde: "Acta 01/09, P.3 y P.4" },
+        { quien: "Konstantin TOKMIN — en acta", ref: "tokmin", cita: "Desde el 01/04/2026 me encuentro embarcado en el buque Alpha como patrón de pesca y estoy subordinado al Capitán Andrei BELIKOV.", donde: "Acta 08/09, P.2" },
         { quien: "Dmitrii FROLOV — sobre TOKMIN", ref: "primer-oficial", cita: "En puente había otra persona, el encargado del procesamiento del pescado, Konstantin TOKMIN.", donde: "Ampliación 31/08, P.4" },
         { quien: "Andrei BELIKOV — sobre SIIUKOV", ref: "capitan", cita: "el 2ndo oficial, Evgenii SIIUKOV, realiza los cálculos de estabilidad.", donde: "Acta 27/08, P.20" }
       ],
-      analisis: "El documento de rol cierra varios huecos onomásticos y abre uno de mando. Evgenii SIIUKOV del expediente es SHUKOV EVGENII, 2nd mate. TOKMIN no es un auxiliar de cubierta: el rol lo nomina Ch.fishmaster. Hoseon SHIN, tratado en toda la instrucción como patrón de pesca, figura como Guarantee engineer; el cargo pesquero nominal del crew list es de TOKMIN (y aparece además KWON TAE GUN como CHIEF TRAL, aún no interrogado). Si SHIN no era el patrón operativo, su afirmación sobre quién estaba de guardia en puente y su hipótesis causal pesan distinto; y TOKMIN concentra a la vez el valor de testigo ocular de sala de máquinas y el de jefe de pesca según el rol.",
-      resolucion: "Confrontar a SHIN, TOKMIN y KWON con el crew list sobre su cargo efectivo el 25/08. Ampliar a SHIN sobre la discrepancia Guarantee engineer / patrón de pesca. Priorizar el interrogatorio de TOKMIN y de SHUKOV/SIIUKOV con las grafías del rol."
+      analisis: "TOKMIN confirma personalmente que era patrón de pesca y estaba subordinado a BELIKOV, coherente con su rango Ch.fishmaster. SHIN también se presentó como patrón de pesca pese a figurar Guarantee engineer, y KWON figura CHIEF TRAL. Subsiste una superposición de funciones pesqueras. TOKMIN no fue testigo ocular de sala de máquinas: su declaración aclara que nunca ingresó.",
+      resolucion: "Ampliar a SHIN y KWON sobre sus funciones frente a TOKMIN y confrontarlos con el crew list. TOKMIN ya declaró; verificar certificados y cuadro orgánico."
     },
     {
       id: "i23",
@@ -1590,6 +1703,20 @@ window.ANALISIS = {
       analisis: "La coincidencia brinda una posición clara y consistente de SAAM, pero no debe ponderarse como si fueran dos relatos espontáneos e independientes. Sí tienen especial valor los extremos ligados a la ejecución material —cómo hicieron firme, qué maniobra realizó cada unidad y el efecto inmediato de retirar el 707—, que resultan propios de cada patrón.",
       resolucion: "Ratificar individualmente los informes, separando recuerdos propios de información recibida de CCO/agencia. Requerir partes de máquinas, bitácoras, AIS, grabaciones VHF y despacho operativo de cada remolcador."
     },
+    {
+      id: "i30",
+      titulo: "TOKMIN contradice el informe que FROLOV le atribuyó",
+      gravedad: "critica",
+      eje: "Credibilidad y cadena de mando",
+      resumen: "FROLOV invocó a TOKMIN como corroboración central; al declarar, TOKMIN negó haber entrado a sala de máquinas y no reconoció el informe atribuido.",
+      versiones: [
+        { quien: "Dmitrii FROLOV — 1er Oficial", ref: "primer-oficial-ampliacion", cita: "Lo esperé y cuando volvió me dijo que en sala de máquinas se encontraban el segundo y el tercer oficial de máquinas escorando el buque. […] Konstantin TAKMIN puede verificar mejor mi versión.", donde: "Ampliación 31/08, P.4 y P.10" },
+        { quien: "Konstantin TOKMIN — Patrón de pesca ruso", ref: "tokmin", cita: "En el camino me encuentro con el 2° de máquinas en la puerta del camarote del 3° […] me retiré al puente nuevamente. […] No, no bajé a sala de máquinas.", donde: "Acta 08/09, P.3 y P.7" },
+        { quien: "Konstantin TOKMIN — sobre el sentido", ref: "tokmin", cita: "El 1° Oficial volvió y me comentó que estaba el 2° de máquinas ruso trasvasando combustible babor a estribor.", donde: "Acta 08/09, P.3" }
+      ],
+      analisis: "La contradicción afecta directamente la credibilidad de FROLOV. El testigo que él propuso no verificó su relato: nunca observó la sala ni dijo en su acta que los maquinistas estuvieran escorando el buque. Además, recuerda que el propio FROLOV le comunicó el sentido correcto babor→estribor. Sí lo corrobora en un punto adverso: FROLOV bajó al muelle antes del black out y dejó el puente sin oficial de guardia.",
+      resolucion: "Ampliar a FROLOV exhibiéndole el acta de TOKMIN. Careo sobre el recorrido de TOKMIN, el supuesto informe y la razón por la que FROLOV bajó al muelle antes del black out."
+    },
 
   ],
 
@@ -1616,9 +1743,9 @@ window.ANALISIS = {
         subtitulo: "Es el punto no resuelto del sumario. La hipótesis dominante en el expediente no resiste el contraste con la evidencia material",
         items: [
           { grado: "refutado", t: "La tesis del error humano del 2° Oficial de Máquinas —sostenida por el 1er Oficial y anticipada por la agencia marítima a las 20:00 del mismo día— no está respaldada por la evidencia. Dos declarantes independientes, el propio 2° Oficial y el 3° Oficial de Máquinas, acreditan que la bomba de trasvase NUNCA fue encendida y que sólo se abrieron válvulas. El movimiento resultante fue por gravedad, entre dos tanques con 12–13 m³ cada uno, a un caudal que el ejecutante describe como \"sumamente menor\". Un trasvase así no puede generar en el lapso disponible una escora de 10° ni, mucho menos, de 35–40° en un buque de 52,35 m de eslora." },
-          { grado: "refutado", t: "La dirección del trasvase declarada por el único oficial que operó las válvulas fue del tanque 9 de BABOR al 9 de ESTRIBOR, es decir, el sentido correcto para adrizar un buque escorado a babor. La versión contraria proviene del Capitán, que estaba durmiendo y admite no haberse enterado de la maniobra, y del 1er Oficial, que la enuncia expresamente como conjetura." },
+          { grado: "refutado", t: "La dirección declarada por el ejecutante fue 9 BABOR→9 ESTRIBOR, el sentido correcto para adrizar. TOKMIN la corrobora: durante el hecho FROLOV volvió de máquinas y le comunicó exactamente ese sentido. La versión contraria del Capitán es de oídas y la posterior de FROLOV es una conjetura incompatible con lo que él mismo había informado." },
           { grado: "probable", t: "La causa primaria más consistente con el conjunto de la prueba es una condición de estabilidad deficiente de partida. El buque acababa de descargar toda su carga de pescado y carnada, perdiendo peso bajo, y conservaba las artes de pesca estibadas sobre la cubierta principal a proa y a popa, con el consiguiente ascenso del centro de gravedad. El Jefe de Máquinas declara que antes de la maniobra el buque \"ya se encontraba inestable\" y \"rolaba constantemente de babor a estribor\", y que fue justamente por eso que se realizaron los trasvases. El 3° Oficial acredita que el día anterior hubo tres trasvases entre los mismos tanques para adrizarlo. El buque venía escorándose de forma recurrente y los trasvases eran la respuesta habitual: la maniobra del 25 no fue el origen del problema, sino el último intento de corregirlo." },
-          { grado: "a-verificar", t: "Existe una línea causal alternativa seria: los trabajos sobre circuitos de refrigeración. El 2° Oficial sitúa al taller portuario el 24/08 con la bomba de agua de mar desconectada sobre el enfriamiento del reductor. Park KWANG JUN describe el cambio de caños del motor el 22/08. MOON acredita haber entregado el 24/08 los caños para el recambio del enfriamiento del motor principal hacia la caja reductora y admite no haber notificado ese trabajo a la autoridad uruguaya. Si alguno de esos circuitos quedó sin estanqueidad, existe una vía de inundación previa que explicaría la escora de origen desconocido." },
+          { grado: "a-verificar", t: "La línea causal de refrigeración se refuerza. Ivanov se retracta de su negativa: admite que el caño estaba podrido, que Park lo retiró sin aviso ni plan y que desconoce prueba alguna. Describe una única línea toma de fondo→motor principal con ramal a reductora. Si quedó sin estanqueidad, constituye una vía de inundación previa capaz de explicar la escora." },
           { grado: "a-verificar", t: "Hay un hecho aportado por el jefe de máquinas coreano —personal venido de Corea soldando a bordo a las 16:00— que Kibong MOON niega: afirma que no había personal de tierra y que la soldadura en cubierta la ejecutó la tripulación con habilitación pedida a la agencia. Queda por resolver la contradicción y por identificar, si existió, al personal externo." },
           { grado: "a-verificar", t: "La vía de agua que motivó el ingreso anticipado a puerto nunca fue localizada, y la fecha de ese ingreso no surge del expediente: la única referencia, la del Jefe de Máquinas, alude al adelanto sobre la fecha de arribo prevista y no al tiempo transcurrido hasta el siniestro. El patrón de pesca coreano aporta un antecedente estructural no investigado: el buque quedó apretado entre los hielos durante la zafra del año anterior cerca del polo sur, con posible daño del casco. MURDIONO, en cambio, la atribuye a un tubo interior de la bodega reparado informalmente por el oficial coreano, quien al declarar niega haber conocido avería alguna. Ninguna de las dos líneas fue explorada." },
           { grado: "refutado", t: "La hipótesis del viento, formulada por el 2° Oficial de Máquinas, queda refutada por los registros Telemetry+ (Nettra) del Puerto de Montevideo: el 25/08 a las 16:27 y 18:27 el viento fue brisa débil (5,09 y 4,41 nudos) desde 129–134°. Con encabezamiento 305°, ese viento relativo llega casi de popa —empuje axial, sin momento escorante a babor—. La hipótesis del \"error en el manejo del lastre\" del patrón coreano no se corresponde con la operación efectivamente realizada, que fue un trasvase de combustible." }
@@ -1630,7 +1757,7 @@ window.ANALISIS = {
         items: [
           { grado: "acreditado", t: "Ruptura completa de la cadena de mando en el momento crítico. El Capitán y el Jefe de Máquinas estaban durmiendo; el 1er Oficial —único oficial de guardia— detectó la escora, dio una indicación verbal y se retiró sin verificar el resultado, sin detener la operación, sin informar al Capitán y finalmente bajó a tierra; el 2° Oficial de Máquinas operó válvulas de combustible sin autorización previa reconociendo que era necesaria; el 3° Oficial, franco de guardia, fue convocado informalmente. En el momento del black out ningún oficial ejercía el mando a bordo." },
           { grado: "acreditado", t: "El puente quedó sin guardia efectiva durante la fase crítica. El único oficial de guardia se encontraba en tierra sobre el muro controlando cabos, el 1er Oficial de Puente coreano estaba en su camarote viendo televisión y declara que no hacía guardias, y el Capitán y el Jefe de Máquinas dormían. La atribución del patrón de pesca de que Kyongsu PARK estaba \"de guardia en puente\" fue desmentida por éste al declarar, con lo que no queda una sola persona identificada al mando del puente de un buque atracado con 300 toneladas de gasoil que se estaba escorando." },
-          { grado: "acreditado", t: "El 1er Oficial de Puente tuvo conocimiento, por el informe de Konstantin TOKMIN, de que la maniobra en curso estaba empeorando la escora, y aun así no la detuvo, no dio la alarma y no informó al Capitán. Su propia declaración lo sitúa yendo a controlar la tensión de los cabos de amarre mientras el buque se escoraba." },
+          { grado: "acreditado", t: "El 1er Oficial abandonó el puente y bajó al muelle antes del black out, hecho ahora corroborado por TOKMIN. No informó al Capitán, no dio alarma y dejó el puente sin oficial de guardia. No queda acreditado, en cambio, el supuesto informe de TOKMIN de que los maquinistas estaban «escorando el buque»: TOKMIN niega haber entrado a máquinas." },
           { grado: "acreditado", t: "Ausencia total de procedimientos escritos para una operación crítica de estabilidad. El Capitán y el Jefe de Máquinas reconocen expresamente que no existe plan de trasvase de combustible ni procedimiento de comunicación entre máquinas y puente. La contradicción del 1er Oficial en este punto no altera la conclusión, y la afirmación del jefe de máquinas coreano de que los planes contra incendio y vía de agua estaban pegados sobre los mamparos agrava el cuadro: existiendo instrucciones a la vista para el caso de vía de agua, no se aplicó ninguna." },
           { grado: "acreditado", t: "Coexistían a bordo dos líneas de autoridad con los mismos cargos duplicados: dos jefes de máquinas y dos primeros oficiales de puente, uno ruso del armador y otro coreano de Dong Nam. La jerarquía formal era rusa, pero el jefe de máquinas coreano describe su función como \"asistencia y supervisión de los oficiales rusos\", los tres marineros indonesios declaran recibir órdenes de la línea coreana y no de la rusa, y el patrón de pesca coreano determinaba el fin de la jornada. Los propios oficiales coreanos se contradicen sobre el alcance de su autoridad: uno afirma supervisar a los oficiales rusos y el otro sostiene que \"nunca les podemos dar órdenes\". Esa dualidad, sumada a que el coreano ejecutaba reparaciones y adrizaba el buque con pesos, es incompatible con una asignación clara de responsabilidades técnicas." },
           { grado: "a-verificar", t: "El jefe de máquinas coreano declara que el buque contaba con dos bombas portátiles además de la de achique, medios que ninguna otra declaración menciona y que no se emplearon. Si eran de accionamiento autónomo, existía un recurso utilizable precisamente en la situación de black out que se produjo y nadie lo usó durante las más de dos horas de inundación progresiva." },
@@ -1658,12 +1785,13 @@ window.ANALISIS = {
         titulo: "Estado del expediente",
         subtitulo: "Cuestiones que deben subsanarse antes de elevar el sumario",
         items: [
-          { grado: "acreditado", t: "Siguen sin declarar Konstantin TOKMIN y Evgenii SHUKOV/SIIUKOV, más el personal de soldadura cuya existencia MOON niega y Park KWANG JUN afirma. Kibong MOON y Daniel URRESTARAZU ya declararon (3/09 y 4/09); entre ambos queda abierta la disputa sobre el contenido del aviso 18:55." },
+          { grado: "acreditado", t: "Konstantin TOKMIN declaró el 8/09 y contradijo el informe que FROLOV le atribuía. Siguen sin declarar Evgenii SHUKOV/SIIUKOV y el personal de soldadura cuya existencia MOON niega y Park KWANG JUN afirma." },
+          { grado: "acreditado", t: "Las ampliaciones de BELIKOV e Ivanov fijan la subordinación formal al Capitán ruso y revelan que la reparación del caño podrido se ejecutó sin plan, comunicación ni prueba conocida. Se superponen cinco minutos con el mismo intérprete, nuevo defecto formal a certificar." },
           { grado: "acreditado", t: "MOON acredita la entrega el 24/08 de caños para el recambio del enfriamiento del motor principal hacia la caja reductora —circuito coincidente con el que el 2° Oficial vinculó a la bomba de agua de mar desconectada— y admite no haber notificado ese trabajo a la autoridad uruguaya por considerarlo breve. Informó a la agencia de soldadura en cubierta, no de caños." },
           { grado: "acreditado", t: "Los informes operativos de Fabrizio VIERA (MANEADOR) y Álvaro RODRÍGUEZ (CRISTOBAL), fechados el 6/09 y remitidos por SAAM el 7/09, ya fueron incorporados. Confirman la fuente agencial de la tesis del trasvase y la función de sostén del SURESTE 707, pero abren discrepancias horarias sustanciales." },
           { grado: "acreditado", t: "La duplicación del archivo rotulado como acta del 1er Oficial de Máquinas coreano, que reproducía literalmente el acta del Jefe de Máquinas ruso, quedó subsanada con la incorporación de la declaración de Park KWANG JUN del 1 de septiembre. Subsiste en cambio la indeterminación de los cargos, y las últimas actas revelaron que no es un problema aislado: el buque tenía dos jefes de máquinas y dos primeros oficiales de puente, uno por la línea rusa del armador y otro por la coreana de Dong Nam, y ninguno de los cuatro tiene su cargo y su línea de dependencia establecidos en el expediente." },
-          { grado: "acreditado", t: "Dos pares de actas se solapan en el tiempo consignando al mismo intérprete, lo que es materialmente imposible, y dos actas registran hora de cierre anterior a su apertura: la del 3° Oficial de Máquinas y la del 1er Oficial de Puente coreano, cuyo pie reproduce literalmente la fecha y hora de cierre del acta del patrón de pesca del día anterior y cuya pregunta 4 reproduce el cuestionario de ese mismo declarante. Son defectos formales subsanables que deben subsanarse para evitar objeciones sobre la validez de las actas." },
-          { grado: "acreditado", t: "Siguen faltando registros objetivos de la fase crítica: no hay grabaciones de CCTV, ni registros de CONMO contrastados, ni tráfico VHF, ni registros telefónicos de la agencia ni de SAAM. Sí se incorporaron planos del buque y la serie de viento Telemetry+ del 25–26/08, que permite descartar la hipótesis meteorológica. El grueso de la reconstrucción de los hechos sigue descansando en declaraciones contradictorias entre sí." }
+          { grado: "acreditado", t: "Tres pares de actas se solapan con un solo intérprete. El nuevo caso es 8/09: Ivanov hasta 14:35 y BELIKOV desde 14:30, ambos con GOLUBEI FORTUNA ante oficiales actuantes distintos. Persisten cierres imposibles, arrastre de plantilla y saltos de numeración; deben certificarse las horas reales." },
+          { grado: "acreditado", t: "Se incorporaron seis videos de MANEADOR y CRISTOBAL entre 19:27:35 y 22:58:38, prueba objetiva de la fase de respuesta y especialmente de la ventana de separación del SURESTE 707. Siguen faltando CCTV de la fase inicial, registros CONMO contrastados, VHF, AIS y comunicaciones telefónicas." }
         ]
       }
     ]
@@ -1678,8 +1806,8 @@ window.ANALISIS = {
       urgencia: "inmediata",
       items: [
         { t: "Ampliar a Kibong MOON sobre el mensaje 18:55 y los puntos omitidos en su acta.", d: "Ya declaró el 4/09 (20 preguntas). Falta indagar expresamente: contenido del mensaje a URRESTARAZU a las 18:55 (foto, atribución de causa, pedido de remolcador); su rol como representante del armador del SURESTE 707 y la decisión de retirarlo; el alojamiento de los indonesios; y la contradicción con Park KWANG JUN sobre personal venido de Corea. Requerir el mensaje con foto a Oriental Shipping y carear con URRESTARAZU si niega el contenido." },
-        { t: "Interrogar a Konstantin TOKMIN (Ch.fishmaster según el rol de tripulación).", d: "Es el testigo con mayor valor probatorio del expediente y no ha declarado. El crew list lo identifica como Ch.fishmaster (TOKMIN KONSTANTIN), no sólo como encargado de procesamiento. Estaba en el puente con el 1er Oficial, fue enviado por éste a sala de máquinas durante el intervalo crítico y regresó informando que el 2° y el 3° Oficial estaban \"escorando el buque\". El propio 1er Oficial lo invoca como quien puede verificar su versión. Debe declarar sobre: qué vio exactamente en sala de máquinas, si la bomba estaba encendida, qué le dijo al 1er Oficial y a qué hora." },
-        { t: "Determinar quién ejercía la guardia de puente y ampliar declaración a FROLOV y al patrón de pesca.", d: "Es el vacío que abre la declaración de Kyongsu PARK. Éste niega haber estado de guardia y en el puente, contra lo afirmado por el patrón de pesca, y el 1er Oficial de Puente ruso —único oficial de guardia— se sitúa en tierra sobre el muro al momento del black out, con el Capitán y el Jefe de Máquinas durmiendo: nadie queda identificado en el puente durante la fase crítica. Requerir el libro de guardias y el rol de guardias en puerto; ampliar a FROLOV sobre el momento y la duración de su permanencia en tierra y a quién dejó a cargo del puente; y ampliar al patrón de pesca sobre el fundamento de su afirmación." },
+        { t: "Ampliar y confrontar a FROLOV con la declaración de TOKMIN.", d: "TOKMIN ya declaró el 8/09. Niega haber entrado a sala de máquinas y no reconoce haber informado que los maquinistas estaban «escorando el buque», pese a que FROLOV lo invocó como corroboración. Además confirma que FROLOV conocía el sentido babor→estribor y bajó al muelle antes del black out. Precisar el supuesto informe y realizar careo." },
+        { t: "Determinar quién ejercía la guardia de puente.", d: "TOKMIN confirma que permaneció en el puente mientras FROLOV bajó al muelle, pero era patrón de pesca, no oficial de guardia. Kyongsu PARK niega haber estado de guardia. Requerir libro y rol de guardias; ampliar a FROLOV sobre a quién dejó formalmente a cargo y a Hoseon SHIN sobre su afirmación respecto de PARK." },
         { t: "Ampliar declaración al 1er Oficial de Puente coreano Kyongsu PARK.", d: "Su acta del 2 de septiembre acota la ventana del siniestro pero deja puntos abiertos. Debe precisar: cuánto tiempo transcurrió entre que sintió la escora y el black out, y entre éste y su llegada al muelle, para fijar el desplazamiento hacia atrás del hito de las 18:46; la hora exacta del mensaje al patrón y si cursó alguna otra comunicación; su cargo efectivo y su relación con el 1er Oficial ruso, dado que ambos ostentan el mismo cargo; y la contradicción con Park KWANG JUN sobre la autoridad de los oficiales coreanos frente a la oficialidad rusa. Rectificar la fecha y hora de cierre del acta y la pregunta 4, que reproduce el cuestionario del patrón de pesca." },
         { t: "Identificar e interrogar a los operarios venidos de Corea que soldaban a bordo el 25 de agosto.", d: "Park KWANG JUN sitúa a personal venido de Corea soldando a las 16:00. MOON niega personal coreano de tierra y sitúa la soldadura en cubierta pedida a la agencia, ejecutada por tripulantes. Requerir a ANP registros de ingreso al muelle B, permisos de trabajo en caliente y órdenes de trabajo. Confrontar a Park y a MOON." },
         { t: "Ampliar declaración al jefe de máquinas coreano Park KWANG JUN.", d: "Su acta del 1 de septiembre dejó puntos esenciales sin cubrir. Debe precisar: qué piezas se soldaban y dónde; el detalle del cambio de caños del 22 de agosto y el registro de la prueba de presión; su participación en el trasvase popa→proa que le atribuye el Jefe de Máquinas ruso; la reparación del tubo de la bodega que le atribuye MURDIONO y que él niega conocer; la ubicación y el tipo de accionamiento de las dos bombas portátiles; el estado de la escora al bajar a la sala de máquinas a las 16:30 y al retirarse a las 17:30; y su cargo y relación jerárquica efectiva con la oficialidad rusa." },
@@ -1694,8 +1822,8 @@ window.ANALISIS = {
       items: [
         { t: "Careo entre el 1er Oficial FROLOV y el 2° Oficial de Máquinas ABDRAKHMANOV.", d: "Sobre la orden de no encender la bomba, que uno afirma de forma circunstanciada y el otro niega de plano. Es la contradicción decisiva del sumario: de su resolución depende determinar si el oficial de guardia impidió activamente el adrizamiento del buque." },
         { t: "Ampliar declaración al 1er Oficial FROLOV sobre los trasvases del 24 de agosto.", d: "El 3° Oficial declara que ese día realizó tres trasvases entre los tanques 9 por orden expresa de FROLOV. Esto acredita que el buque venía escorándose de forma recurrente y que era FROLOV quien ordenaba habitualmente esas maniobras, lo que resulta difícilmente compatible con su desconocimiento total el día 25. Formular además las preguntas 13, 24, 27 y 28 omitidas en su acta original." },
-        { t: "Ampliar declaración al Capitán BELIKOV sobre su conversación previa con el 1er Oficial.", d: "En la P.17 reconoce haber hablado con FROLOV sobre quién dio la orden ANTES de declarar. Debe precisarse el contenido, el momento y las circunstancias de esa conversación, a los efectos de evaluar el riesgo de concertación de versiones. Ampliar también sobre: el origen del criterio de escora normal de 20–25°, la orden del trasvase popa→proa que le atribuye el Jefe de Máquinas y la negativa de éste a ejecutarla, su negativa respecto de las reparaciones —el jefe de máquinas coreano presume que fue informado por el Jefe de Máquinas—, y la presencia de personal venido de Corea soldando a bordo el día del siniestro." },
-        { t: "Ampliar declaración al Jefe de Máquinas Ivanov YURI.", d: "Sobre su negativa respecto de las reparaciones, ahora contradicha por tres declarantes: el 2° Oficial, el 3° Oficial —que afirma haberlo escuchado de él mismo— y el jefe de máquinas coreano, que sostiene que \"seguro que sabía\" porque estaba enterado de antemano de que la tarea se haría en puerto. Sobre el conocimiento del ojo de buey abierto y por qué no se cerró; sobre su cargo efectivo a bordo y su relación jerárquica con el coreano, dado que en su acta se identifica primero como 1er Oficial de Máquinas y luego como Jefe de Máquinas; sobre las bombas portátiles y por qué no se emplearon; y sobre el consumo de alcohol en las 24 horas previas, no indagado en su acta." },
+        { t: "Completar la ampliación del Capitán BELIKOV.", d: "La ampliación del 8/09 sólo aclaró subordinación y desconocimiento del caño. Siguen pendientes: conversación previa con FROLOV, origen del criterio de escora normal, orden popa→proa, soldadura, sistema de emergencia y consumo de alcohol. Confrontarlo con la admisión de Ivanov de que conoció la obra pero no se la comunicó." },
+        { t: "Aclarar la ampliación del Jefe de Máquinas Ivanov YURI.", d: "Ya admitió que conocía el caño podrido y su sustitución sin plan ni prueba conocida. Debe aclarar por qué lo negó inicialmente; si vio válvulas cerradas (P.3) o abiertas (P.9); qué válvulas eran y cuándo; por qué no informó al Capitán; y completar bombas portátiles, ojo de buey, cargo efectivo y alcohol." },
         { t: "Ampliar declaración al 3° Oficial de Máquinas German IVAN.", d: "Reformular en términos neutros la pregunta sobre la dirección del trasvase, que le fue planteada dando por sentada la versión del Capitán. Indagar específicamente sobre el trasvase popa→proa del 25 de agosto, que el Jefe de Máquinas le atribuye, y sobre quién lo convocó a sala de máquinas. Subsanar el error de hora de cierre del acta." },
         { t: "Ampliar declaración al 2° Oficial de Máquinas ABDRAKHMANOV.", d: "Profundizar sobre los trabajos del taller portuario y la desconexión de la bomba de agua de mar: alcance, estado en que quedó el circuito, quién supervisó. Indagar sobre el consumo de alcohol en las 24 horas previas, no preguntado en su acta." }
       ]
@@ -1706,7 +1834,7 @@ window.ANALISIS = {
       items: [
         { t: "Pericia de estabilidad y reconstrucción de la condición de carga.", d: "Es la diligencia que puede resolver el punto central del sumario. Debe determinar: (i) la condición de estabilidad del buque el 25 de agosto tras la descarga de pescado y carnada, con las artes de pesca estibadas sobre cubierta principal; (ii) el momento escorante máximo posible de un trasvase por gravedad entre los tanques 9 con 12–13 m³ por tanque, y el tiempo requerido; (iii) el ángulo de escora necesario para sumergir el ojo de buey del taller situado a 1–2 m de la flotación; y (iv) el volumen de agua embarcada necesario para alcanzar los 35–40° observados. Los resultados permitirán confirmar o descartar definitivamente la hipótesis del error humano." },
         { t: "Inspección subacuática y pericia del casco.", d: "Localizar la vía de agua original nunca identificada, con especial atención a la zona de la bodega de carga y a daños compatibles con presión de hielo, según el antecedente aportado por el patrón coreano." },
-        { t: "Pericia de los circuitos de refrigeración intervenidos y de las tomas de mar.", d: "Alcanza a las dos obras declaradas: el circuito de enfriamiento del reductor del eje que el taller portuario intervino el 24 de agosto, con la posición y estanqueidad de la válvula de fondo y de la bomba de agua de mar desconectada, y los tres tramos de caño de refrigeración del motor principal que el jefe de máquinas coreano dice haber cambiado el 22 de agosto en la sala de máquinas. Determinar si por alguna de las dos existió una vía de inundación. Es la línea causal alternativa más seria y hoy inexplorada." },
+        { t: "Pericia integral de la línea de refrigeración y toma de mar.", d: "Ivanov describe una toma de fondo cuyo caño llega al motor principal y se divide hacia la reductora. Peritar toma, válvulas, caño principal, ramal y uniones como una unidad; establecer si las referencias a motor y reductora describen la misma obra o dos intervenciones. El caño estaba «podrido», no había plan y no consta prueba conocida por el jefe ruso." },
         { t: "Examen pericial de toda soldadura reciente en el casco y la estructura.", d: "El jefe de máquinas coreano sitúa a personal venido de Corea soldando piezas en mal estado el mismo día del siniestro. La pericia de reflote debe identificar toda soldadura reciente, determinar sobre qué elementos se ejecutó, si afectó elementos estancos o de la estructura, y su calidad, así como si para realizarla se abrieron accesos o aberturas que quedaran sin cerrar." },
         { t: "Verificación material del estado de válvulas, bombas y tanques.", d: "Al reflotar: posición efectiva de las válvulas de absorción y alimentación de los tanques 9 de babor y estribor, estado de la bomba de trasvase y verificación de que carecía de contador de caudal, y sondaje de todos los tanques para reconstruir la distribución real de combustible." },
         { t: "Pericia del sistema eléctrico y del generador de emergencia.", d: "Estado y ubicación del tablero principal respecto del tambucho de sala de máquinas; existencia, ubicación, estado, capacidad y sistema de arranque del generador de emergencia de proa; alimentación de las bombas de achique y registros de prueba periódica. Resolver la contradicción entre el Jefe de Máquinas, que niega la existencia de sistema de emergencia, y el 2° Oficial, que la afirma." },
@@ -1717,7 +1845,7 @@ window.ANALISIS = {
       bloque: "Prueba objetiva a incorporar",
       urgencia: "alta",
       items: [
-        { t: "Registros audiovisuales y de tráfico del puerto.", d: "Grabaciones de CCTV del puerto y de la ANP correspondientes al 25 de agosto, que permitirían fijar objetivamente el momento de inicio de la escora y su progresión. Es la prueba que puede cerrar el hueco temporal de las 16:00 a las 19:30." },
+        { t: "Analizar cuadro a cuadro los seis videos incorporados y requerir CCTV portuario.", d: "Los videos de MANEADOR y CRISTOBAL cubren 19:27:35–22:58:38. Extraer hitos verificables, audio, posiciones y maniobras, especialmente 20:34:55–20:39:52, 21:02:37–21:07:17 y 22:49:07–22:58:38. Requerir además CCTV de ANP para cubrir el inicio de la escora entre 16:00 y 19:27." },
         { t: "Registros de CONMO, SAAM Towage, AIS y tráfico VHF.", d: "Contrastar FERRAO y los informes de patrones con el libro/grabaciones de Control Montevideo, despacho electrónico y bitácoras SAAM, AIS de MANEADOR/CRISTOBAL y VHF. Fijar solicitud del cliente (nota SAAM: 19:06), aviso a patrones (19:25), zarpe (19:33/19:35), presencia de PLADA/SUEIRO (20:15–20:33), desatraque del 707 (21:10–23:30) y cierre (23:15–23:28)." },
         { t: "Registros telefónicos y de mensajería.", d: "Del mensaje de Kyongsu PARK al patrón Hoseon SHIN de las 18:46; de las comunicaciones de Oriental Shipping y de SAAM Towage ese día —en particular quién de la agencia ordenó a SAAM antes de las 19:30—; y de las comunicaciones de la tripulación entre las 16:00 y las 20:00." },
         { t: "Documentación técnica y estatutaria del buque.", d: "Declaración general de arribo y despacho de entrada, que fijarán la fecha efectiva de atraque —hoy no acreditada en el expediente— y la duración real de la estadía en puerto; plano de disposición general y de tanques con capacidades certificadas; cuaderno de estabilidad aprobado; condición de carga y calados al arribo y al 25 de agosto; certificados estatutarios y del Estado de bandera; historial de clase; informes de inspección PSC; y el manual del sistema de gestión de la seguridad con los procedimientos de trasvase." },
@@ -1749,7 +1877,7 @@ window.ANALISIS = {
         { t: "Corregir la rotulación del acta del jefe de máquinas coreano y establecer su cargo.", d: "La duplicación del archivo quedó subsanada con la incorporación de la declaración de Park KWANG JUN, pero el acta sigue rotulada como \"1er Oficial de Máquinas Coreano\" mientras el declarante se identifica como jefe de máquina y como técnico de máquina y firma como Jefe de Máquinas. Requerir al armador y a Dong Nam el rol de tripulación y los certificados de competencia para determinar quién ejercía formalmente la jefatura de máquinas." },
         { t: "Subsanar los defectos formales de las actas.", d: "Certificación del intérprete y de los oficiales actuantes sobre las horas efectivas de los actos superpuestos del 27 y 31 de agosto; corrección de la hora de cierre del acta del 3° Oficial, anterior a su apertura; documentación de la duración real del acta del jefe de máquinas coreano, que consigna la misma hora de apertura y cierre y comparte traductor con el acta del patrón de pesca del mismo día; constancia expresa de las preguntas no formuladas en las actas con numeración discontinua." },
         { t: "Consolidar una cronología oficial única.", d: "Contrastar el informe del oficial actuante, la exposición del práctico y la nota manuscrita de cronología con los registros objetivos, resolviendo las discrepancias horarias del arribo del baqueano, el retiro del SURESTE 707 y la secuencia del OSRO." },
-        { t: "Evaluar la conveniencia de que el oficial que actuó en la escena instruya el sumario.", d: "El TN (CP) Adrián MOLESINI actuó como oficial de guardia en la escena, elevó el informe del siniestro, es Oficial Instructor y tomó dos de las actas. Corresponde valorar si esta acumulación de roles puede dar lugar a objeciones sobre la imparcialidad de la instrucción y, en su caso, dejar constancia fundada." }
+        { t: "Documentar formalmente la integración del órgano instructor.", d: "Dejar incorporada la designación del TN (CP) Joaquín PÉREZ CORIA como Oficial Instructor y del TN (CP) Adrián MOLESINI como Oficial Secretario. Consignar que MOLESINI actuó previamente en la escena, elevó informe y tomó actas, a efectos de delimitar sus intervenciones." }
       ]
     },
     {
@@ -1757,7 +1885,7 @@ window.ANALISIS = {
       urgencia: "media",
       items: [
         { t: "Evaluar la responsabilidad administrativa del Capitán.", d: "Por la omisión del deber de notificación del siniestro a la autoridad marítima; por la ausencia de orden de abandono y de activación de alarmas; por la falta de procedimientos escritos y de cálculos de estabilidad; y por el criterio de escora normal de 20–25° con el buque atracado." },
-        { t: "Evaluar la responsabilidad del 1er Oficial de Puente.", d: "Único oficial de guardia. Por no haber informado al Capitán, no haber detenido la operación pese al informe de TOKMIN, no haber dado la alarma, y haber bajado a tierra durante la emergencia. Subordinado al esclarecimiento de la contradicción sobre la orden de no encender la bomba." },
+        { t: "Evaluar la responsabilidad del 1er Oficial de Puente.", d: "Único oficial de guardia. TOKMIN confirma que FROLOV bajó al muelle antes del black out y que conocía el sentido correcto babor→estribor; no confirma el supuesto informe que FROLOV le atribuyó. Evaluar falta de aviso al Capitán, ausencia de alarma y abandono del puente, sin perjuicio del careo sobre la bomba." },
         { t: "Evaluar la responsabilidad del Jefe de Máquinas y del 2° Oficial de Máquinas.", d: "Del primero, por el conocimiento del ojo de buey abierto sin adoptar medidas y por la ausencia de cálculos y procedimientos en su área. Del segundo, por haber operado válvulas de trasvase sin autorización previa reconociendo que era necesaria, aunque con la atenuante de que su intervención por gravedad resulta técnicamente insuficiente para causar la escora." },
         { t: "Evaluar la responsabilidad del armador OO Vodoley y del sistema de gestión de la seguridad.", d: "Las deficiencias detectadas no son circunstanciales sino condiciones estables de operación: ausencia de procedimientos escritos, bomba de trasvase sin contador, falta de alarma de escora, energía de emergencia no disponible en tiempo útil, régimen de descanso deficiente y tolerancia normalizada a escoras extremas." },
         { t: "Adoptar medidas precautorias sobre documentación y personal.", d: "Retención de la documentación del buque y de los certificados de la tripulación; evaluación de la procedencia de medidas restrictivas respecto del personal involucrado mientras se completa la instrucción; y aseguramiento de la prueba material a bordo." },

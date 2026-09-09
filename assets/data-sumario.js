@@ -10,15 +10,15 @@ window.SUMARIO = {
   meta: {
     titulo: "INVESTIGACIÓN DE SINIESTRO MARÍTIMO",
     asunto: "Hundimiento del B/P Alpha Crux",
-    fechaOficio: "7 de septiembre de 2026",
+    fechaOficio: "8 de septiembre de 2026",
     destinatario: "SEÑOR PREFECTO DEL PUERTO DE MONTEVIDEO",
     destinatarioCargo: "Capitán de Navío (CP) Néstor LEMOS",
     estado: "Borrador vivo — se actualiza con cada acta o documento incorporado al análisis",
-    notaFormal: "Este texto reproduce la estructura del oficio de elevación. No obran registros audiovisuales de la fase crítica. La reconstrucción se apoya en catorce actas, informes del oficial actuante, CONMO y los patrones de SAAM, exposición del práctico, nota de cronología, planos, rol y meteorología."
+    notaFormal: "Este texto reproduce la estructura del oficio de elevación. Se incorporaron seis videos de los remolcadores entre 19:27:35 y 22:58:38; aún no obra CCTV de la fase inicial. La reconstrucción se apoya además en diecisiete actas, informes, cronología, planos, rol y meteorología."
   },
 
   introduccion:
-    "Me dirijo a Ud. a efectos de elevar las actuaciones realizadas hasta la fecha en relación con el hundimiento del buque «Alpha Crux», N° OMI 9024621, bandera rusa, ocurrido el 25 de agosto de 2026 en el Muelle B, hangar 7, del Puerto de Montevideo. El presente constituye un borrador elaborado sobre la base de catorce actas de información sumaria, los informes operativos de los patrones Fabrizio VIERA (MANEADOR) y Álvaro RODRÍGUEZ (CRISTOBAL), remitidos por SAAM el 7 de septiembre, los informes del Oficial Comandante de Guardia y CONMO, la exposición del Práctico de Seguridad, la nota de cronología, los planos, el rol de tripulación y los datos meteorológicos. Quedan diligencias pendientes cuya práctica puede modificar las conclusiones provisorias.",
+    "Me dirijo a Ud. a efectos de elevar las actuaciones realizadas hasta la fecha en relación con el hundimiento del buque «Alpha Crux», N° OMI 9024621, bandera rusa, ocurrido el 25 de agosto de 2026 en el Muelle B, hangar 7, del Puerto de Montevideo. El presente constituye un borrador elaborado sobre la base de diecisiete actas de información sumaria —incluidas las ampliaciones de BELIKOV e Ivanov YURI y la declaración de Konstantin TOKMIN del 8 de septiembre—, los informes operativos de los patrones de SAAM, los informes del Oficial Comandante de Guardia y CONMO, la exposición del Práctico de Seguridad, la cronología, planos, rol y meteorología. Quedan diligencias pendientes cuya práctica puede modificar las conclusiones provisorias.",
 
   situacion: [
     "El día 25 de agosto de 2026, aproximadamente a las 19:30 horas, el CS (PM) Willian FERRAO, supervisor del Centro de Control Marítimo (CONMO), recibió un llamado de la empresa SAAM Towage solicitando autorización para asistir al pesquero RS «Alpha Crux» atracado en el hangar 7, «por solicitud de la Agencia Marítima», porque el buque se encontraba escorado. FERRAO informó de inmediato al Teniente de Navío (CP) Adrián MOLESINI, Oficial Comandante de Guardia de la Prefectura del Puerto de Montevideo, y al Práctico de Seguridad Portuaria PLADA. Ningún tripulante ni oficial del Alpha Crux notificó el siniestro a la autoridad marítima. Según URRESTARAZU, la cadena comienza en Kibong MOON a las 18:55; MOON, al declarar el 4/09, confirma su retiro a las 17:10 y su retorno a las 19:00, sin pronunciarse sobre el mensaje porque no se le preguntó.",
@@ -33,9 +33,9 @@ window.SUMARIO = {
   desarrollo: [
     "Del cruce de las declaraciones surge, con coincidencia sustancial, el mecanismo del hundimiento. El buque se encontraba atracado, descargado de pescado y carnada, con las artes de pesca estibadas sobre la cubierta principal. En la tarde del 25 de agosto se escoró a babor. Un ojo de buey abierto situado a babor, en el compartimiento del taller del torno, próximo a la sala de refrigeración y a 1–2 metros de la línea de flotación, quedó sumergido. El intento de cerrarlo fracasó por la presión del agua ya embarcada. El agua descendió por la escalera de acceso y el tambucho de la sala de máquinas, mojó el tablero eléctrico principal y provocó el black out. Las bombas de achique quedaron sin alimentación; el generador de emergencia de proa no llegó a encenderse. A partir de ese instante el buque no tenía posibilidad material de recuperación.",
     "Sobre la causa primaria de la escora el expediente no ha cerrado. La tesis del error humano del 2° Oficial de Máquinas —anticipada por la agencia a las 20:00 y sostenida por el 1er Oficial— no resiste el contraste con la prueba: dos declarantes independientes acreditan que la bomba de trasvase nunca fue encendida y que sólo se abrieron válvulas, con un movimiento por gravedad entre tanques de 12–13 m³ a caudal «sumamente menor». Esa maniobra no explica, por sí sola, una escora de 10° ni, menos aún, de 35–40°.",
-    "La dirección del trasvase entre los tanques 9 permanece en disputa: el ejecutante material declara babor→estribor (sentido correcto para adrizar); el Capitán y el 1er Oficial sostienen o conjeturan el sentido contrario. Nadie asume haber ordenado la maniobra. El día anterior ya se habían realizado tres trasvases entre los mismos tanques por orden del 1er Oficial, lo que acredita una escora recurrente tratada de modo habitual con trasvases, sin cálculo de estabilidad.",
-    "Existen líneas causales alternativas serias: intervenciones sobre circuitos de refrigeración abiertos al mar los días 22 y 24 de agosto —MOON acredita la entrega de caños el 24/08 para el enfriamiento del motor hacia la caja reductora y admite no haber avisado ese trabajo a la autoridad uruguaya—; la soldadura del 25/08, que Park KWANG JUN atribuye a personal venido de Corea y MOON niega; y una vía de agua en la bodega que motivó el ingreso anticipado y nunca fue localizada.",
-    "En el momento crítico la cadena de mando estaba rota. El Capitán y el Jefe de Máquinas dormían. El 1er Oficial de Puente —único oficial de guardia— se encontraba en tierra sobre el muro controlando cabos. El 1er Oficial de Puente coreano declara que no hacía guardias y estaba en su camarote viendo televisión. Nadie ha sido identificado ejerciendo la guardia de puente durante la fase crítica. El abandono se produjo sin orden, sin alarma general y sin aplicación de rol.",
+    "La dirección babor→estribor queda fuertemente corroborada: la declara el ejecutante y TOKMIN afirma que FROLOV se la comunicó durante el hecho. Era el sentido correcto para adrizar. La posterior conjetura de FROLOV de un trasvase hacia babor es incompatible con su propio conocimiento contemporáneo. Nadie asume haber ordenado la maniobra.",
+    "La línea causal de refrigeración se refuerza. Ivanov YURI rectifica su negativa original: admite que el caño estaba podrido, que Park KWANG JUN lo retiró sin aviso ni plan y que no conoce prueba alguna. Describe una línea desde una toma de fondo al motor principal con ramal hacia la reductora. Se contradice sobre si vio las válvulas abiertas o cerradas. BELIKOV mantiene que ignoraba la obra porque ninguno de los dos jefes se la comunicó.",
+    "En el momento crítico la cadena de mando estaba rota. TOKMIN confirma que FROLOV —único oficial de guardia— bajó al muelle antes del black out y lo dejó en el puente, pese a que era patrón de pesca y no oficial de guardia. También contradice el informe que FROLOV le atribuyó: nunca entró a máquinas ni dijo haber visto a los maquinistas escorando el buque. El Capitán y el Jefe de Máquinas dormían; el abandono ocurrió sin orden ni alarma.",
     "Los informes de los patrones no aportan conocimiento directo sobre la causa inicial: expresan que la versión del trasvase incorrecto les fue comunicada por la agencia. Sí aportan observación profesional directa sobre la fase de respuesta: pérdida total de estabilidad transversal al arribar, función de sostén del SURESTE 707, riesgo para ambos buques y efecto inmediato de retirarlo."
   ],
 
@@ -46,11 +46,11 @@ window.SUMARIO = {
     },
     {
       titulo: "Sobre la orden de no encender la bomba",
-      texto: "Es la contradicción central entre el 2° Oficial de Máquinas (quien afirma que el 1er Oficial le ordenó no prender la bomba «porque tal vez se podría escorar más») y el 1er Oficial (quien niega que esa conversación haya existido). De su resolución depende determinar si el oficial de guardia impidió activamente el adrizamiento. Konstantin TOKMIN, enviado por el 1er Oficial a sala de máquinas en el intervalo crítico, no ha declarado."
+      texto: "TOKMIN ya declaró, pero no presenció la conversación: dice no haber oído orden alguna. No resuelve la oposición entre ABDRAKHMANOV y FROLOV. Sí afecta la credibilidad de FROLOV al negar haber entrado a máquinas o haberle dado el informe que éste le atribuye."
     },
     {
       titulo: "Sobre las reparaciones en puerto",
-      texto: "Conviven al menos dos intervenciones: el cambio de caños del motor el 22/08 (Park KWANG JUN + indonesios) y el taller portuario el 24/08 sobre el reductor. MOON entrega caños el 24/08 para el enfriamiento del motor→reductora, no supervisa el trabajo e informa a la agencia de soldadura pero no de caños. El Capitán y el Jefe de Máquinas rusos niegan toda reparación."
+      texto: "Ivanov rectifica su negativa: conoció el retiro de un caño podrido por Park, sin plan ni prueba conocida. Describe una línea toma de fondo→motor→ramal a reductora, que puede unificar referencias antes tratadas como obras separadas. Su versión sobre válvulas abiertas/cerradas es contradictoria. BELIKOV mantiene que nadie le informó."
     },
     {
       titulo: "Sobre el trabajo en caliente el día del hundimiento",
@@ -62,7 +62,11 @@ window.SUMARIO = {
     },
     {
       titulo: "Sobre la estructura de mando a bordo",
-      texto: "El buque presentaba cargos duplicados entre la línea rusa del armador OO Vodoley y la línea coreana de Dong Nam: dos jefes de máquinas y dos primeros oficiales de puente. Los oficiales coreanos se contradicen sobre su autoridad frente a los rusos; coinciden en que mandaban sobre la tripulación indonesia. Esa dualidad es incompatible con una asignación clara de responsabilidades técnicas."
+      texto: "BELIKOV confirma que los oficiales coreanos estaban subordinados a su jerarquía; Ivanov sólo recibía órdenes del Capitán ruso. La autoridad formal queda fijada, pero el control efectivo seguía fragmentado: Park ejecutó una reparación crítica sin plan ni aviso y dirigía a los indonesios."
+    },
+    {
+      titulo: "Sobre Konstantin TOKMIN",
+      texto: "Es el patrón de pesca ruso, no coreano, y figura Ch.fishmaster en el rol. Corrobora que FROLOV conocía el trasvase babor→estribor y que bajó al muelle antes del black out. Niega haber entrado a sala de máquinas y no reconoce el informe con que FROLOV pretendía respaldar su versión. Su imputación al 2° Oficial es una opinión sin observación directa."
     },
     {
       titulo: "Sobre la vía de agua previa",
@@ -105,11 +109,11 @@ window.SUMARIO = {
     "Ningún cálculo de estabilidad antes de los trasvases en la situación de buque recién descargado con peso alto sobre cubierta. La bomba de trasvase carece de contador de caudal.",
     "Tolerancia normalizada a escoras de 20–25° con el buque atracado, declarada por el Capitán; ausencia de alarma de escora operativa.",
     "Omisión del deber de notificación a la autoridad marítima por parte del Capitán y de la oficialidad de guardia. La autoridad se enteró por SAAM a pedido de la agencia; URRESTARAZU sitúa el aviso en MOON (18:55), punto no indagado en el acta de éste.",
-    "Testigos pendientes: Konstantin TOKMIN (Ch.fishmaster), Evgenii SHUKOV/SIIUKOV (2nd mate), KWON TAE GUN (CHIEF TRAL). Ampliar a Kibong MOON sobre el mensaje 18:55. Resolver la contradicción Park/MOON sobre personal coreano de tierra.",
-    "Defectos formales del expediente: actas con intérprete en horarios solapados; dos actas con hora de cierre anterior a la apertura; pregunta del cuestionario del patrón de pesca reproducida en el acta del 1er Oficial de Puente coreano; saltos de numeración en cuestionarios.",
+    "TOKMIN ya declaró. Siguen pendientes Evgenii SHUKOV/SIIUKOV (2nd mate), KWON TAE GUN (CHIEF TRAL), ampliación de MOON y resolución de la contradicción Park/MOON.",
+    "Defectos formales: tres pares de actas con un mismo intérprete en horarios solapados —incluidas las ampliaciones de BELIKOV e Ivanov del 8/09—, cierres imposibles, arrastre de plantilla y saltos de numeración.",
     "Discrepancias horarias entre FERRAO, MOLESINI, PLADA, la nota de cronología y los patrones SAAM. La más crítica es el desatraque del SURESTE 707: 21:10 según VIERA/RODRÍGUEZ frente a 22:30–23:30 en las demás fuentes.",
     "Los informes de ambos patrones tienen redacción prácticamente idéntica; deben ratificarse individualmente y contrastarse con AIS, VHF y bitácoras para distinguir recuerdos propios de la reconstrucción corporativa de SAAM.",
-    "Ningún registro objetivo de la fase crítica incorporado al expediente: sin CCTV, grabaciones de CONMO, tráfico VHF, AIS ni registros telefónicos contrastados. Sí se incorporaron planos, rol, viento, acta de MOON e informes de patrones."
+    "Se incorporaron seis videos de MANEADOR y CRISTOBAL que cubren intervalos entre 19:27:35 y 22:58:38. Deben analizarse cuadro a cuadro y sincronizarse con AIS/VHF. Continúan faltando CCTV de la fase inicial, grabaciones CONMO y registros telefónicos contrastados."
   ],
 
   conclusiones: [
@@ -118,19 +122,19 @@ window.SUMARIO = {
     "Queda acreditado que existió demora relevante entre el hundimiento y la respuesta institucional: aviso a Prefectura a las 19:30 (vía SAAM Towage por pedido de la agencia), activación del plan contra la contaminación a las 23:10 y cierre del cerco a las 00:30, con ≈300 toneladas de gasoil a bordo.",
     "Los patrones acreditan que el SURESTE 707 era el sostén temporal del Alpha Crux y que su retiro precipitó el hundimiento final inmediato. La decisión fue necesaria para evitar un segundo siniestro y no constituye la causa primaria de la pérdida de estabilidad.",
     "La tesis del error humano por trasvase forzado de combustible, imputada por URRESTARAZU al mensaje de MOON a las 18:55 y reproducida ante MOLESINI a las 20:00, no se sostiene como causa suficiente: la bomba no se encendió. MOON declara no saber la causa; falta ampliarle sobre el contenido del mensaje. Tampoco el viento explica la escora.",
-    "La causa primaria de la escora inicial permanece sin establecer. Las hipótesis más consistentes apuntan a estabilidad deficiente de partida, eventualmente agravada por vía de inundación previa (reparaciones sobre circuitos de agua de mar —incluyendo los caños que MOON entregó el 24/08—, soldadura del 25/08 en disputa, o vía de agua de bodega nunca localizada).",
-    "Coexistían a bordo dos líneas de autoridad con cargos duplicados (rusa y coreana), sin asignación clara de responsabilidades técnicas. Esa dualidad, sumada a la tolerancia a escoras extremas y a la ausencia de procedimientos y cálculos, configura un régimen de operación incompatible con la seguridad de un buque atracado con centenares de toneladas de combustible.",
-    "Subsisten contradicciones centrales —orden de no encender la bomba, dirección del trasvase, contenido del aviso 18:55, personal coreano de tierra y cronología del retiro del SURESTE 707— cuya resolución requiere testimonios, careos y prueba objetiva.",
+    "La dirección babor→estribor queda fuertemente corroborada por ABDRAKHMANOV y TOKMIN. La causa primaria permanece sin establecer; las hipótesis principales son estabilidad deficiente y una posible vía en la línea de refrigeración conectada a toma de fondo, cuyo caño Ivanov admite que estaba podrido y fue sustituido sin plan ni prueba conocida.",
+    "La autoridad formal correspondía al Capitán ruso: BELIKOV confirma la subordinación de los oficiales coreanos. Subsistía una ejecución técnica fragmentada que permitió reparaciones críticas sin conocimiento efectivo del Capitán ni control del jefe ruso.",
+    "TOKMIN contradice un extremo central de FROLOV, confirma que éste dejó el puente antes del black out y no corrobora la culpa atribuida al 2° Oficial. Subsisten la orden sobre la bomba, el aviso 18:55, personal coreano de tierra y la cronología del SURESTE 707.",
     "El expediente presenta deficiencias formales y de instrucción que deben subsanarse antes de toda elevación definitiva."
   ],
 
   recomendaciones: [
-    "Continuar la instrucción: ampliar a Kibong MOON sobre el mensaje 18:55 y puntos omitidos; interrogar a Konstantin TOKMIN y a Evgenii SHUKOV/SIIUKOV; carear a Park KWANG JUN y MOON sobre personal de tierra; ampliar a Park KWANG JUN, Kyongsu PARK, FROLOV, BELIKOV, Ivanov YURI y German IVAN; careo FROLOV–ABDRAKHMANOV sobre la orden de no encender la bomba.",
+    "Continuar la instrucción: ampliar a MOON; interrogar a SHUKOV/SIIUKOV; carear Park–MOON; confrontar FROLOV con TOKMIN y efectuar careo FROLOV–ABDRAKHMANOV; aclarar con Ivanov válvulas abiertas/cerradas, ausencia de plan/prueba y omisión de aviso al Capitán; completar las ampliaciones incompletas de BELIKOV e Ivanov.",
     "Disponer pericia de estabilidad y reconstrucción de la condición de carga del 25 de agosto, pericia de los circuitos de refrigeración intervenidos los días 22 y 24, examen de toda soldadura reciente, inspección subacuática del casco (incluida la zona de bodega y daños compatibles con presión de hielo) y verificación material de válvulas, bombas, tanques, ojos de buey y sistema eléctrico de emergencia.",
-    "Incorporar de inmediato la prueba objetiva disponible: CCTV; registros y grabaciones de CONMO; despacho, bitácoras, AIS y VHF de SAAM para resolver 19:06/19:25/19:35/20:15/21:10/23:20; registros de Oriental Shipping (incluido mensaje 18:55); libros de guardia; documentación de clase.",
+    "Analizar y preservar los seis videos incorporados, documentando hash, duración real, audio e hitos cuadro a cuadro; sincronizarlos con AIS/VHF. Incorporar CCTV, CONMO, despacho y bitácoras SAAM, registros de Oriental Shipping, libros de guardia y documentación de clase.",
     "Ratificar individualmente a Fabrizio VIERA y Álvaro RODRÍGUEZ, distinguiendo observación propia de información de agencia/CCO, y ampliar a PLADA y SUEIRO sobre la orden de desatraque que ambos patrones sitúan a las 21:10.",
     "Evaluar la responsabilidad administrativa del Capitán por la omisión de notificación a la autoridad marítima y por el régimen de operación que toleró escoras extremas sin procedimientos ni cálculos de estabilidad. Evaluar también la omisión de MOON de informar a la autoridad uruguaya el cambio de caño de refrigeración.",
-    "Subsanar los defectos formales de las actas (horarios de intérprete, cierres anteriores a la apertura, arrastre de plantilla y saltos de numeración) mediante certificación o ratificación, a fin de preservar la validez del núcleo probatorio.",
+    "Subsanar los defectos formales mediante certificación o ratificación, incluyendo específicamente la superposición del 8/09: Ivanov 14:00–14:35 y BELIKOV 14:30–15:00 con el mismo intérprete.",
     "Verificar el cumplimiento de las obligaciones del armador y del agente respecto de la tripulación siniestrada, atendiendo a la disparidad de trato entre la línea coreana alojada en hotel y los marineros indonesios que declaran haber dormido en el piso del SURESTE 701 durante los primeros días.",
     "Mantener el presente como borrador de trabajo hasta completar las diligencias esenciales. Sólo entonces elevar el sumario con conclusiones definitivas sobre la causa primaria de la escora."
   ],
