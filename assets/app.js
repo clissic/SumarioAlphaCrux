@@ -129,7 +129,7 @@
     var nPreg = DECL.reduce(function (a, d) { return a + d.qa.length; }, 0);
     var criticas = AN.incongruencias.filter(function (i) { return i.gravedad === "critica"; }).length;
     var pendientesNodos = AN.grafo.nodos.filter(function (n) {
-      return n.cat === "no-declaro" || n.id === "equipo-coreano";
+      return n.cat === "no-declaro";
     });
     var nPasos = AN.pasos.reduce(function (a, b) { return a + b.items.length; }, 0);
 
@@ -182,7 +182,7 @@
       },
       {
         h: "Soldaban a bordo el día del hundimiento",
-        p: "El jefe de máquinas coreano sitúa a personal venido de Corea soldando piezas en mal estado a las 16:00, la misma hora en que empieza la escora. Trabajo en caliente de terceros que no fue indagado a ningún otro declarante."
+        p: "Park KWANG JUN alega personal venido de Corea soldando a las 16:00; MOON lo niega. Hecho alegado, no perseguible: se menciona como contexto, sin línea de identificación ni interrogatorio."
       },
       {
         h: "Nadie estaba en el puente",
@@ -200,8 +200,8 @@
         "</b><span>" + esc(d.cargoCorto) + " · " + esc(d.acta.fecha.replace(" de 2026", "")) + "</span></div></div>";
     });
     pendientesNodos.forEach(function (n) {
-      var label = n.id === "equipo-coreano" ? "Personal venido de Corea (soldadura)" : n.label;
-      var sub = n.id === "equipo-coreano" ? "Sin identificar ni declarar" : "Sin declarar";
+      var label = n.label;
+      var sub = "Única declaración pendiente";
       rows.push('<div class="rost pend">' +
         '<div class="rost-av" style="background:#b5559e">' + initials(label) + "</div>" +
         '<div class="rost-txt"><b>' + esc(label) + "</b><span>" + esc(sub) + "</span></div></div>");
@@ -354,7 +354,20 @@
       "</div></div></div>" +
       '<div class="dh-cols">' +
       '<div class="dh-col"><h4>Identificación</h4><dl class="kv">' + fichaRows + "</dl>" +
-      '<h4 style="margin-top:18px">Ubicación durante los hechos</h4><p class="dh-note">' + esc(d.posicion) + "</p></div>" +
+      '<h4 style="margin-top:18px">Ubicación durante los hechos</h4><p class="dh-note">' + esc(d.posicion) + "</p>" +
+      (function () {
+        var doc = d.documentacion || { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" };
+        var label = esc(doc.etiqueta || "Documentación de identidad / filiación");
+        if (doc.url) {
+          return '<div class="doc-personal"><h4 style="margin-top:18px">Documentación personal</h4>' +
+            '<a class="btn btn-ghost doc-personal-link" href="' + esc(doc.url) + '" target="_blank" rel="noopener">' + label + " ↗</a></div>";
+        }
+        return '<div class="doc-personal is-pending"><h4 style="margin-top:18px">Documentación personal</h4>' +
+          '<button type="button" class="btn btn-ghost doc-personal-btn" disabled title="Pendiente de incorporar en files/Documentacion/' + esc(d.id) + '/">' +
+          label + " — pendiente</button>" +
+          '<p class="placeholder-empty">Pendiente de incorporar.</p></div>';
+      })() +
+      "</div>" +
       '<div class="dh-col"><h4>Datos del acta</h4><dl class="kv">' + actaRows + "</dl>" +
       '<h4 style="margin-top:18px">Tesis del declarante</h4><div class="dh-tesis">' + esc(d.tesis) + "</div></div>" +
       "</div></div>";
@@ -593,7 +606,7 @@
     }).length;
     var nCrit = AN.incongruencias.filter(function (i) { return i.gravedad === "critica"; }).length;
     var nPend = AN.grafo.nodos.filter(function (n) {
-      return n.cat === "no-declaro" || n.id === "equipo-coreano";
+      return n.cat === "no-declaro";
     }).length;
     var toc = [
       ["#sd-1", "1. Situación"],
@@ -760,6 +773,18 @@
         "</div>" +
       "</article>";
     }).join("");
+
+    // Placeholder único y global (fuera de todos los acordeones).
+    var globalAnal = data.analisisInvestigador || data.analisisVideos || data.analisisGlobal || null;
+    var gTexto = (globalAnal && globalAnal.texto) ? globalAnal.texto : "";
+    var gEstado = (globalAnal && globalAnal.estado) ? globalAnal.estado : "pendiente";
+    var gPendiente = !gTexto || gEstado === "pendiente";
+    list.insertAdjacentHTML("beforeend",
+      '<div class="video-investigator video-investigator-global' + (gPendiente ? " is-pending" : "") + '">' +
+        "<h3>Análisis del investigador" + (gPendiente ? " — pendiente" : "") + "</h3>" +
+        (gTexto ? "<p>" + esc(gTexto) + "</p>" : '<p class="placeholder-empty">Pendiente de incorporar.</p>') +
+      "</div>"
+    );
 
     qa("#videoList .video-head").forEach(function (button) {
       button.addEventListener("click", function () {

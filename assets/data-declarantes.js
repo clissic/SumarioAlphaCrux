@@ -30,6 +30,7 @@ window.CASO = {
       cargo: "Capitán del buque",
       cargoCorto: "Capitán",
       grupo: "rusa",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Rusa",
         Pasaporte: "776549084",
@@ -116,6 +117,7 @@ window.CASO = {
       cargo: "1er Oficial de Puente — Oficial de Guardia",
       cargoCorto: "1er Oficial",
       grupo: "rusa",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Rusa",
         Pasaporte: "673647340",
@@ -197,6 +199,7 @@ window.CASO = {
       cargo: "1er Oficial de Puente — AMPLIACIÓN de declaración",
       cargoCorto: "1er Oficial (ampliación)",
       grupo: "rusa",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ampliacion: true,
       ficha: {
         Nacionalidad: "Rusa",
@@ -248,6 +251,7 @@ window.CASO = {
       cargo: "Jefe de Máquinas",
       cargoCorto: "Jefe de Máquinas",
       grupo: "rusa",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Rusa",
         Edad: "59 años",
@@ -262,7 +266,7 @@ window.CASO = {
         oficial: "TN (CP) Adrián MOLESINI",
         interprete: "Nicolai GOLUBEI FORTUNA",
         lugar: "Prefectura del Puerto de Montevideo",
-        preguntas: "19 numeradas (una sin numerar; falta la 18)",
+        preguntas: "19 (REGUNTA 7 y 8; una sin numerar entre 8 y 9; falta la 18)",
         archivo: "ACTA DE INFORMACION SUMARIA - Jefe de Maquinas.docx"
       },
       posicion: "En sala de máquinas durante el trasvase popa→proa. Durmiendo en su camarote durante el trasvase 9↔9. Se despierta con el black out.",
@@ -311,6 +315,7 @@ window.CASO = {
       cargo: "2° Oficial de Máquinas — de guardia en máquinas",
       cargoCorto: "2° Of. Máquinas",
       grupo: "rusa",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Rusa",
         Pasaporte: "663751930",
@@ -389,6 +394,7 @@ window.CASO = {
       cargo: "3° Oficial de Máquinas",
       cargoCorto: "3° Of. Máquinas",
       grupo: "rusa",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Rusa",
         "Fecha de nacimiento": "06/12/1973",
@@ -405,7 +411,7 @@ window.CASO = {
         oficial: "TN (CP) Adrián MOLESINI",
         interprete: "Nicolai GOLUBEI FORTUNA",
         lugar: "Prefectura del Puerto de Montevideo",
-        preguntas: "9 (el número 8 se repite dos veces)",
+        preguntas: "9 (una pregunta sin numerar entre 7 y 8; la 8 aparece como REGUNTA)",
         archivo: "ACTA DE INFORMACION SUMARIA - 3er Oficial de Maquinas.docx"
       },
       posicion: "Franco de guardia, en su camarote. El 2° Oficial lo va a buscar para corroborar la maniobra. Baja a sala de máquinas, verifica que la bomba está apagada, e intenta cerrar el ojo de buey sin éxito.",
@@ -430,7 +436,7 @@ window.CASO = {
         { tipo: "hecho", t: "Afirma haber escuchado del 2° Oficial y del propio Jefe de Máquinas que existía un problema en el caño de refrigeración. Ivanov inicialmente lo negó, pero en su ampliación del 8/09 admitió conocer el caño podrido y su sustitución por Park." },
         { tipo: "hecho", t: "Es quien intenta materialmente cerrar el ojo de buey sin lograrlo por la presión del agua, y quien recorre los camarotes avisando a la tripulación que había que abandonar el buque. Fue la única acción organizada de abandono a bordo, y la tomó un oficial subalterno franco de guardia." },
         { tipo: "alerta", t: "La pregunta 4 está formulada por el instructor dando por sentada la dirección \"9 de estribor al 9 de babor\", cuando el ejecutante material declara lo contrario. La formulación de la pregunta condiciona la respuesta y conviene subsanarla en una ampliación." },
-        { tipo: "alerta", t: "El acta presenta un cierre horario (11:11) anterior a su apertura (11:30) y repite el número de pregunta 8. Debe subsanarse formalmente." }
+        { tipo: "alerta", t: "El acta presenta un cierre horario (11:11) anterior a su apertura (11:30) y una pregunta sin numerar entre la 7 y la REGUNTA 8. Debe consignarse el defecto formal." }
       ]
     },
 
@@ -438,9 +444,10 @@ window.CASO = {
     {
       id: "patron-pesca",
       nombre: "Hoseon SHIN",
-      cargo: "Patrón de Pesca (coreano)",
+      cargo: "Patrón de pesca coreano (cargo efectivo; rol: Guarantee engineer)",
       cargoCorto: "Patrón de Pesca",
       grupo: "coreana",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Corea del Sur",
         Pasaporte: "M33406677",
@@ -498,6 +505,7 @@ window.CASO = {
       cargo: "Jefe / técnico de máquinas coreano (acta rotulada «1er Oficial de Máquinas»)",
       cargoCorto: "Jefe Máq. coreano",
       grupo: "coreana",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Corea del Sur",
         Documento: "M419X3876",
@@ -535,7 +543,7 @@ window.CASO = {
         { n: 14, p: "Para que indique si tiene algo más que agregar.", r: "No." }
       ],
       conclusiones: [
-        { tipo: "critico", t: "Introduce un hecho enteramente nuevo y no indagado a ningún otro declarante: a las 16:00 del día del siniestro había personal venido de Corea soldando a bordo piezas que estaban en mal estado. Es trabajo en caliente ejecutado por terceros el mismo día del hundimiento, en coincidencia temporal con el inicio de la escora que el Jefe de Máquinas sitúa sobre las 16:00. No consta la identidad de esa empresa, ni permiso de trabajo, ni supervisión, ni qué piezas se soldaron ni en qué ubicación del buque." },
+        { tipo: "alerta", t: "Alega que a las 16:00 había personal venido de Corea soldando a bordo. MOON lo niega. Hecho alegado / contradicción documentada: no se prioriza identificar ni interrogar a ese personal." },
         { tipo: "critico", t: "Aporta una versión completamente distinta de las reparaciones: no fue un taller portuario uruguayo el 24 de agosto sobre el enfriamiento del reductor del eje, sino él mismo con los tres marineros indonesios el 22 de agosto, cambiando tres tramos de caño de refrigeración del motor principal dentro de la sala de máquinas, con prueba de presión satisfactoria el mismo día. Convive con la versión del 2° Oficial de Máquinas sin excluirla: podrían ser dos intervenciones distintas en fechas distintas, lo que agrava el cuadro en lugar de aclararlo." },
         { tipo: "contradiccion", t: "Afirma que el Jefe de Máquinas ruso \"seguro que sabía\" de la reparación porque estaba enterado de antemano, y presume que el Capitán también fue informado. Es la primera imputación directa de conocimiento contra quienes negaron de plano toda reparación, y proviene de quien ejecutó materialmente la tarea." },
         { tipo: "critico", t: "Aporta la cuarta versión sobre la titularidad del trasvase de combustible y la única que distingue lo formal de lo real: formalmente corresponde al 3er maquinista ruso, pero \"en los hechos la hace el jefe de máquina y el segundo\". Coincide con que el ejecutante material del 25 de agosto fue el 2° Oficial de Máquinas y desmiente que se tratara de una actuación ajena a la práctica habitual del buque." },
@@ -559,6 +567,7 @@ window.CASO = {
       cargo: "1er Oficial de Puente (coreano)",
       cargoCorto: "1er Of. Puente coreano",
       grupo: "coreana",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Corea del Sur",
         Pasaporte: "M75853262",
@@ -623,6 +632,7 @@ window.CASO = {
       cargo: "Marinero de guardia de máquinas (indonesio)",
       cargoCorto: "Marinero MURDIONO",
       grupo: "indonesia",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Indonesia",
         Pasaporte: "E9022361",
@@ -677,6 +687,7 @@ window.CASO = {
       cargo: "Marinero de guardia de máquinas (indonesio)",
       cargoCorto: "Marinero RAVEL",
       grupo: "indonesia",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Indonesia",
         Pasaporte: "E5593303",
@@ -729,6 +740,7 @@ window.CASO = {
       cargo: "Marinero de guardia de máquinas (indonesio)",
       cargoCorto: "Marinero AGUS",
       grupo: "indonesia",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Indonesia",
         Pasaporte: "C8678186",
@@ -783,6 +795,7 @@ window.CASO = {
       cargo: "Agente marítimo — Oriental Shipping",
       cargoCorto: "Agente URRESTARAZU",
       grupo: "terceros",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Uruguaya",
         "C.I.": "1.885.820-3",
@@ -837,6 +850,7 @@ window.CASO = {
       cargo: "Inspector técnico del armador — Dong Nam",
       cargoCorto: "Inspector MOON",
       grupo: "terceros",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Corea del Sur",
         Pasaporte: "M11759454",
@@ -898,6 +912,7 @@ window.CASO = {
       cargo: "Patrón del remolcador MANEADOR — SAAM Towage Uruguay",
       cargoCorto: "Patrón MANEADOR",
       grupo: "terceros",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Uruguaya",
         "C.I.": "4.272.983-4",
@@ -942,6 +957,7 @@ window.CASO = {
       cargo: "Patrón del remolcador CRISTOBAL — SAAM Towage Uruguay",
       cargoCorto: "Patrón CRISTOBAL",
       grupo: "terceros",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Uruguaya",
         "C.I.": "1.793.391-5",
@@ -986,6 +1002,7 @@ window.CASO = {
       cargo: "Capitán del buque — AMPLIACIÓN de declaración",
       cargoCorto: "Capitán (ampliación)",
       grupo: "rusa",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ampliacion: true,
       ficha: {
         Nacionalidad: "Rusa",
@@ -1030,6 +1047,7 @@ window.CASO = {
       cargo: "Jefe de Máquinas ruso — AMPLIACIÓN de declaración",
       cargoCorto: "Jefe Máquinas (ampliación)",
       grupo: "rusa",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ampliacion: true,
       ficha: {
         Nacionalidad: "Rusa",
@@ -1077,6 +1095,7 @@ window.CASO = {
       cargo: "Patrón de pesca ruso — Ch.fishmaster en el rol",
       cargoCorto: "Patrón pesca ruso",
       grupo: "rusa",
+      documentacion: { estado: "pendiente", url: null, etiqueta: "Documentación de identidad / filiación" },
       ficha: {
         Nacionalidad: "Rusa",
         Edad: "59 años",
@@ -1114,7 +1133,7 @@ window.CASO = {
         { tipo: "hecho", t: "Corrobora que FROLOV abandonó el puente y bajó al muelle antes del black out, dejando a TOKMIN —patrón de pesca, no oficial de guardia— en el puente." },
         { tipo: "hecho", t: "Aporta una secuencia relativa: 10° de escora; FROLOV baja y vuelve ≈5 minutos después; luego envía a TOKMIN; ≈15 minutos después ocurre el black out con unos 30°." },
         { tipo: "alerta", t: "Su atribución de culpa al 2° Oficial es una opinión sin percepción directa: no bajó a sala, no vio válvulas ni bomba y no escuchó orden alguna. Su propio relato establece que el sentido comunicado era correcto." },
-        { tipo: "contradiccion", t: "El acta confirma que es ruso, no el patrón de pesca coreano Hoseon SHIN. El rol lo identifica como Ch.fishmaster; debe aclararse la coexistencia de ambos cargos y su relación con SHIN y KWON TAE GUN." },
+        { tipo: "hecho", t: "El acta confirma que es ruso, no el patrón de pesca coreano Hoseon SHIN. El rol lo identifica como Ch.fishmaster; coexistencia de roles con SHIN (patrón efectivo coreano) sin impugnación abierta." },
         { tipo: "alerta", t: "La numeración omite la pregunta 5 y el rótulo de firma dice erróneamente «Jefe de Máquinas» para TOKMIN." }
       ]
     }
