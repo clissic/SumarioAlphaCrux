@@ -741,11 +741,31 @@
     if (!data || !list || !summary) return;
 
     var items = data.items || [];
+    var primerInicio = "—";
+    var ultimoFin = "—";
+    if (items.length) {
+      primerInicio = items.reduce(function (a, b) {
+        return a.inicio <= b.inicio ? a : b;
+      }).inicio;
+      var overnight = items.filter(function (v) { return v.fin < v.inicio; });
+      if (overnight.length) {
+        ultimoFin = overnight.reduce(function (a, b) {
+          return a.fin >= b.fin ? a : b;
+        }).fin + " (+1)";
+      } else {
+        ultimoFin = items.reduce(function (a, b) {
+          return a.fin >= b.fin ? a : b;
+        }).fin;
+      }
+    }
     summary.innerHTML =
       '<div class="video-summary-stat"><b>' + items.length + '</b><span>archivos catalogados</span></div>' +
-      '<div class="video-summary-stat"><b>' + (items[0] ? esc(items[0].inicio) : "—") + '</b><span>primer registro</span></div>' +
-      '<div class="video-summary-stat"><b>' + (items.length ? esc(items[items.length - 1].fin) : "—") + '</b><span>último registro</span></div>' +
-      '<p class="video-warning">' + esc(data.advertencia) + "</p>";
+      '<div class="video-summary-stat"><b>' + esc(primerInicio) + '</b><span>primer registro</span></div>' +
+      '<div class="video-summary-stat"><b>' + esc(ultimoFin) + '</b><span>último registro</span></div>' +
+      '<p class="video-warning">' + esc(data.advertencia) + "</p>" +
+      (data.cctvPortuario && data.cctvPortuario.texto
+        ? '<div class="video-cctv-note"><h3>CCTV portuario</h3><p>' + esc(data.cctvPortuario.texto) + "</p></div>"
+        : "");
 
     list.innerHTML = items.map(function (v, i) {
       var fechaCorta = v.fecha.replace(" de agosto de ", "-08-");

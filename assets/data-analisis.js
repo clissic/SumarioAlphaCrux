@@ -196,6 +196,11 @@ window.ANALISIS = {
   videos: {
     fuente: "Archivos incorporados en files/Videos/",
     advertencia: "La descripción inicial se basa en el nombre y el intervalo temporal de cada archivo. Las inferencias sobre maniobras deben confirmarse mediante visualización cuadro a cuadro y cotejo con AIS, VHF y bitácoras.",
+    cctvPortuario: {
+      estado: "incorporado",
+      resultado: "parcial",
+      texto: "La Administración Nacional de Puertos aportó el registro de la cámara Domo del muelle: es la única cámara portuaria que ve el incidente desde el atraque (muelle B, hangar 7). Cubre desde las 19:30 del 25/08 hasta las 01:30 del 26/08. No hay CCTV portuario de la fase crítica anterior (inicio de escora 16:00–19:27)."
+    },
     items: [
       {
         id: "video-192735",
@@ -221,6 +226,19 @@ window.ANALISIS = {
         archivo: "25082026 19.28.28 al 19.41.48 - MANEADOR Proa Panoramica.mp4",
         url: "files/Videos/25082026 19.28.28 al 19.41.48 - MANEADOR Proa Panoramica.mp4",
         relevancia: "Vista panorámica simultánea con el registro de cubierta del MANEADOR. Útil para reconstruir el estado del ALPHA CRUX y del SURESTE 707 al inicio de la respuesta.",
+        analisis: { estado: "pendiente", texto: "" }
+      },
+      {
+        id: "video-193000-anp",
+        fecha: "25 de agosto de 2026",
+        inicio: "19:30:00",
+        fin: "01:30:00",
+        duracion: "6 h",
+        unidad: "ANP",
+        titulo: "Domo muelle — vista del incidente",
+        archivo: "25-09-2026 19.30.00 al 01.30.00 - Video Domo ANP Muelle.mp4",
+        url: "files/Videos/25-09-2026 19.30.00 al 01.30.00 - Video Domo ANP Muelle.mp4",
+        relevancia: "Única cámara portuaria (ANP) que registra el incidente desde el muelle. Cubre la respuesta institucional desde el aviso CONMO/SAAM (≈19:30) hasta la madrugada del 26/08, incluyendo contención, maniobras de remolque y la ventana de separación del SURESTE 707. Complementa y puede contrastar los videos de MANEADOR/CRISTOBAL.",
         analisis: { estado: "pendiente", texto: "" }
       },
       {
@@ -1360,7 +1378,7 @@ window.ANALISIS = {
         { quien: "TN (CP) Adrián MOLESINI — Oficial actuante", ref: "informe-molesini", cita: "Aproximadamente a las 19:30 horas, recibí una llamada por parte del CS (PM) William FERRAO […] me informó que en el hangar 7 se encontraba un barco escorado.", donde: "Informe 26/08" }
       ],
       analisis: "Si el buque estaba adrizado a las 15:00 y comenzó a escorarse a las 16:00, pero el 1er Oficial sitúa todo el episodio en una ventana de 20 a 30 minutos, la secuencia interna no cubre el intervalo hasta las 19:30. Dos declaraciones coreanas acotan el problema y lo agudizan. El jefe de máquinas bajó a la sala de máquinas a las 16:30 y la encontró en estado correcto, de modo que media hora después de la hora que el Jefe de Máquinas fija como inicio de la escora no había nada anómalo en el compartimiento donde se desarrolló todo el siniestro. Y el 1er Oficial de Puente coreano, ajeno por completo a la maniobra, describe la fase final como prácticamente instantánea —sintió la escora, se produjo el black out, salió y la tripulación ya estaba en el muelle— y precisa que el mensaje de las 18:46 lo envió desde el muelle, con el buque ya abandonado, de modo que esa hora no marca el hundimiento sino un momento posterior a él. El expediente admite entonces dos lecturas. O la escora comenzó bastante después de las 16:00 y la referencia del Jefe de Máquinas es errónea, lo que es verosímil porque él mismo admite haber estado durmiendo. O bien hubo una escora leve y progresiva durante más de dos horas que nadie atendió —consistente con la tolerancia declarada a escoras de 20–25° y con que un tripulante en su camarote no la percibiera— seguida de un colapso brusco. Ninguna de las dos es favorable y ninguna surge acreditada: las declaraciones son la única fuente horaria del período y no hay un solo registro objetivo incorporado.",
-      resolucion: "Incorporar registros objetivos (CCTV ANP, CONMO, VHF, mensajería 18:46). Las ventanas declaradas (16:00 Ivanov; 17:10/19:00 MOON; 18:46 PARK; 18:55 URRESTARAZU; ≈19:15 SAAM) se conservan como cronología canónica de la fase crítica; no se proponen ampliaciones a Park ni a Kyongsu PARK por este hueco."
+      resolucion: "Incorporar registros objetivos disponibles (CONMO, VHF, mensajería 18:46) y analizar el Domo ANP del muelle (19:30–01:30). No hay CCTV portuario de la fase crítica anterior a las 19:30. Las ventanas declaradas (16:00 Ivanov; 17:10/19:00 MOON; 18:46 PARK; 18:55 URRESTARAZU; ≈19:15 SAAM) se conservan como cronología canónica de esa fase; no se proponen ampliaciones a Park ni a Kyongsu PARK por este hueco."
     },
     {
       id: "i09",
@@ -1797,7 +1815,7 @@ window.ANALISIS = {
           { grado: "acreditado", t: "Los informes operativos de Fabrizio VIERA (MANEADOR) y Álvaro RODRÍGUEZ (CRISTOBAL), fechados el 6/09 y remitidos por SAAM el 7/09, ya fueron incorporados. Confirman la fuente agencial de la tesis del trasvase y la función de sostén del SURESTE 707, pero abren discrepancias horarias sustanciales." },
           { grado: "acreditado", t: "La duplicación del archivo rotulado como acta del 1er Oficial de Máquinas coreano, que reproducía literalmente el acta del Jefe de Máquinas ruso, quedó subsanada con la incorporación de la declaración de Park KWANG JUN del 1 de septiembre. Subsiste en cambio la indeterminación de los cargos, y las últimas actas revelaron que no es un problema aislado: el buque tenía dos jefes de máquinas y dos primeros oficiales de puente, uno por la línea rusa del armador y otro por la coreana de Dong Nam, y ninguno de los cuatro tiene su cargo y su línea de dependencia establecidos en el expediente." },
           { grado: "acreditado", t: "Tres pares de actas se solapan con un solo intérprete. El nuevo caso es 8/09: Ivanov hasta 14:35 y BELIKOV desde 14:30, ambos con GOLUBEI FORTUNA ante oficiales actuantes distintos. Persisten cierres imposibles, arrastre de plantilla y saltos de numeración; deben certificarse las horas reales." },
-          { grado: "acreditado", t: "Se incorporaron seis videos de MANEADOR y CRISTOBAL entre 19:27:35 y 22:58:38, prueba objetiva de la fase de respuesta y especialmente de la ventana de separación del SURESTE 707. Siguen faltando CCTV de la fase inicial, registros CONMO contrastados, VHF, AIS y comunicaciones telefónicas." }
+          { grado: "acreditado", t: "Se incorporaron siete videos: seis de MANEADOR/CRISTOBAL (19:27:35–22:58:38) y el Domo ANP del muelle (19:30–01:30), única cámara portuaria con vista del incidente desde el atraque. Prueba objetiva de la fase de respuesta y de la separación del SURESTE 707. No hay CCTV de la escora previa a las 19:30. Siguen faltando registros CONMO contrastados, VHF, AIS y comunicaciones telefónicas." }
         ]
       }
     ]
@@ -1830,7 +1848,7 @@ window.ANALISIS = {
       bloque: "Prueba objetiva a incorporar",
       urgencia: "alta",
       items: [
-        { t: "Completar el análisis de los seis videos incorporados y requerir CCTV portuario.", d: "Los videos de MANEADOR y CRISTOBAL cubren 19:27:35–22:58:38. Extraer hitos verificables (especialmente 19:57–20:02, 20:34–20:39 y 22:49–22:58). Requerir CCTV de ANP para cubrir el inicio de la escora entre 16:00 y 19:27." },
+        { t: "Completar el análisis de los siete videos incorporados.", d: "Incluye seis de MANEADOR/CRISTOBAL (19:27:35–22:58:38) y el Domo ANP del muelle (19:30–01:30), única cámara portuaria con vista del incidente. Extraer hitos verificables —en especial 19:57–20:02, 20:34–20:39, 22:49–22:58 y el tramo ANP coincidente—. No hay CCTV portuario de la fase inicial de escora (16:00–19:27)." },
         { t: "Registros de CONMO, SAAM Towage, AIS y tráfico VHF.", d: "Contrastar FERRAO y los informes de patrones con Control Montevideo, despacho electrónico y bitácoras SAAM, AIS de MANEADOR/CRISTOBAL y VHF. Fijar solicitud del cliente, aviso a patrones, zarpe (19:33/19:35), presencia de PLADA/SUEIRO (20:15–20:33) y cierre (23:15–23:28). La separación del SURESTE 707 queda anclada a 22:45–22:58 (FERRAO + video); la hora 21:10 de los patrones es discrepancia corporativa no resoluble." },
         { t: "Registros telefónicos y de mensajería.", d: "Del mensaje de Kyongsu PARK a Hoseon SHIN de las 18:46; de las comunicaciones de Oriental Shipping y de SAAM Towage ese día; y de las comunicaciones de la tripulación entre las 16:00 y las 20:00." },
         { t: "Documentación técnica y estatutaria externa del buque.", d: "Declaración general de arribo y despacho de entrada (fecha efectiva de atraque); plano de disposición general y de tanques; cuaderno de estabilidad aprobado; condición de carga y calados; certificados estatutarios y del Estado de bandera; historial de clase; informes PSC; y manual del SMS. No se requieren libros/registros de a bordo: se consideran perdidos con el pecio." },

@@ -613,6 +613,16 @@ body{
   background:rgba(232,163,61,.08); border:1px solid rgba(232,163,61,.26);
   border-radius:var(--radius-s); color:var(--txt-2); font-size:12.5px;
 }
+.video-cctv-note{
+  grid-column:1/-1; margin:0; padding:13px 15px;
+  background:rgba(226,87,76,.07); border:1px solid rgba(226,87,76,.28);
+  border-radius:var(--radius-s);
+}
+.video-cctv-note h3{
+  margin:0 0 5px; color:#f09188; font-size:11px;
+  text-transform:uppercase; letter-spacing:.08em;
+}
+.video-cctv-note p{ margin:0; color:var(--txt-2); font-size:13px; line-height:1.55; }
 .video-list{ display:flex; flex-direction:column; gap:11px; }
 .video-item{
   overflow:hidden; background:var(--panel); border:1px solid var(--line);
@@ -982,7 +992,7 @@ mark{ background:rgba(232,163,61,.32); color:#fff; border-radius:2px; padding:0 
 }
 @media (max-width:650px){
   .video-summary, .video-meta{ grid-template-columns:1fr; }
-  .video-warning{ grid-column:auto; }
+  .video-warning, .video-cctv-note{ grid-column:auto; }
   .video-head{ align-items:flex-start; }
   .video-head .chip{ display:none; }
   .video-head-main b, .video-head-main span{ white-space:normal; }

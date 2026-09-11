@@ -14,7 +14,7 @@ window.SUMARIO = {
     destinatario: "SEÑOR PREFECTO DEL PUERTO DE MONTEVIDEO",
     destinatarioCargo: "Capitán de Navío (CP) Néstor LEMOS",
     estado: "Borrador vivo — se actualiza con cada acta o documento incorporado al análisis",
-    notaFormal: "Este texto reproduce la estructura del oficio de elevación. Se incorporaron seis videos de los remolcadores entre 19:27:35 y 22:58:38; aún no obra CCTV de la fase inicial. La reconstrucción se apoya además en diecisiete actas, informes, cronología, planos, rol y meteorología."
+    notaFormal: "Este texto reproduce la estructura del oficio de elevación. Se incorporaron siete videos: seis de remolcadores (19:27:35–22:58:38) y el Domo ANP del muelle (19:30–01:30), única cámara portuaria con vista del incidente. No hay CCTV de la escora previa a las 19:30. La reconstrucción se apoya además en diecisiete actas, informes, cronología, planos, rol y meteorología."
   },
 
   introduccion:
@@ -113,7 +113,7 @@ window.SUMARIO = {
     "Defectos formales documentados: solapamientos de intérprete, cierres imposibles, saltos de numeración. No se exige certificación formal del intérprete.",
     "Separación del SURESTE 707: ancla 22:45–22:58 (Willian FERRAO + video); 21:10 de patrones SAAM = discrepancia corporativa no resoluble.",
     "Libros y registros de a bordo se consideran perdidos con el pecio; no se fundan diligencias en su recuperación.",
-    "Seis videos MANEADOR/CRISTOBAL (19:27:35–22:58:38) incorporados; análisis del investigador pendiente de completar. Faltan CCTV de la fase inicial y registros CONMO/VHF/AIS contrastados."
+    "Siete videos incorporados (MANEADOR/CRISTOBAL 19:27:35–22:58:38 y Domo ANP 19:30–01:30); análisis del investigador pendiente de completar. El Domo ANP es la única cámara portuaria con vista del muelle; no cubre la escora previa a las 19:30. Faltan registros CONMO/VHF/AIS contrastados."
   ],
 
   conclusiones: [
@@ -131,7 +131,7 @@ window.SUMARIO = {
   recomendaciones: [
     "Interrogar a Evgenii SIIUKOV (alias SHUKOV) sobre los cálculos de estabilidad. No disponer ampliaciones ni careos del resto de declarantes.",
     "Disponer pericia de estabilidad y reconstrucción de la condición de carga del 25 de agosto; pericia de refrigeración/toma de mar; inspección subacuática del casco; verificación de válvulas, bombas, tanques, ojos de buey y sistema eléctrico de emergencia. No priorizar pericia de soldadura ni identificación de personal venido de Corea.",
-    "Completar el análisis de los seis videos; sincronizar con AIS/VHF si se incorporan. Requerir CCTV, CONMO, bitácoras SAAM y documentación estatutaria externa. No pedir libros de a bordo (perdidos).",
+    "Completar el análisis de los siete videos (incl. Domo ANP del muelle); sincronizar con AIS/VHF si se incorporan. Requerir CONMO, bitácoras SAAM y documentación estatutaria externa. No pedir libros de a bordo (perdidos).",
     "Tomar como oficial la serie de viento Telemetry+ (Nettra); no requerir certificación ANP/INUMET.",
     "Evaluar la responsabilidad administrativa del Capitán por omisión de notificación y régimen de escoras sin procedimientos ni cálculos.",
     "Consignar defectos formales (solapamientos de intérprete, numeración) sin exigir certificación del intérprete.",
